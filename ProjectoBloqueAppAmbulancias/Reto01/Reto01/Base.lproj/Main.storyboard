@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8hP-6o-0ob">
+            <objects>
+                <tabBarController id="1jM-Dg-qOo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qfG-bh-N2i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iUA-IJ-5gO" kind="relationship" relationship="viewControllers" id="Vad-3p-7eR"/>
+                        <segue destination="t48-mr-bAe" kind="relationship" relationship="viewControllers" id="ejn-ht-KDf"/>
+                        <segue destination="CI2-Sc-4qs" kind="relationship" relationship="viewControllers" id="LzB-vN-5XK"/>
+                        <segue destination="4Ja-Nn-5AI" kind="relationship" relationship="viewControllers" id="0hX-hg-DdU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtg-C8-m8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="-824"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="Di3-iK-dhw">
+            <objects>
+                <navigationController id="iUA-IJ-5gO" userLabel="Info" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Info" image="globe" catalog="system" id="Xjv-bU-x52" userLabel="Info"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y9h-Vx-WiT">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tJz-Nw-7eG" kind="relationship" relationship="rootViewController" id="vXg-36-3kY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="na0-Gl-nlI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1959" y="-42"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="0mD-aC-Oy1">
+            <objects>
+                <navigationController id="t48-mr-bAe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Log In" image="person.fill" catalog="system" id="kIn-EH-3pW" userLabel="Cuenta"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h66-Re-Yms">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gwO-fV-KeT" kind="relationship" relationship="rootViewController" id="cku-ef-d7A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZC-c0-2kG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1267" y="-42"/>
+        </scene>
+        <!--Consulta-->
+        <scene sceneID="4F6-jk-EOh">
+            <objects>
+                <navigationController id="CI2-Sc-4qs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Consulta" image="magnifyingglass" catalog="system" id="0Ye-EE-gpi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tHj-5L-ePC">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rtw-xx-4Cf" kind="relationship" relationship="rootViewController" id="p9W-Xa-9BP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsM-Mb-QKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584" y="-42"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="cmz-E2-IAu">
+            <objects>
+                <navigationController title="Contact" id="4Ja-Nn-5AI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacto" image="book.fill" catalog="system" id="qOq-O9-EhJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hGO-yq-FW3">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nlu-hE-dxC" kind="relationship" relationship="rootViewController" id="6Gp-rU-7zx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSg-WD-dfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="-42"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="TB2-ZR-qwW">
+            <objects>
+                <viewController id="tJz-Nw-7eG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b2b-Us-yrs">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyD-y9-if7">
+                                <rect key="frame" x="16" y="132" width="358" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="CETAC"/>
+                                <connections>
+                                    <segue destination="RUE-ay-WzC" kind="show" id="IAJ-Hg-Db8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoM-CS-hl5">
+                                <rect key="frame" x="16" y="225" width="358" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="SERVICIOS ACOMPAñAMIENTO"/>
+                                <connections>
+                                    <segue destination="uPg-cu-StL" kind="show" id="vuw-SG-BBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-cS-LxE">
+                                <rect key="frame" x="16" y="422" width="358" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="SERVICIOS TÉCNICAS ALTERNATIVAS"/>
+                                <connections>
+                                    <segue destination="lAH-2w-gTA" kind="show" id="3p9-fP-jQH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKk-Mb-I4z">
+                                <rect key="frame" x="16" y="322" width="358" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="SERVICIOS HOLÍSTICOS"/>
+                                <connections>
+                                    <segue destination="jM7-xl-CZI" kind="show" id="Fo2-Vf-9tk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1qF-oh-oaj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="oFy-3w-YZS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYu-sD-Afx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1960" y="648.34123222748815"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="kQM-xt-mdb">
+            <objects>
+                <viewController title="Menu" id="gwO-fV-KeT" customClass="ViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PTn-17-rJT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMp-Xk-pun">
+                                <rect key="frame" x="54" y="240" width="213" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixX-Cr-2LK">
+                                <rect key="frame" x="137" y="187" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="TryToLogIn" destination="yHD-zY-qX9" eventType="touchUpInside" id="Yjs-zN-jy8"/>
+                                    <segue destination="sTP-gV-j0E" kind="show" id="1Oh-Qw-Trp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZTZ-dF-BJs"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="X9p-ah-YI6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHD-zY-qX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1268" y="648"/>
+        </scene>
+        <!--LoggedAdmin-->
+        <scene sceneID="Y6F-Z9-lNl">
+            <objects>
+                <viewController title="LoggedAdmin" id="sTP-gV-j0E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1X-n6-i00">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRn-jx-9Bk">
+                                <rect key="frame" x="185" y="169" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Th9-AZ-A1N" kind="show" id="6lR-NJ-Xyn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="41f-jI-EaA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Admin" id="hHH-kq-HTn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVJ-Mm-rvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-640" y="1345"/>
+        </scene>
+        <!--Consulta-->
+        <scene sceneID="qU4-TD-QaP">
+            <objects>
+                <viewController id="Rtw-xx-4Cf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2fg-b4-mx4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-XS-VMB">
+                                <rect key="frame" x="172" y="210" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Th9-AZ-A1N" kind="show" id="A8y-gN-qBz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fwb-82-pjT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Consulta" id="45J-Az-Rse"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwH-v0-bH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="648"/>
+        </scene>
+        <!--Contacto-->
+        <scene sceneID="3Uw-f1-KHI">
+            <objects>
+                <viewController id="Nlu-hE-dxC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rLZ-3B-edI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contacto" translatesAutoresizingMaskIntoConstraints="NO" id="RLy-fj-Bpa">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sK7-wu-Zik"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sK7-wu-Zik" firstAttribute="trailing" secondItem="RLy-fj-Bpa" secondAttribute="trailing" id="15Y-ok-Bcu"/>
+                            <constraint firstItem="RLy-fj-Bpa" firstAttribute="leading" secondItem="sK7-wu-Zik" secondAttribute="leading" id="23S-cR-LID"/>
+                            <constraint firstItem="RLy-fj-Bpa" firstAttribute="top" secondItem="sK7-wu-Zik" secondAttribute="top" id="XCm-gC-GO2"/>
+                            <constraint firstItem="sK7-wu-Zik" firstAttribute="bottom" secondItem="RLy-fj-Bpa" secondAttribute="bottom" id="w0i-Ni-EfN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contacto" id="zsP-eW-OZH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cO4-4c-HMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586.15384615384619" y="647.63033175355451"/>
+        </scene>
+        <!--Servicios1-->
+        <scene sceneID="0M2-6Z-58V">
+            <objects>
+                <viewController title="Servicios1" id="uPg-cu-StL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Kq-lt-wR4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="51" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fk-aw-fcI">
+                                <rect key="frame" x="16" y="127" width="358" height="634"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Tanatología:  Proceso  de  encuentro  personal  en  donde  a  través  de  un  diálogo  con  la  ayuda  de técnicas  y  herramientas  tanatológicas  la  persona  identifica  y  reconoce  sus  emociones  ante  una pérdida.
+
+Acompañamiento Individual: Proceso individual en donde se crea un vínculo de afecto y confianza, la persona se siente escuchada, comprendida, respetada y aceptada. Se busca resignificar su propia vida  de  alguna  situación  que  está  viviendo  o  vivió  (miedos,  violencia,  dudas,  inseguridades, bloqueos, vicios, etc.) con el fin de ayudarlos a desarrollar soluciones en su propio beneficio y vivir el aquí y el ahora.
+
+Acompañamiento  Grupal:  Proceso  en  donde  las  personas  no  se  enjuician,  se  comparten  las experiencias que al mismo tiempo está siendo vivida por el resto de los participantes. Se crean lazos de  confianza,  compasión,  empatía  y  aceptación  en  un  espacio  seguro  en  donde  se  es  libre  de comunicar y dar solución ante una situación.
+
+Logoterapia: Proceso para guiar a la persona en su búsqueda del sentido de vida y permite descubrir la  capacidad  que  tienen  los  humanos  para  superar  los  condicionamientos  más  difíciles  “sanar  a través del sentido”. Sanar, cuidar, acompañar lo que implica buscar sentido y esencia para vivir en plenitud.Mindfulness: Es una práctica que ayuda a la persona a enfocarse en el presente reconociendo que puede pasar por momentos de estrés, momentos de crisis laboral y personal, de baja autoestima y depresión.  A  través  de  herramientas  de  autoconocimiento,  autoreconocimiento  y  autocontrol podemos entrenar la mente para tener una actitud de apertura, aceptación y solución en cualquier situación de nuestra vida para un balance y dominio emocional.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="swD-R1-s9A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SERVICIOS ACOMPAñAMIENTO" id="J2n-wN-4E0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YP-ee-ZYc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2735.3846153846152" y="1375.5924170616113"/>
+        </scene>
+        <!--CETAC-->
+        <scene sceneID="2Jd-wL-u6M">
+            <objects>
+                <viewController title="CETAC" id="RUE-ay-WzC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qGu-cj-Sat">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="65" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tY2-H3-Ulh">
+                                <rect key="frame" x="16" y="122" width="358" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Misión:  Acompañar,  guiar  y  encauzar  a  personas,  pacientes  con  alguna  enfermedad  y  a  sus  familiares  a través   de   la   tanatología   mejorando   su   estado   emocional,   físico,   psicológico   y   espiritual   logrando reencuentren un sentido a la vida asumiendo nuestro compromiso y calidad humana con cada uno de ellos.
+
+Visión: Ser la mejor opción en el servicio en tanatología en la Ciudad de México ampliando nuestros servicios en el interior de la República Mexicana asumiendo nuestro compromiso de ofrecer beneficios a las personas con calidez humana.
+
+Valores:
+
+Respeto: Dar valía a la ideología de cada individuo respetando sus creencias, estatus económico o género.
+
+Honestidad:  Conducirnos  con  la  verdad  y  transparencia  con  todos  los  individuos,  asociados  y aliados.
+
+Empatía: Reconocer, comprender y apreciar las emociones y sentimientos de los demás.
+
+Integridad: Conducirnos con rectitud y ética en las ideas, creencias y comportamientos de nuestros colaboradores con la interacción con la comunidad.
+
+Humildad:  Tener  la  sabiduría  de  reconocer  y  respetar  las  habilidades,  cualidades,  capacidades  y aptitudes del ser humano.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NxH-VZ-Miq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CETAC" id="mPF-If-HKM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiD-V6-0Kh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2735.3846153846152" y="647.63033175355451"/>
+        </scene>
+        <!--Servicios2-->
+        <scene sceneID="PD0-Fb-uup">
+            <objects>
+                <viewController title="Servicios2" id="jM7-xl-CZI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzh-He-cI1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MCL-a3-l3D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SERVICIOS HOLÍSTICOS" id="GPZ-bo-gdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofw-7y-jqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3375" y="648"/>
+        </scene>
+        <!--Servicios3-->
+        <scene sceneID="f2I-Hd-dh5">
+            <objects>
+                <viewController title="Servicios3" id="lAH-2w-gTA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jlk-EE-sx4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eP3-nV-zG7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TÉCNICAS ALTERNATIVAS" id="c29-ee-qNu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzr-Ui-hYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3375" y="1376"/>
+        </scene>
+        <!--Reporte-->
+        <scene sceneID="7No-3y-hZz">
+            <objects>
+                <viewController title="Reporte" id="Th9-AZ-A1N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Zf-YZ-V1m">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ue-mP-Ogz">
+                                <rect key="frame" x="107" y="164" width="195" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CJN-80-yCw"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reporte" id="wQL-vl-tQ9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVa-v2-5S6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.615384615384613" y="1350.7109004739336"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6lR-NJ-Xyn"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Contacto" width="234" height="339.5"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
