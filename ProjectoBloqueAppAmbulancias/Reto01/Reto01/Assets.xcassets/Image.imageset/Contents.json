@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "iniciarsesion.png",
+      "filename" : "Facebook_icon_2013.svg.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "iniciarsesion-1.png",
+      "filename" : "Facebook_icon_2013.svg-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "iniciarsesion-2.png",
+      "filename" : "Facebook_icon_2013.svg-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
