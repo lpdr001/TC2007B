@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -519,7 +519,6 @@ Llena el siguiente formulario</string>
         <!--Reporte-->
         <scene sceneID="7No-3y-hZz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KVa-v2-5S6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Reporte" id="Th9-AZ-A1N" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Zf-YZ-V1m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -538,6 +537,7 @@ Llena el siguiente formulario</string>
                     <tabBarItem key="tabBarItem" title="Item" id="WEI-is-2Xt"/>
                     <navigationItem key="navigationItem" title="Reporte" id="wQL-vl-tQ9"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVa-v2-5S6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="1242"/>
         </scene>
