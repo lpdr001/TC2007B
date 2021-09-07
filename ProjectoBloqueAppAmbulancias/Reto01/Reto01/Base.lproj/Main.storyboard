@@ -125,7 +125,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uPg-cu-StL" kind="show" id="vuw-SG-BBb"/>
+                                    <segue destination="jM7-xl-CZI" kind="show" id="Hhc-n9-wCm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-cS-LxE">
@@ -149,7 +149,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jM7-xl-CZI" kind="show" id="Fo2-Vf-9tk"/>
+                                    <segue destination="uPg-cu-StL" kind="show" id="aug-eA-Otd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,7 +320,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Facebook_icon_2013.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-0j-cNj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-0j-cNj">
                                 <rect key="frame" x="172" y="253" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -387,14 +387,25 @@ Llena el siguiente formulario</string>
                     <view key="view" contentMode="scaleToFill" id="2Kq-lt-wR4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_4" translatesAutoresizingMaskIntoConstraints="NO" id="CcB-Kx-8Ac">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="swD-R1-s9A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="swD-R1-s9A" firstAttribute="trailing" secondItem="CcB-Kx-8Ac" secondAttribute="trailing" id="C2P-Du-SoW"/>
+                            <constraint firstItem="CcB-Kx-8Ac" firstAttribute="top" secondItem="swD-R1-s9A" secondAttribute="top" id="PZU-Pv-dkw"/>
+                            <constraint firstItem="swD-R1-s9A" firstAttribute="bottom" secondItem="CcB-Kx-8Ac" secondAttribute="bottom" id="eah-L1-m3G"/>
+                            <constraint firstItem="CcB-Kx-8Ac" firstAttribute="leading" secondItem="swD-R1-s9A" secondAttribute="leading" id="frO-I6-ems"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SERVICIOS ACOMPAñAMIENTO" id="J2n-wN-4E0"/>
+                    <navigationItem key="navigationItem" title="SERVICIOS HOLÍSTICOS" id="J2n-wN-4E0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YP-ee-ZYc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2735.3846153846152" y="1375.5924170616113"/>
+            <point key="canvasLocation" x="-3375" y="656"/>
         </scene>
         <!--UsuariosTanatologo-->
         <scene sceneID="ktl-zO-zJi">
@@ -404,11 +415,11 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_1_2" translatesAutoresizingMaskIntoConstraints="NO" id="hMg-Wd-YBV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchPaciente" translatesAutoresizingMaskIntoConstraints="NO" id="hMg-Wd-YBV">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-TK-Kxi">
-                                <rect key="frame" x="77" y="166" width="53" height="30"/>
+                                <rect key="frame" x="77" y="202" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Usuario"/>
                                 <connections>
@@ -439,14 +450,26 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-lr-Nmm">
-                                <rect key="frame" x="164" y="172" width="46" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchTanatologo" translatesAutoresizingMaskIntoConstraints="NO" id="eIO-CU-lvz">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-IC-fSX">
+                                <rect key="frame" x="75" y="239" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="K7F-a6-pu4" kind="show" id="f2z-2s-XfU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jhv-Wq-vE3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eIO-CU-lvz" firstAttribute="leading" secondItem="jhv-Wq-vE3" secondAttribute="leading" id="7Zv-7C-xIi"/>
+                            <constraint firstItem="jhv-Wq-vE3" firstAttribute="bottom" secondItem="eIO-CU-lvz" secondAttribute="bottom" id="EMb-lm-p0t"/>
+                            <constraint firstItem="jhv-Wq-vE3" firstAttribute="trailing" secondItem="eIO-CU-lvz" secondAttribute="trailing" id="V1A-tf-Fry"/>
+                            <constraint firstItem="eIO-CU-lvz" firstAttribute="top" secondItem="jhv-Wq-vE3" secondAttribute="top" id="zMH-qo-LNL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Consulta Tanatologos" id="TPI-zQ-8Gf"/>
                 </viewController>
@@ -462,20 +485,35 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-b5-BLH">
-                                <rect key="frame" x="164" y="172" width="46" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchPaciente" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-1b-2v5">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLL-FM-mhd">
+                                <rect key="frame" x="83" y="233" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="jQd-WN-KRe" kind="show" id="LEc-ji-KnM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ghh-de-PVu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X6m-1b-2v5" firstAttribute="top" secondItem="Ghh-de-PVu" secondAttribute="top" id="DKq-nj-xjW"/>
+                            <constraint firstItem="Ghh-de-PVu" firstAttribute="bottom" secondItem="X6m-1b-2v5" secondAttribute="bottom" id="H4D-D8-7l1"/>
+                            <constraint firstItem="X6m-1b-2v5" firstAttribute="leading" secondItem="Ghh-de-PVu" secondAttribute="leading" id="LcM-BW-DbG"/>
+                            <constraint firstItem="Ghh-de-PVu" firstAttribute="trailing" secondItem="X6m-1b-2v5" secondAttribute="trailing" id="OSe-bj-jZl"/>
+                            <constraint firstItem="Ghh-de-PVu" firstAttribute="bottom" secondItem="X6m-1b-2v5" secondAttribute="bottom" id="en1-2i-iep"/>
+                            <constraint firstItem="X6m-1b-2v5" firstAttribute="leading" secondItem="Ghh-de-PVu" secondAttribute="leading" id="ggv-rK-eJh"/>
+                            <constraint firstItem="X6m-1b-2v5" firstAttribute="trailing" secondItem="Ghh-de-PVu" secondAttribute="trailing" id="kMu-uv-ola"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Consulta Pacientes" id="qIq-YU-ZwC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zf8-m9-841" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2087" y="2764"/>
+            <point key="canvasLocation" x="-2087.1999999999998" y="2763.5467980295566"/>
         </scene>
         <!--CETAC-->
         <scene sceneID="2Jd-wL-u6M">
@@ -509,39 +547,27 @@ Llena el siguiente formulario</string>
             <objects>
                 <viewController title="Servicios2" id="jM7-xl-CZI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mzh-He-cI1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1229"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upb-F7-1Bh">
-                                <rect key="frame" x="0.0" y="88" width="375" height="829"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1058"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-aO-y8j">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="829"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1058"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-g8-Fej">
-                                                <rect key="frame" x="169" y="8" width="36" height="38"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGl-BX-NNN">
-                                                <rect key="frame" x="169" y="395" width="36" height="38"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bottom" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rr-99-7Oh">
-                                                <rect key="frame" x="158" y="733" width="58" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1_2" translatesAutoresizingMaskIntoConstraints="NO" id="9ik-iZ-Seu">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1014"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9ik-iZ-Seu" secondAttribute="bottom" id="I6l-5l-Bor"/>
+                                            <constraint firstItem="9ik-iZ-Seu" firstAttribute="leading" secondItem="ux2-aO-y8j" secondAttribute="leading" id="JaG-o3-6Lh"/>
+                                            <constraint firstAttribute="trailing" secondItem="9ik-iZ-Seu" secondAttribute="trailing" id="gGS-PJ-9lR"/>
+                                            <constraint firstItem="9ik-iZ-Seu" firstAttribute="top" secondItem="ux2-aO-y8j" secondAttribute="top" id="yuD-8I-aSI"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
@@ -560,12 +586,12 @@ Llena el siguiente formulario</string>
                             <constraint firstItem="ux2-aO-y8j" firstAttribute="width" secondItem="mzh-He-cI1" secondAttribute="width" id="aXB-Kt-OPo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SERVICIOS HOLÍSTICOS" id="GPZ-bo-gdN"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <navigationItem key="navigationItem" title="SERVICIOS ACOMPAñAMIENTO" id="GPZ-bo-gdN"/>
+                    <size key="freeformSize" width="375" height="1229"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ofw-7y-jqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3834.4000000000001" y="638.42364532019712"/>
+            <point key="canvasLocation" x="-4618.3999999999996" y="646.92118226600985"/>
         </scene>
         <!--Servicios3-->
         <scene sceneID="f2I-Hd-dh5">
@@ -574,14 +600,25 @@ Llena el siguiente formulario</string>
                     <view key="view" contentMode="scaleToFill" id="Jlk-EE-sx4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_3" translatesAutoresizingMaskIntoConstraints="NO" id="AWA-ku-p6F">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eP3-nV-zG7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AWA-ku-p6F" firstAttribute="leading" secondItem="eP3-nV-zG7" secondAttribute="leading" id="cL1-zz-INM"/>
+                            <constraint firstItem="AWA-ku-p6F" firstAttribute="top" secondItem="eP3-nV-zG7" secondAttribute="top" id="e2b-Hx-uc9"/>
+                            <constraint firstItem="eP3-nV-zG7" firstAttribute="bottom" secondItem="AWA-ku-p6F" secondAttribute="bottom" id="fnR-dt-vE1"/>
+                            <constraint firstItem="eP3-nV-zG7" firstAttribute="trailing" secondItem="AWA-ku-p6F" secondAttribute="trailing" id="qFD-r6-4fD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TÉCNICAS ALTERNATIVAS" id="c29-ee-qNu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fzr-Ui-hYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3375" y="1376"/>
+            <point key="canvasLocation" x="-3990" y="655"/>
         </scene>
         <!--Reporte-->
         <scene sceneID="7No-3y-hZz">
@@ -590,15 +627,26 @@ Llena el siguiente formulario</string>
                     <view key="view" contentMode="scaleToFill" id="6Zf-YZ-V1m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_1" translatesAutoresizingMaskIntoConstraints="NO" id="Ooi-Zd-qBk">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CJN-80-yCw"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CJN-80-yCw" firstAttribute="bottom" secondItem="Ooi-Zd-qBk" secondAttribute="bottom" id="KTP-hS-8AC"/>
+                            <constraint firstItem="Ooi-Zd-qBk" firstAttribute="top" secondItem="CJN-80-yCw" secondAttribute="top" id="Q6m-BW-wWY"/>
+                            <constraint firstItem="CJN-80-yCw" firstAttribute="trailing" secondItem="Ooi-Zd-qBk" secondAttribute="trailing" id="YkM-BR-Sui"/>
+                            <constraint firstItem="Ooi-Zd-qBk" firstAttribute="leading" secondItem="CJN-80-yCw" secondAttribute="leading" id="hIF-6v-eqV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="WEI-is-2Xt"/>
                     <navigationItem key="navigationItem" title="Reporte" id="wQL-vl-tQ9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVa-v2-5S6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="1242"/>
+            <point key="canvasLocation" x="770" y="647"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SQH-fi-7jP">
@@ -765,23 +813,39 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="321-i2-6AC">
-                                <rect key="frame" x="164" y="186" width="46" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PacInf" translatesAutoresizingMaskIntoConstraints="NO" id="NYd-9Y-1C8">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-As-Rnp">
+                                <rect key="frame" x="230" y="685" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="7rn-ry-ewO" kind="show" id="eYT-UO-rOO"/>
+                                    <segue destination="7rn-ry-ewO" kind="popoverPresentation" popoverAnchorView="pLA-As-Rnp" id="e0P-Ui-k1a">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2CJ-IY-6gG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NYd-9Y-1C8" firstAttribute="leading" secondItem="2CJ-IY-6gG" secondAttribute="leading" id="2N0-tH-1Ky"/>
+                            <constraint firstItem="2CJ-IY-6gG" firstAttribute="bottom" secondItem="NYd-9Y-1C8" secondAttribute="bottom" id="PEc-BZ-2a2"/>
+                            <constraint firstItem="2CJ-IY-6gG" firstAttribute="trailing" secondItem="NYd-9Y-1C8" secondAttribute="trailing" id="Qfc-eb-H8r"/>
+                            <constraint firstItem="2CJ-IY-6gG" firstAttribute="bottom" secondItem="NYd-9Y-1C8" secondAttribute="bottom" id="UYU-pX-bdk"/>
+                            <constraint firstItem="NYd-9Y-1C8" firstAttribute="leading" secondItem="2CJ-IY-6gG" secondAttribute="leading" id="VfW-CB-jS5"/>
+                            <constraint firstItem="2CJ-IY-6gG" firstAttribute="bottom" secondItem="NYd-9Y-1C8" secondAttribute="bottom" id="dyf-fi-rLH"/>
+                            <constraint firstItem="NYd-9Y-1C8" firstAttribute="trailing" secondItem="2CJ-IY-6gG" secondAttribute="trailing" id="h3W-Ep-O8f"/>
+                            <constraint firstItem="NYd-9Y-1C8" firstAttribute="top" secondItem="2CJ-IY-6gG" secondAttribute="top" id="tN2-fw-ocu"/>
+                            <constraint firstItem="2CJ-IY-6gG" firstAttribute="trailing" secondItem="NYd-9Y-1C8" secondAttribute="trailing" id="ynB-IG-ygD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info Paciente" id="IaF-7n-7Sr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eh-g6-FwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2762" y="3398"/>
+            <point key="canvasLocation" x="-2762" y="3403"/>
         </scene>
         <!--Tanatológo-->
         <scene sceneID="7Hg-o8-G0L">
@@ -824,11 +888,11 @@ Llena el siguiente formulario</string>
             <objects>
                 <viewController title="Feed" id="7rn-ry-ewO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irX-w2-qwy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_1_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-uh-YND">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vfY-cD-LCt"/>
@@ -854,14 +918,18 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte indicadores.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xzk-9B-nsa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte indicadores" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xzk-9B-nsa">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f7K-os-hKr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="bottom" secondItem="f7K-os-hKr" secondAttribute="bottom" id="3hm-Su-BdX"/>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="leading" secondItem="f7K-os-hKr" secondAttribute="leading" id="4Mg-DJ-Slp"/>
                             <constraint firstItem="xzk-9B-nsa" firstAttribute="leading" secondItem="f7K-os-hKr" secondAttribute="leading" id="KWB-Od-QlI"/>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="top" secondItem="f7K-os-hKr" secondAttribute="top" id="Qur-nr-irz"/>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="trailing" secondItem="f7K-os-hKr" secondAttribute="trailing" id="W1y-Xq-mOj"/>
                             <constraint firstItem="f7K-os-hKr" firstAttribute="bottom" secondItem="xzk-9B-nsa" secondAttribute="bottom" id="aQv-5v-KXA"/>
                             <constraint firstItem="f7K-os-hKr" firstAttribute="trailing" secondItem="xzk-9B-nsa" secondAttribute="trailing" id="lNq-WZ-gs1"/>
                             <constraint firstItem="xzk-9B-nsa" firstAttribute="top" secondItem="f7K-os-hKr" secondAttribute="top" id="nqG-TL-iqF"/>
@@ -881,13 +949,17 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte historico.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-bF-yK4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte historico" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-bF-yK4">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U6Y-ZS-zes"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="top" secondItem="U6Y-ZS-zes" secondAttribute="top" id="CTw-uW-LqQ"/>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="leading" secondItem="U6Y-ZS-zes" secondAttribute="leading" id="IHY-Zr-EAR"/>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="trailing" secondItem="U6Y-ZS-zes" secondAttribute="trailing" id="K4l-ZT-jOK"/>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="bottom" secondItem="U6Y-ZS-zes" secondAttribute="bottom" id="Ngp-Yt-hDv"/>
                             <constraint firstItem="0dl-bF-yK4" firstAttribute="top" secondItem="U6Y-ZS-zes" secondAttribute="top" id="S1D-8m-xyR"/>
                             <constraint firstItem="U6Y-ZS-zes" firstAttribute="trailing" secondItem="0dl-bF-yK4" secondAttribute="trailing" id="ivz-5R-5NI"/>
                             <constraint firstItem="0dl-bF-yK4" firstAttribute="leading" secondItem="U6Y-ZS-zes" secondAttribute="leading" id="q9D-e5-qNm"/>
@@ -908,14 +980,26 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdi-Ua-KSI">
-                                <rect key="frame" x="164" y="172" width="46" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchTanatologo" translatesAutoresizingMaskIntoConstraints="NO" id="bf7-Ot-0Mr">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfH-Il-p4f">
+                                <rect key="frame" x="81" y="243" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="tcg-Iq-Bic" kind="show" id="iLm-bf-ynh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CvZ-i1-XEd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bf7-Ot-0Mr" firstAttribute="leading" secondItem="CvZ-i1-XEd" secondAttribute="leading" id="HEM-yF-se5"/>
+                            <constraint firstItem="CvZ-i1-XEd" firstAttribute="bottom" secondItem="bf7-Ot-0Mr" secondAttribute="bottom" id="Y6W-9l-NwE"/>
+                            <constraint firstItem="CvZ-i1-XEd" firstAttribute="trailing" secondItem="bf7-Ot-0Mr" secondAttribute="trailing" id="gW1-VW-zSa"/>
+                            <constraint firstItem="bf7-Ot-0Mr" firstAttribute="top" secondItem="CvZ-i1-XEd" secondAttribute="top" id="mzO-9P-kQF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Consulta Tanatologos (Soporte)" id="HWG-hT-pOv"/>
                 </viewController>
@@ -931,14 +1015,26 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-5i-VfP">
-                                <rect key="frame" x="164" y="172" width="46" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchPaciente" translatesAutoresizingMaskIntoConstraints="NO" id="IzB-pV-VBb">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fer-zm-mcs">
+                                <rect key="frame" x="89" y="229" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="9EL-yi-brA" kind="show" id="gCp-Zm-gf6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NAm-cj-zRG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NAm-cj-zRG" firstAttribute="trailing" secondItem="IzB-pV-VBb" secondAttribute="trailing" id="ev4-rz-uRK"/>
+                            <constraint firstItem="IzB-pV-VBb" firstAttribute="top" secondItem="NAm-cj-zRG" secondAttribute="top" id="k40-fj-Du3"/>
+                            <constraint firstItem="IzB-pV-VBb" firstAttribute="leading" secondItem="NAm-cj-zRG" secondAttribute="leading" id="mMn-jv-VU7"/>
+                            <constraint firstItem="NAm-cj-zRG" firstAttribute="bottom" secondItem="IzB-pV-VBb" secondAttribute="bottom" id="uLy-oy-kqq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Consulta Pacientes (Soporte)" id="SDR-0M-VBJ"/>
                 </viewController>
@@ -982,19 +1078,128 @@ Llena el siguiente formulario</string>
             </objects>
             <point key="canvasLocation" x="444" y="2081"/>
         </scene>
+        <!--Feed-->
+        <scene sceneID="tE4-Z5-nzg">
+            <objects>
+                <viewController title="Feed" id="K7F-a6-pu4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iLG-Ef-r0g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TanInf" translatesAutoresizingMaskIntoConstraints="NO" id="4z6-Pc-pMa">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hci-SP-yLc">
+                                <rect key="frame" x="164" y="437" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MRA-CO-e84"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4z6-Pc-pMa" firstAttribute="leading" secondItem="MRA-CO-e84" secondAttribute="leading" id="3Zl-IR-XDA"/>
+                            <constraint firstItem="MRA-CO-e84" firstAttribute="trailing" secondItem="4z6-Pc-pMa" secondAttribute="trailing" id="BF0-aM-AEq"/>
+                            <constraint firstItem="MRA-CO-e84" firstAttribute="trailing" secondItem="4z6-Pc-pMa" secondAttribute="trailing" id="OFo-vl-Jnm"/>
+                            <constraint firstItem="4z6-Pc-pMa" firstAttribute="leading" secondItem="MRA-CO-e84" secondAttribute="leading" id="P6x-Rg-212"/>
+                            <constraint firstItem="MRA-CO-e84" firstAttribute="bottom" secondItem="4z6-Pc-pMa" secondAttribute="bottom" id="acD-h4-cBQ"/>
+                            <constraint firstItem="MRA-CO-e84" firstAttribute="bottom" secondItem="4z6-Pc-pMa" secondAttribute="bottom" id="eWl-pb-vNW"/>
+                            <constraint firstItem="4z6-Pc-pMa" firstAttribute="trailing" secondItem="MRA-CO-e84" secondAttribute="trailing" id="kQJ-Xr-kbn"/>
+                            <constraint firstItem="MRA-CO-e84" firstAttribute="bottom" secondItem="4z6-Pc-pMa" secondAttribute="bottom" id="lfZ-gD-cFS"/>
+                            <constraint firstItem="4z6-Pc-pMa" firstAttribute="top" secondItem="MRA-CO-e84" secondAttribute="top" id="p0C-7b-Efh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info Paciente" id="z1q-ge-3ZM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVy-DI-Qnt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1479" y="3426"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="r2T-h7-hLE">
+            <objects>
+                <viewController title="Feed" id="9EL-yi-brA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GdV-yv-8a0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tanSUP" translatesAutoresizingMaskIntoConstraints="NO" id="6D1-Ui-4u2">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M7B-38-k9W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M7B-38-k9W" firstAttribute="bottom" secondItem="6D1-Ui-4u2" secondAttribute="bottom" id="30r-tM-5c4"/>
+                            <constraint firstItem="M7B-38-k9W" firstAttribute="trailing" secondItem="6D1-Ui-4u2" secondAttribute="trailing" id="Lze-Xq-woA"/>
+                            <constraint firstItem="6D1-Ui-4u2" firstAttribute="leading" secondItem="M7B-38-k9W" secondAttribute="leading" id="Pw0-VC-tvn"/>
+                            <constraint firstItem="M7B-38-k9W" firstAttribute="trailing" secondItem="6D1-Ui-4u2" secondAttribute="trailing" id="asZ-3T-1It"/>
+                            <constraint firstItem="M7B-38-k9W" firstAttribute="bottom" secondItem="6D1-Ui-4u2" secondAttribute="bottom" id="fDy-IZ-pTB"/>
+                            <constraint firstItem="6D1-Ui-4u2" firstAttribute="trailing" secondItem="M7B-38-k9W" secondAttribute="trailing" id="mbK-jF-TFE"/>
+                            <constraint firstItem="M7B-38-k9W" firstAttribute="bottom" secondItem="6D1-Ui-4u2" secondAttribute="bottom" id="ttl-vP-egc"/>
+                            <constraint firstItem="6D1-Ui-4u2" firstAttribute="leading" secondItem="M7B-38-k9W" secondAttribute="leading" id="xMc-c9-JEU"/>
+                            <constraint firstItem="6D1-Ui-4u2" firstAttribute="top" secondItem="M7B-38-k9W" secondAttribute="top" id="z13-43-Bgh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info Paciente" id="k2u-NY-aJi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjq-YS-aZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="3426"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="cSS-cM-u5F">
+            <objects>
+                <viewController title="Feed" id="tcg-Iq-Bic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ia7-f5-B9h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PacSup" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-hO-DJH">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="agX-CB-l6i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Shd-hO-DJH" firstAttribute="leading" secondItem="agX-CB-l6i" secondAttribute="leading" id="FPt-dG-KQE"/>
+                            <constraint firstItem="Shd-hO-DJH" firstAttribute="top" secondItem="agX-CB-l6i" secondAttribute="top" id="Foy-py-86i"/>
+                            <constraint firstItem="agX-CB-l6i" firstAttribute="bottom" secondItem="Shd-hO-DJH" secondAttribute="bottom" id="Jpl-X7-PGf"/>
+                            <constraint firstItem="agX-CB-l6i" firstAttribute="bottom" secondItem="Shd-hO-DJH" secondAttribute="bottom" id="LT1-pN-u9j"/>
+                            <constraint firstItem="Shd-hO-DJH" firstAttribute="trailing" secondItem="agX-CB-l6i" secondAttribute="trailing" id="Lyi-i1-fkT"/>
+                            <constraint firstItem="agX-CB-l6i" firstAttribute="trailing" secondItem="Shd-hO-DJH" secondAttribute="trailing" id="WK1-En-hWS"/>
+                            <constraint firstItem="agX-CB-l6i" firstAttribute="bottom" secondItem="Shd-hO-DJH" secondAttribute="bottom" id="f3T-EV-SPy"/>
+                            <constraint firstItem="agX-CB-l6i" firstAttribute="trailing" secondItem="Shd-hO-DJH" secondAttribute="trailing" id="igK-Jl-3eF"/>
+                            <constraint firstItem="Shd-hO-DJH" firstAttribute="leading" secondItem="agX-CB-l6i" secondAttribute="leading" id="oi9-H3-JDl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info Paciente" id="17o-r3-VcZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rwx-Mo-hAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="3426"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="CvK-XU-Tsz"/>
         <segue reference="RhG-gL-aEk"/>
         <segue reference="Klh-VQ-Zqq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1_1" width="61.666667938232422" height="94.666664123535156"/>
+        <image name="1_2" width="81.666664123535156" height="289"/>
+        <image name="1_3" width="155.66667175292969" height="188"/>
+        <image name="1_4" width="158" height="290"/>
         <image name="2" width="124.33333587646484" height="196.66667175292969"/>
         <image name="2_1_1" width="125" height="172.66667175292969"/>
-        <image name="2_1_2" width="61.333332061767578" height="105"/>
         <image name="2_1_2_1" width="124.66666412353516" height="173"/>
         <image name="3" width="156.66667175292969" height="155.66667175292969"/>
-        <image name="Facebook_icon_2013.svg.png" width="1024" height="1024"/>
+        <image name="3_1" width="155.66667175292969" height="240.33332824707031"/>
+        <image name="PacInf" width="157" height="266"/>
+        <image name="PacSup" width="157.33332824707031" height="263.33334350585938"/>
+        <image name="SearchPaciente" width="153" height="282.66665649414062"/>
+        <image name="SearchTanatologo" width="154" height="250.33332824707031"/>
+        <image name="TanInf" width="153.33332824707031" height="256"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
@@ -1004,9 +1209,10 @@ Llena el siguiente formulario</string>
         <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="reporte historico.png" width="375" height="551"/>
-        <image name="reporte indicadores.png" width="374" height="597"/>
+        <image name="reporte historico" width="125" height="183.66667175292969"/>
+        <image name="reporte indicadores" width="124.66666412353516" height="185"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="tanSUP" width="148.66667175292969" height="262"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -1021,9 +1227,6 @@ Llena el siguiente formulario</string>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
