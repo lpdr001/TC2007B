@@ -320,7 +320,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Facebook_icon_2013.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-0j-cNj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-0j-cNj">
                                 <rect key="frame" x="172" y="253" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -453,6 +453,14 @@ Llena el siguiente formulario</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchTanatologo" translatesAutoresizingMaskIntoConstraints="NO" id="eIO-CU-lvz">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-IC-fSX">
+                                <rect key="frame" x="75" y="239" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="K7F-a6-pu4" kind="show" id="f2z-2s-XfU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jhv-Wq-vE3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -480,6 +488,14 @@ Llena el siguiente formulario</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchPaciente" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-1b-2v5">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLL-FM-mhd">
+                                <rect key="frame" x="83" y="233" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="jQd-WN-KRe" kind="show" id="LEc-ji-KnM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ghh-de-PVu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -801,11 +817,13 @@ Llena el siguiente formulario</string>
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-As-Rnp">
-                                <rect key="frame" x="164" y="437" width="46" height="30"/>
+                                <rect key="frame" x="230" y="685" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="7rn-ry-ewO" kind="show" id="GvC-gt-Vnf"/>
+                                    <segue destination="7rn-ry-ewO" kind="popoverPresentation" popoverAnchorView="pLA-As-Rnp" id="e0P-Ui-k1a">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -870,11 +888,11 @@ Llena el siguiente formulario</string>
             <objects>
                 <viewController title="Feed" id="7rn-ry-ewO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irX-w2-qwy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_1_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-uh-YND">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vfY-cD-LCt"/>
@@ -900,14 +918,18 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte indicadores.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xzk-9B-nsa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte indicadores" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xzk-9B-nsa">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f7K-os-hKr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="bottom" secondItem="f7K-os-hKr" secondAttribute="bottom" id="3hm-Su-BdX"/>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="leading" secondItem="f7K-os-hKr" secondAttribute="leading" id="4Mg-DJ-Slp"/>
                             <constraint firstItem="xzk-9B-nsa" firstAttribute="leading" secondItem="f7K-os-hKr" secondAttribute="leading" id="KWB-Od-QlI"/>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="top" secondItem="f7K-os-hKr" secondAttribute="top" id="Qur-nr-irz"/>
+                            <constraint firstItem="xzk-9B-nsa" firstAttribute="trailing" secondItem="f7K-os-hKr" secondAttribute="trailing" id="W1y-Xq-mOj"/>
                             <constraint firstItem="f7K-os-hKr" firstAttribute="bottom" secondItem="xzk-9B-nsa" secondAttribute="bottom" id="aQv-5v-KXA"/>
                             <constraint firstItem="f7K-os-hKr" firstAttribute="trailing" secondItem="xzk-9B-nsa" secondAttribute="trailing" id="lNq-WZ-gs1"/>
                             <constraint firstItem="xzk-9B-nsa" firstAttribute="top" secondItem="f7K-os-hKr" secondAttribute="top" id="nqG-TL-iqF"/>
@@ -927,13 +949,17 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte historico.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-bF-yK4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporte historico" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-bF-yK4">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U6Y-ZS-zes"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="top" secondItem="U6Y-ZS-zes" secondAttribute="top" id="CTw-uW-LqQ"/>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="leading" secondItem="U6Y-ZS-zes" secondAttribute="leading" id="IHY-Zr-EAR"/>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="trailing" secondItem="U6Y-ZS-zes" secondAttribute="trailing" id="K4l-ZT-jOK"/>
+                            <constraint firstItem="0dl-bF-yK4" firstAttribute="bottom" secondItem="U6Y-ZS-zes" secondAttribute="bottom" id="Ngp-Yt-hDv"/>
                             <constraint firstItem="0dl-bF-yK4" firstAttribute="top" secondItem="U6Y-ZS-zes" secondAttribute="top" id="S1D-8m-xyR"/>
                             <constraint firstItem="U6Y-ZS-zes" firstAttribute="trailing" secondItem="0dl-bF-yK4" secondAttribute="trailing" id="ivz-5R-5NI"/>
                             <constraint firstItem="0dl-bF-yK4" firstAttribute="leading" secondItem="U6Y-ZS-zes" secondAttribute="leading" id="q9D-e5-qNm"/>
@@ -957,6 +983,14 @@ Llena el siguiente formulario</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchTanatologo" translatesAutoresizingMaskIntoConstraints="NO" id="bf7-Ot-0Mr">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfH-Il-p4f">
+                                <rect key="frame" x="81" y="243" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="tcg-Iq-Bic" kind="show" id="iLm-bf-ynh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CvZ-i1-XEd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -984,6 +1018,14 @@ Llena el siguiente formulario</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchPaciente" translatesAutoresizingMaskIntoConstraints="NO" id="IzB-pV-VBb">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fer-zm-mcs">
+                                <rect key="frame" x="89" y="229" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="9EL-yi-brA" kind="show" id="gCp-Zm-gf6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NAm-cj-zRG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1045,7 +1087,7 @@ Llena el siguiente formulario</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TanInf" translatesAutoresizingMaskIntoConstraints="NO" id="4z6-Pc-pMa">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hci-SP-yLc">
                                 <rect key="frame" x="164" y="437" width="46" height="30"/>
@@ -1082,7 +1124,7 @@ Llena el siguiente formulario</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tanSUP" translatesAutoresizingMaskIntoConstraints="NO" id="6D1-Ui-4u2">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M7B-38-k9W"/>
@@ -1113,8 +1155,8 @@ Llena el siguiente formulario</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-hO-DJH">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PacSup" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-hO-DJH">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="agX-CB-l6i"/>
@@ -1139,6 +1181,7 @@ Llena el siguiente formulario</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="CvK-XU-Tsz"/>
         <segue reference="RhG-gL-aEk"/>
         <segue reference="Klh-VQ-Zqq"/>
     </inferredMetricsTieBreakers>
@@ -1152,8 +1195,8 @@ Llena el siguiente formulario</string>
         <image name="2_1_2_1" width="124.66666412353516" height="173"/>
         <image name="3" width="156.66667175292969" height="155.66667175292969"/>
         <image name="3_1" width="155.66667175292969" height="240.33332824707031"/>
-        <image name="Facebook_icon_2013.svg.png" width="1024" height="1024"/>
         <image name="PacInf" width="157" height="266"/>
+        <image name="PacSup" width="157.33332824707031" height="263.33334350585938"/>
         <image name="SearchPaciente" width="153" height="282.66665649414062"/>
         <image name="SearchTanatologo" width="154" height="250.33332824707031"/>
         <image name="TanInf" width="153.33332824707031" height="256"/>
@@ -1166,8 +1209,8 @@ Llena el siguiente formulario</string>
         <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="reporte historico.png" width="375" height="551"/>
-        <image name="reporte indicadores.png" width="374" height="597"/>
+        <image name="reporte historico" width="125" height="183.66667175292969"/>
+        <image name="reporte indicadores" width="124.66666412353516" height="185"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <image name="tanSUP" width="148.66667175292969" height="262"/>
         <systemColor name="labelColor">
