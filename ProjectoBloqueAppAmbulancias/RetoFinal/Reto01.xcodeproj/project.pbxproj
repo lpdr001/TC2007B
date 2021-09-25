@@ -13,6 +13,10 @@
 		322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097BB26DEE3FB0024DD40 /* Main.storyboard */; };
 		322097C226DEE3FC0024DD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097C026DEE3FC0024DD40 /* LaunchScreen.storyboard */; };
 		3270FDD926DFD0F6000CE316 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3270FDD826DFD0F6000CE316 /* Images */; };
+		32D0846126FEEC4B00D28D45 /* DetalleServicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0845D26FEEC4B00D28D45 /* DetalleServicioViewController.swift */; };
+		32D0846226FEEC4B00D28D45 /* ServicioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0845E26FEEC4B00D28D45 /* ServicioTableViewCell.swift */; };
+		32D0846326FEEC4B00D28D45 /* ServiciosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0845F26FEEC4B00D28D45 /* ServiciosTableViewController.swift */; };
+		32D0846426FEEC4B00D28D45 /* AddEditServicioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0846026FEEC4B00D28D45 /* AddEditServicioTableViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
 		AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */; };
@@ -30,6 +34,10 @@
 		322097C126DEE3FC0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3270FDD826DFD0F6000CE316 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		32D0845D26FEEC4B00D28D45 /* DetalleServicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioViewController.swift; sourceTree = "<group>"; };
+		32D0845E26FEEC4B00D28D45 /* ServicioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicioTableViewCell.swift; sourceTree = "<group>"; };
+		32D0845F26FEEC4B00D28D45 /* ServiciosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosTableViewController.swift; sourceTree = "<group>"; };
+		32D0846026FEEC4B00D28D45 /* AddEditServicioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditServicioTableViewController.swift; sourceTree = "<group>"; };
 		32D4274326E666D9001DB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62F6D28BF161954B10B4BE19 /* Pods-Reto01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.release.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.release.xcconfig"; sourceTree = "<group>"; };
 		70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reto01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +83,7 @@
 				AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */,
 				3270FDD826DFD0F6000CE316 /* Images */,
 				322097B526DEE3FB0024DD40 /* AppDelegate.swift */,
+				32D0845C26FEEC3300D28D45 /* Controller */,
 				322097B726DEE3FB0024DD40 /* SceneDelegate.swift */,
 				322097B926DEE3FB0024DD40 /* ViewController.swift */,
 				322097BB26DEE3FB0024DD40 /* Main.storyboard */,
@@ -92,6 +101,17 @@
 				62F6D28BF161954B10B4BE19 /* Pods-Reto01.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		32D0845C26FEEC3300D28D45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32D0845F26FEEC4B00D28D45 /* ServiciosTableViewController.swift */,
+				32D0846026FEEC4B00D28D45 /* AddEditServicioTableViewController.swift */,
+				32D0845D26FEEC4B00D28D45 /* DetalleServicioViewController.swift */,
+				32D0845E26FEEC4B00D28D45 /* ServicioTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		71C6EBEEEE552616A7955F67 /* Frameworks */ = {
@@ -227,11 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D0846126FEEC4B00D28D45 /* DetalleServicioViewController.swift in Sources */,
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
 				322097B626DEE3FB0024DD40 /* AppDelegate.swift in Sources */,
 				AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */,
 				322097B826DEE3FB0024DD40 /* SceneDelegate.swift in Sources */,
+				32D0846426FEEC4B00D28D45 /* AddEditServicioTableViewController.swift in Sources */,
+				32D0846226FEEC4B00D28D45 /* ServicioTableViewCell.swift in Sources */,
 				AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */,
+				32D0846326FEEC4B00D28D45 /* ServiciosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
