@@ -47,7 +47,7 @@ class DetalleServicioViewController: UIViewController {
        
     }
     
-    @IBAction func guardarEdicion(_ sender: UIButton) {
+    /*@IBAction func guardarEdicion(_ sender: UIButton) {
         editar = !editar
         botones(estado: editar)
         let servicioUpdated = Servicio(id: elServicio!.id, nombre: nombre.text!, desc: descripcion.text!)
@@ -58,7 +58,7 @@ class DetalleServicioViewController: UIViewController {
             }
             
         }
-    }
+    }*/
     @IBAction func cancelarEdicion(_ sender: UIButton) {
         editar = !editar
         botones(estado: editar)
