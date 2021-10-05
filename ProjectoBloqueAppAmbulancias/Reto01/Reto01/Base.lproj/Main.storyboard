@@ -1209,8 +1209,8 @@ Llena el siguiente formulario</string>
         <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="reporte historico" width="125" height="183.66667175292969"/>
-        <image name="reporte indicadores" width="124.66666412353516" height="185"/>
+        <image name="reporte historico" width="125" height="126.33333587646484"/>
+        <image name="reporte indicadores" width="124.66666412353516" height="120.66666412353516"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <image name="tanSUP" width="148.66667175292969" height="262"/>
         <systemColor name="labelColor">
