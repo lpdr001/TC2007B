@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,7 +39,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HYh-05-5Hx" customClass="ServicioTableViewCell" customModule="Reto01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="20.666666030883789"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="20.666666030883789"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYh-05-5Hx" id="V5J-AF-QoH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="20.666666030883789"/>
@@ -250,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHD-zY-qX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1268" y="647.29064039408865"/>
+            <point key="canvasLocation" x="-2329" y="647"/>
         </scene>
         <!--Consulta-->
         <scene sceneID="qU4-TD-QaP">
@@ -451,7 +452,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qU-lV-bCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2762.4000000000001" y="2740.6403940886703"/>
+            <point key="canvasLocation" x="-3364" y="2775"/>
         </scene>
         <!--UsuariosTanatologo-->
         <scene sceneID="2rk-uW-n3P">
@@ -609,15 +610,17 @@ Llena el siguiente formulario</string>
                     <connections>
                         <segue destination="Kh4-3X-p5Q" kind="relationship" relationship="viewControllers" id="JAl-1X-OWp"/>
                         <segue destination="OD3-bK-Iao" kind="relationship" relationship="viewControllers" id="MLU-p3-C0D"/>
+                        <segue destination="E0s-Ns-5zN" kind="relationship" relationship="viewControllers" id="6lz-2n-VtH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuF-gA-qnc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959" y="1366"/>
+            <point key="canvasLocation" x="-2945" y="1366"/>
         </scene>
         <!--Pacientes-->
         <scene sceneID="ffd-Ia-qFG">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ml6-Qr-vCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="OD3-bK-Iao" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Pacientes" image="person.and.person.fill" catalog="system" id="QjT-eA-d3J"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hJZ-Wb-BB3">
@@ -628,9 +631,8 @@ Llena el siguiente formulario</string>
                         <segue destination="vVu-Py-N6B" kind="relationship" relationship="rootViewController" id="66q-t5-Ss3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ml6-Qr-vCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2761" y="2047"/>
+            <point key="canvasLocation" x="-3364" y="2081"/>
         </scene>
         <!--Indicadores-->
         <scene sceneID="5U4-dq-73F">
@@ -666,9 +668,27 @@ Llena el siguiente formulario</string>
             </objects>
             <point key="canvasLocation" x="-857" y="2081"/>
         </scene>
+        <!--Menú-->
+        <scene sceneID="ZS7-3o-me6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2t-Wq-7re" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="E0s-Ns-5zN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menú" image="house" catalog="system" id="Vt1-Hx-YZa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2nT-1W-3oD">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pzd-yh-gd5" kind="relationship" relationship="rootViewController" id="szc-DZ-47d"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-4698" y="2081"/>
+        </scene>
         <!--Encuadre-->
         <scene sceneID="ktS-Ws-UX5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUb-fb-M0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Kh4-3X-p5Q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Encuadre" image="square.and.pencil" catalog="system" id="mVz-He-yqm"/>
                     <navigationItem key="navigationItem" id="wdH-wm-ofs"/>
@@ -680,9 +700,42 @@ Llena el siguiente formulario</string>
                         <segue destination="wvd-bv-SwI" kind="relationship" relationship="rootViewController" id="sAf-xj-T4G"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fUb-fb-M0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3375" y="2047"/>
+            <point key="canvasLocation" x="-3977" y="2081"/>
+        </scene>
+        <!--Menú-->
+        <scene sceneID="8Jb-vM-J68">
+            <objects>
+                <viewController id="pzd-yh-gd5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00P-sb-RPU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="dA7-h2-o8j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-77-kEB">
+                                <rect key="frame" x="95" y="278" width="185" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90256340353741782" green="0.90100355633666351" blue="1" alpha="0.36035385959832245" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="brB-tt-wdN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dA7-h2-o8j" firstAttribute="top" secondItem="brB-tt-wdN" secondAttribute="top" id="RgC-Ed-Mye"/>
+                            <constraint firstItem="dA7-h2-o8j" firstAttribute="leading" secondItem="brB-tt-wdN" secondAttribute="leading" id="eYm-5x-cWo"/>
+                            <constraint firstItem="brB-tt-wdN" firstAttribute="trailing" secondItem="dA7-h2-o8j" secondAttribute="trailing" id="rlD-nd-VdO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menú" id="jWT-kz-eml"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8U-aW-Et6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4698.3999999999996" y="2837.4384236453202"/>
         </scene>
         <!--Feed-->
         <scene sceneID="VIY-gL-arI">
@@ -709,7 +762,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O86-se-fn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3375" y="2741"/>
+            <point key="canvasLocation" x="-3977" y="2775"/>
         </scene>
         <!--Feed-->
         <scene sceneID="8w9-lx-eVL">
@@ -751,7 +804,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eh-g6-FwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2762" y="3403"/>
+            <point key="canvasLocation" x="-2986" y="3517"/>
         </scene>
         <!--Tanatológo-->
         <scene sceneID="7Hg-o8-G0L">
@@ -1102,11 +1155,13 @@ Llena el siguiente formulario</string>
         <image name="SearchPaciente" width="153" height="282.66665649414062"/>
         <image name="SearchTanatologo" width="154" height="250.33332824707031"/>
         <image name="TanInf" width="153.33332824707031" height="256"/>
-        <image name="book.fill" catalog="system" width="128" height="102"/>
-        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="fondo" width="976" height="1691"/>
         <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
