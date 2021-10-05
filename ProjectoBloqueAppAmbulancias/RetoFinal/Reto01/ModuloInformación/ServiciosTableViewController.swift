@@ -112,19 +112,9 @@ func displayError(_ error: Error, title: String) {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         // Configure the cell...
-        if (list == 0){
-        self.C = servicios
-        }
-        else if (list == 1){
-        self.Ho = servicios
-        }
-        else if (list == 2){
-        self.A = servicios
-        }
-        else if (list == 3){
-        self.Ha = servicios
-            self.updateUI()
-        }        cell.textLabel?.text = tmpdatos[indexPath.item].nombre
+        let list = indexPath.section
+
+        cell.textLabel?.text = tmpdatos[indexPath.row].nombre
         
         
         return cell
