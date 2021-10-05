@@ -12,6 +12,12 @@ class ServiciosTableViewController: UITableViewController {
     
     @IBOutlet var UITableView: UITableView!
     var servicioControlador = ServicioController()
+    var C = [Servicio]()
+    var Ho = [Servicio]()
+    var A = [Servicio]()
+    var Ha = [Servicio]()
+    
+    var tmpdatos = [Servicio]()
     var datos = [Servicio]()
     let sections = ["CETAC", "Holístico", "Acompañamiento","Herramientas Alternativas"]
     
@@ -26,25 +32,47 @@ class ServiciosTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //let str = "Herramientas Alternativas"//[//3] = ["Herramientas Alternativas", "Holístico", "Acompañamiento"]
         
-    
-    
-        servicioControlador.fetchServicios(st: sections[0]){ (result) in
+        for n in 0...3 {
+            print(n)
+        
+        servicioControlador.fetchServicios(st: sections[n]){ (result) in
             switch result{
-            case .success(let servicios):self.updateUI(with: servicios)
+            case .success(let servicios):self.updatelist(list:n , with: servicios)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
             }
+        }
 
             
         }
 
 }
-
-    
-func updateUI(with servicios:Servicios){
-    DispatchQueue.main.async {
-        self.datos = servicios
-        self.tableView.reloadData()
+    func updatelist(list : Int ,with servicios:Servicios){
+        DispatchQueue.main.async {
+            if (list == 0){
+            self.C = servicios
+            }
+            else if (list == 1){
+            self.Ho = servicios
+            }
+            else if (list == 2){
+            self.A = servicios
+            }
+            else if (list == 3){
+            self.Ha = servicios
+                self.updateUI()
+            }
+        }
     }
+
+func updateUI(){
+     
+    self.datos.append(contentsOf: C)
+    self.datos.append(contentsOf: Ho)
+    self.datos.append(contentsOf: A)
+    self.datos.append(contentsOf: Ha)
+    self.tmpdatos = datos
+        self.tableView.reloadData()
+    
 }
 func displayError(_ error: Error, title: String) {
         DispatchQueue.main.async {
@@ -83,15 +111,22 @@ func displayError(_ error: Error, title: String) {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
-        let section = sections[indexPath.section]
         // Configure the cell...
-        for i in datos {
-        
-        cell.textLabel?.text = datos[indexPath.row].nombre
-        
-        datos.remove(at: indexPath.row)
+        if (list == 0){
+        self.C = servicios
         }
-
+        else if (list == 1){
+        self.Ho = servicios
+        }
+        else if (list == 2){
+        self.A = servicios
+        }
+        else if (list == 3){
+        self.Ha = servicios
+            self.updateUI()
+        }        cell.textLabel?.text = tmpdatos[indexPath.item].nombre
+        
+        
         return cell
     }
     
@@ -141,6 +176,19 @@ func displayError(_ error: Error, title: String) {
         // Pass the selected object to the new view controller.
         let siguiente = segue.destination as! DetalleServicioViewController
         let indice = self.tableView.indexPathForSelectedRow?.row
+        let section = self.tableView.indexPathForSelectedRow?.section
+        if (section == 0){
+            siguiente.elServicio = C[indice!]
+        }
+        else if (section == 1){
+            siguiente.elServicio = Ho[indice!]
+        }
+        else if (section == 2){
+            siguiente.elServicio = A[indice!]
+        }
+        else if (section == 3){
+            siguiente.elServicio = Ha[indice!]
+        }
         siguiente.elServicio = datos[indice!]
     }
     
