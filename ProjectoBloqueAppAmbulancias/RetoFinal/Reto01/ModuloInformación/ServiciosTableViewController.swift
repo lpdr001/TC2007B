@@ -33,7 +33,7 @@ class ServiciosTableViewController: UITableViewController {
         //let str = "Herramientas Alternativas"//[//3] = ["Herramientas Alternativas", "Holístico", "Acompañamiento"]
         
         for n in 0...3 {
-            print(n)
+            print(sections[n])
         
         servicioControlador.fetchServicios(st: sections[n]){ (result) in
             switch result{
@@ -113,8 +113,19 @@ func displayError(_ error: Error, title: String) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         // Configure the cell...
         let list = indexPath.section
-
-        cell.textLabel?.text = tmpdatos[indexPath.row].nombre
+        
+        if (list == 0){
+            cell.textLabel?.text = C[indexPath.row].nombre
+        }
+        else if (list == 1){
+            cell.textLabel?.text = Ho[indexPath.row].nombre
+        }
+        else if (list == 2){
+            cell.textLabel?.text = A[indexPath.row].nombre
+        }
+        else if (list == 3){
+            cell.textLabel?.text = Ha[indexPath.row].nombre
+        }
         
         
         return cell

@@ -18,7 +18,7 @@ class ServicioController{
 
     func fetchServicios(st:String, completion: @escaping (Result<Servicios, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var servicios = [Servicio]()
-        db.collection("Servicios").getDocuments() { (querySnapshot, err) in
+        db.collection("Servicios").whereField("tipo", isEqualTo: st).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))
