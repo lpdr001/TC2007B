@@ -15,7 +15,7 @@
 		3260D786270D594A00E6F29E /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D785270D594A00E6F29E /* Usuarios.swift */; };
 		3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D788270D5AAD00E6F29E /* UsuariosController.swift */; };
 		3260D78D270D5CA400E6F29E /* DetalleUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D78C270D5CA400E6F29E /* DetalleUsuarioViewController.swift */; };
-		3260D790270D5D4200E6F29E /* UsuariosTableTenetologoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D78F270D5D4200E6F29E /* UsuariosTableTenetologoViewController.swift */; };
+		3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */; };
 		3270FDD926DFD0F6000CE316 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3270FDD826DFD0F6000CE316 /* Images */; };
 		32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */; };
 		32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */; };
@@ -38,7 +38,7 @@
 		3260D785270D594A00E6F29E /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
 		3260D788270D5AAD00E6F29E /* UsuariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosController.swift; sourceTree = "<group>"; };
 		3260D78C270D5CA400E6F29E /* DetalleUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleUsuarioViewController.swift; sourceTree = "<group>"; };
-		3260D78F270D5D4200E6F29E /* UsuariosTableTenetologoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosTableTenetologoViewController.swift; sourceTree = "<group>"; };
+		3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UuariosTanatologoTableViewController.swift; sourceTree = "<group>"; };
 		3270FDD826DFD0F6000CE316 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioViewController.swift; sourceTree = "<group>"; };
 		32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosTableViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 		322097B426DEE3FB0024DD40 /* Reto01 */ = {
 			isa = PBXGroup;
 			children = (
-				3260D78B270D5C5A00E6F29E /* VistasTanatologo */,
 				32A670092706094D004B8C64 /* ModuloInformación */,
 				AF63E4E326FBCE8B00AFE201 /* Models */,
 				AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */,
@@ -103,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3260D78C270D5CA400E6F29E /* DetalleUsuarioViewController.swift */,
-				3260D78F270D5D4200E6F29E /* UsuariosTableTenetologoViewController.swift */,
+				3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */,
 			);
 			path = VistasTanatologo;
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 		32A670092706094D004B8C64 /* ModuloInformación */ = {
 			isa = PBXGroup;
 			children = (
+				3260D78B270D5C5A00E6F29E /* VistasTanatologo */,
 				32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */,
 				32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */,
 			);
@@ -266,9 +266,9 @@
 				32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */,
 				322097B626DEE3FB0024DD40 /* AppDelegate.swift in Sources */,
 				AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */,
+				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
 				322097B826DEE3FB0024DD40 /* SceneDelegate.swift in Sources */,
-				3260D790270D5D4200E6F29E /* UsuariosTableTenetologoViewController.swift in Sources */,
 				AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */,
 				3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */,
 				32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */,

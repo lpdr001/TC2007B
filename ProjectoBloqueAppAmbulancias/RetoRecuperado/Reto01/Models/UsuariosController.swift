@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 
 
-class UsuariooController{
+class UsuariosController{
     
     let db = Firestore.firestore()
     
