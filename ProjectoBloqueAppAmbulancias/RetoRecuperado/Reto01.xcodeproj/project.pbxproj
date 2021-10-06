@@ -12,7 +12,6 @@
 		322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322097B926DEE3FB0024DD40 /* ViewController.swift */; };
 		322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097BB26DEE3FB0024DD40 /* Main.storyboard */; };
 		322097C226DEE3FC0024DD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097C026DEE3FC0024DD40 /* LaunchScreen.storyboard */; };
-		323AE86F270D34760011CA89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 323AE86E270D34760011CA89 /* GoogleService-Info.plist */; };
 		3270FDD926DFD0F6000CE316 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3270FDD826DFD0F6000CE316 /* Images */; };
 		32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */; };
 		32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */; };
@@ -32,7 +31,6 @@
 		322097BC26DEE3FB0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		322097C126DEE3FC0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		323AE86E270D34760011CA89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3270FDD826DFD0F6000CE316 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioViewController.swift; sourceTree = "<group>"; };
 		32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosTableViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				32A670092706094D004B8C64 /* ModuloInformación */,
 				AF63E4E326FBCE8B00AFE201 /* Models */,
 				AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */,
-				323AE86E270D34760011CA89 /* GoogleService-Info.plist */,
 				3270FDD826DFD0F6000CE316 /* Images */,
 				322097B526DEE3FB0024DD40 /* AppDelegate.swift */,
 				322097B726DEE3FB0024DD40 /* SceneDelegate.swift */,
@@ -193,7 +190,6 @@
 				AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */,
 				32D4274426E666D9001DB449 /* Assets.xcassets in Resources */,
 				322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */,
-				323AE86F270D34760011CA89 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

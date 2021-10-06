@@ -50,7 +50,7 @@ class ServiciosTableViewController: UITableViewController {
         DispatchQueue.main.async {
             if (list == 0){
             self.C = servicios
-            }
+                self.updateUI()            }
             else if (list == 1){
             self.Ho = servicios
             }
@@ -59,12 +59,13 @@ class ServiciosTableViewController: UITableViewController {
             }
             else if (list == 3){
             self.Ha = servicios
-                self.updateUI()
+                
             }
         }
     }
 
 func updateUI(){
+    
      
     self.datos.append(contentsOf: C)
     self.datos.append(contentsOf: Ho)
@@ -176,21 +177,26 @@ func displayError(_ error: Error, title: String) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         let siguiente = segue.destination as! DetalleServicioViewController
-        let indice = self.tableView.indexPathForSelectedRow?.row
+        let indice = self.tableView.indexPathForSelectedRow?.item //indexPathForSelectedRow?.row
         let section = self.tableView.indexPathForSelectedRow?.section
         if (section == 0){
+            print("0 ")
             siguiente.elServicio = C[indice!]
         }
         else if (section == 1){
             siguiente.elServicio = Ho[indice!]
+            print("1 ")
+        
         }
         else if (section == 2){
             siguiente.elServicio = A[indice!]
+            print("2 ")
         }
         else if (section == 3){
             siguiente.elServicio = Ha[indice!]
+            print("3 ")
         }
-        siguiente.elServicio = datos[indice!]
+        //siguiente.elServicio = datos[indice!]
     }
     
 
