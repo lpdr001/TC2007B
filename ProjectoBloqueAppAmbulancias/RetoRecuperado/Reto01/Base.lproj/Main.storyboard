@@ -333,7 +333,7 @@
             </objects>
             <point key="canvasLocation" x="-1959" y="1312"/>
         </scene>
-        <!--Paciente-->
+        <!--Usuario-->
         <scene sceneID="icQ-De-9MV">
             <objects>
                 <tableViewController id="BUQ-6G-PAM" customClass="DetalleUsuariosTableViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
@@ -341,7 +341,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lpE-RV-tPm">
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lpE-RV-tPm">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -371,7 +371,7 @@
                             <outlet property="delegate" destination="BUQ-6G-PAM" id="Vgu-ro-VXq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Paciente" id="n85-cO-pJU"/>
+                    <navigationItem key="navigationItem" title="Usuario" id="n85-cO-pJU"/>
                     <connections>
                         <outlet property="Namedisplay" destination="lpE-RV-tPm" id="ALP-Hg-XAH"/>
                     </connections>
