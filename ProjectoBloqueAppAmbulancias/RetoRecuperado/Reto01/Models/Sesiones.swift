@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-struct Sesion: Codable {
+class Sesion: Codable {
     let id:String
     let cierre:Bool
     let fecha,idUsuario,servicio: String

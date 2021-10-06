@@ -136,7 +136,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="402" id="yaf-77-Mx6"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -184,18 +184,30 @@
         <!--Sesion-->
         <scene sceneID="EvG-FI-CIx">
             <objects>
-                <viewController title="Sesion" id="JdZ-oT-4EN" sceneMemberID="viewController">
+                <viewController title="Sesion" id="JdZ-oT-4EN" customClass="DetalleSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DCw-vo-A3B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOa-h8-gJD">
+                                <rect key="frame" x="16" y="169" width="343" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pBh-pB-Rce"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sesion" id="NIG-o2-Xro"/>
+                    <connections>
+                        <outlet property="sesionDesc" destination="uOa-h8-gJD" id="uYl-UF-txq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-2y-7pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959" y="1995"/>
+            <point key="canvasLocation" x="-1959.2" y="1994.3349753694581"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="tyX-w2-cFQ">
@@ -304,6 +316,22 @@
             </objects>
             <point key="canvasLocation" x="-2674" y="1312"/>
         </scene>
+        <!--Reporte-->
+        <scene sceneID="mBd-f0-o3l">
+            <objects>
+                <viewController id="ucI-MW-Uxg" customClass="DetalleSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lw0-PE-O4E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GQg-My-bnZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reporte" id="iIt-lQ-uMP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fc-98-eC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1959" y="1312"/>
+        </scene>
         <!--Paciente-->
         <scene sceneID="icQ-De-9MV">
             <objects>
@@ -332,6 +360,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JdZ-oT-4EN" kind="show" id="Y00-7p-kvh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -348,42 +379,10 @@
             </objects>
             <point key="canvasLocation" x="-2674" y="1994"/>
         </scene>
-        <!--Reporte-->
-        <scene sceneID="WSN-rH-ahD">
-            <objects>
-                <tableViewController id="Dhw-4m-YTV" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PjB-PX-4X8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="deV-XZ-qO1" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="deV-XZ-qO1" id="hEi-zD-Fny">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="JdZ-oT-4EN" kind="show" id="8s2-ca-9Ns"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Dhw-4m-YTV" id="2Q5-QD-hU8"/>
-                            <outlet property="delegate" destination="Dhw-4m-YTV" id="ebI-c6-bBd"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Reporte" id="X6A-uf-T5O"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uEJ-WL-KV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1959" y="1312"/>
-        </scene>
         <!--Menu-->
         <scene sceneID="kQM-xt-mdb">
             <objects>
-                <viewController title="Menu" id="gwO-fV-KeT" customClass="ViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Menu" id="gwO-fV-KeT" customClass="LogInViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PTn-17-rJT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -447,7 +446,8 @@ U09QT1JURQg
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="USUARIO"/>
                                 <connections>
-                                    <segue destination="Dhw-4m-YTV" kind="show" id="Xjp-ha-m0A"/>
+                                    <action selector="LogInAsUsuario:" destination="gwO-fV-KeT" eventType="touchUpInside" id="lHr-o5-BVk"/>
+                                    <segue destination="ucI-MW-Uxg" kind="show" id="Fex-cs-baa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -774,7 +774,6 @@ Llena el siguiente formulario</string>
         <!--Encuadre-->
         <scene sceneID="ktS-Ws-UX5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fUb-fb-M0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Kh4-3X-p5Q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Encuadre" image="square.and.pencil" catalog="system" id="mVz-He-yqm"/>
                     <navigationItem key="navigationItem" id="wdH-wm-ofs"/>
@@ -786,6 +785,7 @@ Llena el siguiente formulario</string>
                         <segue destination="wvd-bv-SwI" kind="relationship" relationship="rootViewController" id="sAf-xj-T4G"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUb-fb-M0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3722" y="-42"/>
         </scene>

@@ -15,6 +15,7 @@ class DetalleUsuariosTableViewController: UITableViewController {
     var UserID = ""
 
     var datos = [Sesion]()
+
     let sections = ["Sesiones"]
     
 
@@ -132,11 +133,12 @@ func displayError(_ error: Error, title: String) {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        //let siguiente = segue.destination as! DetalleUsuarioViewController
-        //let indice = self.tableView.indexPathForSelectedRow?.item //indexPathForSelectedRow?.row
+        let siguiente = segue.destination as! DetalleSesionViewController
+        //let index = = self.tableView.indexPathForSelectedRow?.item
       
-        //siguiente.elServicio = datos[indice!]
+        siguiente.datos = self.datos
     }
+
     
 
 }
