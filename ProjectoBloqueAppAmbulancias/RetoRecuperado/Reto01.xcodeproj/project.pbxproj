@@ -14,8 +14,10 @@
 		322097C226DEE3FC0024DD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097C026DEE3FC0024DD40 /* LaunchScreen.storyboard */; };
 		3260D786270D594A00E6F29E /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D785270D594A00E6F29E /* Usuarios.swift */; };
 		3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D788270D5AAD00E6F29E /* UsuariosController.swift */; };
-		3260D78D270D5CA400E6F29E /* DetalleUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D78C270D5CA400E6F29E /* DetalleUsuarioViewController.swift */; };
 		3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */; };
+		3260D79D270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D79C270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift */; };
+		3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D7A0270D6C2800E6F29E /* Sesiones.swift */; };
+		3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D7A4270D6F2D00E6F29E /* SesionesController.swift */; };
 		3270FDD926DFD0F6000CE316 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3270FDD826DFD0F6000CE316 /* Images */; };
 		32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */; };
 		32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */; };
@@ -37,8 +39,10 @@
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3260D785270D594A00E6F29E /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
 		3260D788270D5AAD00E6F29E /* UsuariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosController.swift; sourceTree = "<group>"; };
-		3260D78C270D5CA400E6F29E /* DetalleUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleUsuarioViewController.swift; sourceTree = "<group>"; };
 		3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UuariosTanatologoTableViewController.swift; sourceTree = "<group>"; };
+		3260D79C270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleUsuariosTableViewController.swift; sourceTree = "<group>"; };
+		3260D7A0270D6C2800E6F29E /* Sesiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sesiones.swift; sourceTree = "<group>"; };
+		3260D7A4270D6F2D00E6F29E /* SesionesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionesController.swift; sourceTree = "<group>"; };
 		3270FDD826DFD0F6000CE316 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioViewController.swift; sourceTree = "<group>"; };
 		32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosTableViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +105,8 @@
 		3260D78B270D5C5A00E6F29E /* VistasTanatologo */ = {
 			isa = PBXGroup;
 			children = (
-				3260D78C270D5CA400E6F29E /* DetalleUsuarioViewController.swift */,
 				3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */,
+				3260D79C270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift */,
 			);
 			path = VistasTanatologo;
 			sourceTree = "<group>";
@@ -142,6 +146,8 @@
 				AF63E4E526FBCE8B00AFE201 /* Servicios.swift */,
 				3260D788270D5AAD00E6F29E /* UsuariosController.swift */,
 				3260D785270D594A00E6F29E /* Usuarios.swift */,
+				3260D7A0270D6C2800E6F29E /* Sesiones.swift */,
+				3260D7A4270D6F2D00E6F29E /* SesionesController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,15 +270,17 @@
 			files = (
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
 				32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */,
+				3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */,
 				322097B626DEE3FB0024DD40 /* AppDelegate.swift in Sources */,
 				AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */,
 				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
+				3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */,
+				3260D79D270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift in Sources */,
 				322097B826DEE3FB0024DD40 /* SceneDelegate.swift in Sources */,
 				AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */,
 				3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */,
 				32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */,
-				3260D78D270D5CA400E6F29E /* DetalleUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

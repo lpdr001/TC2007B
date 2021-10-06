@@ -1,25 +1,27 @@
 //
-//  UuariosTanatologoTableViewController.swift
+//  DetalleUsuariosTableViewController.swift
 //  Reto01
 //
 //  Created by user193889 on 10/5/21.
 //
 
 import UIKit
-import Firebase
 
-class UuariosTanatologoTableViewController: UITableViewController {
-
+class DetalleUsuariosTableViewController: UITableViewController {
     @IBOutlet var UITableView: UITableView!
-    var UsuarioControlador = UsuariosController()
-    var Tananame = ""
-    var datos = [Usuario]()
-    let sections = ["Usuarios"]
+    @IBOutlet weak var Namedisplay: UILabel!
+    var UsuarioControlador = SesionesController()
+    var Username = ""
+    var UserID = ""
+
+    var datos = [Sesion]()
+    let sections = ["Sesiones"]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        Namedisplay.text = Username
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,9 +29,9 @@ class UuariosTanatologoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //let str = "Herramientas Alternativas"//[//3] = ["Herramientas Alternativas", "Holístico", "Acompañamiento"]
         
-        UsuarioControlador.fetchServicios(st: Tananame){ (result) in
+        UsuarioControlador.fetchSesiones(st: UserID){ (result) in
             switch result{
-            case .success(let usuarios):self.updateUI(with: usuarios)
+            case .success(let sesiones):self.updateUI(with: sesiones)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
             }
 
@@ -39,9 +41,9 @@ class UuariosTanatologoTableViewController: UITableViewController {
 }
 
 
-func updateUI(with usuarios:Usuarios){
+func updateUI(with sesiones:Sesiones){
     DispatchQueue.main.async {
-        self.datos = usuarios
+        self.datos = sesiones
         self.tableView.reloadData()
     }
     
@@ -78,8 +80,8 @@ func displayError(_ error: Error, title: String) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         // Configure the cell...
 
-        cell.textLabel?.text = datos[indexPath.row].nombre
-        cell.detailTextLabel?.text = datos[indexPath.row].fechaIngreso
+        cell.textLabel?.text = datos[indexPath.row].fecha
+        cell.detailTextLabel?.text = datos[indexPath.row].idUsuario
         
         
         
@@ -130,12 +132,12 @@ func displayError(_ error: Error, title: String) {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let siguiente = segue.destination as! DetalleUsuariosTableViewController
-        let indice = self.tableView.indexPathForSelectedRow?.item //indexPathForSelectedRow?.row
+        //let siguiente = segue.destination as! DetalleUsuarioViewController
+        //let indice = self.tableView.indexPathForSelectedRow?.item //indexPathForSelectedRow?.row
       
-        siguiente.Username = datos[indice!].nombre
-        siguiente.UserID = datos[indice!].id
+        //siguiente.elServicio = datos[indice!]
     }
     
 
 }
+
