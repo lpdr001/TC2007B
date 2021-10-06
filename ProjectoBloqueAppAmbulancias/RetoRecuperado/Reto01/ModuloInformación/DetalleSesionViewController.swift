@@ -14,7 +14,7 @@ class DetalleSesionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sesionDesc.text = datos[0].fecha
+        sesionDesc.text = datos[0].fecha
 
         // Do any additional setup after loading the view.
     }

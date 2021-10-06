@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,7 +37,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="D7q-RF-l24" style="IBUITableViewCellStyleDefault" id="HYh-05-5Hx" customClass="ServicioTableViewCell" customModule="Reto01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49" width="375" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYh-05-5Hx" id="V5J-AF-QoH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
@@ -203,40 +202,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sesion" id="NIG-o2-Xro"/>
                     <connections>
-                        <outlet property="sesionDesc" destination="uOa-h8-gJD" id="uYl-UF-txq"/>
+                        <outlet property="sesionDesc" destination="uOa-h8-gJD" id="q5g-Ge-oKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-2y-7pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1959.2" y="1994.3349753694581"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="tyX-w2-cFQ">
-            <objects>
-                <tableViewController id="za5-ls-CFQ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OA0-ji-ChG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EFA-4v-yTC" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EFA-4v-yTC" id="24Y-vf-8iW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="za5-ls-CFQ" id="vcS-ky-u7J"/>
-                            <outlet property="delegate" destination="za5-ls-CFQ" id="45M-Uw-tx6"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FK9-HZ-nYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3884" y="1923"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="3VC-h4-k9L">
@@ -248,7 +219,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AH8-5J-nQE">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AH8-5J-nQE" id="CCg-tx-Bqm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
@@ -266,6 +237,22 @@
             </objects>
             <point key="canvasLocation" x="1273" y="925"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FgA-tT-0CC">
+            <objects>
+                <viewController id="eLe-v9-A4D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIP-QI-Jge">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PWF-C4-kr0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pCF-kd-Q7K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEt-t1-FBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3374" y="1291"/>
+        </scene>
         <!--Uuarios Tanatologo Table View Controller-->
         <scene sceneID="dyT-0i-utR">
             <objects>
@@ -278,7 +265,7 @@
                         <color key="sectionIndexBackgroundColor" systemColor="systemGrayColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="vdg-ky-557" detailTextLabel="fgO-bt-4hR" style="IBUITableViewCellStyleSubtitle" id="x1R-8f-pYa" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="55.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1R-8f-pYa" id="Pvu-Aa-bT0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
@@ -317,22 +304,6 @@
             </objects>
             <point key="canvasLocation" x="-2674" y="1312"/>
         </scene>
-        <!--Reporte-->
-        <scene sceneID="mBd-f0-o3l">
-            <objects>
-                <viewController id="ucI-MW-Uxg" customClass="DetalleSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lw0-PE-O4E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GQg-My-bnZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Reporte" id="iIt-lQ-uMP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fc-98-eC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1959" y="1312"/>
-        </scene>
         <!--Usuario-->
         <scene sceneID="icQ-De-9MV">
             <objects>
@@ -349,13 +320,16 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fIh-TP-wv6">
-                            <rect key="frame" x="0.0" y="155.00000000000003" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="143.66666793823242" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Añadir sesión"/>
+                            <connections>
+                                <segue destination="eLe-v9-A4D" kind="show" id="0tG-82-8BU"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="jGX-4D-e6m">
-                                <rect key="frame" x="0.0" y="88.666666030883789" width="375" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jGX-4D-e6m" id="cds-gz-Zdc">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
@@ -448,7 +422,6 @@ U09QT1JURQg
                                 <state key="normal" title="USUARIO"/>
                                 <connections>
                                     <action selector="LogInAsUsuario:" destination="gwO-fV-KeT" eventType="touchUpInside" id="lHr-o5-BVk"/>
-                                    <segue destination="ucI-MW-Uxg" kind="show" id="Fex-cs-baa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -801,6 +774,14 @@ Llena el siguiente formulario</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_1_1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LpX-yJ-8c9">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-uC-dKR">
+                                <rect key="frame" x="138" y="699" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pasar a sesión"/>
+                                <connections>
+                                    <segue destination="eLe-v9-A4D" kind="show" id="Gpi-3x-zXO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uQz-y8-SGh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1153,6 +1134,7 @@ Llena el siguiente formulario</string>
     <inferredMetricsTieBreakers>
         <segue reference="980-D3-kdJ"/>
         <segue reference="ECI-fs-8zY"/>
+        <segue reference="Gpi-3x-zXO"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
@@ -1162,8 +1144,8 @@ Llena el siguiente formulario</string>
         <image name="SearchPaciente" width="153" height="282.66665649414062"/>
         <image name="SearchTanatologo" width="154" height="250.33332824707031"/>
         <image name="TanInf" width="153.33332824707031" height="256"/>
-        <image name="book.fill" catalog="system" width="128" height="95"/>
-        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="globe" catalog="system" width="128" height="121"/>
