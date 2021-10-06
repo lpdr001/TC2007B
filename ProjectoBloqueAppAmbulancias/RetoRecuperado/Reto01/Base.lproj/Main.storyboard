@@ -235,7 +235,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="InP-bt-STa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="925"/>
+            <point key="canvasLocation" x="1857" y="873"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FgA-tT-0CC">
@@ -652,7 +652,7 @@ Llena el siguiente formulario</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGp-ed-5hk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="1366"/>
+            <point key="canvasLocation" x="366" y="1363"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9qc-kA-QvL">
@@ -673,7 +673,7 @@ Llena el siguiente formulario</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FjD-8P-EyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538" y="1410"/>
+            <point key="canvasLocation" x="-305" y="1383"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6oS-gT-xr1">
@@ -814,13 +814,13 @@ Llena el siguiente formulario</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfS-Eb-cPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="1753"/>
+            <point key="canvasLocation" x="1834" y="1544"/>
         </scene>
-        <!--Pacientes-->
+        <!--Usuarios-->
         <scene sceneID="web-Gv-V0d">
             <objects>
                 <navigationController id="1jK-2e-UqS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pacientes" image="magnifyingglass" catalog="system" id="wrx-m0-6Y0"/>
+                    <tabBarItem key="tabBarItem" title="Usuarios" image="magnifyingglass" catalog="system" id="wrx-m0-6Y0"/>
                     <navigationItem key="navigationItem" id="SzC-u7-JVB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cgr-L2-qCZ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -832,7 +832,7 @@ Llena el siguiente formulario</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7s-Hv-TNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1082" y="1410"/>
+            <point key="canvasLocation" x="-1220" y="1363"/>
         </scene>
         <!--Feed-->
         <scene sceneID="GGK-oy-xCO">
