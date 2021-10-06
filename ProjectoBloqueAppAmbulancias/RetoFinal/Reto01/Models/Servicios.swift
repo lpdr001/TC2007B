@@ -10,24 +10,21 @@ import Firebase
 
 struct Servicio: Codable {
     let id:String
-    let nombre, desc, tipo: String
-    init(nombre:String, desc:String, tipo:String){
+    let nombre, desc: String
+    init(nombre:String, desc:String){
         self.nombre = nombre
         self.desc  = desc
-        self.tipo = tipo
         id = "1234"
     }
-    init(id:String, nombre:String, desc:String, tipo:String){
+    init(id:String, nombre:String, desc:String){
         self.id = id
         self.nombre = nombre
         self.desc  = desc
-        self.tipo = tipo
     }
     init(aDoc: DocumentSnapshot){
         self.id = aDoc.documentID
         self.nombre = aDoc.get("nombre") as? String ?? ""
         self.desc = aDoc.get("desc") as? String ?? ""
-        self.tipo = aDoc.get("tipo") as? String ?? ""
     }
 }
 
@@ -44,7 +41,7 @@ extension Servicio{
             Servicio(nombre: "Logoterapia", desc: "Proceso para guiar a la persona en su búsqueda del sentido de vida y permite descubrir la capacidad que tienen los humanos para superar los condicionamientos más difíciles “sanar a través del sentido”. Sanar, cuidar, acompañar lo que implica buscar sentido y esencia para vivir en plenitud."),
             Servicio(nombre: "Mindfulness", desc: "Es una práctica que ayuda a la persona a enfocarse en el presente reconociendo que puede pasar por momentos de estrés, momentos de crisis laboral y personal, de baja autoestima y depresión. A través de herramientas de autoconocimiento, autoreconocimiento y autocontrol podemos entrenar la mente para tener una actitud de apertura, aceptación y solución en cualquier situación de nuestra vida para un balance y dominio emocional.")
         ]
-    
+        
     }
 }
  */
