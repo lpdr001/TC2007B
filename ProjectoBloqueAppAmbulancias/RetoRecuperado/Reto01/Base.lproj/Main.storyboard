@@ -260,7 +260,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="371.66666666666669" height="812"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIH-dL-6CP">
-                                                <rect key="frame" x="124" y="745" width="124" height="30"/>
+                                                <rect key="frame" x="123.66666666666666" y="745" width="124" height="30"/>
                                                 <state key="normal" title="Cerrar expediente"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDm-oh-i4T">
@@ -322,7 +322,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-1e-ImE">
-                                                <rect key="frame" x="65.999999999999986" y="225" width="239.66666666666663" height="30"/>
+                                                <rect key="frame" x="66" y="225" width="239" height="30"/>
                                                 <menu key="menu" title="Motivo" id="TxA-h8-Wht">
                                                     <menuOptions key="menuOptions" displayInline="YES"/>
                                                     <children>
@@ -336,13 +336,13 @@
                                                 <state key="normal" title="Motivo"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo de consulta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzk-vv-QMt">
-                                                <rect key="frame" x="109" y="202" width="154" height="21"/>
+                                                <rect key="frame" x="108.66666666666666" y="202" width="153.99999999999997" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rrh-AR-EqZ" userLabel="Servicio">
-                                                <rect key="frame" x="65.999999999999986" y="314" width="239.66666666666663" height="30"/>
+                                                <rect key="frame" x="66" y="314" width="239" height="30"/>
                                                 <menu key="menu" title="servicio" id="Kb6-jO-Aih">
                                                     <menuOptions key="menuOptions" displayInline="YES"/>
                                                     <children>
@@ -356,13 +356,13 @@
                                                 <state key="normal" title="Motivo"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CO-dc-aDz">
-                                                <rect key="frame" x="120.33333333333331" y="290" width="131" height="21"/>
+                                                <rect key="frame" x="120" y="290" width="131" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qab-JK-CbS">
-                                                <rect key="frame" x="65.999999999999986" y="403" width="239.66666666666663" height="30"/>
+                                                <rect key="frame" x="66" y="403" width="239" height="30"/>
                                                 <menu key="menu" title="Intervencion" id="aNf-k6-uUR">
                                                     <menuOptions key="menuOptions" displayInline="YES"/>
                                                     <children>
@@ -376,7 +376,7 @@
                                                 <state key="normal" title="intervencion"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervencion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eG-ca-i0v">
-                                                <rect key="frame" x="134.33333333333334" y="379" width="103" height="21"/>
+                                                <rect key="frame" x="134" y="379" width="103" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -403,7 +403,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDn-Ab-LMj">
-                                                <rect key="frame" x="65.999999999999986" y="483" width="239.66666666666663" height="37"/>
+                                                <rect key="frame" x="66" y="483" width="239" height="37"/>
                                                 <menu key="menu" title="herramienta" id="3IL-NX-7uv">
                                                     <menuOptions key="menuOptions" displayInline="YES"/>
                                                     <children>
@@ -417,7 +417,7 @@
                                                 <state key="normal" title="herramienta"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herramienta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nv-PO-vzy">
-                                                <rect key="frame" x="134.33333333333334" y="459" width="103" height="21"/>
+                                                <rect key="frame" x="134" y="459" width="103" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -814,7 +814,7 @@ Llena el siguiente formulario</string>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sK7-wu-Zik"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.23137256503105164" green="0.7137255072593689" blue="0.9490196704864502" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contacto" id="zsP-eW-OZH"/>
                 </viewController>
@@ -855,7 +855,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36E-Eq-2Uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-844" y="2748"/>
+            <point key="canvasLocation" x="-1479" y="2764"/>
         </scene>
         <!--UsuariosTanatologo-->
         <scene sceneID="Twa-71-Vjj">
@@ -890,7 +890,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zf8-m9-841" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="2708"/>
+            <point key="canvasLocation" x="-858" y="2764"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SQH-fi-7jP">
@@ -1443,7 +1443,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIN-1b-j9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="2764"/>
+            <point key="canvasLocation" x="-2095" y="2764"/>
         </scene>
         <!--UsuariosTanatologo-->
         <scene sceneID="8C8-FK-O3Q">
