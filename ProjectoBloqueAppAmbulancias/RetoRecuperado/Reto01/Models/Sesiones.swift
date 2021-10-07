@@ -12,24 +12,10 @@ struct Sesion: Codable {
     let id:String
     let cierre:Bool
     let evaluacion,idExpediente,idUsuario,servicio: String
-    let fecha:Timestamp
+    let fecha:Date
     let cuota,numeroSesion:Int
     
-    init(cierre:Bool, fecha:Timestamp, numeroSesion: Int, evaluacion:String, idUsuario:String, servicio:String, idExpediente:String, couta:Int){
-        
-        self.cierre = cierre
-        self.evaluacion = evaluacion
-        self.idExpediente = idExpediente
-        self.idUsuario = idUsuario
-        self.fecha = fecha
-        self.servicio = servicio
-        self.numeroSesion = numeroSesion
-        self.cuota = couta
-        
-        id = "4376"
-    }
-    
-    init(id:String, cierre:Bool, fecha:Timestamp, numeroSesion: Int, evaluacion:String, idUsuario:String, servicio:String, idExpediente:String, couta:Int){
+    init(id:String, cierre:Bool, numeroSesion: Int, evaluacion:String, idUsuario:String, servicio:String, idExpediente:String, couta:Int , fecha:Date){
         self.id = id
         self.cierre = cierre
         self.evaluacion = evaluacion
@@ -43,7 +29,7 @@ struct Sesion: Codable {
     init(aDoc: DocumentSnapshot){
         self.id = aDoc.documentID
         self.cierre = aDoc.get("cierre") as? Bool ?? false
-        self.fecha = aDoc.get("fecha") as? Timestamp ?? Timestamp.init(seconds: 0, nanoseconds: 0)
+        self.fecha = aDoc.get("fecha") as? Date ?? Date.init(timeIntervalSince1970: 0)
         self.evaluacion = aDoc.get("evaluacion") as? String ?? ""
         self.idExpediente = aDoc.get("idExpediente") as? String ?? ""
         self.idUsuario = aDoc.get("isUsuario") as? String ?? ""

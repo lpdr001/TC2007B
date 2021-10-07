@@ -79,9 +79,15 @@ func displayError(_ error: Error, title: String) {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
-        // Configure the cell...
-
-        cell.textLabel?.text = datos[indexPath.row].fecha
+        
+        let date = datos[indexPath.row].fecha
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT") //Set timezone that you want
+        dateFormatter.locale = NSLocale.current
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
+        let strDate = dateFormatter.string(from: date)
+        
+        //cell.textLabel?.text = strDate
         cell.detailTextLabel?.text = datos[indexPath.row].idUsuario
         
         
