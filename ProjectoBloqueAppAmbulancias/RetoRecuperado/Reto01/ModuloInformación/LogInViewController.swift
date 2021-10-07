@@ -6,15 +6,50 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseAnalytics
+
 
 class LogInViewController: UIViewController {
-        override func viewDidLoad() {
+    
+    
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-                
+
+    @IBAction func singUpTapped(_ sender: Any) {
+        if username.text?.isEmpty == true{
+            print ("Ingrese su nombre de usuario")
+            return
+        }
+        
+        if password.text?.isEmpty == true{
+            print ("Ingrese su contraseña")
+            return
+        }
+    }
+    
+    
+    func signUpT(){
+        Auth.auth().createUser(withEmail: username.text!, password: password.text!) { authResult, error in
+            
+            guard let user = authResult?.user, error == nil else{
+                print("Error \(error?.localizedDescription)")
+                return
+            }
+            
+            
+        }
+        
+    }
     
     func updatedatos(with sesiones:Sesiones){
         DispatchQueue.main.async {

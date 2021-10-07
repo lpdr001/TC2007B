@@ -8,5 +8,8 @@ target 'Reto01' do
   # Pods for Reto01
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  
 
 end
