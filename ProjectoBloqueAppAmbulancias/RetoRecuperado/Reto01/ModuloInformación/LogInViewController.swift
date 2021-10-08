@@ -11,24 +11,38 @@ import Firebase
 
 class LogInViewController: UIViewController {
 
-    var username = "tanatologo1"
+    var name = "Mr. Meeseeks"
     
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var username: UITextField!
     var TanatologoControlador = TanatologosController()
    
     var datos = [Tanatologo]()
-    let sections = ["Tanatologos"]
+    
+    static var Lv = LogInViewController()
+    var b = false
     
     
     @IBAction func LogInTanatologos(_ sender: Any) {
         
-        TanatologoControlador.fetchTanatologos(st: username){ (result) in
+        TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
             switch result{
             case .success(let tanatologos):self.updatedatos(with: tanatologos)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
-
-            
         }
+        /*TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
+            switch result{
+            case .success(let tanatologos):self.updatedatos1(with: tanatologos)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+            }
+        }
+        TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
+            switch result{
+            case .success(let tanatologos):self.updatedatos2(with: tanatologos)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+            }
+        }*/
         
     }
     
@@ -46,15 +60,57 @@ class LogInViewController: UIViewController {
        
             self.datos = sesiones
         if (self.datos.count >= 1){
+            if(self.datos[0].password == password.text!){
+                if(LogInViewController.Lv != self  ){
+                    LogInViewController.Lv = self
+                }
+                self.name = self.datos[0].nombre
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance") 
-            self.present(balanceViewController, animated: true, completion: nil)
+            let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance1")
+                //balanceViewController.Tananame = datos[0].nombre
+                self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
            
         }
            
         }
-        
-        
+    }
+    
+    func updatedatos1(with sesiones:Tanatologos){
+       
+            self.datos = sesiones
+        if (self.datos.count >= 1){
+            if(self.datos[0].password == password.text!){
+                if(LogInViewController.Lv != self  ){
+                    LogInViewController.Lv = self
+                }
+                self.name = self.datos[0].nombre
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance2")
+                //balanceViewController.Tananame = datos[0].nombre
+                self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
+           
+        }
+           
+        }
+    }
+    func updatedatos2(with sesiones:Tanatologos){
+       
+            self.datos = sesiones
+        if (self.datos.count >= 1){
+            if(self.datos[0].password == password.text!){
+                if(LogInViewController.Lv != self  ){
+                    LogInViewController.Lv = self
+                }
+                self.name = self.datos[0].nombre
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance3")
+                //balanceViewController.Tananame = datos[0].nombre
+                self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
+           
+        }
+           
+        }
+    }
     
     
 func displayError(_ error: Error, title: String) {

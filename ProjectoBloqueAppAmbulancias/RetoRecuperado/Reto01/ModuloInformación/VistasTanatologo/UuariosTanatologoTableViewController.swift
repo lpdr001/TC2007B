@@ -17,9 +17,15 @@ class UuariosTanatologoTableViewController: UITableViewController {
     let sections = ["Usuarios"]
     
 
+    @IBOutlet weak var tname: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+       
+        Tananame = LogInViewController.Lv.name
+        tname.text = Tananame
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,7 +33,7 @@ class UuariosTanatologoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //let str = "Herramientas Alternativas"//[//3] = ["Herramientas Alternativas", "Holístico", "Acompañamiento"]
         
-        UsuarioControlador.fetchServicios(st: Tananame){ (result) in
+        UsuarioControlador.fetchServicios(st: LogInViewController.Lv.datos[0].id){ (result) in
             switch result{
             case .success(let usuarios):self.updateUI(with: usuarios)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")

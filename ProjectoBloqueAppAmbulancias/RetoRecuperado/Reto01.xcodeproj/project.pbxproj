@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320562192710DB2400CE0D89 /* Expedientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320562182710DB2400CE0D89 /* Expedientes.swift */; };
 		322097B626DEE3FB0024DD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322097B526DEE3FB0024DD40 /* AppDelegate.swift */; };
 		322097B826DEE3FB0024DD40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322097B726DEE3FB0024DD40 /* SceneDelegate.swift */; };
 		322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322097B926DEE3FB0024DD40 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		22468832751049E146F8D06F /* Pods-Reto01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.debug.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.debug.xcconfig"; sourceTree = "<group>"; };
+		320562182710DB2400CE0D89 /* Expedientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expedientes.swift; sourceTree = "<group>"; };
 		322097B226DEE3FB0024DD40 /* Reto01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reto01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		322097B526DEE3FB0024DD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		322097B726DEE3FB0024DD40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				3260D7A0270D6C2800E6F29E /* Sesiones.swift */,
 				3260D7A4270D6F2D00E6F29E /* SesionesController.swift */,
 				3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */,
+				320562182710DB2400CE0D89 /* Expedientes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				322097B826DEE3FB0024DD40 /* SceneDelegate.swift in Sources */,
 				AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */,
 				3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */,
+				320562192710DB2400CE0D89 /* Expedientes.swift in Sources */,
 				32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */,
 				AFFA1550270FD62100E4A3E7 /* TanatologosController.swift in Sources */,
 			);
