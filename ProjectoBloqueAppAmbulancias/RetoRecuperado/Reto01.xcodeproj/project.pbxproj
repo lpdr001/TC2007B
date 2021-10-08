@@ -24,6 +24,7 @@
 		32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */; };
 		32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
+		3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
 		AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */; };
 		AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */; };
@@ -51,6 +52,7 @@
 		32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioViewController.swift; sourceTree = "<group>"; };
 		32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosTableViewController.swift; sourceTree = "<group>"; };
 		32D4274326E666D9001DB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteBusquedaViewController.swift; sourceTree = "<group>"; };
 		62F6D28BF161954B10B4BE19 /* Pods-Reto01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.release.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.release.xcconfig"; sourceTree = "<group>"; };
 		70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reto01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				3260D785270D594A00E6F29E /* Usuarios.swift */,
 				3260D7A0270D6C2800E6F29E /* Sesiones.swift */,
 				3260D7A4270D6F2D00E6F29E /* SesionesController.swift */,
+				3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
 				32A28B8F270DD0CF009BB4A2 /* DetalleSesionViewController.swift in Sources */,
+				3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */,
 				32A28B92270DD277009BB4A2 /* LogInViewController.swift in Sources */,
 				3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */,
 				3260D79D270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift in Sources */,
