@@ -10,21 +10,63 @@ import Firebase
 
 struct Usuario: Codable {
     let id:String
-    let nombre,fechaIngreso: String
-    init(nombre:String, fechaIngreso:String){
+    let domicilio,estadoCivil,iDRA,idTanatologo,motivo,ocupacion,procedencia,referencia,religion,sexo,nombre,fechaIngreso: String
+    let cerrado:Bool
+    let edad,telefono:Int
+    init(domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String, nombre:String,fechaIngreso:String,cerrado:Bool,edad:Int,telefono:Int){
+        self.domicilio = domicilio
+        self.estadoCivil=estadoCivil
+        self.iDRA=iDRA
+        self.idTanatologo=idTanatologo
+        self.motivo=motivo
+        self.ocupacion=ocupacion
+        self.procedencia=procedencia
+        self.referencia=referencia
+        self.religion=religion
+        self.sexo=sexo
         self.nombre = nombre
         self.fechaIngreso  = fechaIngreso
+        self.cerrado = cerrado
+        self.edad = edad
+        self.telefono = telefono
         id = "1234"
     }
-    init(id:String, nombre:String, fechaIngreso:String){
+    init(id:String,domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String,nombre:String,fechaIngreso:String,cerrado:Bool,edad:Int,telefono:Int){
         self.id = id
+        self.domicilio = domicilio
+        self.estadoCivil=estadoCivil
+        self.iDRA=iDRA
+        self.idTanatologo=idTanatologo
+        self.motivo=motivo
+        self.ocupacion=ocupacion
+        self.procedencia=procedencia
+        self.referencia=referencia
+        self.religion=religion
+        self.sexo=sexo
         self.nombre = nombre
         self.fechaIngreso  = fechaIngreso
+        self.cerrado = cerrado
+        self.edad = edad
+        self.telefono = telefono
+        
     }
     init(aDoc: DocumentSnapshot){
         self.id = aDoc.documentID
         self.nombre = aDoc.get("nombre") as? String ?? ""
-        self.fechaIngreso = aDoc.get("fechaIngreso") as? String ?? ""
+        self.fechaIngreso = aDoc.get("fechaIngrso") as? String ?? ""
+        self.domicilio = aDoc.get("domicilio") as? String ?? ""
+        self.estadoCivil=aDoc.get("estadoCivil") as? String ?? ""
+        self.iDRA=aDoc.get("iDRA") as? String ?? ""
+        self.idTanatologo=aDoc.get("idTanatologo") as? String ?? ""
+        self.motivo=aDoc.get("motivo") as? String ?? ""
+        self.ocupacion=aDoc.get("ocupacion") as? String ?? ""
+        self.procedencia=aDoc.get("procedencia") as? String ?? ""
+        self.referencia=aDoc.get("referencia") as? String ?? ""
+        self.religion=aDoc.get("religion") as? String ?? ""
+        self.sexo=aDoc.get("sexo") as? String ?? ""
+        self.cerrado = aDoc.get("cerrado") as? Bool ?? false
+        self.edad = aDoc.get("edad") as? Int ?? 1
+        self.telefono = aDoc.get("telefono") as? Int ?? 1
     }
 }
 
