@@ -6,55 +6,56 @@
 //
 
 import UIKit
-import FirebaseAuth
 import Firebase
-import FirebaseAnalytics
 
 
 class LogInViewController: UIViewController {
+
+    var username = "tanatologo1"
+    
+    var TanatologoControlador = TanatologosController()
+   
+    var datos = [Tanatologo]()
+    let sections = ["Tanatologos"]
     
     
-    @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var password: UITextField!
-    
+    @IBAction func LogInTanatologos(_ sender: Any) {
+        
+        TanatologoControlador.fetchTanatologos(st: username){ (result) in
+            switch result{
+            case .success(let tanatologos):self.updatedatos(with: tanatologos)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+            }
+
+            
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+       
+        
+
     }
 
-
-    @IBAction func singUpTapped(_ sender: Any) {
-        if username.text?.isEmpty == true{
-            print ("Ingrese su nombre de usuario")
-            return
+    func updatedatos(with sesiones:Tanatologos){
+       
+            self.datos = sesiones
+        if (self.datos.count >= 1){
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance") 
+            self.present(balanceViewController, animated: true, completion: nil)
+           
+        }
+           
         }
         
-        if password.text?.isEmpty == true{
-            print ("Ingrese su contraseña")
-            return
-        }
-    }
-    
-    
-    func signUpT(){
-        Auth.auth().createUser(withEmail: username.text!, password: password.text!) { authResult, error in
-            
-            guard let user = authResult?.user, error == nil else{
-                print("Error \(error?.localizedDescription)")
-                return
-            }
-            
-            
-        }
         
-    }
     
-    func updatedatos(with sesiones:Sesiones){
-        DispatchQueue.main.async {
-            //elf.datos = sesiones
-        }}
     
 func displayError(_ error: Error, title: String) {
         DispatchQueue.main.async {
@@ -75,8 +76,15 @@ func displayError(_ error: Error, title: String) {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+       
+       /* let siguiente = segue.destination as! UuariosTanatologoTableViewController
+        siguiente.Tananame = self.datos[0].id */
+      
+        //siguiente.Username = datos[indice!].nombre
+        //siguiente.UserID = datos[indice!].id
 
     }
 }

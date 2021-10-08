@@ -28,6 +28,8 @@
 		AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */; };
 		AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */; };
 		AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63E4E526FBCE8B00AFE201 /* Servicios.swift */; };
+		AFFA154E270FD4D000E4A3E7 /* Tanatologos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA154D270FD4D000E4A3E7 /* Tanatologos.swift */; };
+		AFFA1550270FD62100E4A3E7 /* TanatologosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosController.swift; sourceTree = "<group>"; };
 		AF63E4E526FBCE8B00AFE201 /* Servicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servicios.swift; sourceTree = "<group>"; };
+		AFFA154D270FD4D000E4A3E7 /* Tanatologos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologos.swift; sourceTree = "<group>"; };
+		AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +155,9 @@
 				AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */,
 				AF63E4E526FBCE8B00AFE201 /* Servicios.swift */,
 				3260D788270D5AAD00E6F29E /* UsuariosController.swift */,
+				AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */,
 				3260D785270D594A00E6F29E /* Usuarios.swift */,
+				AFFA154D270FD4D000E4A3E7 /* Tanatologos.swift */,
 				3260D7A0270D6C2800E6F29E /* Sesiones.swift */,
 				3260D7A4270D6F2D00E6F29E /* SesionesController.swift */,
 			);
@@ -281,6 +287,7 @@
 				AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */,
 				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
+				AFFA154E270FD4D000E4A3E7 /* Tanatologos.swift in Sources */,
 				32A28B8F270DD0CF009BB4A2 /* DetalleSesionViewController.swift in Sources */,
 				32A28B92270DD277009BB4A2 /* LogInViewController.swift in Sources */,
 				3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */,
@@ -289,6 +296,7 @@
 				AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */,
 				3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */,
 				32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */,
+				AFFA1550270FD62100E4A3E7 /* TanatologosController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
