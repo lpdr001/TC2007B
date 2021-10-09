@@ -17,7 +17,7 @@ class AdministradorController{
 
     func fetchAdministrador(st:String, completion: @escaping (Result<Administradores, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var administradores = [Administrador]()
-        db.collection("Admnistrador").whereField("user", isEqualTo: st).getDocuments() { (querySnapshot, err) in
+        db.collection("Administradores").whereField("user", isEqualTo: st).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))

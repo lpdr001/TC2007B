@@ -15,6 +15,7 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var error: UILabel!
     
     
     var TanatologoControlador = TanatologosController()
@@ -59,6 +60,8 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        error.text = ""
 
         // Do any additional setup after loading the view.
         
@@ -113,6 +116,7 @@ class LogInViewController: UIViewController {
                 if(LogInViewController.Lv != self  ){
                     LogInViewController.Lv = self
                 }
+                
                 self.name = self.datos2[0].nombre
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance3")
@@ -120,8 +124,10 @@ class LogInViewController: UIViewController {
                 self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
            
         }
+            else { error.text = "error"}
            
         }
+        else { error.text = "error"}
     }
     
     
