@@ -13,6 +13,26 @@ struct Usuario: Codable {
     let domicilio,estadoCivil,iDRA,idTanatologo,motivo,ocupacion,procedencia,referencia,religion,sexo,nombre,fechaIngreso: String
     let cerrado:Bool
     let edad,telefono:Int
+    
+    /*enum CodingKeys: String, CodingKey {
+        
+        case domicilio
+        case estadoCivil
+        case iDRA
+        case idTanatologo
+        case motivo
+        case ocupacion
+        case procedencia
+        case referencia
+        case religion
+        case sexo
+        case nombre
+        case fechaIngreso
+        case cerrado = "cerrado"
+        case edad
+        case telefono
+       }*/
+    
     init(domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String, nombre:String,fechaIngreso:String,cerrado:Bool,edad:Int,telefono:Int){
         self.domicilio = domicilio
         self.estadoCivil=estadoCivil
