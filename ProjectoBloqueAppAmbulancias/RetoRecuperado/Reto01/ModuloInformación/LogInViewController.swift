@@ -15,9 +15,13 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
+    
+    
     var TanatologoControlador = TanatologosController()
+    var AdministradorControlador = AdministradorController()
    
     var datos = [Tanatologo]()
+    var datos1 = [Administrador]()
     
     static var Lv = LogInViewController()
     var b = false
@@ -31,18 +35,23 @@ class LogInViewController: UIViewController {
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
         }
-        /*TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
+        
+        
+        
+        AdministradorControlador.fetchAdministrador(st: username.text!){ (result) in
             switch result{
-            case .success(let tanatologos):self.updatedatos1(with: tanatologos)
+            case .success(let administrador):self.updatedatos1(with: administrador)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
         }
-        TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
+        
+        
+        AdminsoporteControlador.fetchSoporte(st: username.text!){ (result) in
             switch result{
-            case .success(let tanatologos):self.updatedatos2(with: tanatologos)
+            case .success(let soporte):self.updatedatos2(with: administrador)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
-        }*/
+        }
         
     }
     
@@ -75,7 +84,7 @@ class LogInViewController: UIViewController {
         }
     }
     
-    func updatedatos1(with sesiones:Tanatologos){
+    func updatedatos1(with sesiones:Administrador){
        
             self.datos = sesiones
         if (self.datos.count >= 1){
@@ -93,7 +102,8 @@ class LogInViewController: UIViewController {
            
         }
     }
-    func updatedatos2(with sesiones:Tanatologos){
+    
+    func updatedatos2(with sesiones:AdminSoporte){
        
             self.datos = sesiones
         if (self.datos.count >= 1){

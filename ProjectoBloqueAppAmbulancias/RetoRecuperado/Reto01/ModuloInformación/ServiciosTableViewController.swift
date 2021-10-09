@@ -117,6 +117,7 @@ func displayError(_ error: Error, title: String) {
         
         if (list == 0){
             cell.textLabel?.text = C[indexPath.row].nombre
+            cell.imageView?.image = UIImage(named: "Image")
         }
         else if (list == 1){
             cell.textLabel?.text = Ho[indexPath.row].nombre
