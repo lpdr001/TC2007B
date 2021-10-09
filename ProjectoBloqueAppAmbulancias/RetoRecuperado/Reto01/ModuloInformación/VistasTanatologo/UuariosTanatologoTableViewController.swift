@@ -13,6 +13,7 @@ class UuariosTanatologoTableViewController: UITableViewController {
     @IBOutlet var UITableView: UITableView!
     var UsuarioControlador = UsuariosController()
     var Tananame = ""
+    var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
     var datos = [Usuario]()
     let sections = ["Usuarios"]
     
@@ -21,10 +22,10 @@ class UuariosTanatologoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        
         Tananame = LogInViewController.Lv.name
-        tname.text = Tananame
+        tanatologo = LogInViewController.Lv.datos[0]
+        tname.text = Tananame + tanatologo.id
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,7 +34,7 @@ class UuariosTanatologoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //let str = "Herramientas Alternativas"//[//3] = ["Herramientas Alternativas", "Holístico", "Acompañamiento"]
         
-        UsuarioControlador.fetchServicios(st: LogInViewController.Lv.datos[0].id){ (result) in
+        UsuarioControlador.fetchServicios(st: tanatologo.id){ (result) in
             switch result{
             case .success(let usuarios):self.updateUI(with: usuarios)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
@@ -83,8 +84,15 @@ func displayError(_ error: Error, title: String) {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         // Configure the cell...
+        var s:String
+        switch datos[indexPath.row].cerrado {
+        case true:
+            s = "Cerrado";
+        default:
+            s = "Abierto";
+        }
 
-        cell.textLabel?.text = datos[indexPath.row].nombre
+        cell.textLabel?.text = datos[indexPath.row].nombre + " Expediente" + s
         cell.detailTextLabel?.text = datos[indexPath.row].fechaIngreso
         
         

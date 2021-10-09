@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
 
     var name = "Mr. Meeseeks"
     
@@ -57,7 +57,8 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        username.delegate = self
+        password.delegate = self
         // Do any additional setup after loading the view.
         
        
