@@ -819,45 +819,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36E-Eq-2Uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1479" y="2860"/>
-        </scene>
-        <!--UsuariosTanatologo-->
-        <scene sceneID="Twa-71-Vjj">
-            <objects>
-                <viewController title="UsuariosTanatologo" id="qES-Rl-ZnO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="O37-ed-c2L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchPaciente" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-1b-2v5">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLL-FM-mhd">
-                                <rect key="frame" x="164" y="673" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="K7F-a6-pu4" kind="show" id="TrH-Gz-0Cw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ghh-de-PVu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="X6m-1b-2v5" firstAttribute="top" secondItem="Ghh-de-PVu" secondAttribute="top" id="DKq-nj-xjW"/>
-                            <constraint firstItem="Ghh-de-PVu" firstAttribute="bottom" secondItem="X6m-1b-2v5" secondAttribute="bottom" id="H4D-D8-7l1"/>
-                            <constraint firstItem="X6m-1b-2v5" firstAttribute="leading" secondItem="Ghh-de-PVu" secondAttribute="leading" id="LcM-BW-DbG"/>
-                            <constraint firstItem="Ghh-de-PVu" firstAttribute="trailing" secondItem="X6m-1b-2v5" secondAttribute="trailing" id="OSe-bj-jZl"/>
-                            <constraint firstItem="Ghh-de-PVu" firstAttribute="bottom" secondItem="X6m-1b-2v5" secondAttribute="bottom" id="en1-2i-iep"/>
-                            <constraint firstItem="X6m-1b-2v5" firstAttribute="leading" secondItem="Ghh-de-PVu" secondAttribute="leading" id="ggv-rK-eJh"/>
-                            <constraint firstItem="X6m-1b-2v5" firstAttribute="trailing" secondItem="Ghh-de-PVu" secondAttribute="trailing" id="kMu-uv-ola"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Consulta Pacientes" id="qIq-YU-ZwC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zf8-m9-841" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-858" y="2846"/>
+            <point key="canvasLocation" x="-1594" y="2933"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SQH-fi-7jP">
@@ -1033,7 +995,7 @@ Llena el siguiente formulario</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ms-TG-GRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1174" y="2081"/>
+            <point key="canvasLocation" x="-1182" y="2149"/>
         </scene>
         <!--Encuadre-->
         <scene sceneID="ktS-Ws-UX5">
@@ -1489,12 +1451,12 @@ Llena el siguiente formulario</string>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="qES-Rl-ZnO" kind="relationship" relationship="rootViewController" id="3Y0-Zg-JlI"/>
+                        <segue destination="VFh-24-w7b" kind="relationship" relationship="rootViewController" id="ngj-Kk-5n1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7s-Hv-TNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1812" y="2117"/>
+            <point key="canvasLocation" x="-2052" y="2197"/>
         </scene>
         <!--Feed-->
         <scene sceneID="GGK-oy-xCO">
@@ -1810,7 +1772,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRX-eh-qf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2254" y="2823"/>
+            <point key="canvasLocation" x="-2348" y="2933"/>
         </scene>
         <!--Reporte Histórico-->
         <scene sceneID="3HF-jQ-8h9">
@@ -1852,7 +1814,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dx1-dn-uk8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3210" y="2824"/>
+            <point key="canvasLocation" x="-3284" y="2933"/>
         </scene>
         <!--UsuariosTanatologo-->
         <scene sceneID="8C8-FK-O3Q">
@@ -2202,7 +2164,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVy-DI-Qnt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1508" y="3615"/>
+            <point key="canvasLocation" x="-959" y="3745"/>
         </scene>
         <!--Feed-->
         <scene sceneID="cSS-cM-u5F">
@@ -2469,11 +2431,67 @@ Llena el siguiente formulario</string>
             </objects>
             <point key="canvasLocation" x="444" y="3550"/>
         </scene>
+        <!--Usuarios-->
+        <scene sceneID="7wp-Cu-4eK">
+            <objects>
+                <tableViewController id="VFh-24-w7b" customClass="UuariosTanatologoTableViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2eM-8g-gUN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexColor" systemColor="labelColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGrayColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="uQp-oo-7IP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Dhm-Pf-CbA" detailTextLabel="dWr-J7-msJ" style="IBUITableViewCellStyleSubtitle" id="vKe-Wz-c00" userLabel="zelda">
+                                <rect key="frame" x="0.0" y="88.666666030883789" width="375" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vKe-Wz-c00" id="6uY-Fk-rJp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dhm-Pf-CbA">
+                                            <rect key="frame" x="16" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dWr-J7-msJ">
+                                            <rect key="frame" x="15.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" label="zelda"/>
+                                <connections>
+                                    <segue destination="K7F-a6-pu4" kind="show" trigger="accessoryAction" id="wKE-Ul-FQ4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VFh-24-w7b" id="GVP-kl-njL"/>
+                            <outlet property="delegate" destination="VFh-24-w7b" id="fZE-qj-UrK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Usuarios" id="LbB-AX-P0h"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sh0-KD-l8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887.20000000000005" y="2944.5812807881775"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="RhG-gL-aEk"/>
         <segue reference="Klh-VQ-Zqq"/>
-        <segue reference="Gpi-3x-zXO"/>
+        <segue reference="0tG-82-8BU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
