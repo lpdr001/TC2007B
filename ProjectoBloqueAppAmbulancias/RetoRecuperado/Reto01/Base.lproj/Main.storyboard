@@ -1826,7 +1826,7 @@ Llena el siguiente formulario</string>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TlL-EM-OLp">
-                            <rect key="frame" x="0.0" y="768" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="641.33333206176758" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                         </button>
