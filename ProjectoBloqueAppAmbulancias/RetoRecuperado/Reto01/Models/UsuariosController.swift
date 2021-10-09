@@ -20,6 +20,26 @@ class UsuariosController{
                             }
 
                         }*/
+    func EditUsuario(sn:Usuario){
+        db.collection("Usuarios").document(sn.id).setData([
+            "domicilio":sn.domicilio,
+            "estadoCivil":sn.estadoCivil,
+            "iDRA":sn.iDRA,
+            "idTanatologo":sn.idTanatologo,
+            "motivo":sn.motivo,
+            "ocupacion":sn.ocupacion,
+            "procedencia":sn.procedencia,
+            "referencia":sn.referencia,
+            "religion":sn.religion,
+            "sexo":sn.sexo,
+            "nombre":sn.nombre,
+            "fechaIngreso":sn.fechaIngreso,
+            "cerrado":false,
+            "edad":sn.edad,
+            "telefono":sn.telefono
+
+        ]) 
+    }
     
     func SentServicio(sn:Usuario){
         var ref: DocumentReference? = nil

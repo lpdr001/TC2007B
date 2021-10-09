@@ -1183,7 +1183,7 @@ Llena el siguiente formulario</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre Completo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-b3-BHC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-b3-BHC">
                                                 <rect key="frame" x="11" y="183" width="352" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172964009951" green="0.26427522252817626" blue="0.26133231118931161" alpha="0.10284068972565406" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1193,14 +1193,14 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ocupación" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5D-b0-3n0">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ocupación" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5D-b0-3n0">
                                                 <rect key="frame" x="12" y="236" width="169" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Procedencia" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70M-C0-FeX">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Procedencia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70M-C0-FeX">
                                                 <rect key="frame" x="11" y="286" width="170" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1210,14 +1210,14 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Domicilio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CE1-ua-Ady">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Domicilio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CE1-ua-Ady">
                                                 <rect key="frame" x="11" y="337" width="351" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teléfono de casa" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-oZ-rRQ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-oZ-rRQ">
                                                 <rect key="frame" x="12" y="389" width="169" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1227,7 +1227,7 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Religión" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VfJ-1z-0mj">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Religión" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VfJ-1z-0mj">
                                                 <rect key="frame" x="194" y="237" width="169" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1237,21 +1237,21 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Estado civil" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAe-wA-OBU">
-                                                <rect key="frame" x="194" y="286" width="102" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado civil" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAe-wA-OBU">
+                                                <rect key="frame" x="194" y="286" width="101.33333333333331" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Celular" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-OF-DrI">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-OF-DrI">
                                                 <rect key="frame" x="194" y="389" width="168" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Edad" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAI-bs-qak">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAI-bs-qak">
                                                 <rect key="frame" x="12" y="439" width="169" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1279,7 +1279,7 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="¿Por quién fue referido?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gv3-fV-NjH">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Referencia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gv3-fV-NjH">
                                                 <rect key="frame" x="11" y="586" width="294" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1293,7 +1293,7 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sexo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCa-tx-Qqm">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCa-tx-Qqm">
                                                 <rect key="frame" x="194" y="439" width="111" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1312,7 +1312,7 @@ Llena el siguiente formulario</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Motivo de la consulta" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRh-sD-9kL">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Motivo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRh-sD-9kL">
                                                 <rect key="frame" x="11" y="636" width="348" height="34"/>
                                                 <color key="backgroundColor" red="0.21354172960000001" green="0.26427522250000002" blue="0.2613323112" alpha="0.1028406897" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1321,6 +1321,7 @@ Llena el siguiente formulario</string>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="0.8080278112993825" green="1" blue="0.98886421772456978" alpha="0.76749343280644378" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="hhb-ZC-tY3" firstAttribute="top" secondItem="oAI-bs-qak" secondAttribute="bottom" constant="15" id="3Mk-FI-82X"/>
                                             <constraint firstItem="MXk-oZ-rRQ" firstAttribute="centerY" secondItem="Frh-RM-ky9" secondAttribute="centerY" id="4DK-nL-5kM"/>
@@ -1389,6 +1390,9 @@ Llena el siguiente formulario</string>
                                             <constraint firstItem="MXk-oZ-rRQ" firstAttribute="top" secondItem="3U2-OF-DrI" secondAttribute="top" id="yCD-Le-vAH"/>
                                             <constraint firstItem="IRh-sD-9kL" firstAttribute="top" secondItem="Gv3-fV-NjH" secondAttribute="bottom" constant="16" id="zOl-6K-ex9"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="25r-ew-bYV" appends="YES" id="Rd3-s0-6TL"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -1436,6 +1440,12 @@ Llena el siguiente formulario</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O86-se-fn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="25r-ew-bYV">
+                    <eventButtonMask key="buttonMaskRequired" primary="YES" secondary="YES"/>
+                    <connections>
+                        <action selector="CerrarTeclado:" destination="wvd-bv-SwI" id="IWy-xB-tUZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-3718" y="787"/>
         </scene>
