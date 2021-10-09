@@ -29,4 +29,4 @@ struct Administrador: Codable {
     }
 }
 
-typealias Admin = [Administrador]
+typealias Administradores = [Administrador]

@@ -29,4 +29,4 @@ struct AdminSoporte: Codable {
     }
 }
 
-typealias Soporte = [AdminSoporte]
+typealias Soportes = [AdminSoporte]

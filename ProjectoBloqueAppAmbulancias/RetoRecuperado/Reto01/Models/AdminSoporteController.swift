@@ -15,7 +15,7 @@ class AdminSoporteController{
     
     
 
-    func fetchAdminSoporte(st:String, completion: @escaping (Result<AdminSoporte, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+    func fetchAdminSoporte(st:String, completion: @escaping (Result<Soportes, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var adminsoporte = [AdminSoporte]()
         db.collection("AdminSoporte").whereField("user", isEqualTo: st).getDocuments() { (querySnapshot, err) in
             if let err = err {

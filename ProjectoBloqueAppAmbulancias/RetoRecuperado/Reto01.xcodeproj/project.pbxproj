@@ -27,7 +27,7 @@
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
 		3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
-		AF421D3B2710EF32009CE697 /* Administrador.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3A2710EF32009CE697 /* Administrador.swift */; };
+		AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3A2710EF32009CE697 /* Administradores.swift */; };
 		AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3C2710EF78009CE697 /* AdministradorController.swift */; };
 		AF421D43271111FC009CE697 /* AdminSoporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D42271111FC009CE697 /* AdminSoporte.swift */; };
 		AF421D4527111214009CE697 /* AdminSoporteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D4427111214009CE697 /* AdminSoporteController.swift */; };
@@ -63,7 +63,7 @@
 		3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteBusquedaViewController.swift; sourceTree = "<group>"; };
 		62F6D28BF161954B10B4BE19 /* Pods-Reto01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.release.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.release.xcconfig"; sourceTree = "<group>"; };
 		70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reto01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF421D3A2710EF32009CE697 /* Administrador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrador.swift; sourceTree = "<group>"; };
+		AF421D3A2710EF32009CE697 /* Administradores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administradores.swift; sourceTree = "<group>"; };
 		AF421D3C2710EF78009CE697 /* AdministradorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministradorController.swift; sourceTree = "<group>"; };
 		AF421D42271111FC009CE697 /* AdminSoporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSoporte.swift; sourceTree = "<group>"; };
 		AF421D4427111214009CE697 /* AdminSoporteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSoporteController.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				AF63E4E526FBCE8B00AFE201 /* Servicios.swift */,
 				3260D788270D5AAD00E6F29E /* UsuariosController.swift */,
 				AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */,
-				AF421D3A2710EF32009CE697 /* Administrador.swift */,
+				AF421D3A2710EF32009CE697 /* Administradores.swift */,
 				AF421D3C2710EF78009CE697 /* AdministradorController.swift */,
 				3260D785270D594A00E6F29E /* Usuarios.swift */,
 				AFFA154D270FD4D000E4A3E7 /* Tanatologos.swift */,
@@ -301,7 +301,7 @@
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
 				32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */,
 				3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */,
-				AF421D3B2710EF32009CE697 /* Administrador.swift in Sources */,
+				AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */,
 				322097B626DEE3FB0024DD40 /* AppDelegate.swift in Sources */,
 				AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */,
 				AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */,

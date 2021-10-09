@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 
-class LogInViewController: UIViewController, UITextFieldDelegate {
+class LogInViewController: UIViewController {
 
     var name = "Mr. Meeseeks"
     
@@ -19,9 +19,11 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     var TanatologoControlador = TanatologosController()
     var AdministradorControlador = AdministradorController()
+    var AdminSoporteControlador = AdminSoporteController()
    
     var datos = [Tanatologo]()
     var datos1 = [Administrador]()
+    var datos2 = [AdminSoporte]()
     
     static var Lv = LogInViewController()
     var b = false
@@ -40,15 +42,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         
         AdministradorControlador.fetchAdministrador(st: username.text!){ (result) in
             switch result{
-            case .success(let administrador):self.updatedatos1(with: administrador)
+            case .success(let administradores):self.updatedatos1(with: administradores)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
         }
         
         
-        AdminsoporteControlador.fetchSoporte(st: username.text!){ (result) in
+        AdminSoporteControlador.fetchAdminSoporte(st: username.text!){ (result) in
             switch result{
-            case .success(let soporte):self.updatedatos2(with: administrador)
+            case .success(let soportes):self.updatedatos2(with: soportes)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
         }
@@ -57,8 +59,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        username.delegate = self
-        password.delegate = self
+
         // Do any additional setup after loading the view.
         
        
@@ -85,15 +86,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func updatedatos1(with sesiones:Administrador){
+    func updatedatos1(with sesiones:Administradores){
        
-            self.datos = sesiones
-        if (self.datos.count >= 1){
-            if(self.datos[0].password == password.text!){
+            self.datos1 = sesiones
+        if (self.datos1.count >= 1){
+            if(self.datos1[0].password == password.text!){
                 if(LogInViewController.Lv != self  ){
                     LogInViewController.Lv = self
                 }
-                self.name = self.datos[0].nombre
+                self.name = self.datos1[0].nombre
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance2")
                 //balanceViewController.Tananame = datos[0].nombre
@@ -104,15 +105,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func updatedatos2(with sesiones:AdminSoporte){
+    func updatedatos2(with sesiones:Soportes){
        
-            self.datos = sesiones
-        if (self.datos.count >= 1){
-            if(self.datos[0].password == password.text!){
+            self.datos2 = sesiones
+        if (self.datos2.count >= 1){
+            if(self.datos2[0].password == password.text!){
                 if(LogInViewController.Lv != self  ){
                     LogInViewController.Lv = self
                 }
-                self.name = self.datos[0].nombre
+                self.name = self.datos2[0].nombre
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance3")
                 //balanceViewController.Tananame = datos[0].nombre

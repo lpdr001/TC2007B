@@ -15,8 +15,8 @@ class AdministradorController{
     
     
 
-    func fetchAdministrador(st:String, completion: @escaping (Result<Administrador, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
-        var administrador = [Administrador]()
+    func fetchAdministrador(st:String, completion: @escaping (Result<Administradores, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+        var administradores = [Administrador]()
         db.collection("Admnistrador").whereField("user", isEqualTo: st).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -27,10 +27,10 @@ class AdministradorController{
                     
                     let s = Administrador(aDoc: document)
                     //if(s.tipo == st){
-                    administrador.append(s)
+                    administradores.append(s)
                     //}
                 }
-                completion(.success(administrador))
+                completion(.success(administradores))
             }
         }
        
