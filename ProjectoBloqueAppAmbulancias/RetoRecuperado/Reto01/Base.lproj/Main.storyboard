@@ -191,29 +191,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0h-fs-Hhd">
-                                <rect key="frame" x="16" y="98" width="343" height="639"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="fondo1.2" translatesAutoresizingMaskIntoConstraints="NO" id="Mnd-cR-VP4">
+                                <rect key="frame" x="0.0" y="-15" width="375" height="827"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0h-fs-Hhd">
+                                <rect key="frame" x="16" y="128" width="343" height="529"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oey-a9-QbY">
                                         <rect key="frame" x="8" y="8" width="327" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08X-6o-GQS">
+                                <rect key="frame" x="149" y="725" width="77" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pBh-pB-Rce"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="08X-6o-GQS" firstAttribute="centerX" secondItem="p0h-fs-Hhd" secondAttribute="centerX" id="ImN-Vx-TVC"/>
+                            <constraint firstItem="08X-6o-GQS" firstAttribute="centerX" secondItem="Mnd-cR-VP4" secondAttribute="centerX" id="bp6-2U-4x9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="08X-6o-GQS" secondAttribute="bottom" constant="-27" id="fIW-gj-cQ1"/>
+                            <constraint firstItem="08X-6o-GQS" firstAttribute="top" secondItem="p0h-fs-Hhd" secondAttribute="bottom" constant="68" id="fm9-zt-neq"/>
+                            <constraint firstItem="08X-6o-GQS" firstAttribute="centerX" secondItem="DCw-vo-A3B" secondAttribute="centerX" id="gLh-3v-J8s"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sesion" id="NIG-o2-Xro"/>
+                    <navigationItem key="navigationItem" title="Sesion" id="NIG-o2-Xro">
+                        <barButtonItem key="rightBarButtonItem" title="Editar" id="lH9-RR-bZl"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-2y-7pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2002" y="1499"/>
+            <point key="canvasLocation" x="-2002.4000000000001" y="1498.5221674876848"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="3VC-h4-k9L">
@@ -727,6 +742,7 @@ U09QT1JURQg
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-0j-cNj">
                                 <rect key="frame" x="172" y="253" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXo-2R-eQC">
                                 <rect key="frame" x="103" y="299" width="171" height="32"/>
@@ -2562,7 +2578,7 @@ Llena el siguiente formulario</string>
     <inferredMetricsTieBreakers>
         <segue reference="RhG-gL-aEk"/>
         <segue reference="Klh-VQ-Zqq"/>
-        <segue reference="0tG-82-8BU"/>
+        <segue reference="Gpi-3x-zXO"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
@@ -2573,6 +2589,7 @@ Llena el siguiente formulario</string>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="fondo" width="325.33334350585938" height="563.66668701171875"/>
+        <image name="fondo1.2" width="135.66667175292969" height="135.33332824707031"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
