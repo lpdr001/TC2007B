@@ -92,7 +92,7 @@ func displayError(_ error: Error, title: String) {
             s = "Abierto";
         }
 
-        cell.textLabel?.text = datos[indexPath.row].nombre + " Expediente" + s
+        cell.textLabel?.text = datos[indexPath.row].nombre + "   Expediente:" + s
         cell.detailTextLabel?.text = datos[indexPath.row].fechaIngreso
         
         
@@ -149,6 +149,7 @@ func displayError(_ error: Error, title: String) {
       
         siguiente.Username = datos[indice!].nombre
         siguiente.UserID = datos[indice!].id
+        siguiente.user = datos[indice!]
     }
     
 

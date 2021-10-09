@@ -9,16 +9,16 @@ import UIKit
 
 class DetalleUsuariosTableViewController: UITableViewController {
     @IBOutlet var UITableView: UITableView!
-    @IBOutlet weak var Namedisplay: UILabel!
+    @IBOutlet var Namedisplay: UILabel!
     var UsuarioControlador = SesionesController()
     var Username = ""
     var UserID = ""
+    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
 
     var datos = [Sesion]()
 
     let sections = ["Sesiones"]
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -131,18 +131,44 @@ func displayError(_ error: Error, title: String) {
         return true
     }
     */
+    
+    @IBAction func add(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b2")
+        
+        //balanceViewController.user = self.user
+            self.show(balanceViewController, sender: nil)
 
+    }
+    
+    
+    
+    @IBAction func Editar(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b1") as! EditarUserViewController
+        
+        balanceViewController.user = self.user
+            self.show(balanceViewController, sender: nil)
+
+    }
+    
+    
     
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+
         let siguiente = segue.destination as! DetalleSesionViewController
+
+        
         //let index = = self.tableView.indexPathForSelectedRow?.item
       
         siguiente.datos = self.datos
+
     }
 
     
