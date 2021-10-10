@@ -28,7 +28,7 @@ class UuariosTanatologoTableViewController: UITableViewController {
        
         Tananame = LogInViewController.Lv.name
         tanatologo = LogInViewController.Lv.datos[0]
-        tname.text = Tananame + tanatologo.id
+        tname.text = Tananame
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -153,6 +153,7 @@ func displayError(_ error: Error, title: String) {
         siguiente.Username = datos[indice!].nombre
         siguiente.UserID = datos[indice!].id
         siguiente.user = datos[indice!]
+        siguiente.tanatologo = self.tanatologo
     }
     
 

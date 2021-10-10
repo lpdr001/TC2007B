@@ -36,7 +36,7 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     }
     
     @IBAction func Registrar(_ sender: Any) {
-        let us = Sesion(id:"123",cierre: false, numeroSesion: datos.count+1, evaluacion: eval.text!, idUsuario: user.id, servicio: "tmp", couta: cuota.hashValue, fecha: "")
+        let us = Sesion(id: "1", cierre: false, numeroSesion: self.datos.count+1, evaluacion: eval.text!, idUsuario: user.id, servicio: "", couta: cuota.hashValue, fecha: "0/0/0", intervencion: "", herramienta: "", motivo: "")
         vc.SendSesion(sn: us)
         _ = navigationController?.popViewController(animated: true)
     }

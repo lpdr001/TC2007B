@@ -26,6 +26,7 @@
 		32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */; };
 		32AB61EB271146E3006793EA /* EditarUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB61EA271146E3006793EA /* EditarUserViewController.swift */; };
 		32BA899E27110F910030E25F /* EncuadreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA899D27110F910030E25F /* EncuadreViewController.swift */; };
+		32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
 		3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
@@ -63,6 +64,7 @@
 		32A6702027060C5A004B8C64 /* ServiciosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosTableViewController.swift; sourceTree = "<group>"; };
 		32AB61EA271146E3006793EA /* EditarUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarUserViewController.swift; sourceTree = "<group>"; };
 		32BA899D27110F910030E25F /* EncuadreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuadreViewController.swift; sourceTree = "<group>"; };
+		32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarSesionViewController.swift; sourceTree = "<group>"; };
 		32D4274326E666D9001DB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteBusquedaViewController.swift; sourceTree = "<group>"; };
 		62F6D28BF161954B10B4BE19 /* Pods-Reto01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.release.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				32BA899D27110F910030E25F /* EncuadreViewController.swift */,
 				32AB61EA271146E3006793EA /* EditarUserViewController.swift */,
 				329D792B271298D000461B09 /* SesionesViewController.swift */,
+				32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */,
 			);
 			name = "ModuloInformación";
 			path = "ModuloInformación";
@@ -316,6 +319,7 @@
 				32AB61EB271146E3006793EA /* EditarUserViewController.swift in Sources */,
 				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
+				32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */,
 				AFFA154E270FD4D000E4A3E7 /* Tanatologos.swift in Sources */,
 				32A28B8F270DD0CF009BB4A2 /* DetalleSesionViewController.swift in Sources */,
 				3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */,

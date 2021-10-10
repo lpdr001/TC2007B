@@ -34,7 +34,7 @@ class UsuariosController{
             "sexo":sn.sexo,
             "nombre":sn.nombre,
             "fechaIngreso":sn.fechaIngreso,
-            "cerrado":false,
+            "cerrado":sn.cerrado,
             "edad":sn.edad,
             "telefono":sn.telefono
 

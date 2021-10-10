@@ -16,6 +16,10 @@ class DetalleUsuariosTableViewController: UITableViewController {
     var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
 
     var datos = [Sesion]()
+    
+    var Tananame = ""
+    var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
+    
 
     let sections = ["Sesiones"]
     
@@ -145,10 +149,10 @@ func displayError(_ error: Error, title: String) {
         let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b2")as! SesionesViewController
         
         balanceViewController.user = self.user
+        balanceViewController.datos = self.datos
             self.show(balanceViewController, sender: nil)
 
     }
-    
     
     
     
@@ -157,8 +161,12 @@ func displayError(_ error: Error, title: String) {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue" {
+            let indice = self.tableView.indexPathForSelectedRow?.item
             let siguiente = segue.destination as! DetalleSesionViewController
-            siguiente.datos = self.datos}
+            siguiente.sesion = self.datos[indice!]
+            siguiente.tanatologo = self.tanatologo
+        }
+        
     else if segue.identifier == "segue1" {
             let siguiente2 = segue.destination as! EditarUserViewController
             

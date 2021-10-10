@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class EditarUserViewController: UIViewController {
+class EditarUserViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBOutlet weak var name: UITextField!
@@ -32,6 +32,21 @@ class EditarUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        name.delegate = self
+        oc.delegate = self
+        rel.delegate = self
+        proce.delegate = self
+        estCiv.delegate = self
+        dom.delegate = self
+        tel.delegate = self
+        cel.delegate = self
+        edad.delegate = self
+        sexo.delegate = self
+        ref.delegate = self
+        motivo.delegate = self
+        idra.delegate = self
+        
         name.text = user.nombre
         oc.text = user.ocupacion
         rel.text = user.religion
@@ -49,7 +64,21 @@ class EditarUserViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func CerrarTeclado(_ sender: UITapGestureRecognizer) {
+        name.resignFirstResponder()
+        oc.resignFirstResponder()
+        rel.resignFirstResponder()
+        proce.resignFirstResponder()
+        estCiv.resignFirstResponder()
+        dom.resignFirstResponder()
+        tel.resignFirstResponder()
+        cel.resignFirstResponder()
+        edad.resignFirstResponder()
+        sexo.resignFirstResponder()
+        ref.resignFirstResponder()
+        motivo.resignFirstResponder()
+        idra.resignFirstResponder()
+    }
 
     @IBAction func editar(_ sender: Any) {
         

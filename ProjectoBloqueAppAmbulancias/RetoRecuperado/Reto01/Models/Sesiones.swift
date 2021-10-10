@@ -10,12 +10,12 @@ import Firebase
 
 struct Sesion: Codable {
     let id:String
-    let cierre:Bool
-    let evaluacion,idUsuario,servicio: String
+    var cierre:Bool
+    var evaluacion,idUsuario,servicio, intervencion, herramienta, motivo: String
     let fecha:String
-    let cuota,numeroSesion:Int
+    var cuota,numeroSesion:Int
     
-    init(id:String, cierre:Bool, numeroSesion: Int, evaluacion:String, idUsuario:String, servicio:String, couta:Int , fecha:String){
+    init(id:String, cierre:Bool, numeroSesion: Int, evaluacion:String, idUsuario:String, servicio:String, couta:Int , fecha:String, intervencion:String, herramienta:String, motivo:String){
         self.id = id
         self.cierre = cierre
         self.evaluacion = evaluacion
@@ -24,6 +24,9 @@ struct Sesion: Codable {
         self.servicio = servicio
         self.numeroSesion = numeroSesion
         self.cuota = couta
+        self.intervencion = intervencion
+        self.herramienta = herramienta
+        self.motivo = motivo
     }
     init(aDoc: DocumentSnapshot){
         self.id = aDoc.documentID
@@ -32,6 +35,9 @@ struct Sesion: Codable {
         self.evaluacion = aDoc.get("evaluacion") as? String ?? ""
         self.idUsuario = aDoc.get("isUsuario") as? String ?? ""
         self.servicio = aDoc.get("servicio") as? String ?? ""
+        self.intervencion = aDoc.get("intervencion") as? String ?? ""
+        self.herramienta = aDoc.get("herramienta") as? String ?? ""
+        self.motivo = aDoc.get("motivo") as? String ?? ""
         self.numeroSesion = aDoc.get("numeroSesion")as? Int ?? 0
         self.cuota = aDoc.get("cuota")as? Int ?? 0
     }

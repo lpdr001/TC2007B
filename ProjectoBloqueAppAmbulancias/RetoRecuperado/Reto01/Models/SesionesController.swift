@@ -13,6 +13,21 @@ class SesionesController{
     
     let db = Firestore.firestore()
     
+    func EditUsuario(sn:Sesion){
+        db.collection("Sesiones").document(sn.id).setData([
+            "cierre" : sn.cierre,
+            "evaluacion" : sn.evaluacion,
+            "idUsuario":sn.idUsuario,
+            "fecha": sn.fecha,
+            "servicio" : sn.servicio,
+            "numeroSesion": sn.numeroSesion,
+            "cuota": sn.cuota,
+            "motivo":sn.motivo,
+            "herramienta":sn.herramienta,
+            "intervencion":sn.intervencion
+        ])
+    }
+    
     func SendSesion(sn:Sesion){
         var ref: DocumentReference? = nil
         ref = db.collection("Sesiones").addDocument(data: [
@@ -22,7 +37,10 @@ class SesionesController{
             "fecha": sn.fecha,
             "servicio" : sn.servicio,
             "numeroSesion": sn.numeroSesion,
-            "cuota": sn.cuota
+            "cuota": sn.cuota,
+            "motivo":sn.motivo,
+            "herramienta":sn.herramienta,
+            "intervencion":sn.intervencion
 
         ]) { err in
             if let err = err {
