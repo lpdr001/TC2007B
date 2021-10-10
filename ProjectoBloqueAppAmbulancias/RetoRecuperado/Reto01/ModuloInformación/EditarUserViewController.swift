@@ -45,7 +45,7 @@ class EditarUserViewController: UIViewController {
         ref.text = user.referencia
         motivo.text = user.motivo
         idra.text = user.iDRA
-        swit.isOn = !user.cerrado
+        swit.isOn = user.cerrado
         
         // Do any additional setup after loading the view.
     }
@@ -53,11 +53,11 @@ class EditarUserViewController: UIViewController {
 
     @IBAction func editar(_ sender: Any) {
         
-        var b: Bool
-        b = !swit.isOn
-        let tmpuser = Usuario(id:user.id,domicilio:dom.text!,estadoCivil:estCiv.text!,iDRA:idra.text!,idTanatologo:user.idTanatologo,motivo:motivo.text!,ocupacion:oc.text!,procedencia:proce.text!,referencia:ref.text!,religion:rel.text!,sexo:sexo.text!, nombre:name.text!,fechaIngreso:user.fechaIngreso,cerrado:b,edad:edad.hashValue,telefono:tel.hashValue)
+        let tmpuser = Usuario(id:user.id,domicilio:dom.text!,estadoCivil:estCiv.text!,iDRA:idra.text!,idTanatologo:user.idTanatologo,motivo:motivo.text!,ocupacion:oc.text!,procedencia:proce.text!,referencia:ref.text!,religion:rel.text!,sexo:sexo.text!, nombre:name.text!,fechaIngreso:user.fechaIngreso,cerrado:swit.isOn,edad:edad.hashValue,telefono:tel.hashValue)
         
         uc.EditUsuario(sn: tmpuser)
+        
+        _ = navigationController?.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation

@@ -95,7 +95,7 @@ func displayError(_ error: Error, title: String) {
             s = "Abierto";
         }
 
-        cell.textLabel?.text = datos[indexPath.row].nombre + "   Expediente:" + s
+        cell.textLabel?.text = datos[indexPath.row].nombre + "   Expediente:" + String(datos[indexPath.row].cerrado)
         cell.detailTextLabel?.text = datos[indexPath.row].fechaIngreso
         
         
