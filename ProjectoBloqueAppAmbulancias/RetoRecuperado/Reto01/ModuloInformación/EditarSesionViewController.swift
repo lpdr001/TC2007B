@@ -41,6 +41,7 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate{
         let tmpus = Sesion(id: sesion.id, cierre: sesion.cierre, numeroSesion: sesion.numeroSesion, evaluacion: motivo.text!, idUsuario: sesion.idUsuario, servicio: sesion.servicio, couta: Int(cuota.text!) ?? 0, fecha: sesion.fecha, intervencion: "", herramienta: "", motivo: "")
         
         sesion.evaluacion = motivo.text!
+        sesion.cuota = Int(cuota.text!) ?? 0
         
         sc.EditUsuario(sn: sesion)
         
