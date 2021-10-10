@@ -19,6 +19,8 @@ class DetalleUsuariosTableViewController: UITableViewController {
 
     let sections = ["Sesiones"]
     
+    var bo = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -146,11 +148,12 @@ func displayError(_ error: Error, title: String) {
     
     
     @IBAction func Editar(_ sender: Any) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        bo = false
+        /*let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b1") as! EditarUserViewController
         
         balanceViewController.user = self.user
-            self.show(balanceViewController, sender: nil)
+            self.show(balanceViewController, sender: nil)*/
 
     }
     
@@ -158,19 +161,17 @@ func displayError(_ error: Error, title: String) {
     
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-
-        let siguiente = segue.destination as! DetalleSesionViewController
-
-        
-        //let index = = self.tableView.indexPathForSelectedRow?.item
-      
-        siguiente.datos = self.datos
-
+        if segue.identifier == "segue" {
+            let siguiente = segue.destination as! DetalleSesionViewController
+            siguiente.datos = self.datos}
+    else if segue.identifier == "segue1" {
+            let siguiente2 = segue.destination as! EditarUserViewController
+            
+            siguiente2.user = self.user
+        }
     }
-
     
 
 }
