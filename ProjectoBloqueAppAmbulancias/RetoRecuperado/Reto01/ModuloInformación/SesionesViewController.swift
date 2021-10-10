@@ -13,6 +13,8 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var eval: UITextField!
     @IBOutlet weak var cuota: UITextField!
     @IBOutlet weak var tan: UILabel!
+    @IBOutlet weak var nu: UILabel!
+    @IBOutlet weak var fecha: UIDatePicker!
     
     var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
     
@@ -34,8 +36,8 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     }
     
     @IBAction func Registrar(_ sender: Any) {
-        let us = Sesion(id: <#T##String#>, cierre: false, numeroSesion: datos.count+1, evaluacion: <#T##String#>, idUsuario: <#T##String#>, servicio: <#T##String#>, idExpediente: <#T##String#>, couta: cuota.hashValue, fecha: <#T##Date#>)
-        vc.SentServicio(sn: us)
+        let us = Sesion(id:"123",cierre: false, numeroSesion: datos.count+1, evaluacion: eval.text!, idUsuario: user.id, servicio: "tmp", couta: cuota.hashValue, fecha: "")
+        vc.SendSesion(sn: us)
     }
     
     /*
