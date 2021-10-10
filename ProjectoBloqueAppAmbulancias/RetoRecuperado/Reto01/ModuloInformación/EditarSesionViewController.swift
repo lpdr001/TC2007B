@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class EditarSesionViewController: UIViewController, UITextFieldDelegate{
     
@@ -14,7 +15,7 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate{
     var sc = SesionesController()
 
     var sesion = Sesion(id: "", cierre: false, numeroSesion: 1, evaluacion: "", idUsuario: "", servicio: "", couta: 1, fecha: "", intervencion: "", herramienta: "", motivo: "")
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         super.viewDidLoad()
         cuota.delegate = self
         motivo.delegate = self
@@ -36,7 +37,7 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate{
     }
     */
     
-    @IBAction func Registrar(_ sender: Any) {
+    @IBAction func editar(_ sender: Any) {
         let us = Sesion(id: sesion.id, cierre: sesion.cierre, numeroSesion: sesion.numeroSesion, evaluacion: motivo.text!, idUsuario: sesion.idUsuario, servicio: sesion.servicio, couta: cuota.hashValue, fecha: sesion.fecha, intervencion: "", herramienta: "", motivo: "")
         
         sc.SendSesion(sn: us)

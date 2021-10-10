@@ -16,6 +16,7 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var nu: UILabel!
     @IBOutlet weak var fecha: UIDatePicker!
     
+    @IBOutlet weak var name: UILabel!
     var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
     
     var datos = [Sesion]()
@@ -23,6 +24,7 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.text = user.nombre
         eval.delegate = self
         cuota.delegate = self
         tan.text = LogInViewController.Lv.datos[0].nombre

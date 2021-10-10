@@ -66,6 +66,15 @@ class DetalleSesionViewController: UIViewController {
             }
         }
     
+    @IBAction func Editsesion(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "editsesion")as! EditarSesionViewController
+        
+        balanceViewController.sesion = self.sesion
+            self.show(balanceViewController, sender: nil)
+    }
     
     /*
     // MARK: - Navigation

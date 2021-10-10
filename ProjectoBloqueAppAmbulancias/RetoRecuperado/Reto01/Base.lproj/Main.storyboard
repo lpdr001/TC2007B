@@ -286,7 +286,7 @@
                     <navigationItem key="navigationItem" title="Sesion" id="NIG-o2-Xro">
                         <barButtonItem key="rightBarButtonItem" title="Editar" id="lH9-RR-bZl">
                             <connections>
-                                <segue destination="xvM-bo-3yc" kind="show" id="i8O-gn-N0H"/>
+                                <action selector="Editsesion:" destination="JdZ-oT-4EN" id="Iw0-0m-kap"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -345,7 +345,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q85-er-peX">
-                                <rect key="frame" x="1.5" y="-44" width="372" height="755"/>
+                                <rect key="frame" x="1.5" y="-88" width="372" height="843"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="72x-di-N88">
                                         <rect key="frame" x="-443" y="0.0" width="1073" height="812"/>
@@ -388,7 +388,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2j-5b-fAj">
-                                                <rect key="frame" x="292.5" y="70.5" width="11" height="21"/>
+                                                <rect key="frame" x="292" y="70.5" width="11" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -579,6 +579,7 @@
                         <outlet property="cuota" destination="wRb-H3-zMO" id="IvC-4T-sAv"/>
                         <outlet property="eval" destination="U8p-2E-wNR" id="fR2-HL-MIt"/>
                         <outlet property="fecha" destination="Yuo-eZ-SlC" id="9dm-S0-Rg7"/>
+                        <outlet property="name" destination="3ia-E8-FoU" id="20D-La-lLS"/>
                         <outlet property="nu" destination="3ia-E8-FoU" id="bl2-wV-ISr"/>
                         <outlet property="tan" destination="8Hb-WF-EiN" id="Tfc-ph-tEC"/>
                     </connections>
@@ -656,21 +657,21 @@
         <!--Editar Sesion-->
         <scene sceneID="aMM-E4-bM1">
             <objects>
-                <viewController id="xvM-bo-3yc" customClass="EditarSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editsesion" id="xvM-bo-3yc" customClass="EditarSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEU-6U-h8F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="KPI-F3-vDB">
-                                <rect key="frame" x="16" y="54" width="343" height="548"/>
+                                <rect key="frame" x="16" y="10" width="343" height="641"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eow-Vx-wg4">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="258.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="305"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="luw-UF-C6Z">
-                                        <rect key="frame" x="0.0" y="289.5" width="343" height="258.5"/>
+                                        <rect key="frame" x="0.0" y="336" width="343" height="305"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -699,7 +700,7 @@
                                 <state key="normal" title="Listo"/>
                             </button>
                             <connections>
-                                <action selector="Registrar:" destination="xvM-bo-3yc" id="F0x-Dz-afl"/>
+                                <action selector="editar:" destination="xvM-bo-3yc" id="dJ8-im-9DX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1562,7 +1563,6 @@ Llena el siguiente formulario</string>
                                 <state key="normal" title="Listo"/>
                                 <connections>
                                     <action selector="Registrar:" destination="wvd-bv-SwI" eventType="touchUpInside" id="sTD-ob-ik9"/>
-                                    <segue destination="eLe-v9-A4D" kind="show" id="Gpi-3x-zXO"/>
                                 </connections>
                             </button>
                         </barButtonItem>
