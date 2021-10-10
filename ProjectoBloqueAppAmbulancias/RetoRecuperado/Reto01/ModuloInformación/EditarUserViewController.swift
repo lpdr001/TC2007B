@@ -82,7 +82,7 @@ class EditarUserViewController: UIViewController,UITextFieldDelegate {
 
     @IBAction func editar(_ sender: Any) {
         
-        let tmpuser = Usuario(id:user.id,domicilio:dom.text!,estadoCivil:estCiv.text!,iDRA:idra.text!,idTanatologo:user.idTanatologo,motivo:motivo.text!,ocupacion:oc.text!,procedencia:proce.text!,referencia:ref.text!,religion:rel.text!,sexo:sexo.text!, nombre:name.text!,fechaIngreso:user.fechaIngreso,cerrado:swit.isOn,edad:edad.hashValue,telefono:tel.hashValue)
+        let tmpuser = Usuario(id:user.id,domicilio:dom.text!,estadoCivil:estCiv.text!,iDRA:idra.text!,idTanatologo:user.idTanatologo,motivo:motivo.text!,ocupacion:oc.text!,procedencia:proce.text!,referencia:ref.text!,religion:rel.text!,sexo:sexo.text!, nombre:name.text!,fechaIngreso:user.fechaIngreso,cerrado:swit.isOn,edad:Int(edad.text!) ?? 18,telefono:Int(tel.text!) ?? 00000000)
         
         uc.EditUsuario(sn: tmpuser)
         

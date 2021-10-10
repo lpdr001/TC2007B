@@ -55,6 +55,7 @@ class DetalleSesionViewController: UIViewController {
         func updateUI(with sesiones:Sesiones){
 
                     self.sesion = sesiones[0]
+            self.sesion.idUsuario = user.id
                     self.tanname.text = self.tanatologo.nombre
                     self.Fecha.text = self.sesion.fecha
                     self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
