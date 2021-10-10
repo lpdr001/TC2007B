@@ -20,8 +20,11 @@ class UuariosTanatologoTableViewController: UITableViewController {
 
     @IBOutlet weak var tname: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+    
+   // }
+   // override func viewDidLoad() {
+     //   super.viewDidLoad()
        
         Tananame = LogInViewController.Lv.name
         tanatologo = LogInViewController.Lv.datos[0]

@@ -19,6 +19,7 @@
 		3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D7A0270D6C2800E6F29E /* Sesiones.swift */; };
 		3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D7A4270D6F2D00E6F29E /* SesionesController.swift */; };
 		3270FDD926DFD0F6000CE316 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3270FDD826DFD0F6000CE316 /* Images */; };
+		329D792C271298D000461B09 /* SesionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329D792B271298D000461B09 /* SesionesViewController.swift */; };
 		32A28B8F270DD0CF009BB4A2 /* DetalleSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A28B8E270DD0CF009BB4A2 /* DetalleSesionViewController.swift */; };
 		32A28B92270DD277009BB4A2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A28B91270DD277009BB4A2 /* LogInViewController.swift */; };
 		32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */; };
@@ -55,6 +56,7 @@
 		3260D7A0270D6C2800E6F29E /* Sesiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sesiones.swift; sourceTree = "<group>"; };
 		3260D7A4270D6F2D00E6F29E /* SesionesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionesController.swift; sourceTree = "<group>"; };
 		3270FDD826DFD0F6000CE316 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		329D792B271298D000461B09 /* SesionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionesViewController.swift; sourceTree = "<group>"; };
 		32A28B8E270DD0CF009BB4A2 /* DetalleSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleSesionViewController.swift; sourceTree = "<group>"; };
 		32A28B91270DD277009BB4A2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		32A6701F27060C5A004B8C64 /* DetalleServicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				32A28B91270DD277009BB4A2 /* LogInViewController.swift */,
 				32BA899D27110F910030E25F /* EncuadreViewController.swift */,
 				32AB61EA271146E3006793EA /* EditarUserViewController.swift */,
+				329D792B271298D000461B09 /* SesionesViewController.swift */,
 			);
 			name = "ModuloInformación";
 			path = "ModuloInformación";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
+				329D792C271298D000461B09 /* SesionesViewController.swift in Sources */,
 				32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */,
 				3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */,
 				AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */,
