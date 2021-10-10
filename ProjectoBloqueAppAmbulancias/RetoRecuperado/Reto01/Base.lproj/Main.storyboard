@@ -230,10 +230,13 @@
                     <navigationItem key="navigationItem" title="Sesion" id="NIG-o2-Xro">
                         <barButtonItem key="rightBarButtonItem" title="Editar" id="lH9-RR-bZl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sesionDesc" destination="oey-a9-QbY" id="OBS-7d-2hZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-2y-7pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2002.4000000000001" y="1498.5221674876848"/>
+            <point key="canvasLocation" x="-2060" y="2112"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="3VC-h4-k9L">
@@ -516,7 +519,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-5161" y="1753"/>
+            <point key="canvasLocation" x="-4292" y="1567"/>
         </scene>
         <!--Uuarios Tanatologo Table View Controller-->
         <scene sceneID="dyT-0i-utR">
@@ -2113,7 +2116,7 @@ Llena el siguiente formulario</string>
                         <outlet property="ref" destination="KMp-Bw-mt5" id="8j7-6A-dyc"/>
                         <outlet property="rel" destination="XQQ-ve-aHe" id="QNy-G7-QTc"/>
                         <outlet property="sexo" destination="6Y5-9o-sLk" id="B8g-23-mZm"/>
-                        <outlet property="swit" destination="KBn-PB-cVa" id="C8i-aD-2lf"/>
+                        <outlet property="swit" destination="KBn-PB-cVa" id="sEW-wf-V3N"/>
                         <outlet property="switch" destination="KBn-PB-cVa" id="3NZ-b7-UPb"/>
                         <outlet property="tel" destination="gWu-mi-eDZ" id="9GK-cV-4Vt"/>
                     </connections>
@@ -2154,8 +2157,7 @@ Llena el siguiente formulario</string>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Editar"/>
                                     <connections>
-                                        <action selector="Editar:" destination="TpR-bv-ciW" eventType="touchUpInside" id="71c-is-wl3"/>
-                                        <segue destination="K7F-a6-pu4" kind="show" identifier="segue1" id="kNb-Zi-Hxl"/>
+                                        <segue destination="K7F-a6-pu4" kind="show" id="80b-H3-Upq"/>
                                     </connections>
                                 </button>
                             </subviews>

@@ -21,8 +21,9 @@ class DetalleUsuariosTableViewController: UITableViewController {
     
     var bo = true
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+//viewDidLoad() {
+        //super.viewDidLoad()
         
         Namedisplay.text = user.nombre
         // Uncomment the following line to preserve selection between presentations
@@ -92,8 +93,8 @@ func displayError(_ error: Error, title: String) {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
         //let strDate = dateFormatter.string(from: date)*/
         
-        //cell.textLabel?.text = strDate
-        cell.detailTextLabel?.text = datos[indexPath.row].idUsuario
+        cell.textLabel?.text = datos[indexPath.row].fecha
+        cell.detailTextLabel?.text = datos[indexPath.row].evaluacion
         
         
         
@@ -148,17 +149,6 @@ func displayError(_ error: Error, title: String) {
 
     }
     
-    
-    
-    @IBAction func Editar(_ sender: Any) {
-        bo = false
-        /*let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b1") as! EditarUserViewController
-        
-        balanceViewController.user = self.user
-            self.show(balanceViewController, sender: nil)*/
-
-    }
     
     
     
