@@ -51,6 +51,27 @@ class SesionesController{
         }
         //db.collection("Usuarios").setData()
     }
+    
+    func fetchOneSesion(st:String,stt:Int, completion: @escaping (Result<Sesiones, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+        var sesiones = [Sesion]()
+        db.collection("Sesiones").whereField("idUsuario", isEqualTo: st).whereField("numeroSesion", isEqualTo: stt).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(.failure(err))
+            } else {
+              
+                for document in querySnapshot!.documents {
+                    
+                    let s = Sesion(aDoc: document)
+                    //if(s.tipo == st){
+                    sesiones.append(s)
+                    //}
+                }
+                completion(.success(sesiones))
+            }
+        }
+       
+    }
 
     func fetchSesiones(st:String, completion: @escaping (Result<Sesiones, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var sesiones = [Sesion]()

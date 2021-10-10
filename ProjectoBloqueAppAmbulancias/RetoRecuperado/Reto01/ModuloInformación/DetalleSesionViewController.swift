@@ -22,40 +22,51 @@ class DetalleSesionViewController: UIViewController {
     @IBOutlet weak var herramienta: UILabel!
     
     var tc = TanatologosController()
+    var uc = SesionesController()
     
     @IBOutlet weak var cuota: UILabel!
     
-    var sesion = Sesion(id: "", cierre: false, numeroSesion: 1, evaluacion: "", idUsuario: "", servicio: "", couta: 1, fecha: "", intervencion: "", herramienta: "", motivo: "")
+    var num = 0
     var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
     
-    var Tananame = ""
+    var sesion = Sesion(id: "", cierre: false, numeroSesion: 1, evaluacion: "", idUsuario: "not loading", servicio: "", couta: 1, fecha: "", intervencion: "", herramienta: "", motivo: "")
+    
+    
     var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        uc.fetchOneSesion(st: user.id, stt: num){ (result) in
+            switch result{
+            case .success(let sesiones):self.updateUI(with: sesiones)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
+            }
+    }
+
     
     //} viewDidLoad() {
-        super.viewDidLoad()
-        self.tanname.text = self.tanatologo.nombre
-            self.Fecha.text = self.sesion.fecha
-            self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
-        self.nexp.text = self.sesion.idUsuario
-            self.usname.text = self.user.nombre
-            self.motivo.text = self.sesion.motivo
-            self.servicio.text = self.sesion.servicio
-            self.intervencion.text = self.sesion.intervencion
-            self.herramienta.text = self.sesion.herramienta
-            self.cuota.text = String(self.sesion.cuota)
-            self.sesionDesc.text = self.sesion.evaluacion
+        //super.viewDidLoad()
+
 
         // Do any additional setup after loading the view.
     }
     
-        func updateUI(with tanatologos:Tanatologos){
-            for t in tanatologos{
-                if(t.id == user.idTanatologo){
-                    self.tanname.text = t.nombre}
-            }
+        func updateUI(with sesiones:Sesiones){
+
+                    self.sesion = sesiones[0]
+                    self.tanname.text = self.tanatologo.nombre
+                    self.Fecha.text = self.sesion.fecha
+                    self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
+                    self.nexp.text = self.sesion.idUsuario
+                    self.usname.text = self.user.nombre
+                    self.motivo.text = self.sesion.motivo
+                    self.servicio.text = self.sesion.servicio
+                    self.intervencion.text = self.sesion.intervencion
+                    self.herramienta.text = self.sesion.herramienta
+                    self.cuota.text = String(self.sesion.cuota)
+                    self.sesionDesc.text = self.sesion.evaluacion
+            
             
         }
     func displayError(_ error: Error, title: String) {

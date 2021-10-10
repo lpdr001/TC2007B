@@ -27,7 +27,7 @@ class DetalleUsuariosTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
 //viewDidLoad() {
-        super.viewDidLoad()
+        //super.viewDidLoad()
         
         Namedisplay.text = user.nombre
         // Uncomment the following line to preserve selection between presentations
@@ -97,8 +97,8 @@ func displayError(_ error: Error, title: String) {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
         //let strDate = dateFormatter.string(from: date)*/
         
-        cell.textLabel?.text = datos[indexPath.row].fecha
-        cell.detailTextLabel?.text = datos[indexPath.row].evaluacion
+        cell.textLabel?.text = String(datos[indexPath.row].numeroSesion)
+        cell.detailTextLabel?.text = datos[indexPath.row].fecha
         
         
         
@@ -163,8 +163,11 @@ func displayError(_ error: Error, title: String) {
         if segue.identifier == "segue" {
             let indice = self.tableView.indexPathForSelectedRow?.item
             let siguiente = segue.destination as! DetalleSesionViewController
+            self.datos[indice!].idUsuario = user.id
             siguiente.sesion = self.datos[indice!]
             siguiente.tanatologo = self.tanatologo
+            siguiente.user = self.user
+            siguiente.num = self.datos[indice!].numeroSesion
         }
         
     else if segue.identifier == "segue1" {
