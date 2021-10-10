@@ -39,7 +39,7 @@ class DetalleSesionViewController: UIViewController {
         self.tanname.text = self.tanatologo.nombre
             self.Fecha.text = self.sesion.fecha
             self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
-            self.nexp.text = self.user.id
+        self.nexp.text = self.sesion.idUsuario
             self.usname.text = self.user.nombre
             self.motivo.text = self.sesion.motivo
             self.servicio.text = self.sesion.servicio

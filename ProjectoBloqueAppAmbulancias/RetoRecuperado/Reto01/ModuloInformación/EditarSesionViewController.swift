@@ -38,9 +38,10 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate{
     */
     
     @IBAction func editar(_ sender: Any) {
-        let us = Sesion(id: sesion.id, cierre: sesion.cierre, numeroSesion: sesion.numeroSesion, evaluacion: motivo.text!, idUsuario: sesion.idUsuario, servicio: sesion.servicio, couta: cuota.hashValue, fecha: sesion.fecha, intervencion: "", herramienta: "", motivo: "")
+        let tmpus = Sesion(id: sesion.id, cierre: sesion.cierre, numeroSesion: sesion.numeroSesion, evaluacion: motivo.text!, idUsuario: sesion.idUsuario, servicio: sesion.servicio, couta: cuota.hashValue, fecha: sesion.fecha, intervencion: "", herramienta: "", motivo: "")
         
-        sc.SendSesion(sn: us)
+        sc.EditUsuario(sn: tmpus)
+        
         _ = navigationController?.popViewController(animated: true)
     }
 

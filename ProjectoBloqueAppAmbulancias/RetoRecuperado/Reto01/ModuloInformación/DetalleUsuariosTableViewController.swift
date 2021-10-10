@@ -27,7 +27,7 @@ class DetalleUsuariosTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
 //viewDidLoad() {
-        //super.viewDidLoad()
+        super.viewDidLoad()
         
         Namedisplay.text = user.nombre
         // Uncomment the following line to preserve selection between presentations
