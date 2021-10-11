@@ -127,7 +127,6 @@ class LogInViewController: UIViewController {
             else { error.text = "error"}
            
         }
-        else { error.text = "error"}
     }
     
     

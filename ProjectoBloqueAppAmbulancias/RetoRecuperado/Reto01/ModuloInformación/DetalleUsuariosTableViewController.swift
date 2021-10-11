@@ -9,20 +9,27 @@ import UIKit
 
 class DetalleUsuariosTableViewController: UITableViewController {
     @IBOutlet var UITableView: UITableView!
-    @IBOutlet weak var Namedisplay: UILabel!
+    @IBOutlet var Namedisplay: UILabel!
     var UsuarioControlador = SesionesController()
     var Username = ""
     var UserID = ""
+    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
 
     var datos = [Sesion]()
+    
+    var Tananame = ""
+    var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
+    
 
     let sections = ["Sesiones"]
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var bo = true
+    
+    override func viewWillAppear(_ animated: Bool) {
+//viewDidLoad() {
+        //super.viewDidLoad()
         
-        Namedisplay.text = Username
+        Namedisplay.text = user.nombre
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,16 +37,19 @@ class DetalleUsuariosTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //let str = "Herramientas Alternativas"//[//3] = ["Herramientas Alternativas", "Holístico", "Acompañamiento"]
         
+        self.ReloadScene();
+
+            
+        }
+
+    func ReloadScene(){
         UsuarioControlador.fetchSesiones(st: UserID){ (result) in
             switch result{
             case .success(let sesiones):self.updateUI(with: sesiones)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
             }
-
-            
-        }
-
-}
+    }
+    }
 
 
 func updateUI(with sesiones:Sesiones){
@@ -80,15 +90,15 @@ func displayError(_ error: Error, title: String) {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         
-        let date = datos[indexPath.row].fecha
+        /*let date = datos[indexPath.row].fecha
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT") //Set timezone that you want
         dateFormatter.locale = NSLocale.current
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
-        let strDate = dateFormatter.string(from: date)
+        //let strDate = dateFormatter.string(from: date)*/
         
-        //cell.textLabel?.text = strDate
-        cell.detailTextLabel?.text = datos[indexPath.row].idUsuario
+        cell.textLabel?.text = String(datos[indexPath.row].numeroSesion)
+        cell.detailTextLabel?.text = datos[indexPath.row].fecha
         
         
         
@@ -131,20 +141,41 @@ func displayError(_ error: Error, title: String) {
         return true
     }
     */
+    
+    @IBAction func add(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b2")as! SesionesViewController
+        
+        balanceViewController.user = self.user
+        balanceViewController.datos = self.datos
+            self.show(balanceViewController, sender: nil)
 
+    }
+    
+    
     
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let siguiente = segue.destination as! DetalleSesionViewController
-        //let index = = self.tableView.indexPathForSelectedRow?.item
-      
-        siguiente.datos = self.datos
+        if segue.identifier == "segue" {
+            let indice = self.tableView.indexPathForSelectedRow?.item
+            let siguiente = segue.destination as! DetalleSesionViewController
+            self.datos[indice!].idUsuario = user.id
+            siguiente.sesion = self.datos[indice!]
+            siguiente.tanatologo = self.tanatologo
+            siguiente.user = self.user
+            siguiente.num = self.datos[indice!].numeroSesion
+        }
+        
+    else if segue.identifier == "segue1" {
+            let siguiente2 = segue.destination as! EditarUserViewController
+            
+            siguiente2.user = self.user
+        }
     }
-
     
 
 }

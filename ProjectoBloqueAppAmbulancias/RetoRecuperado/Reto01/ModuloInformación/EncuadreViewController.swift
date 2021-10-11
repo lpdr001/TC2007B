@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class EncuadreViewController: UIViewController, UITextFieldDelegate {
 
@@ -27,6 +28,8 @@ class EncuadreViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var tan: UILabel!
     var vc = UsuariosController()
+    
+    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +68,18 @@ class EncuadreViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func Registrar(_ sender: Any) {
-        let us = Usuario(domicilio:domicilio.text!,estadoCivil:estadocivil.text!,iDRA:idra.text!,idTanatologo:LogInViewController.Lv.datos[0].id,motivo:motivo.text!,ocupacion:Ocupación.text!,procedencia:procedencia.text!,referencia:ref.text!,religion:religion.text!,sexo:sexo.text!, nombre:nombre.text!,fechaIngreso:"2",cerrado:false,edad:edad.hashValue,telefono:telefono.hashValue)
+        let us = Usuario(domicilio:domicilio.text!,estadoCivil:estadocivil.text!,iDRA:idra.text!,idTanatologo:LogInViewController.Lv.datos[0].id,motivo:motivo.text!,ocupacion:Ocupación.text!,procedencia:procedencia.text!,referencia:ref.text!,religion:religion.text!,sexo:sexo.text!, nombre:nombre.text!,fechaIngreso:"2",cerrado:false,edad:Int(edad.text!) ?? 18,telefono:Int(telefono.text!) ?? 00000000)
         vc.SentServicio(sn: us)
+        user = us
+        
+        self.loadView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+            let siguiente = segue.destination as! SesionesViewController
+        siguiente.user = self.user
+
     }
     
     /*
