@@ -44,20 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		323B895A2713D238007AFDA2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 322097AA26DEE3FB0024DD40 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 322097B126DEE3FB0024DD40;
-			remoteInfo = Reto01;
-		};
-		323B89812713D80D007AFDA2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 322097AA26DEE3FB0024DD40 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 322097B126DEE3FB0024DD40;
-			remoteInfo = Reto01;
-		};
 		323B899E2713DDE2007AFDA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 322097AA26DEE3FB0024DD40 /* Project object */;
@@ -76,8 +62,6 @@
 		322097BC26DEE3FB0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		322097C126DEE3FC0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		323B89552713D238007AFDA2 /* Reto01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reto01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		323B897C2713D80D007AFDA2 /* Reto01Tests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reto01Tests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B89992713DDE2007AFDA2 /* Reto01Testing.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reto01Testing.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B899B2713DDE2007AFDA2 /* Reto01Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reto01Testing.swift; sourceTree = "<group>"; };
 		323B899D2713DDE2007AFDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,20 +107,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		323B89522713D238007AFDA2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323B89792713D80D007AFDA2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		323B89962713DDE2007AFDA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				322097B226DEE3FB0024DD40 /* Reto01.app */,
-				323B89552713D238007AFDA2 /* Reto01Tests.xctest */,
-				323B897C2713D80D007AFDA2 /* Reto01Tests1.xctest */,
 				323B89992713DDE2007AFDA2 /* Reto01Testing.xctest */,
 			);
 			name = Products;
@@ -174,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				323B89082713CD32007AFDA2 /* Unit Test */,
-				32A670092706094D004B8C64 /* ModuloInformación */,
+				32A670092706094D004B8C64 /* ModuloInformación */,
 				AF63E4E326FBCE8B00AFE201 /* Models */,
 				AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */,
 				3270FDD826DFD0F6000CE316 /* Images */,
@@ -224,7 +192,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		32A670092706094D004B8C64 /* ModuloInformación */ = {
+		32A670092706094D004B8C64 /* ModuloInformación */ = {
 			isa = PBXGroup;
 			children = (
 				3260D78B270D5C5A00E6F29E /* VistasTanatologo */,
@@ -293,42 +261,6 @@
 			productReference = 322097B226DEE3FB0024DD40 /* Reto01.app */;
 			productType = "com.apple.product-type.application";
 		};
-		323B89542713D238007AFDA2 /* Reto01Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 323B895C2713D238007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Tests" */;
-			buildPhases = (
-				323B89512713D238007AFDA2 /* Sources */,
-				323B89522713D238007AFDA2 /* Frameworks */,
-				323B89532713D238007AFDA2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				323B895B2713D238007AFDA2 /* PBXTargetDependency */,
-			);
-			name = Reto01Tests;
-			productName = Reto01Tests;
-			productReference = 323B89552713D238007AFDA2 /* Reto01Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		323B897B2713D80D007AFDA2 /* Reto01Tests1 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 323B89832713D80D007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Tests1" */;
-			buildPhases = (
-				323B89782713D80D007AFDA2 /* Sources */,
-				323B89792713D80D007AFDA2 /* Frameworks */,
-				323B897A2713D80D007AFDA2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				323B89822713D80D007AFDA2 /* PBXTargetDependency */,
-			);
-			name = Reto01Tests1;
-			productName = Reto01Tests1;
-			productReference = 323B897C2713D80D007AFDA2 /* Reto01Tests1.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		323B89982713DDE2007AFDA2 /* Reto01Testing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 323B89A02713DDE2007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Testing" */;
@@ -361,14 +293,6 @@
 					322097B126DEE3FB0024DD40 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					323B89542713D238007AFDA2 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 322097B126DEE3FB0024DD40;
-					};
-					323B897B2713D80D007AFDA2 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 322097B126DEE3FB0024DD40;
-					};
 					323B89982713DDE2007AFDA2 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 322097B126DEE3FB0024DD40;
@@ -389,8 +313,6 @@
 			projectRoot = "";
 			targets = (
 				322097B126DEE3FB0024DD40 /* Reto01 */,
-				323B89542713D238007AFDA2 /* Reto01Tests */,
-				323B897B2713D80D007AFDA2 /* Reto01Tests1 */,
 				323B89982713DDE2007AFDA2 /* Reto01Testing */,
 			);
 		};
@@ -406,20 +328,6 @@
 				AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */,
 				32D4274426E666D9001DB449 /* Assets.xcassets in Resources */,
 				322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323B89532713D238007AFDA2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323B897A2713D80D007AFDA2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,20 +455,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		323B89512713D238007AFDA2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323B89782713D80D007AFDA2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		323B89952713DDE2007AFDA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,16 +466,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		323B895B2713D238007AFDA2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 322097B126DEE3FB0024DD40 /* Reto01 */;
-			targetProxy = 323B895A2713D238007AFDA2 /* PBXContainerItemProxy */;
-		};
-		323B89822713D80D007AFDA2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 322097B126DEE3FB0024DD40 /* Reto01 */;
-			targetProxy = 323B89812713D80D007AFDA2 /* PBXContainerItemProxy */;
-		};
 		323B899F2713DDE2007AFDA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 322097B126DEE3FB0024DD40 /* Reto01 */;
@@ -765,82 +649,6 @@
 			};
 			name = Release;
 		};
-		323B895D2713D238007AFDA2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Reto01Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.A01653185.Reto01Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reto01.app/Reto01";
-			};
-			name = Debug;
-		};
-		323B895E2713D238007AFDA2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Reto01Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.A01653185.Reto01Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reto01.app/Reto01";
-			};
-			name = Release;
-		};
-		323B89842713D80D007AFDA2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Reto01Tests1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.A01653185.Reto01Tests1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reto01.app/Reto01";
-			};
-			name = Debug;
-		};
-		323B89852713D80D007AFDA2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Reto01Tests1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.A01653185.Reto01Tests1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reto01.app/Reto01";
-			};
-			name = Release;
-		};
 		323B89A12713DDE2007AFDA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 569EBD36030A15518C976309 /* Pods-Reto01-Reto01Testing.debug.xcconfig */;
@@ -898,24 +706,6 @@
 			buildConfigurations = (
 				322097C726DEE3FC0024DD40 /* Debug */,
 				322097C826DEE3FC0024DD40 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		323B895C2713D238007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323B895D2713D238007AFDA2 /* Debug */,
-				323B895E2713D238007AFDA2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		323B89832713D80D007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Tests1" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323B89842713D80D007AFDA2 /* Debug */,
-				323B89852713D80D007AFDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
