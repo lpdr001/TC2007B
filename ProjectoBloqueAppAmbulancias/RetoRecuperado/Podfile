@@ -10,6 +10,8 @@ target 'Reto01' do
   pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+ 
+target 'Reto01Testing' do  inherit! :complete  end
   
 
 end

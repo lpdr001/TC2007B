@@ -9,8 +9,11 @@ import XCTest
 
 class TestsUS1: XCTestCase {
 
-    override func setUpWithError() throws {
+    override func setUpWithNullError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let sesion = SesionesController()
+        
+        let result = sesion.EditUsuario(sn:nil)        
     }
 
     override func tearDownWithError() throws {

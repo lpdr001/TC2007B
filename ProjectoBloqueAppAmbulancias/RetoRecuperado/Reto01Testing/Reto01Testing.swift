@@ -1,13 +1,13 @@
 //
-//  Reto01Tests.swift
-//  Reto01Tests
+//  Reto01Testing.swift
+//  Reto01Testing
 //
 //  Created by user193889 on 10/10/21.
 //
 
 import XCTest
 
-class Reto01Tests: XCTestCase {
+class Reto01Testing: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
