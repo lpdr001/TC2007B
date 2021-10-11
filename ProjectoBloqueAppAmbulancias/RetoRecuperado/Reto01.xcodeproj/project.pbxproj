@@ -12,6 +12,8 @@
 		322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322097B926DEE3FB0024DD40 /* ViewController.swift */; };
 		322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097BB26DEE3FB0024DD40 /* Main.storyboard */; };
 		322097C226DEE3FC0024DD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097C026DEE3FC0024DD40 /* LaunchScreen.storyboard */; };
+		323B890A2713CEF3007AFDA2 /* TestsUS1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B89092713CEF3007AFDA2 /* TestsUS1.swift */; };
+		323B89582713D238007AFDA2 /* Reto01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B89572713D238007AFDA2 /* Reto01Tests.swift */; };
 		3260D786270D594A00E6F29E /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D785270D594A00E6F29E /* Usuarios.swift */; };
 		3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D788270D5AAD00E6F29E /* UsuariosController.swift */; };
 		3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */; };
@@ -41,6 +43,16 @@
 		AFFA1550270FD62100E4A3E7 /* TanatologosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		323B895A2713D238007AFDA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322097AA26DEE3FB0024DD40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322097B126DEE3FB0024DD40;
+			remoteInfo = Reto01;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		22468832751049E146F8D06F /* Pods-Reto01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.debug.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.debug.xcconfig"; sourceTree = "<group>"; };
 		322097B226DEE3FB0024DD40 /* Reto01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reto01.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +62,10 @@
 		322097BC26DEE3FB0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		322097C126DEE3FC0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323B89092713CEF3007AFDA2 /* TestsUS1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsUS1.swift; sourceTree = "<group>"; };
+		323B89552713D238007AFDA2 /* Reto01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reto01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323B89572713D238007AFDA2 /* Reto01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reto01Tests.swift; sourceTree = "<group>"; };
+		323B89592713D238007AFDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3260D785270D594A00E6F29E /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
 		3260D788270D5AAD00E6F29E /* UsuariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosController.swift; sourceTree = "<group>"; };
 		3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UuariosTanatologoTableViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		323B89522713D238007AFDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				322097B426DEE3FB0024DD40 /* Reto01 */,
+				323B89562713D238007AFDA2 /* Reto01Tests */,
 				322097B326DEE3FB0024DD40 /* Products */,
 				326D1485CF454A35E36A57A1 /* Pods */,
 				71C6EBEEEE552616A7955F67 /* Frameworks */,
@@ -106,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				322097B226DEE3FB0024DD40 /* Reto01.app */,
+				323B89552713D238007AFDA2 /* Reto01Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +138,7 @@
 		322097B426DEE3FB0024DD40 /* Reto01 */ = {
 			isa = PBXGroup;
 			children = (
+				323B89082713CD32007AFDA2 /* Unit Test */,
 				32A670092706094D004B8C64 /* ModuloInformación */,
 				AF63E4E326FBCE8B00AFE201 /* Models */,
 				AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */,
@@ -126,6 +152,23 @@
 				322097C326DEE3FC0024DD40 /* Info.plist */,
 			);
 			path = Reto01;
+			sourceTree = "<group>";
+		};
+		323B89082713CD32007AFDA2 /* Unit Test */ = {
+			isa = PBXGroup;
+			children = (
+				323B89092713CEF3007AFDA2 /* TestsUS1.swift */,
+			);
+			path = "Unit Test";
+			sourceTree = "<group>";
+		};
+		323B89562713D238007AFDA2 /* Reto01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				323B89572713D238007AFDA2 /* Reto01Tests.swift */,
+				323B89592713D238007AFDA2 /* Info.plist */,
+			);
+			path = Reto01Tests;
 			sourceTree = "<group>";
 		};
 		3260D78B270D5C5A00E6F29E /* VistasTanatologo */ = {
@@ -213,6 +256,24 @@
 			productReference = 322097B226DEE3FB0024DD40 /* Reto01.app */;
 			productType = "com.apple.product-type.application";
 		};
+		323B89542713D238007AFDA2 /* Reto01Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323B895C2713D238007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Tests" */;
+			buildPhases = (
+				323B89512713D238007AFDA2 /* Sources */,
+				323B89522713D238007AFDA2 /* Frameworks */,
+				323B89532713D238007AFDA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323B895B2713D238007AFDA2 /* PBXTargetDependency */,
+			);
+			name = Reto01Tests;
+			productName = Reto01Tests;
+			productReference = 323B89552713D238007AFDA2 /* Reto01Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +285,10 @@
 				TargetAttributes = {
 					322097B126DEE3FB0024DD40 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					323B89542713D238007AFDA2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 322097B126DEE3FB0024DD40;
 					};
 				};
 			};
@@ -241,6 +306,7 @@
 			projectRoot = "";
 			targets = (
 				322097B126DEE3FB0024DD40 /* Reto01 */,
+				323B89542713D238007AFDA2 /* Reto01Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +321,13 @@
 				AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */,
 				32D4274426E666D9001DB449 /* Assets.xcassets in Resources */,
 				322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323B89532713D238007AFDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +390,7 @@
 				AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */,
 				AF421D4527111214009CE697 /* AdminSoporteController.swift in Sources */,
 				32AB61EB271146E3006793EA /* EditarUserViewController.swift in Sources */,
+				323B890A2713CEF3007AFDA2 /* TestsUS1.swift in Sources */,
 				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
 				32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */,
@@ -336,7 +410,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		323B89512713D238007AFDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323B89582713D238007AFDA2 /* Reto01Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323B895B2713D238007AFDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322097B126DEE3FB0024DD40 /* Reto01 */;
+			targetProxy = 323B895A2713D238007AFDA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		322097BB26DEE3FB0024DD40 /* Main.storyboard */ = {
@@ -514,6 +604,44 @@
 			};
 			name = Release;
 		};
+		323B895D2713D238007AFDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Reto01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.A01653185.Reto01Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reto01.app/Reto01";
+			};
+			name = Debug;
+		};
+		323B895E2713D238007AFDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Reto01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.A01653185.Reto01Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reto01.app/Reto01";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,6 +659,15 @@
 			buildConfigurations = (
 				322097C726DEE3FC0024DD40 /* Debug */,
 				322097C826DEE3FC0024DD40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323B895C2713D238007AFDA2 /* Build configuration list for PBXNativeTarget "Reto01Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323B895D2713D238007AFDA2 /* Debug */,
+				323B895E2713D238007AFDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
