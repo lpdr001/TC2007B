@@ -1,13 +1,14 @@
 //
-//  Reto01Tests.swift
-//  Reto01Tests
+//  Reto01Testing.swift
+//  Reto01Testing
 //
 //  Created by user193889 on 10/10/21.
 //
 
 import XCTest
+ @testable import Reto01
 
-class Reto01Tests: XCTestCase {
+class Reto01Testing: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,6 +19,16 @@ class Reto01Tests: XCTestCase {
     }
 
     func testExample() throws {
+        let sesion = SesionesController()
+        
+        
+        sesion.fetchSesiones(st:""){ (result) in
+            switch result{
+            case .success:XCTAssert(true)
+            case .failure:XCTAssert(false)
+            }
+        }
+            
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

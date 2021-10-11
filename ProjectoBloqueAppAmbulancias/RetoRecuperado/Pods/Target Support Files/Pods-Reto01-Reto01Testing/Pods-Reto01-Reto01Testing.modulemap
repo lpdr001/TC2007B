@@ -1,0 +1,6 @@
+framework module Pods_Reto01_Reto01Testing {
+  umbrella header "Pods-Reto01-Reto01Testing-umbrella.h"
+
+  export *
+  module * { export * }
+}

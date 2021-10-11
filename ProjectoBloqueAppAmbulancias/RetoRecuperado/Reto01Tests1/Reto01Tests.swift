@@ -1,19 +1,18 @@
 //
-//  TestsUS1.swift
-//  Reto01
+//  Reto01Tests1.swift
+//  Reto01Tests1
 //
 //  Created by user193889 on 10/10/21.
 //
 
 import XCTest
+@testable import Reto01
 
-class TestsUS1: XCTestCase {
+class Reto01Tests1: XCTestCase {
 
-    override func setUpWithNullError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        let sesion = SesionesController()
+    override func setUpWithError() throws {
         
-        let result = sesion.EditUsuario(sn:nil)        
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
@@ -27,7 +26,7 @@ class TestsUS1: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

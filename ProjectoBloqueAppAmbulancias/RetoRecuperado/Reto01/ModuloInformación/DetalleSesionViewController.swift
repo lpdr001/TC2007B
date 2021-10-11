@@ -52,10 +52,11 @@ class DetalleSesionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-        func updateUI(with sesiones:Sesiones){
-
+        func updateUI(with sesiones:Sesiones) -> Int{
+            if(sesiones.count != 0)
+            {
                     self.sesion = sesiones[0]
-            self.sesion.idUsuario = user.id
+                    self.sesion.idUsuario = user.id
                     self.tanname.text = self.tanatologo.nombre
                     self.Fecha.text = self.sesion.fecha
                     self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
@@ -67,6 +68,11 @@ class DetalleSesionViewController: UIViewController {
                     self.herramienta.text = self.sesion.herramienta
                     self.cuota.text = String(self.sesion.cuota)
                     self.sesionDesc.text = self.sesion.evaluacion
+            return 1
+            }
+            else{
+                return 0
+            }
             
             
         }
