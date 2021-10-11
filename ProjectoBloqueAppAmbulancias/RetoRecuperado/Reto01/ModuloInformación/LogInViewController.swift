@@ -46,9 +46,9 @@ class LogInViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+      //  super.viewDidLoad()
         
-        error.text = ""
+       // error.text = ""
 
         // Do any additional setup after loading the view.
         
@@ -131,7 +131,7 @@ class LogInViewController: UIViewController {
          b = true
         }
             else {
-                error.text = "error"
+               // error.text = "Error"
                 b = false
             }
             
