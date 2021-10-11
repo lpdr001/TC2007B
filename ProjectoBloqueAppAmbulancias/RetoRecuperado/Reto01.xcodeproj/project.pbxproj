@@ -30,6 +30,7 @@
 		32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
 		3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */; };
+		3AA6A2242713DF9E00851335 /* EncuadreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6A2232713DF9E00851335 /* EncuadreTest.swift */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
 		AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3A2710EF32009CE697 /* Administradores.swift */; };
 		AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3C2710EF78009CE697 /* AdministradorController.swift */; };
