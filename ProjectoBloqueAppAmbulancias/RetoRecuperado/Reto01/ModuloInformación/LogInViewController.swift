@@ -34,27 +34,14 @@ class LogInViewController: UIViewController {
         
         TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
             switch result{
-            case .success(let tanatologos):self.updatedatos(with: tanatologos)
+            case .success(let tanatologos):self.updatedatos(with: tanatologos, password:self.password.text!, username:self.username.text!)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
         }
         
         
         
-        AdministradorControlador.fetchAdministrador(st: username.text!){ (result) in
-            switch result{
-            case .success(let administradores):self.updatedatos1(with: administradores)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
-            }
-        }
-        
-        
-        AdminSoporteControlador.fetchAdminSoporte(st: username.text!){ (result) in
-            switch result{
-            case .success(let soportes):self.updatedatos2(with: soportes)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
-            }
-        }
+       
         
     }
     
@@ -70,11 +57,12 @@ class LogInViewController: UIViewController {
 
     }
 
-    func updatedatos(with sesiones:Tanatologos){
-       
+    func updatedatos(with sesiones:Tanatologos, password: String, username: String)-> Bool{
+        var b = false
+        
             self.datos = sesiones
         if (self.datos.count >= 1){
-            if(self.datos[0].password == password.text!){
+            if(self.datos[0].password == password){
                 if(LogInViewController.Lv != self  ){
                     LogInViewController.Lv = self
                 }
@@ -83,17 +71,26 @@ class LogInViewController: UIViewController {
             let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance1")
                 //balanceViewController.Tananame = datos[0].nombre
                 self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
-           
+                b = true
         }
            
+        }else {
+            AdministradorControlador.fetchAdministrador(st: username){ (result) in
+                switch result{
+                case .success(let administradores):self.updatedatos1(with: administradores, password: password, username: username)
+                case .failure: b = false //self.displayError(error, title: "No se pudo acceder a ")
+                }
+            }
         }
+        return b
     }
     
-    func updatedatos1(with sesiones:Administradores){
+    func updatedatos1(with sesiones:Administradores, password: String, username: String)-> Bool{
+        var b = false
        
             self.datos1 = sesiones
         if (self.datos1.count >= 1){
-            if(self.datos1[0].password == password.text!){
+            if(self.datos1[0].password == password){
                 if(LogInViewController.Lv != self  ){
                     LogInViewController.Lv = self
                 }
@@ -102,17 +99,26 @@ class LogInViewController: UIViewController {
             let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance2")
                 //balanceViewController.Tananame = datos[0].nombre
                 self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
-           
+                b = true
         }
            
+        } else {
+            AdminSoporteControlador.fetchAdminSoporte(st: username){ (result) in
+                switch result{
+                case .success(let soportes):b = self.updatedatos2(with: soportes,  password: password)
+                case .failure: b = false
+                }
+            }
         }
+        return b
     }
     
-    func updatedatos2(with sesiones:Soportes){
+    func updatedatos2(with sesiones:Soportes, password: String)-> Bool{
+        var b = false
        
             self.datos2 = sesiones
         if (self.datos2.count >= 1){
-            if(self.datos2[0].password == password.text!){
+            if(self.datos2[0].password == password){
                 if(LogInViewController.Lv != self  ){
                     LogInViewController.Lv = self
                 }
@@ -122,12 +128,18 @@ class LogInViewController: UIViewController {
             let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "balance3")
                 //balanceViewController.Tananame = datos[0].nombre
                 self.show(balanceViewController, sender: nil) //present(balanceViewController, animated: true, completion: nil)
+         b = true
+        }
+            else {
+                error.text = "error"
+                b = false
+            }
+            
            
         }
-            else { error.text = "error"}
-           
-        }
+        return b
     }
+    
     
     
 func displayError(_ error: Error, title: String) {
