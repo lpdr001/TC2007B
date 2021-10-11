@@ -31,6 +31,7 @@
 		32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
 		3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */; };
+		3AA6A2242713DF9E00851335 /* EncuadreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6A2232713DF9E00851335 /* EncuadreTest.swift */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
 		AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3A2710EF32009CE697 /* Administradores.swift */; };
 		AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3C2710EF78009CE697 /* AdministradorController.swift */; };
@@ -83,6 +84,7 @@
 		32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarSesionViewController.swift; sourceTree = "<group>"; };
 		32D4274326E666D9001DB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteBusquedaViewController.swift; sourceTree = "<group>"; };
+		3AA6A2232713DF9E00851335 /* EncuadreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuadreTest.swift; sourceTree = "<group>"; };
 		62F6D28BF161954B10B4BE19 /* Pods-Reto01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01.release.xcconfig"; path = "Target Support Files/Pods-Reto01/Pods-Reto01.release.xcconfig"; sourceTree = "<group>"; };
 		70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reto01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF421D3A2710EF32009CE697 /* Administradores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administradores.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				323B89572713D238007AFDA2 /* Reto01Tests.swift */,
+				3AA6A2232713DF9E00851335 /* EncuadreTest.swift */,
 				323B89592713D238007AFDA2 /* Info.plist */,
 			);
 			path = Reto01Tests;
@@ -415,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323B89582713D238007AFDA2 /* Reto01Tests.swift in Sources */,
+				3AA6A2242713DF9E00851335 /* EncuadreTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
