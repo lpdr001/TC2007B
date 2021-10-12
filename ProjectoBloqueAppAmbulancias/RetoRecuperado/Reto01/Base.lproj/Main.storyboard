@@ -135,6 +135,7 @@
                                 <rect key="frame" x="16" y="238" width="343" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="335" id="6Iy-sT-ej5"/>
                                     <constraint firstAttribute="height" constant="402" id="yaf-77-Mx6"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -158,23 +159,34 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrP-Qc-lM1">
+                                <rect key="frame" x="67" y="85" width="241" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1qF-oh-oaj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UrP-Qc-lM1" firstAttribute="top" secondItem="swt-E2-JIR" secondAttribute="bottom" constant="20" id="4B9-5H-Cg2"/>
+                            <constraint firstItem="UrP-Qc-lM1" firstAttribute="leading" secondItem="1qF-oh-oaj" secondAttribute="leading" constant="67" id="9gL-aj-k63"/>
                             <constraint firstItem="yi2-D4-awZ" firstAttribute="leading" secondItem="swt-E2-JIR" secondAttribute="leading" id="EEb-Lk-EoA"/>
                             <constraint firstItem="1qF-oh-oaj" firstAttribute="bottom" secondItem="yi2-D4-awZ" secondAttribute="bottom" constant="45" id="IKP-oQ-y1Q"/>
                             <constraint firstItem="swt-E2-JIR" firstAttribute="top" secondItem="1qF-oh-oaj" secondAttribute="top" id="KBW-ti-70N"/>
                             <constraint firstItem="yi2-D4-awZ" firstAttribute="top" secondItem="swt-E2-JIR" secondAttribute="bottom" constant="173" id="KLp-po-1Vp"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="top" secondItem="UrP-Qc-lM1" secondAttribute="bottom" constant="25" id="KRf-ao-U3x"/>
                             <constraint firstItem="1qF-oh-oaj" firstAttribute="bottom" secondItem="yi2-D4-awZ" secondAttribute="bottom" constant="45" id="L11-0f-CKE"/>
                             <constraint firstItem="yi2-D4-awZ" firstAttribute="trailing" secondItem="swt-E2-JIR" secondAttribute="trailing" id="NDY-Ze-OE1"/>
                             <constraint firstItem="1qF-oh-oaj" firstAttribute="trailing" secondItem="swt-E2-JIR" secondAttribute="trailing" constant="16" id="dvZ-En-V1v"/>
                             <constraint firstItem="swt-E2-JIR" firstAttribute="leading" secondItem="1qF-oh-oaj" secondAttribute="leading" constant="16" id="ntF-AW-erP"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="centerX" secondItem="UrP-Qc-lM1" secondAttribute="centerX" id="qI4-f2-tHb"/>
                         </constraints>
+                        <connections>
+                            <outlet property="image" destination="UrP-Qc-lM1" id="kha-fd-bWv"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="oFy-3w-YZS"/>
                     <connections>
                         <outlet property="descServicio" destination="yi2-D4-awZ" id="kny-HS-k1w"/>
+                        <outlet property="imagen" destination="UrP-Qc-lM1" id="gey-i4-GDd"/>
                         <outlet property="nombreServicio" destination="swt-E2-JIR" id="3hI-je-GrA"/>
                     </connections>
                 </viewController>

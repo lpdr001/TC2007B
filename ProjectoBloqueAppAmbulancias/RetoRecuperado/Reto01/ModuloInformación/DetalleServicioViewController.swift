@@ -9,7 +9,12 @@ import UIKit
 
 class DetalleServicioViewController: UIViewController {
     var elServicio:Servicio?
+    var imageName = "Image1"
+    var section = ""
+    
     @IBOutlet weak var nombreServicio: UILabel!
+
+    @IBOutlet weak var imagen: UIImageView!
     
     
     @IBOutlet weak var descServicio: UITextView!
@@ -19,6 +24,25 @@ class DetalleServicioViewController: UIViewController {
         // Do any additional setup after loading the view.
         nombreServicio.text = elServicio?.nombre
         descServicio.text = elServicio?.desc
+         imagen.image = UIImage(named: "Image1")
+        
+        if (section == "C"){
+            imagen.image = UIImage(named: "Image")
+        }
+        else if (section == "Ho"){
+            imagen.image = UIImage(named: "Image1")
+            
+        }
+        else if (section == "A"){
+          
+            imagen.image = UIImage(named: "Image2")
+        }
+        else if (section == "Ha"){
+           
+            imagen.image = UIImage(named: "Image3")
+           
+        }
+        
     }
     
 

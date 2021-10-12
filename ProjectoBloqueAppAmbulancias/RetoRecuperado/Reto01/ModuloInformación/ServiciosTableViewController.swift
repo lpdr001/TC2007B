@@ -186,19 +186,23 @@ func displayError(_ error: Error, title: String) {
         if (section == 0){
             print("0 ")
             siguiente.elServicio = C[indice!]
+          //  siguiente.imageName = "Image"
         }
         else if (section == 1){
             siguiente.elServicio = Ho[indice!]
             print("1 ")
-        
+            
         }
         else if (section == 2){
             siguiente.elServicio = A[indice!]
             print("2 ")
+          //  siguiente.imageName = "Image2"
         }
         else if (section == 3){
             siguiente.elServicio = Ha[indice!]
             print("3 ")
+          //  siguiente.imageName = "Image3"
+           
         }
         //siguiente.elServicio = datos[indice!]
     }
