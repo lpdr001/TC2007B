@@ -39,9 +39,7 @@ class Reto01Testing: XCTestCase {
         
         let test = Tanatologo(id: "123" , nombre: "Juan", password: "cetac123", user: "tanatologo1")
         var datos = [Tanatologo]()
-        //var datos1 = [Administrador]()
-        //var datos2 = [AdminSoporte]()
-       
+    
         
         let login = LogInViewController()
         

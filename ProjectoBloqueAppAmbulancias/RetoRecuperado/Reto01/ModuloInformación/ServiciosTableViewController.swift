@@ -121,12 +121,15 @@ func displayError(_ error: Error, title: String) {
         }
         else if (list == 1){
             cell.textLabel?.text = Ho[indexPath.row].nombre
+            cell.imageView?.image = UIImage(named: "Image1")
         }
         else if (list == 2){
             cell.textLabel?.text = A[indexPath.row].nombre
+            cell.imageView?.image = UIImage(named: "Image2")
         }
         else if (list == 3){
             cell.textLabel?.text = Ha[indexPath.row].nombre
+            cell.imageView?.image = UIImage(named: "Image3")
         }
         
         
