@@ -11,19 +11,47 @@ class DetalleServicioViewController: UIViewController {
     var elServicio:Servicio?
     var imageName = "Image1"
     var section = ""
+    var descServicio = ""
     
     @IBOutlet weak var nombreServicio: UILabel!
-
     @IBOutlet weak var imagen: UIImageView!
+    @IBOutlet weak var imgDEsc: UITextView!
+  
     
-    
-    @IBOutlet weak var descServicio: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        
+        nombreServicio.text = String(format: "%.2f", imageName)
         nombreServicio.text = elServicio?.nombre
         descServicio.text = elServicio?.desc
+        //imageName.text = elServicio?.desc
+        
+        //imagen.image = UIImage(named: "Image1")
+        
+        var imgDEsc: Bool = true
+        switch imgDEsc {
+        
+        case section == "C":
+            imagen.image = UIImage(named: "Image")
+            
+        case section == "Ho":
+            imagen.image = UIImage(named: "Image1")
+            
+        case section == "A":
+            imagen.image = UIImage(named: "Image2")
+       
+        default:
+            imagen.image = UIImage(named: "Image3")
+    
+        }
+         
+        
+       /*
+        nombreServicio.text = elServicio?.nombre
+        descServicio.text = elServicio?.desc
+        
          imagen.image = UIImage(named: "Image1")
         
         if (section == "C"){
@@ -42,6 +70,7 @@ class DetalleServicioViewController: UIViewController {
             imagen.image = UIImage(named: "Image3")
            
         }
+        */
         
     }
     
@@ -55,5 +84,6 @@ class DetalleServicioViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
