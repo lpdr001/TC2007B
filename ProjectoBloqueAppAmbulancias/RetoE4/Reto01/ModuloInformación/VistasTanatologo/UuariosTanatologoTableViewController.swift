@@ -12,6 +12,7 @@ class UuariosTanatologoTableViewController: UITableViewController, UISearchBarDe
 
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var UITableView: UITableView!
+   
     var UsuarioControlador = UsuariosController()
     var Tananame = ""
     var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")

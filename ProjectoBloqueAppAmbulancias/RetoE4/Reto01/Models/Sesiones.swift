@@ -41,6 +41,8 @@ struct Sesion: Codable {
         self.numeroSesion = aDoc.get("numeroSesion")as? Int ?? 0
         self.cuota = aDoc.get("cuota")as? Int ?? 0
     }
+    static func == (left:Sesion, right:Sesion)-> Bool{return left.id == right.id }
 }
+
 
 typealias Sesiones = [Sesion]

@@ -7,15 +7,21 @@
 
 import UIKit
 
-class DetalleUsuariosTableViewController: UITableViewController {
+class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDelegate {
+    
+    
+    
+    @IBOutlet weak var searchBarS: UISearchBar!
     @IBOutlet var UITableView: UITableView!
     @IBOutlet var Namedisplay: UILabel!
+   
     var UsuarioControlador = SesionesController()
     var Username = ""
     var UserID = ""
     var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
 
     var datos = [Sesion]()
+    var filtroDatos = [Sesion]()
     
     var Tananame = ""
     var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
@@ -26,6 +32,9 @@ class DetalleUsuariosTableViewController: UITableViewController {
     var bo = true
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        searchBarS.delegate = self
+        
 //viewDidLoad() {
         //super.viewDidLoad()
         
@@ -83,7 +92,7 @@ func displayError(_ error: Error, title: String) {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
                 
-        return datos.count
+        return filtroDatos.count
     }
 
     
@@ -97,14 +106,25 @@ func displayError(_ error: Error, title: String) {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
         //let strDate = dateFormatter.string(from: date)*/
         
-        cell.textLabel?.text = String(datos[indexPath.row].numeroSesion)
-        cell.detailTextLabel?.text = datos[indexPath.row].fecha
+        cell.textLabel?.text = String(filtroDatos[indexPath.row].numeroSesion)
+        cell.detailTextLabel?.text = filtroDatos[indexPath.row].fecha
         
         
         
         return cell
     }
     
+    func searchBarS(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print ("using bar")
+        if searchBar.text == nil || searchBar.text == "" {
+            self.filtroDatos = self.datos
+        } else {
+            let lowerCase = searchBar.text!
+            self.filtroDatos = self.datos.filter({$0.id.range(of: lowerCase, options: .caseInsensitive) != nil })
+        }
+        tableView.reloadData()
+    }
+
     
 
     /*
