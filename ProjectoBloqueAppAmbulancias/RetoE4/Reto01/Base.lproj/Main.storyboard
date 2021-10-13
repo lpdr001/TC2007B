@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,7 +27,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtg-C8-m8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-958" y="-824"/>
+            <point key="canvasLocation" x="-854" y="-977"/>
         </scene>
         <!--Info-->
         <scene sceneID="2EL-eN-jft">
@@ -70,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mF-t6-CCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1690" y="-870"/>
+            <point key="canvasLocation" x="-1756" y="-949"/>
         </scene>
         <!--Info-->
         <scene sceneID="Di3-iK-dhw">
@@ -87,7 +88,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="na0-Gl-nlI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959" y="-42"/>
+            <point key="canvasLocation" x="-2058" y="72"/>
         </scene>
         <!--Log In-->
         <scene sceneID="0mD-aC-Oy1">
@@ -188,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYu-sD-Afx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2468" y="-825"/>
+            <point key="canvasLocation" x="-2758" y="-904"/>
         </scene>
         <!--Sesion-->
         <scene sceneID="EvG-FI-CIx">
@@ -314,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-2y-7pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1999" y="1520"/>
+            <point key="canvasLocation" x="-2058" y="1543"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="3VC-h4-k9L">
@@ -326,7 +327,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AH8-5J-nQE">
-                                <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AH8-5J-nQE" id="CCg-tx-Bqm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -601,7 +602,7 @@
             </objects>
             <point key="canvasLocation" x="-4292" y="1566.5024630541873"/>
         </scene>
-        <!--Uuarios Tanatologo Table View Controller-->
+        <!--Usuario-->
         <scene sceneID="dyT-0i-utR">
             <objects>
                 <tableViewController id="Mhi-Iz-k8m" customClass="UuariosTanatologoTableViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
@@ -618,9 +619,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <searchBar key="tableFooterView" contentMode="redraw" id="Yf0-zr-fRq">
+                            <rect key="frame" x="0.0" y="166.5" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="vdg-ky-557" detailTextLabel="fgO-bt-4hR" style="IBUITableViewCellStyleSubtitle" id="x1R-8f-pYa" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="55.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1R-8f-pYa" id="Pvu-Aa-bT0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -653,7 +659,7 @@
                             <outlet property="delegate" destination="Mhi-Iz-k8m" id="vJV-2X-y1F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7g6-6M-vee"/>
+                    <navigationItem key="navigationItem" title="Usuario" id="PRp-5n-CCK"/>
                     <connections>
                         <outlet property="tname" destination="QqY-Cm-tED" id="Yt1-Sv-9hF"/>
                     </connections>
@@ -724,7 +730,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2023" y="2178"/>
+            <point key="canvasLocation" x="-2268" y="2235"/>
         </scene>
         <!--Menu-->
         <scene sceneID="kQM-xt-mdb">
@@ -953,7 +959,7 @@ Llena el siguiente formulario</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGp-ed-5hk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="1265"/>
+            <point key="canvasLocation" x="422" y="1111"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9qc-kA-QvL">
@@ -974,7 +980,7 @@ Llena el siguiente formulario</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FjD-8P-EyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1127" y="1377"/>
+            <point key="canvasLocation" x="-1426" y="1378"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6oS-gT-xr1">
@@ -1124,7 +1130,7 @@ Llena el siguiente formulario</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ms-TG-GRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767" y="2143"/>
+            <point key="canvasLocation" x="-887" y="2159"/>
         </scene>
         <!--Encuadre-->
         <scene sceneID="ktS-Ws-UX5">
@@ -1242,8 +1248,8 @@ Llena el siguiente formulario</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="AuF-wA-wxE">
-                                                <rect key="frame" x="60" y="35" width="96" height="34.5"/>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="AuF-wA-wxE">
+                                                <rect key="frame" x="60" y="35" width="96" height="31"/>
                                                 <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <locale key="locale" localeIdentifier="es_MX"/>
                                             </datePicker>
@@ -1610,6 +1616,7 @@ Llena el siguiente formulario</string>
                     <tabBarItem key="tabBarItem" title="Tanatológo" image="magnifyingglass" catalog="system" id="R5j-2j-tJG"/>
                     <navigationItem key="navigationItem" id="o60-Fg-CTF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mBy-9c-Dg3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1636,34 +1643,7 @@ Llena el siguiente formulario</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7s-Hv-TNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1268" y="2257"/>
-        </scene>
-        <!--Feed-->
-        <scene sceneID="GGK-oy-xCO">
-            <objects>
-                <viewController title="Feed" id="7rn-ry-ewO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="irX-w2-qwy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_1_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-uh-YND">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vfY-cD-LCt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="vfY-cD-LCt" firstAttribute="bottom" secondItem="FR4-uh-YND" secondAttribute="bottom" id="KkU-15-tpv"/>
-                            <constraint firstItem="FR4-uh-YND" firstAttribute="top" secondItem="vfY-cD-LCt" secondAttribute="top" id="Sk1-06-Oab"/>
-                            <constraint firstItem="vfY-cD-LCt" firstAttribute="trailing" secondItem="FR4-uh-YND" secondAttribute="trailing" id="Unh-lm-5dC"/>
-                            <constraint firstItem="FR4-uh-YND" firstAttribute="leading" secondItem="irX-w2-qwy" secondAttribute="leading" id="qcZ-Vn-5nI"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Seguimiento" id="RDj-Rn-EtB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HGC-kn-P7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2762" y="4068"/>
+            <point key="canvasLocation" x="-1545" y="2257"/>
         </scene>
         <!--Reporte Indicadores-->
         <scene sceneID="ha3-Ye-TsE">
@@ -1694,7 +1674,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSF-C8-dfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="3559"/>
+            <point key="canvasLocation" x="-242" y="3678"/>
         </scene>
         <!--Reporte de indicadores-->
         <scene sceneID="F7I-Yl-TIJ">
@@ -1711,7 +1691,7 @@ Llena el siguiente formulario</string>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OZx-nh-Btl">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OZx-nh-Btl" id="UZ8-qe-QML">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -1728,7 +1708,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAH-3J-81w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="2846"/>
+            <point key="canvasLocation" x="-220" y="2933"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="BQT-qb-tey">
@@ -1749,10 +1729,10 @@ Llena el siguiente formulario</string>
                             <tableViewSection headerTitle="Juan Luis Guerra" id="Mz8-5y-Zb3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="iwo-eI-ulm" detailTextLabel="eDX-ys-BCv" style="IBUITableViewCellStyleSubtitle" id="BQq-Gi-9pE">
-                                        <rect key="frame" x="0.0" y="68.5" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="88.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BQq-Gi-9pE" id="FWs-mK-eZc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Expediente Electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iwo-eI-ulm">
@@ -1773,10 +1753,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="DrZ-PX-aAs" detailTextLabel="LUr-Kh-9ne" style="IBUITableViewCellStyleSubtitle" id="YOa-Wf-BjX">
-                                        <rect key="frame" x="0.0" y="112.16666793823242" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="132" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YOa-Wf-BjX" id="Vl1-rN-Nq0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sesiones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DrZ-PX-aAs">
@@ -1797,10 +1777,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XPA-tr-Q0d" detailTextLabel="hXf-fe-VVN" style="IBUITableViewCellStyleSubtitle" id="v6M-dj-zeF">
-                                        <rect key="frame" x="0.0" y="155.83333587646484" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="175.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v6M-dj-zeF" id="tLF-Fi-NtK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Motivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XPA-tr-Q0d">
@@ -1821,10 +1801,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8e8-T8-Lsi" detailTextLabel="qA6-F0-4jb" style="IBUITableViewCellStyleSubtitle" id="xDj-Jg-ThX">
-                                        <rect key="frame" x="0.0" y="199.50000381469727" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="219" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xDj-Jg-ThX" id="m8H-c8-NED">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tipo de Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8e8-T8-Lsi">
@@ -1845,10 +1825,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Av0-QE-89C" detailTextLabel="biz-ZV-ApN" style="IBUITableViewCellStyleSubtitle" id="WTV-MG-ekb">
-                                        <rect key="frame" x="0.0" y="243.16667175292969" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="262.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTV-MG-ekb" id="pIM-KY-WiS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Intervención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Av0-QE-89C">
@@ -1869,10 +1849,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="rHF-IC-JpH" detailTextLabel="avh-rP-4yL" style="IBUITableViewCellStyleSubtitle" id="2t9-6X-TH7">
-                                        <rect key="frame" x="0.0" y="286.83333969116211" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="306" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2t9-6X-TH7" id="0yt-8w-iUU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Herramienta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rHF-IC-JpH">
@@ -1893,10 +1873,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="gbH-bh-Sc3" detailTextLabel="x02-EV-knB" style="IBUITableViewCellStyleSubtitle" id="D52-FL-BJL">
-                                        <rect key="frame" x="0.0" y="330.50000762939453" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D52-FL-BJL" id="zrx-rf-ZlB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gbH-bh-Sc3">
@@ -1917,10 +1897,10 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FfA-7D-fhA" detailTextLabel="Vsw-62-5kx" style="IBUITableViewCellStyleSubtitle" id="wv8-76-yCY">
-                                        <rect key="frame" x="0.0" y="374.16667556762695" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="393" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wv8-76-yCY" id="vmo-GC-LPk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tanatólogo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FfA-7D-fhA">
@@ -1952,7 +1932,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRX-eh-qf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2348" y="2933"/>
+            <point key="canvasLocation" x="-1209" y="3860"/>
         </scene>
         <!--Reporte Histórico-->
         <scene sceneID="3HF-jQ-8h9">
@@ -1968,13 +1948,13 @@ Llena el siguiente formulario</string>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TlL-EM-OLp">
-                            <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="574.5" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="Zpb-QO-5VT">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zpb-QO-5VT" id="sqj-j3-H2g">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -1994,7 +1974,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dx1-dn-uk8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3284" y="2933"/>
+            <point key="canvasLocation" x="-1225" y="2993"/>
         </scene>
         <!--Tanatologos-->
         <scene sceneID="oAm-Vd-wKX">
@@ -2014,11 +1994,11 @@ Llena el siguiente formulario</string>
             </objects>
             <point key="canvasLocation" x="1052" y="2081"/>
         </scene>
-        <!--Pacientes-->
+        <!--Usuarios-->
         <scene sceneID="yVA-7K-U7E">
             <objects>
                 <navigationController id="Nis-tL-hxL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pacientes" image="eye" catalog="system" id="Y92-uw-AoD"/>
+                    <tabBarItem key="tabBarItem" title="Usuarios" image="eye" catalog="system" id="Y92-uw-AoD"/>
                     <navigationItem key="navigationItem" id="9u2-Y3-57O"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tQL-jn-BxT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -2275,7 +2255,7 @@ Llena el siguiente formulario</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-4207" y="2289"/>
+            <point key="canvasLocation" x="-3066" y="2955"/>
         </scene>
         <!--Detalle Usuarios Table View Controller-->
         <scene sceneID="Ma2-nZ-YAT">
@@ -2293,7 +2273,7 @@ Llena el siguiente formulario</string>
                             <nil key="highlightedColor"/>
                         </label>
                         <view key="tableFooterView" contentMode="center" id="alV-7c-8HN">
-                            <rect key="frame" x="0.0" y="148.50000034679067" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="166.5" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9K8-ud-yqQ">
@@ -2317,7 +2297,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="SPp-Lz-Fhv" detailTextLabel="rsV-DI-BbW" style="IBUITableViewCellStyleSubtitle" id="nnV-UP-SWK">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="55.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nnV-UP-SWK" id="IYW-Aa-9QA">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -2357,39 +2337,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uL2-EY-niW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3066" y="2118"/>
-        </scene>
-        <!--Feed-->
-        <scene sceneID="cSS-cM-u5F">
-            <objects>
-                <viewController title="Feed" id="tcg-Iq-Bic" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ia7-f5-B9h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PacSup" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-hO-DJH">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="agX-CB-l6i"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Shd-hO-DJH" firstAttribute="leading" secondItem="agX-CB-l6i" secondAttribute="leading" id="FPt-dG-KQE"/>
-                            <constraint firstItem="Shd-hO-DJH" firstAttribute="top" secondItem="agX-CB-l6i" secondAttribute="top" id="Foy-py-86i"/>
-                            <constraint firstItem="agX-CB-l6i" firstAttribute="bottom" secondItem="Shd-hO-DJH" secondAttribute="bottom" id="Jpl-X7-PGf"/>
-                            <constraint firstItem="agX-CB-l6i" firstAttribute="bottom" secondItem="Shd-hO-DJH" secondAttribute="bottom" id="LT1-pN-u9j"/>
-                            <constraint firstItem="Shd-hO-DJH" firstAttribute="trailing" secondItem="agX-CB-l6i" secondAttribute="trailing" id="Lyi-i1-fkT"/>
-                            <constraint firstItem="agX-CB-l6i" firstAttribute="trailing" secondItem="Shd-hO-DJH" secondAttribute="trailing" id="WK1-En-hWS"/>
-                            <constraint firstItem="agX-CB-l6i" firstAttribute="bottom" secondItem="Shd-hO-DJH" secondAttribute="bottom" id="f3T-EV-SPy"/>
-                            <constraint firstItem="agX-CB-l6i" firstAttribute="trailing" secondItem="Shd-hO-DJH" secondAttribute="trailing" id="igK-Jl-3eF"/>
-                            <constraint firstItem="Shd-hO-DJH" firstAttribute="leading" secondItem="agX-CB-l6i" secondAttribute="leading" id="oi9-H3-JDl"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Info Tanatólogo" id="17o-r3-VcZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rwx-Mo-hAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1185" y="3706"/>
+            <point key="canvasLocation" x="-3393" y="2158"/>
         </scene>
         <!--Feed-->
         <scene sceneID="dyn-zT-K84">
@@ -2690,7 +2638,7 @@ Llena el siguiente formulario</string>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Dhm-Pf-CbA" detailTextLabel="dWr-J7-msJ" style="IBUITableViewCellStyleSubtitle" id="vKe-Wz-c00" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="55.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vKe-Wz-c00" id="6uY-Fk-rJp">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -2724,7 +2672,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sh0-KD-l8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887.20000000000005" y="2944.5812807881775"/>
+            <point key="canvasLocation" x="-2122" y="3024"/>
         </scene>
         <!--Tanatólogos-->
         <scene sceneID="Hoc-Hc-p4s">
@@ -2743,7 +2691,7 @@ Llena el siguiente formulario</string>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Av2-04-zT1" detailTextLabel="cBk-CK-0lv" style="IBUITableViewCellStyleSubtitle" id="NnZ-5U-se7" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="55.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NnZ-5U-se7" id="mDs-Tn-3bm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -2766,6 +2714,9 @@ Llena el siguiente formulario</string>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" label="zelda"/>
+                                <connections>
+                                    <segue destination="wEk-MM-qee" kind="show" trigger="accessoryAction" id="8BW-jR-LVc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2777,7 +2728,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6l-4c-i6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1591" y="2992"/>
+            <point key="canvasLocation" x="1833" y="2406"/>
         </scene>
         <!--Consulta de Usuarios (Soporte)-->
         <scene sceneID="Xfd-Ej-C79">
@@ -2796,7 +2747,7 @@ Llena el siguiente formulario</string>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="aWr-oj-gwR" detailTextLabel="RoL-uF-AAq" style="IBUITableViewCellStyleSubtitle" id="ATR-di-WYD" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="55.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ATR-di-WYD" id="VZI-Nv-Xdm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -2852,7 +2803,7 @@ Llena el siguiente formulario</string>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="P8r-43-gdN" detailTextLabel="fcO-SS-FE8" style="IBUITableViewCellStyleSubtitle" id="xge-7u-1LD" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="68.5" width="375" height="55.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xge-7u-1LD" id="Dxd-By-iWK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -2876,7 +2827,7 @@ Llena el siguiente formulario</string>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" label="zelda"/>
                                 <connections>
-                                    <segue destination="tcg-Iq-Bic" kind="show" id="FSY-GY-WaQ"/>
+                                    <segue destination="pQW-6r-Hmr" kind="show" id="V0r-Zo-qLw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2891,17 +2842,378 @@ Llena el siguiente formulario</string>
             </objects>
             <point key="canvasLocation" x="1074" y="2854"/>
         </scene>
+        <!--Feed-->
+        <scene sceneID="pQU-1d-Kep">
+            <objects>
+                <viewController title="Feed" id="pQW-6r-Hmr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EjD-Mr-WnY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJc-DI-Ej0">
+                                <rect key="frame" x="1" y="-44" width="373" height="755"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-uu-bUr">
+                                        <rect key="frame" x="-443" y="0.0" width="1073" height="812"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1073" id="uC0-s0-359"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a21-0B-KCs">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="812"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2K-YA-KAs">
+                                                <rect key="frame" x="11" y="183" width="351" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="151-Ce-UEL"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="351" id="b3F-pN-PTM"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="ecs-zY-caL"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-uv-qNH">
+                                                <rect key="frame" x="0.0" y="-13" width="373" height="44"/>
+                                            </navigationBar>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-km-UAX">
+                                                <rect key="frame" x="120" y="23" width="137" height="139"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DS-m5-05b">
+                                                <rect key="frame" x="11" y="235" width="169" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="hWZ-Aw-dxu"/>
+                                                    <constraint firstAttribute="width" constant="170" id="o1i-u9-va1"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="skp-hi-WdI">
+                                                <rect key="frame" x="192" y="235" width="170" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="HS3-uT-gTF"/>
+                                                    <constraint firstAttribute="width" constant="170" id="kG8-tK-PJE"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-Mx-PMV">
+                                                <rect key="frame" x="192" y="285" width="170" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-j1-T7L">
+                                                <rect key="frame" x="11" y="285" width="169" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="XMg-6k-wyp"/>
+                                                    <constraint firstAttribute="width" constant="170" id="cPD-OZ-GbE"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.80802781130000001" green="1" blue="0.98886421769999999" alpha="0.76749343280000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="5DS-m5-05b" firstAttribute="centerY" secondItem="a21-0B-KCs" secondAttribute="centerY" id="0Bo-dl-Bym"/>
+                                            <constraint firstItem="5DS-m5-05b" firstAttribute="top" secondItem="skp-hi-WdI" secondAttribute="top" id="3si-lK-NEE"/>
+                                            <constraint firstItem="d4n-j1-T7L" firstAttribute="top" secondItem="5DS-m5-05b" secondAttribute="bottom" constant="16" id="8ub-gz-yfW"/>
+                                            <constraint firstAttribute="height" constant="812" id="BFS-kb-oEL"/>
+                                            <constraint firstItem="wqa-uv-qNH" firstAttribute="centerX" secondItem="hvd-km-UAX" secondAttribute="centerX" constant="-10.166666666666657" id="Cu8-Gn-Aqj"/>
+                                            <constraint firstItem="d4n-j1-T7L" firstAttribute="top" secondItem="IyG-Mx-PMV" secondAttribute="top" id="HBE-uP-d0j"/>
+                                            <constraint firstItem="5DS-m5-05b" firstAttribute="trailing" secondItem="d4n-j1-T7L" secondAttribute="trailing" id="Sk2-CF-2HO"/>
+                                            <constraint firstItem="wqa-uv-qNH" firstAttribute="top" secondItem="a21-0B-KCs" secondAttribute="top" constant="-13" id="aBt-XF-xMK"/>
+                                            <constraint firstItem="y2K-YA-KAs" firstAttribute="top" secondItem="hvd-km-UAX" secondAttribute="bottom" constant="19.666666666666686" id="aQC-Te-yLp"/>
+                                            <constraint firstAttribute="trailing" secondItem="y2K-YA-KAs" secondAttribute="trailing" constant="11" id="dJH-AI-SAo"/>
+                                            <constraint firstItem="skp-hi-WdI" firstAttribute="leading" secondItem="IyG-Mx-PMV" secondAttribute="leading" id="jRG-0R-AaI"/>
+                                            <constraint firstItem="5DS-m5-05b" firstAttribute="leading" secondItem="d4n-j1-T7L" secondAttribute="leading" id="m1e-fJ-Bot"/>
+                                            <constraint firstItem="y2K-YA-KAs" firstAttribute="leading" secondItem="a21-0B-KCs" secondAttribute="leading" constant="11" id="pBx-1t-My3"/>
+                                            <constraint firstItem="wqa-uv-qNH" firstAttribute="leading" secondItem="a21-0B-KCs" secondAttribute="leading" id="xY9-CQ-Nqy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="leading" secondItem="NJc-DI-Ej0" secondAttribute="leading" id="3Yj-Jb-0N9"/>
+                                    <constraint firstAttribute="bottom" secondItem="a21-0B-KCs" secondAttribute="bottom" id="DD9-Ge-71o"/>
+                                    <constraint firstAttribute="bottom" secondItem="a21-0B-KCs" secondAttribute="bottom" id="E9D-qo-wgz"/>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="top" secondItem="NJc-DI-Ej0" secondAttribute="top" id="Jsw-Fz-eeJ"/>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="centerX" secondItem="NJc-DI-Ej0" secondAttribute="centerX" id="Miy-PZ-Iw1"/>
+                                    <constraint firstItem="6pR-uu-bUr" firstAttribute="leading" secondItem="NJc-DI-Ej0" secondAttribute="leading" constant="-443" id="Ro5-xn-1Qa"/>
+                                    <constraint firstAttribute="trailing" secondItem="a21-0B-KCs" secondAttribute="trailing" id="V7e-ND-FRQ"/>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="top" secondItem="NJc-DI-Ej0" secondAttribute="top" id="Wmg-Vx-oHI"/>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="top" secondItem="NJc-DI-Ej0" secondAttribute="top" id="dD1-ax-UIe"/>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="bottom" secondItem="6pR-uu-bUr" secondAttribute="bottom" id="edD-Pr-x3g"/>
+                                    <constraint firstItem="a21-0B-KCs" firstAttribute="top" secondItem="6pR-uu-bUr" secondAttribute="top" id="i3h-6P-LOP"/>
+                                    <constraint firstAttribute="bottom" secondItem="a21-0B-KCs" secondAttribute="bottom" id="paL-zC-Ej3"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l60-y9-JTG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NJc-DI-Ej0" firstAttribute="top" secondItem="EjD-Mr-WnY" secondAttribute="topMargin" constant="-88" id="0ky-WE-DFL"/>
+                            <constraint firstItem="NJc-DI-Ej0" firstAttribute="centerX" secondItem="EjD-Mr-WnY" secondAttribute="centerX" id="6EC-eC-0Ea"/>
+                            <constraint firstItem="NJc-DI-Ej0" firstAttribute="centerY" secondItem="EjD-Mr-WnY" secondAttribute="centerY" id="6ud-ih-CYh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info Tanatólogo" id="aV5-kE-MgJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62r-gc-Vt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="3705"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="kRs-cK-MXj">
+            <objects>
+                <tableViewController id="wEk-MM-qee" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0DR-D9-Kzc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o19-RZ-dxK">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view key="tableFooterView" contentMode="center" id="2zU-Qd-3zt">
+                            <rect key="frame" x="0.0" y="166.5" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS4-wM-faw">
+                                    <rect key="frame" x="102" y="8" width="45" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Añadir"/>
+                                    <connections>
+                                        <action selector="add:" destination="wEk-MM-qee" eventType="touchUpInside" id="OC6-0S-daa"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Pjq-hC-yE8">
+                                    <rect key="frame" x="241" y="7" width="40" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Editar"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="34l-Ip-rvd" detailTextLabel="gJ2-Rb-sg8" style="IBUITableViewCellStyleSubtitle" id="iFP-tN-bWf">
+                                <rect key="frame" x="0.0" y="88.5" width="375" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iFP-tN-bWf" id="LlA-f4-6rV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34l-Ip-rvd">
+                                            <rect key="frame" x="16" y="10" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJ2-Rb-sg8">
+                                            <rect key="frame" x="16" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="pdn-eS-u5W" kind="show" id="FMc-F1-0B9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wEk-MM-qee" id="6JS-77-0Jw"/>
+                            <outlet property="delegate" destination="wEk-MM-qee" id="3eZ-hz-Cdf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dmU-EO-Ksc"/>
+                    <connections>
+                        <outlet property="Namedisplay" destination="o19-RZ-dxK" id="Hua-Fq-XR4"/>
+                        <outlet property="UITableView" destination="0DR-D9-Kzc" id="8xI-GW-mwV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ju7-Ms-Lr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="3281"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="1J3-LO-m69">
+            <objects>
+                <viewController title="Feed" id="pdn-eS-u5W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWh-Zs-BiN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMd-uZ-N0R">
+                                <rect key="frame" x="-0.5" y="-44" width="376" height="755"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="fEt-fb-jTi">
+                                        <rect key="frame" x="-443" y="0.0" width="1073" height="812"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1073" id="Zg2-aN-IRf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-Cu-z4W">
+                                        <rect key="frame" x="0.0" y="0.0" width="376" height="812"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Jf-J5-gNN">
+                                                <rect key="frame" x="11" y="183" width="352" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="354" id="qLk-Q5-NYR"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lY-t1-2to">
+                                                <rect key="frame" x="0.0" y="-13" width="376" height="44"/>
+                                            </navigationBar>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOT-6l-RAj">
+                                                <rect key="frame" x="149" y="668" width="78" height="30"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b3r-oB-QPx">
+                                                <rect key="frame" x="120" y="23" width="137" height="139"/>
+                                            </imageView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soi-HL-cTz">
+                                                <rect key="frame" x="281" y="77" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                            </switch>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-WU-Cvq">
+                                                <rect key="frame" x="12" y="233" width="169" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="51L-o0-Unz"/>
+                                                    <constraint firstAttribute="width" constant="170" id="pdj-z7-L4n"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ja1-gx-TA9">
+                                                <rect key="frame" x="193" y="233" width="170" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="9kY-D2-1bd"/>
+                                                    <constraint firstAttribute="height" constant="34" id="WjS-Ku-xOD"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86U-id-sI9">
+                                                <rect key="frame" x="193" y="283" width="170" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-pl-eyi">
+                                                <rect key="frame" x="12" y="283" width="169" height="34"/>
+                                                <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="UUD-iE-sBQ"/>
+                                                    <constraint firstAttribute="width" constant="170" id="geq-EM-Xt0"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.80802781130000001" green="1" blue="0.98886421769999999" alpha="0.76749343280000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="4lY-t1-2to" firstAttribute="leading" secondItem="I6C-Cu-z4W" secondAttribute="leading" id="3eo-uZ-DZ7"/>
+                                            <constraint firstItem="4lY-t1-2to" firstAttribute="top" secondItem="I6C-Cu-z4W" secondAttribute="top" constant="-13" id="6PD-XI-siY"/>
+                                            <constraint firstItem="mOT-6l-RAj" firstAttribute="centerX" secondItem="4lY-t1-2to" secondAttribute="centerX" id="CDi-rT-MuZ"/>
+                                            <constraint firstItem="1Hd-WU-Cvq" firstAttribute="top" secondItem="ja1-gx-TA9" secondAttribute="top" id="FJn-Aj-nJO"/>
+                                            <constraint firstAttribute="height" constant="812" id="LQt-Yn-FVL"/>
+                                            <constraint firstItem="mOT-6l-RAj" firstAttribute="leading" secondItem="I6C-Cu-z4W" secondAttribute="leading" constant="149" id="P9Y-oY-OyI"/>
+                                            <constraint firstItem="4Jf-J5-gNN" firstAttribute="top" secondItem="b3r-oB-QPx" secondAttribute="bottom" constant="21.666666666666686" id="Pcd-fl-F8N"/>
+                                            <constraint firstItem="4lY-t1-2to" firstAttribute="centerX" secondItem="b3r-oB-QPx" secondAttribute="centerX" id="QUs-Ud-MFq"/>
+                                            <constraint firstItem="4Jf-J5-gNN" firstAttribute="centerX" secondItem="4lY-t1-2to" secondAttribute="centerX" id="VdI-oa-g2J"/>
+                                            <constraint firstItem="1Hd-WU-Cvq" firstAttribute="leading" secondItem="hIa-pl-eyi" secondAttribute="leading" id="Wbn-uh-vsE"/>
+                                            <constraint firstItem="4Jf-J5-gNN" firstAttribute="leading" secondItem="I6C-Cu-z4W" secondAttribute="leading" constant="11" id="Y2t-Vd-cnd"/>
+                                            <constraint firstItem="1Hd-WU-Cvq" firstAttribute="trailing" secondItem="hIa-pl-eyi" secondAttribute="trailing" id="fje-2e-MZC"/>
+                                            <constraint firstItem="ja1-gx-TA9" firstAttribute="leading" secondItem="86U-id-sI9" secondAttribute="leading" id="o0g-DR-pOK"/>
+                                            <constraint firstItem="hIa-pl-eyi" firstAttribute="top" secondItem="1Hd-WU-Cvq" secondAttribute="bottom" constant="16" id="v1b-fQ-GJ9"/>
+                                            <constraint firstItem="hIa-pl-eyi" firstAttribute="top" secondItem="86U-id-sI9" secondAttribute="top" id="vtr-U1-eyI"/>
+                                            <constraint firstAttribute="trailing" secondItem="mOT-6l-RAj" secondAttribute="trailing" constant="149" id="zKd-L4-JRT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="KGi-lC-ev9" appends="YES" id="UTs-cc-Eo1"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="I6C-Cu-z4W" secondAttribute="bottom" id="2bF-ub-qA6"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="top" secondItem="QMd-uZ-N0R" secondAttribute="top" id="6re-Ha-g8g"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="centerX" secondItem="QMd-uZ-N0R" secondAttribute="centerX" id="GC1-rk-y2Q"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="top" secondItem="QMd-uZ-N0R" secondAttribute="top" id="Hqj-zj-4qu"/>
+                                    <constraint firstAttribute="trailing" secondItem="I6C-Cu-z4W" secondAttribute="trailing" id="HrC-Uo-zVP"/>
+                                    <constraint firstAttribute="bottom" secondItem="I6C-Cu-z4W" secondAttribute="bottom" id="N8D-Tf-QiO"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="top" secondItem="QMd-uZ-N0R" secondAttribute="top" id="TKY-KH-B0Q"/>
+                                    <constraint firstItem="fEt-fb-jTi" firstAttribute="leading" secondItem="QMd-uZ-N0R" secondAttribute="leading" constant="-443" id="TPb-Ah-yIL"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="top" secondItem="fEt-fb-jTi" secondAttribute="top" id="eCo-FK-g91"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="bottom" secondItem="fEt-fb-jTi" secondAttribute="bottom" id="jCs-pW-Qxd"/>
+                                    <constraint firstItem="I6C-Cu-z4W" firstAttribute="leading" secondItem="QMd-uZ-N0R" secondAttribute="leading" id="sFk-JJ-Z1A"/>
+                                    <constraint firstAttribute="bottom" secondItem="I6C-Cu-z4W" secondAttribute="bottom" id="xuQ-QJ-ZSI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pxh-ol-1Ku"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QMd-uZ-N0R" firstAttribute="top" secondItem="QWh-Zs-BiN" secondAttribute="topMargin" constant="-88" id="NZ1-mV-YLH"/>
+                            <constraint firstItem="QMd-uZ-N0R" firstAttribute="centerY" secondItem="QWh-Zs-BiN" secondAttribute="centerY" id="cgw-I3-1EC"/>
+                            <constraint firstItem="QMd-uZ-N0R" firstAttribute="centerX" secondItem="QWh-Zs-BiN" secondAttribute="centerX" id="uhA-XQ-i6P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info Tanatólogo" id="RN0-fZ-nT3">
+                        <barButtonItem key="rightBarButtonItem" title="Listo" id="kPr-Ri-Qny">
+                            <connections>
+                                <action selector="editar:" destination="pdn-eS-u5W" id="jy2-wt-MGO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="name" destination="4Jf-J5-gNN" id="2yV-7U-Lbc"/>
+                        <outlet property="swit" destination="soi-HL-cTz" id="H8S-iT-cq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctV-lN-eOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KGi-lC-ev9">
+                    <connections>
+                        <action selector="CerrarTeclado:" destination="pdn-eS-u5W" id="ui7-QH-Vqc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2695" y="3280"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RhG-gL-aEk"/>
-        <segue reference="Klh-VQ-Zqq"/>
+        <segue reference="980-D3-kdJ"/>
+        <segue reference="ECI-fs-8zY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
-        <image name="2_1_2_1" width="187" height="259.5"/>
-        <image name="PacSup" width="236" height="395"/>
-        <image name="book.fill" catalog="system" width="128" height="102"/>
-        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="fondo" width="488" height="845.5"/>
