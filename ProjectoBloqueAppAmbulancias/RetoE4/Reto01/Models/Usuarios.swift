@@ -88,6 +88,8 @@ struct Usuario: Codable {
         self.edad = aDoc.get("edad") as? Int ?? 1
         self.telefono = aDoc.get("telefono") as? Int ?? 1
     }
+    
+    static func == (left:Usuario, right:Usuario)-> Bool{return left.nombre == right.nombre }
 }
 
 typealias Usuarios = [Usuario]

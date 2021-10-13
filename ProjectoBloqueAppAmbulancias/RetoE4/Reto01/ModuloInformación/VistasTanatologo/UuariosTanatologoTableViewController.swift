@@ -8,20 +8,27 @@
 import UIKit
 import Firebase
 
-class UuariosTanatologoTableViewController: UITableViewController {
+class UuariosTanatologoTableViewController: UITableViewController, UISearchBarDelegate {
 
+    @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var UITableView: UITableView!
     var UsuarioControlador = UsuariosController()
     var Tananame = ""
     var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
     var datos = [Usuario]()
+    var filtroDatos = [Usuario]()
+   // var datosResult = [Usuario]() = {
+     //   return filtroDatos ?? datos
+    //}()
     let sections = ["Usuarios"]
     
 
     @IBOutlet weak var tname: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
-    
+        
+        searchBar.delegate = self
+
    // }
    // override func viewDidLoad() {
      //   super.viewDidLoad()
@@ -52,6 +59,7 @@ class UuariosTanatologoTableViewController: UITableViewController {
 func updateUI(with usuarios:Usuarios){
     DispatchQueue.main.async {
         self.datos = usuarios
+        self.filtroDatos = usuarios
         self.tableView.reloadData()
     }
     
@@ -80,7 +88,7 @@ func displayError(_ error: Error, title: String) {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
                 
-        return datos.count
+        return filtroDatos.count
     }
 
     
@@ -88,23 +96,33 @@ func displayError(_ error: Error, title: String) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         // Configure the cell...
         var s:String
-        switch datos[indexPath.row].cerrado {
+        switch filtroDatos[indexPath.row].cerrado {
         case true:
             s = "Cerrado";
         default:
             s = "Abierto";
         }
 
-        cell.textLabel?.text = datos[indexPath.row].nombre 
-        cell.detailTextLabel?.text = "Expediente cerrado:" + String(datos[indexPath.row].cerrado)
+        cell.textLabel?.text = filtroDatos[indexPath.row].nombre
+        cell.detailTextLabel?.text = "Expediente cerrado:" + String(filtroDatos[indexPath.row].cerrado)
         
         
         
         return cell
     }
     
-    
+   // return dataString.range(of: searchText, options: .caseInsensitive) != nil
 
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print ("using bar")
+        if searchBar.text == nil || searchBar.text == "" {
+            self.filtroDatos = self.datos
+        } else {
+            let lowerCase = searchBar.text!
+            self.filtroDatos = self.datos.filter({$0.nombre.range(of: lowerCase, options: .caseInsensitive) != nil })
+        }
+        tableView.reloadData()
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
