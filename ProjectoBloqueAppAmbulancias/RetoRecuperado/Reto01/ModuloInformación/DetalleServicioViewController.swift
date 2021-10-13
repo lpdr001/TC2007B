@@ -9,8 +9,12 @@ import UIKit
 
 class DetalleServicioViewController: UIViewController {
     var elServicio:Servicio?
+    
+    
     @IBOutlet weak var nombreServicio: UILabel!
     
+   
+    @IBOutlet weak var imagenPrueba: UIImageView!
     
     @IBOutlet weak var descServicio: UITextView!
     override func viewDidLoad() {
@@ -19,6 +23,19 @@ class DetalleServicioViewController: UIViewController {
         // Do any additional setup after loading the view.
         nombreServicio.text = elServicio?.nombre
         descServicio.text = elServicio?.desc
+        
+        
+        imagenPrueba.image = UIImage(named: "Image")
+        switch elServicio?.tipo {
+        case "CETAC":
+            imagenPrueba.image = UIImage(named: "Image")
+        case "Holístico":
+            imagenPrueba.image = UIImage(named: "Image1")
+        case "Acompañamiento":
+            imagenPrueba.image = UIImage(named: "Image2")
+        default:
+            imagenPrueba.image = UIImage(named: "Image3")
+        }
     }
     
 

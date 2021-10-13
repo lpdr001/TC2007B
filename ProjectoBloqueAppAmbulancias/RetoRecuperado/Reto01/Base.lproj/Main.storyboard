@@ -135,7 +135,7 @@
                                 <rect key="frame" x="16" y="238" width="343" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="402" id="yaf-77-Mx6"/>
+                                    <constraint firstAttribute="height" constant="335" id="8gc-bc-Vzm"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -158,23 +158,31 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bmr-xb-TJQ">
+                                <rect key="frame" x="67" y="102" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Pqt-Yc-g5g"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1qF-oh-oaj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yi2-D4-awZ" firstAttribute="leading" secondItem="swt-E2-JIR" secondAttribute="leading" id="EEb-Lk-EoA"/>
-                            <constraint firstItem="1qF-oh-oaj" firstAttribute="bottom" secondItem="yi2-D4-awZ" secondAttribute="bottom" constant="45" id="IKP-oQ-y1Q"/>
-                            <constraint firstItem="swt-E2-JIR" firstAttribute="top" secondItem="1qF-oh-oaj" secondAttribute="top" id="KBW-ti-70N"/>
-                            <constraint firstItem="yi2-D4-awZ" firstAttribute="top" secondItem="swt-E2-JIR" secondAttribute="bottom" constant="173" id="KLp-po-1Vp"/>
-                            <constraint firstItem="1qF-oh-oaj" firstAttribute="bottom" secondItem="yi2-D4-awZ" secondAttribute="bottom" constant="45" id="L11-0f-CKE"/>
-                            <constraint firstItem="yi2-D4-awZ" firstAttribute="trailing" secondItem="swt-E2-JIR" secondAttribute="trailing" id="NDY-Ze-OE1"/>
-                            <constraint firstItem="1qF-oh-oaj" firstAttribute="trailing" secondItem="swt-E2-JIR" secondAttribute="trailing" constant="16" id="dvZ-En-V1v"/>
-                            <constraint firstItem="swt-E2-JIR" firstAttribute="leading" secondItem="1qF-oh-oaj" secondAttribute="leading" constant="16" id="ntF-AW-erP"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="centerX" secondItem="bmr-xb-TJQ" secondAttribute="centerX" id="5iw-yQ-xCF"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="leading" secondItem="swt-E2-JIR" secondAttribute="leading" id="7UD-Lb-FFB"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="trailing" secondItem="b2b-Us-yrs" secondAttribute="trailingMargin" id="8Jj-R8-aJ0"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="trailing" secondItem="swt-E2-JIR" secondAttribute="trailing" id="I5j-rE-aZg"/>
+                            <constraint firstItem="bmr-xb-TJQ" firstAttribute="leading" secondItem="1qF-oh-oaj" secondAttribute="leading" constant="67" id="J5O-2r-WJI"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="leading" secondItem="b2b-Us-yrs" secondAttribute="leadingMargin" id="M08-3p-wwG"/>
+                            <constraint firstItem="1qF-oh-oaj" firstAttribute="bottom" secondItem="yi2-D4-awZ" secondAttribute="bottom" constant="45" id="T4U-8j-X85"/>
+                            <constraint firstItem="bmr-xb-TJQ" firstAttribute="top" secondItem="swt-E2-JIR" secondAttribute="bottom" constant="37" id="Wbz-f7-8Rk"/>
+                            <constraint firstItem="yi2-D4-awZ" firstAttribute="top" secondItem="bmr-xb-TJQ" secondAttribute="bottom" constant="8" id="wVc-GZ-B9c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oFy-3w-YZS"/>
                     <connections>
                         <outlet property="descServicio" destination="yi2-D4-awZ" id="kny-HS-k1w"/>
+                        <outlet property="imagenPrueba" destination="bmr-xb-TJQ" id="NmB-Kf-hdp"/>
                         <outlet property="nombreServicio" destination="swt-E2-JIR" id="3hI-je-GrA"/>
                     </connections>
                 </viewController>
@@ -1107,7 +1115,6 @@ Llena el siguiente formulario</string>
                 <navigationController id="6J8-uh-DK6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Historico" image="book.fill" catalog="system" id="Vxj-yo-cjh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eme-qu-0k9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1961,7 +1968,7 @@ Llena el siguiente formulario</string>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TlL-EM-OLp">
-                            <rect key="frame" x="0.0" y="574.1363639831543" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                         </button>
@@ -1996,7 +2003,6 @@ Llena el siguiente formulario</string>
                     <tabBarItem key="tabBarItem" title="Tanatologos" image="eye" catalog="system" id="3e7-ol-gLI"/>
                     <navigationItem key="navigationItem" id="X1W-gS-qLf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ynf-Xd-pss">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
