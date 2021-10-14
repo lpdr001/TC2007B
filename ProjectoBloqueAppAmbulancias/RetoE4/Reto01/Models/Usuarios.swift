@@ -77,7 +77,7 @@ struct Usuario: Codable {
         self.nombre = aDoc.get("nombre") as? String ?? st
         
         let timestamp = NSDate()
-        let postTimestamp = aDoc.get("fechaIngrso") as? Timestamp ?? Timestamp(date: timestamp as Date)
+        let postTimestamp = aDoc.get("fechaIngreso") as? Timestamp ?? Timestamp(date: timestamp as Date)
 
         self.fechaIngreso = postTimestamp.dateValue()
         self.domicilio = aDoc.get("domicilio") as? String ?? ""

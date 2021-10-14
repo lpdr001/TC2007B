@@ -90,9 +90,9 @@ class UsuariosController{
         }
     }
     
-    func fetchUsers(completion: @escaping (Result<Usuarios, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+    func fetchUsers(start:Date,End:Date, completion: @escaping (Result<Usuarios, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var usuarios = [Usuario]()
-        db.collection("Usuarios").getDocuments() { (querySnapshot, err) in
+        db.collection("Usuarios").whereField("fechaIngreso", isGreaterThanOrEqualTo: start).whereField("fechaIngreso", isLessThanOrEqualTo: End).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))

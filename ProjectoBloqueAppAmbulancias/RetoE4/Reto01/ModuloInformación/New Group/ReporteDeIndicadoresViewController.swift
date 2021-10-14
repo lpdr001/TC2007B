@@ -11,6 +11,10 @@ import Charts
 import TinyConstraints
 
 class ReporteDeIndicadoresViewController: UIViewController {
+    
+    @IBOutlet weak var FechaInicial: UIDatePicker!
+    @IBOutlet weak var FechaFinal: UIDatePicker!
+    
     @IBOutlet weak var vistabarras: UIView!
     var UC = UsuariosController()
     
@@ -28,13 +32,22 @@ class ReporteDeIndicadoresViewController: UIViewController {
         graficaBarras.center(in: vistabarras)
         graficaBarras.width(to: vistabarras)
         graficaBarras.height(to: vistabarras)
-        
-        UC.fetchUsers{ (result) in
+        GetData()
+    
+    }
+    
+    @IBAction func updateFecha(_ sender: UIDatePicker) {
+        GetData()
+    }
+    
+    
+    func GetData(){
+        UC.fetchUsers(start: FechaInicial.date, End: FechaFinal.date){ (result) in
             switch result{
             case .success(let sesiones):self.definirUsuarios(with: sesiones)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
             }
-    }
+        }
     }
     
     func displayError(_ error: Error, title: String) {
@@ -67,7 +80,7 @@ class ReporteDeIndicadoresViewController: UIViewController {
         graficaBarras.data = data
         let motivos = ["Hombres","Mujer"]
         graficaBarras.xAxis.valueFormatter = IndexAxisValueFormatter(values: motivos)
-        graficaBarras.chartDescription?.text = "del 1-oct al 30-dic"
+        //graficaBarras.chartDescription?.text = "del 1-oct al 30-dic"
         graficaBarras.notifyDataSetChanged()
     }
 
