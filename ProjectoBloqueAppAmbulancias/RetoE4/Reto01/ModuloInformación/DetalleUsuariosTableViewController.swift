@@ -9,7 +9,7 @@ import UIKit
 
 class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDelegate {
     
-    
+    static var DU = DetalleUsuariosTableViewController()
     
     @IBOutlet weak var searchBarS: UISearchBar!
     @IBOutlet var UITableView: UITableView!
@@ -175,6 +175,16 @@ func displayError(_ error: Error, title: String) {
     }
     
     
+    @IBAction func EditarUs(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "b2")as! SesionesViewController
+        
+        balanceViewController.user = self.user
+        balanceViewController.datos = self.datos
+            self.show(balanceViewController, sender: nil)
+    }
     
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -191,6 +201,7 @@ func displayError(_ error: Error, title: String) {
         }
         
     else if segue.identifier == "segue1" {
+        DetalleUsuariosTableViewController.DU = self
             let siguiente2 = segue.destination as! EditarUserViewController
             
             siguiente2.user = self.user

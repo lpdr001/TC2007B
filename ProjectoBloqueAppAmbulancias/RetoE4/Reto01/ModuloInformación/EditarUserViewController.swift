@@ -86,6 +86,8 @@ class EditarUserViewController: UIViewController,UITextFieldDelegate {
         
         uc.EditUsuario(sn: tmpuser)
         
+        DetalleUsuariosTableViewController.DU.user = tmpuser
+        //balanceViewController.user = tmpuser
         _ = navigationController?.popViewController(animated: true)
     }
     /*
