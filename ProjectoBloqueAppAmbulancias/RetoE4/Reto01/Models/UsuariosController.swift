@@ -88,6 +88,25 @@ class UsuariosController{
                 completion(.success(usuarios))
             }
         }
-       
+    }
+    
+    func fetchUsers(completion: @escaping (Result<Usuarios, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+        var usuarios = [Usuario]()
+        db.collection("Usuarios").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(.failure(err))
+            } else {
+              
+                for document in querySnapshot!.documents {
+                    
+                    let s = Usuario(aDoc: document)
+                    //if(s.tipo == st){
+                    usuarios.append(s)
+                    //}
+                }
+                completion(.success(usuarios))
+            }
+        }
     }
 }
