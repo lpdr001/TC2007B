@@ -119,8 +119,8 @@ func displayError(_ error: Error, title: String) {
         if searchBar.text == nil || searchBar.text == "" {
             self.filtroDatos = self.datos
         } else {
-            let lowerCase = searchBar.text!
-            self.filtroDatos = self.datos.filter({$0.id.range(of: lowerCase, options: .caseInsensitive) != nil })
+            let lowerCase = Int(searchBar.text!)
+            self.filtroDatos = self.datos.filter({$0.numeroSesion == lowerCase})
         }
         tableView.reloadData()
     }
