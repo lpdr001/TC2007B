@@ -17,14 +17,14 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var fecha: UIDatePicker!
     
     @IBOutlet weak var name: UILabel!
-    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
+    var user: Usuario?
     
     var datos = [Sesion]()
     var vc = SesionesController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        name.text = user.nombre
+        name.text = user?.nombre
         eval.delegate = self
         cuota.delegate = self
         tan.text = LogInViewController.Lv.datos[0].nombre
@@ -38,7 +38,7 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     }
     
     @IBAction func Registrar(_ sender: Any) {
-        let us = Sesion(id: "1", cierre: false, numeroSesion: self.datos.count+1, evaluacion: eval.text!, idUsuario: user.id, servicio: "", couta: Int(cuota.text!) ?? 0, fecha: "0/0/0", intervencion: "", herramienta: "", motivo: "")
+        let us = Sesion(id: "1", cierre: false, numeroSesion: self.datos.count+1, evaluacion: eval.text!, idUsuario: user?.id ?? "", servicio: "", couta: Int(cuota.text!) ?? 0, fecha: "0/0/0", intervencion: "", herramienta: "", motivo: "")
         vc.SendSesion(sn: us)
         _ = navigationController?.popViewController(animated: true)
     }

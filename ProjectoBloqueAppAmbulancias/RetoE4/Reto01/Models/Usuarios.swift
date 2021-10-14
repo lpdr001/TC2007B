@@ -10,7 +10,8 @@ import Firebase
 
 struct Usuario: Codable {
     let id:String
-    let domicilio,estadoCivil,iDRA,idTanatologo,motivo,ocupacion,procedencia,referencia,religion,sexo,nombre,fechaIngreso: String
+    let domicilio,estadoCivil,iDRA,idTanatologo,motivo,ocupacion,procedencia,referencia,religion,sexo,nombre: String
+    let fechaIngreso: Date
     let cerrado:Bool
     let edad,telefono:Int
     
@@ -33,7 +34,7 @@ struct Usuario: Codable {
         case telefono
        }*/
     
-    init(domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String, nombre:String,fechaIngreso:String,cerrado:Bool,edad:Int,telefono:Int){
+    init(domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String, nombre:String,fechaIngreso:Date,cerrado:Bool,edad:Int,telefono:Int){
         self.domicilio = domicilio
         self.estadoCivil=estadoCivil
         self.iDRA=iDRA
@@ -45,13 +46,13 @@ struct Usuario: Codable {
         self.religion=religion
         self.sexo=sexo
         self.nombre = nombre
-        self.fechaIngreso  = fechaIngreso
+        self.fechaIngreso = fechaIngreso
         self.cerrado = cerrado
         self.edad = edad
         self.telefono = telefono
         id = "1234"
     }
-    init(id:String,domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String,nombre:String,fechaIngreso:String,cerrado:Bool,edad:Int,telefono:Int){
+    init(id:String,domicilio:String,estadoCivil:String,iDRA:String,idTanatologo:String,motivo:String,ocupacion:String,procedencia:String,referencia:String,religion:String,sexo:String,nombre:String,fechaIngreso:Date,cerrado:Bool,edad:Int,telefono:Int){
         self.id = id
         self.domicilio = domicilio
         self.estadoCivil=estadoCivil
@@ -72,8 +73,13 @@ struct Usuario: Codable {
     }
     init(aDoc: DocumentSnapshot){
         self.id = aDoc.documentID
-        self.nombre = aDoc.get("nombre") as? String ?? ""
-        self.fechaIngreso = aDoc.get("fechaIngrso") as? String ?? ""
+        let st = ""
+        self.nombre = aDoc.get("nombre") as? String ?? st
+        
+        let timestamp = NSDate()
+        let postTimestamp = aDoc.get("fechaIngrso") as? Timestamp ?? Timestamp(date: timestamp as Date)
+
+        self.fechaIngreso = postTimestamp.dateValue()
         self.domicilio = aDoc.get("domicilio") as? String ?? ""
         self.estadoCivil=aDoc.get("estadoCivil") as? String ?? ""
         self.iDRA=aDoc.get("iDRA") as? String ?? ""

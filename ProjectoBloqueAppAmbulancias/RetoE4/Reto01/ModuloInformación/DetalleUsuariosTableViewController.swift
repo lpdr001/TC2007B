@@ -18,7 +18,7 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
     var UsuarioControlador = SesionesController()
     var Username = ""
     var UserID = ""
-    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
+    var user: Usuario?
 
     var datos = [Sesion]()
     var filtroDatos = [Sesion]()
@@ -38,7 +38,7 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
 //viewDidLoad() {
         //super.viewDidLoad()
         
-        Namedisplay.text = user.nombre
+        Namedisplay.text = user?.nombre
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -193,7 +193,7 @@ func displayError(_ error: Error, title: String) {
         if segue.identifier == "segue" {
             let indice = self.tableView.indexPathForSelectedRow?.item
             let siguiente = segue.destination as! DetalleSesionViewController
-            self.datos[indice!].idUsuario = user.id
+            self.datos[indice!].idUsuario = user!.id
             siguiente.sesion = self.datos[indice!]
             siguiente.tanatologo = self.tanatologo
             siguiente.user = self.user

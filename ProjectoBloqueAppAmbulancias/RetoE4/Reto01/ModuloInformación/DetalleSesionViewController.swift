@@ -27,7 +27,7 @@ class DetalleSesionViewController: UIViewController {
     @IBOutlet weak var cuota: UILabel!
     
     var num = 0
-    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
+    var user : Usuario!
     
     var sesion = Sesion(id: "", cierre: false, numeroSesion: 1, evaluacion: "", idUsuario: "not loading", servicio: "", couta: 1, fecha: "", intervencion: "", herramienta: "", motivo: "")
     

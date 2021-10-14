@@ -26,8 +26,7 @@ class EditarUserViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var idra: UITextField!
     @IBOutlet weak var swit: UISwitch!
     
-    var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:"",cerrado:false,edad:0,telefono:0)
-    
+    var user: Usuario?
     var uc = UsuariosController()
     
     override func viewDidLoad() {
@@ -47,20 +46,20 @@ class EditarUserViewController: UIViewController,UITextFieldDelegate {
         motivo.delegate = self
         idra.delegate = self
         
-        name.text = user.nombre
-        oc.text = user.ocupacion
-        rel.text = user.religion
-        proce.text = user.procedencia
-        estCiv.text = user.estadoCivil
-        dom.text = user.domicilio
-        tel.text = String(user.telefono)
+        name.text = user?.nombre
+        oc.text = user?.ocupacion
+        rel.text = user?.religion
+        proce.text = user?.procedencia
+        estCiv.text = user?.estadoCivil
+        dom.text = user?.domicilio
+        tel.text = String(user?.telefono ?? 0)
         //cel.text = user.cel
-        edad.text = String(user.edad)
-        sexo.text = user.sexo
-        ref.text = user.referencia
-        motivo.text = user.motivo
-        idra.text = user.iDRA
-        swit.isOn = user.cerrado
+        edad.text = String(user?.edad ?? 0)
+        sexo.text = user?.sexo
+        ref.text = user?.referencia
+        motivo.text = user?.motivo
+        idra.text = user?.iDRA
+        swit.isOn = user?.cerrado ?? false
         
         // Do any additional setup after loading the view.
     }
@@ -82,7 +81,7 @@ class EditarUserViewController: UIViewController,UITextFieldDelegate {
 
     @IBAction func editar(_ sender: Any) {
         
-        let tmpuser = Usuario(id:user.id,domicilio:dom.text!,estadoCivil:estCiv.text!,iDRA:idra.text!,idTanatologo:user.idTanatologo,motivo:motivo.text!,ocupacion:oc.text!,procedencia:proce.text!,referencia:ref.text!,religion:rel.text!,sexo:sexo.text!, nombre:name.text!,fechaIngreso:user.fechaIngreso,cerrado:swit.isOn,edad:Int(edad.text!) ?? 18,telefono:Int(tel.text!) ?? 00000000)
+        let tmpuser = Usuario(id:user!.id,domicilio:dom.text!,estadoCivil:estCiv.text!,iDRA:idra.text!,idTanatologo:user!.idTanatologo,motivo:motivo.text!,ocupacion:oc.text!,procedencia:proce.text!,referencia:ref.text!,religion:rel.text!,sexo:sexo.text!, nombre:name.text!,fechaIngreso:user!.fechaIngreso,cerrado:swit.isOn,edad:Int(edad.text!) ?? 18,telefono:Int(tel.text!) ?? 00000000)
         
         uc.EditUsuario(sn: tmpuser)
         
