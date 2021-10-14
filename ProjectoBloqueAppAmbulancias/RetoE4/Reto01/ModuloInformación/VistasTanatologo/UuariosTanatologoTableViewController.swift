@@ -34,7 +34,7 @@ class UuariosTanatologoTableViewController: UITableViewController, UISearchBarDe
    // override func viewDidLoad() {
      //   super.viewDidLoad()
        
-        Tananame = LogInViewController.Lv.name
+        Tananame = LogInViewController.Lv.datos[0].nombre
         tanatologo = LogInViewController.Lv.datos[0]
         tname.text = Tananame
         
@@ -50,8 +50,6 @@ class UuariosTanatologoTableViewController: UITableViewController, UISearchBarDe
             case .success(let usuarios):self.updateUI(with: usuarios)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
             }
-
-            
         }
 
 }
@@ -159,6 +157,16 @@ func displayError(_ error: Error, title: String) {
     }
     */
 
+    @IBAction func EditarTan(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "ETan")//as! SesionesViewController
+        
+        //balanceViewController.user = self.user
+        //balanceViewController.datos = self.datos
+        self.show(balanceViewController, sender: nil)
+    }
     
     // MARK: - Navigation
 

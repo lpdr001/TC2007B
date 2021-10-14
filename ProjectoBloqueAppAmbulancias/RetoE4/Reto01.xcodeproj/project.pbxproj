@@ -28,9 +28,12 @@
 		32AB61EB271146E3006793EA /* EditarUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB61EA271146E3006793EA /* EditarUserViewController.swift */; };
 		32BA899E27110F910030E25F /* EncuadreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA899D27110F910030E25F /* EncuadreViewController.swift */; };
 		32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */; };
+		32BEF32F27179BFB004EA84F /* TanatologosAminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEF32E27179BFB004EA84F /* TanatologosAminTableViewController.swift */; };
+		32BEF3332717C366004EA84F /* RegistrarTanatologoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEF3322717C366004EA84F /* RegistrarTanatologoViewController.swift */; };
+		32BEF3372717C3D8004EA84F /* RegistrarSoporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEF3362717C3D8004EA84F /* RegistrarSoporteViewController.swift */; };
+		32BEF33B2717C41B004EA84F /* EditarTanatologoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEF33A2717C41B004EA84F /* EditarTanatologoViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
 		3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */; };
-		3AA6A2242713DF9E00851335 /* EncuadreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6A2232713DF9E00851335 /* EncuadreTest.swift */; };
 		40E2F30F1DFB136CA2F3A453 /* Pods_Reto01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70195E55BE4EC1922349EAE4 /* Pods_Reto01.framework */; };
 		AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3A2710EF32009CE697 /* Administradores.swift */; };
 		AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF421D3C2710EF78009CE697 /* AdministradorController.swift */; };
@@ -81,6 +84,10 @@
 		32AB61EA271146E3006793EA /* EditarUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarUserViewController.swift; sourceTree = "<group>"; };
 		32BA899D27110F910030E25F /* EncuadreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuadreViewController.swift; sourceTree = "<group>"; };
 		32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarSesionViewController.swift; sourceTree = "<group>"; };
+		32BEF32E27179BFB004EA84F /* TanatologosAminTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologosAminTableViewController.swift; sourceTree = "<group>"; };
+		32BEF3322717C366004EA84F /* RegistrarTanatologoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarTanatologoViewController.swift; sourceTree = "<group>"; };
+		32BEF3362717C3D8004EA84F /* RegistrarSoporteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarSoporteViewController.swift; sourceTree = "<group>"; };
+		32BEF33A2717C41B004EA84F /* EditarTanatologoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarTanatologoViewController.swift; sourceTree = "<group>"; };
 		32D4274326E666D9001DB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA06714270FECA5009E760F /* ReporteBusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteBusquedaViewController.swift; sourceTree = "<group>"; };
 		569EBD36030A15518C976309 /* Pods-Reto01-Reto01Testing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto01-Reto01Testing.debug.xcconfig"; path = "Target Support Files/Pods-Reto01-Reto01Testing/Pods-Reto01-Reto01Testing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				3260D792270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift */,
+				32BEF32E27179BFB004EA84F /* TanatologosAminTableViewController.swift */,
+				32BEF3362717C3D8004EA84F /* RegistrarSoporteViewController.swift */,
 			);
 			path = VistasTanatologo;
 			sourceTree = "<group>";
@@ -206,6 +215,8 @@
 				32AB61EA271146E3006793EA /* EditarUserViewController.swift */,
 				329D792B271298D000461B09 /* SesionesViewController.swift */,
 				32BE039727135A2C00E8B74D /* EditarSesionViewController.swift */,
+				32BEF3322717C366004EA84F /* RegistrarTanatologoViewController.swift */,
+				32BEF33A2717C41B004EA84F /* EditarTanatologoViewController.swift */,
 			);
 			name = "ModuloInformación";
 			path = "ModuloInformación";
@@ -427,7 +438,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BEF3332717C366004EA84F /* RegistrarTanatologoViewController.swift in Sources */,
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
+				32BEF32F27179BFB004EA84F /* TanatologosAminTableViewController.swift in Sources */,
 				329D792C271298D000461B09 /* SesionesViewController.swift in Sources */,
 				32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */,
 				3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */,
@@ -446,6 +459,7 @@
 				32A28B92270DD277009BB4A2 /* LogInViewController.swift in Sources */,
 				3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */,
 				3260D79D270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift in Sources */,
+				32BEF3372717C3D8004EA84F /* RegistrarSoporteViewController.swift in Sources */,
 				32BA899E27110F910030E25F /* EncuadreViewController.swift in Sources */,
 				322097B826DEE3FB0024DD40 /* SceneDelegate.swift in Sources */,
 				AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */,
@@ -453,6 +467,7 @@
 				32A6702227060C5A004B8C64 /* ServiciosTableViewController.swift in Sources */,
 				AF421D43271111FC009CE697 /* AdminSoporte.swift in Sources */,
 				AFFA1550270FD62100E4A3E7 /* TanatologosController.swift in Sources */,
+				32BEF33B2717C41B004EA84F /* EditarTanatologoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
