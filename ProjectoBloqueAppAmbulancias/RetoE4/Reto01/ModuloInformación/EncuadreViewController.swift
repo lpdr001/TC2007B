@@ -28,7 +28,7 @@ class EncuadreViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var tan: UILabel!
     var vc = UsuariosController()
-    
+    var sex = "Hombre"
     let date = NSDate(timeIntervalSince1970: 1)
     
     var user = Usuario(domicilio:"",estadoCivil:"",iDRA:"",idTanatologo:"",motivo:"",ocupacion:"",procedencia:"",referencia:"",religion:"",sexo:"", nombre:"",fechaIngreso:NSDate(timeIntervalSince1970: 1) as Date,cerrado:false,edad:0,telefono:0)
@@ -44,7 +44,7 @@ class EncuadreViewController: UIViewController, UITextFieldDelegate {
         telefono.delegate = self
         celular.delegate = self
         edad.delegate = self
-        sexo.delegate = self
+       // sexo.delegate = self
         ref.delegate = self
         motivo.delegate = self
         idra.delegate = self
@@ -63,18 +63,38 @@ class EncuadreViewController: UIViewController, UITextFieldDelegate {
         telefono.resignFirstResponder()
         celular.resignFirstResponder()
         edad.resignFirstResponder()
-        sexo.resignFirstResponder()
+        //sexo.resignFirstResponder()
         ref.resignFirstResponder()
         motivo.resignFirstResponder()
         idra.resignFirstResponder()
     }
     
     @IBAction func Registrar(_ sender: Any) {
-        let us = Usuario(domicilio:domicilio.text!,estadoCivil:estadocivil.text!,iDRA:idra.text!,idTanatologo:LogInViewController.Lv.datos[0].id,motivo:motivo.text!,ocupacion:Ocupación.text!,procedencia:procedencia.text!,referencia:ref.text!,religion:religion.text!,sexo:sexo.text!, nombre:nombre.text!,fechaIngreso:fecha.date,cerrado:false,edad:Int(edad.text!) ?? 18,telefono:Int(telefono.text!) ?? 00000000)
+        let us = Usuario(domicilio:domicilio.text!,estadoCivil:estadocivil.text!,iDRA:idra.text!,idTanatologo:LogInViewController.Lv.datos[0].id,motivo:motivo.text!,ocupacion:Ocupación.text!,procedencia:procedencia.text!,referencia:ref.text!,religion:religion.text!,sexo:self.sex, nombre:nombre.text!,fechaIngreso:fecha.date,cerrado:false,edad:Int(edad.text!) ?? 18,telefono:Int(telefono.text!) ?? 00000000)
         vc.SentServicio(sn: us)
         user = us
         
         self.loadView()
+    }
+    
+    
+    @IBAction func SelectOption(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+                print("No ")
+            sex = "Hombre"
+            }
+
+            else if sender.selectedSegmentIndex == 1 {
+                print("Sometimes ")
+                sex = "Mujer"
+
+            }
+
+
+            else if sender.selectedSegmentIndex == 2 {
+                print("Yes")
+                sex = "Otro"
+            }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
