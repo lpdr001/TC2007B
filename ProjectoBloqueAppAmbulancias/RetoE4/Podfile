@@ -12,6 +12,7 @@ target 'Reto01' do
   pod 'Firebase/Auth'
   pod 'Charts'
   pod 'TinyConstraints'
+  pod 'DropDown'
 
  
 target 'Reto01Testing' do

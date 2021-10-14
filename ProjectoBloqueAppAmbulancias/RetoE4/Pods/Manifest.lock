@@ -221,6 +221,7 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
+  - DropDown (2.3.13)
   - Firebase/Analytics (6.34.0):
     - Firebase/Core
   - Firebase/Auth (6.34.0):
@@ -339,6 +340,7 @@ PODS:
 
 DEPENDENCIES:
   - Charts
+  - DropDown
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
@@ -350,6 +352,7 @@ SPEC REPOS:
     - abseil
     - BoringSSL-GRPC
     - Charts
+    - DropDown
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -373,6 +376,7 @@ SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
   FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
   FirebaseAuth: c92d49ada7948d1a23466e3db17bc4c2039dddc3
@@ -392,6 +396,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: a58e90dcbcc89d6746e0174d01febcea71cf6f54
+PODFILE CHECKSUM: a772c9aa9228340528f9fe5aab37469878c0fa6d
 
 COCOAPODS: 1.11.2
