@@ -17,11 +17,23 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var nu: UILabel!
     @IBOutlet weak var fechatext: UIDatePicker!
     
+    
+    
+    @IBOutlet weak var herram: herramientaPickerView!
+    
+    
     @IBOutlet weak var name: UILabel!
     var user: Usuario?
     
     var datos = [Sesion]()
     var vc = SesionesController()
+    
+    /*
+    func viewWillappear(){
+        self.herram.delegate = herram
+        self.herram.dataSource = herram
+    }
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +42,9 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
         cuota.delegate = self
         tan.text = LogInViewController.Lv.datos[0].nombre
 
+        self.herram.delegate = herram
+        self.herram.dataSource = herram
+        
         // Do any additional setup after loading the view.
     }
     
