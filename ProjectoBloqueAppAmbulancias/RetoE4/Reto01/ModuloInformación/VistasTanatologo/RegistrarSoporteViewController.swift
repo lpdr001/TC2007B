@@ -8,14 +8,20 @@
 import UIKit
 
 class RegistrarSoporteViewController: UIViewController {
-
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var name: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func Registrar(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

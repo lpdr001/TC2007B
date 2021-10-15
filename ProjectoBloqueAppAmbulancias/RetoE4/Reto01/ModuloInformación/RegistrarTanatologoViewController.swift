@@ -9,6 +9,9 @@ import UIKit
 
 class RegistrarTanatologoViewController: UIViewController {
 
+    @IBOutlet weak var Name: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var username: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +28,8 @@ class RegistrarTanatologoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func Registrar(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
 }

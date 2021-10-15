@@ -14,7 +14,7 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var motivo: UITextField!
     var sc = SesionesController()
 
-    var sesion = Sesion(id: "", cierre: false, numeroSesion: 1, evaluacion: "", idUsuario: "", servicio: "", couta: 1, fecha: "", intervencion: "", herramienta: "", motivo: "")
+    var sesion: Sesion!
     override func viewDidLoad() {
         super.viewDidLoad()
         cuota.delegate = self
@@ -43,7 +43,7 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate{
         sesion.evaluacion = motivo.text!
         sesion.cuota = Int(cuota.text!) ?? 0
         
-        sc.EditUsuario(sn: sesion)
+        sc.EditUsuario(sn: tmpus)
         
         _ = navigationController?.popViewController(animated: true)
         

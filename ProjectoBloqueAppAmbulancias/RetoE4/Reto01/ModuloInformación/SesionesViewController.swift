@@ -10,11 +10,12 @@ import Firebase
 
 class SesionesViewController: UIViewController , UITextFieldDelegate {
     
+    @IBOutlet weak var Fecha: UIDatePicker!
     @IBOutlet weak var eval: UITextField!
     @IBOutlet weak var cuota: UITextField!
     @IBOutlet weak var tan: UILabel!
     @IBOutlet weak var nu: UILabel!
-    @IBOutlet weak var fecha: UIDatePicker!
+    @IBOutlet weak var fechatext: UIDatePicker!
     
     @IBOutlet weak var name: UILabel!
     var user: Usuario?
@@ -38,7 +39,7 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     }
     
     @IBAction func Registrar(_ sender: Any) {
-        let us = Sesion(id: "1", cierre: false, numeroSesion: self.datos.count+1, evaluacion: eval.text!, idUsuario: user?.id ?? "", servicio: "", couta: Int(cuota.text!) ?? 0, fecha: "0/0/0", intervencion: "", herramienta: "", motivo: "")
+        let us = Sesion(id: "1", cierre: false, numeroSesion: self.datos.count+1, evaluacion: eval.text!, idUsuario: user?.id ?? "", servicio: "", couta: Int(cuota.text!) ?? 0, fecha: Fecha.date, intervencion: "", herramienta: "", motivo: "")
         vc.SendSesion(sn: us)
         _ = navigationController?.popViewController(animated: true)
     }

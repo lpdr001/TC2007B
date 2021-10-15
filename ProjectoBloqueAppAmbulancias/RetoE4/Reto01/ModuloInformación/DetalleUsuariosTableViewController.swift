@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDelegate {
     
@@ -64,6 +65,7 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
 func updateUI(with sesiones:Sesiones){
     DispatchQueue.main.async {
         self.datos = sesiones
+        self.filtroDatos = sesiones
         self.tableView.reloadData()
     }
     
@@ -105,16 +107,18 @@ func displayError(_ error: Error, title: String) {
         dateFormatter.locale = NSLocale.current
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
         //let strDate = dateFormatter.string(from: date)*/
+        let h = DateFormatter().string(from: filtroDatos[indexPath.row].fecha)
+            
         
-        cell.textLabel?.text = String(filtroDatos[indexPath.row].numeroSesion)
-        cell.detailTextLabel?.text = filtroDatos[indexPath.row].fecha
+        cell.textLabel?.text = "" + String(filtroDatos[indexPath.row].numeroSesion) + ": " + h
+        cell.detailTextLabel?.text = String(filtroDatos[indexPath.row].cuota)
         
         
         
         return cell
     }
     
-    func searchBarS(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print ("using bar")
         if searchBar.text == nil || searchBar.text == "" {
             self.filtroDatos = self.datos
