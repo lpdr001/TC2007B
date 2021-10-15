@@ -29,7 +29,7 @@ class DetalleSesionViewController: UIViewController {
     var num = 0
     var user : Usuario!
     
-    var sesion = Sesion(id: "", cierre: false, numeroSesion: 1, evaluacion: "", idUsuario: "not loading", servicio: "", couta: 1, fecha: "", intervencion: "", herramienta: "", motivo: "")
+    var sesion: Sesion!
     
     
     var tanatologo = Tanatologo(id:"", nombre:"", password:"", user:"")
@@ -58,7 +58,8 @@ class DetalleSesionViewController: UIViewController {
                     self.sesion = sesiones[0]
                     self.sesion.idUsuario = user.id
                     self.tanname.text = self.tanatologo.nombre
-                    self.Fecha.text = self.sesion.fecha
+                
+                    self.Fecha.text = DateFormatter().string(from: self.sesion.fecha)
                     self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
                     self.nexp.text = self.sesion.idUsuario
                     self.usname.text = self.user.nombre
