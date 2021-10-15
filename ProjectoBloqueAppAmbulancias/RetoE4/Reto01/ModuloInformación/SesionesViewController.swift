@@ -18,8 +18,12 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var fechatext: UIDatePicker!
     
     
-    
+    //PickerViews
     @IBOutlet weak var herram: herramientaPickerView!
+    @IBOutlet weak var interv: tipoServicioPickerView!
+    @IBOutlet weak var tServ: tipoServicioPickerView!
+    @IBOutlet weak var motivo: motivoServPickerView!
+    
     
     
     @IBOutlet weak var name: UILabel!
@@ -28,12 +32,7 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
     var datos = [Sesion]()
     var vc = SesionesController()
     
-    /*
-    func viewWillappear(){
-        self.herram.delegate = herram
-        self.herram.dataSource = herram
-    }
-     */
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +41,19 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
         cuota.delegate = self
         tan.text = LogInViewController.Lv.datos[0].nombre
 
+        
+        //PickerViews
         self.herram.delegate = herram
         self.herram.dataSource = herram
+        
+        self.interv.delegate = interv
+        self.interv.dataSource = interv
+        
+        self.tServ.delegate = tServ
+        self.tServ.dataSource = tServ
+        
+        self.motivo.delegate = motivo
+        self.motivo.dataSource = motivo
         
         // Do any additional setup after loading the view.
     }
