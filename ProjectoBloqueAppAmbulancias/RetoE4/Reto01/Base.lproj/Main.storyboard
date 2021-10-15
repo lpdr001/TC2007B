@@ -2673,8 +2673,9 @@ Llena el siguiente formulario</string>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dny-2t-IFb">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="76"/>
-                                                <state key="normal" title="Registrar"/>
+                                                <state key="normal" title="Guardar"/>
                                                 <connections>
+                                                    <action selector="Editar:" destination="mXG-vZ-7iU" eventType="touchUpInside" id="IhL-9B-y9k"/>
                                                     <action selector="Registrar:" destination="mXG-vZ-7iU" eventType="touchUpInside" id="dgw-Bc-DAp"/>
                                                 </connections>
                                             </button>
@@ -2695,8 +2696,9 @@ Llena el siguiente formulario</string>
                     <navigationItem key="navigationItem" id="WvR-xS-9AU"/>
                     <connections>
                         <outlet property="Name" destination="fdz-y1-zSr" id="w8d-Cx-i6E"/>
-                        <outlet property="password" destination="sRC-sa-iqf" id="YRE-1O-dD9"/>
-                        <outlet property="username" destination="Y16-uh-SFi" id="uB9-6j-VDD"/>
+                        <outlet property="name" destination="fdz-y1-zSr" id="Mz7-rt-LoF"/>
+                        <outlet property="password" destination="sRC-sa-iqf" id="4Ze-Sk-aal"/>
+                        <outlet property="username" destination="Y16-uh-SFi" id="yp4-KA-Xa3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkK-a1-HDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

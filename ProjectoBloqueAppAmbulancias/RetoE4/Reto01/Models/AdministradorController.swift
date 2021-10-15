@@ -67,7 +67,14 @@ class AdministradorController{
                     "password" : sup.password,
                     "user":sup.user])
     }
-
+    
+    func Editar(sup:Tanatologo){
+        db.collection("Tanatologos").document(sup.id).setData([
+            "nombre" : sup.nombre,
+            "password" : sup.password,
+            "user":sup.user
+        ])
+    }
     
 }
 
