@@ -6,15 +6,25 @@
 //
 
 import UIKit
+import Firebase
 
-class RegistrarTanatologoViewController: UIViewController {
+class RegistrarTanatologoViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var Name: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
+  
+   // var datos = [Tanatologo]()
+    var tc = TanatologosController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Name.delegate = self
+        //password.delegate = self
+        //username.delegate = self
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +39,11 @@ class RegistrarTanatologoViewController: UIViewController {
     }
     */
     @IBAction func Registrar(_ sender: Any) {
+        let tanatologo = Tanatologo(id: "", nombre: Name.text!, password: password.text!, user:username.text!)
+        tc.SingUpTanatologo(sup: tanatologo)
+        
+        
+        
         _ = navigationController?.popViewController(animated: true)
     }
     

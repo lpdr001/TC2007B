@@ -59,5 +59,15 @@ class AdministradorController{
         }
        
     }
+    
+    func SingUpTanatologo(sup:Tanatologo){
+        var reference: DocumentReference? = nil
+        reference = db.collection("Tanatologos").addDocument(data: [
+                    "nombre" : sup.nombre,
+                    "password" : sup.password,
+                    "user":sup.user])
+    }
+
+    
 }
 
