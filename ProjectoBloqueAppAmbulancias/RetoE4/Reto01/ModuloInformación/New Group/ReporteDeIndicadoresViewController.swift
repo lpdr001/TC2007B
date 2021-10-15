@@ -126,9 +126,9 @@ class ReporteDeIndicadoresViewController: UIViewController {
     }
     
     func definicionGraficaBubble(){
-        let punto1 = BubbleChartDataEntry(x: 1, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Acompañamiento"}).count)), data: "Servicios Acompañamiento")
-        let punto2 = BubbleChartDataEntry(x: 2, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Holísticos"}).count)), data: "Servicios Holísticos")
-        let punto3 = BubbleChartDataEntry(x: 3, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Herramientas Alternativas"}).count)), data: "Herramientas Alternativas")
+        let punto1 = BubbleChartDataEntry(x: 1, y: 1, size: 2)// CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Acompañamiento"}).count)), data: "Servicios Acompañamiento")
+        let punto2 = BubbleChartDataEntry(x: 2, y: 1, size: 3)// CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Holísticos"}).count)), data: "Servicios Holísticos")
+        let punto3 = BubbleChartDataEntry(x: 3, y: 1, size: 4) // CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Herramientas Alternativas"}).count)), data: "Herramientas Alternativas")
         
         var arreglo = [BubbleChartDataEntry]()
         arreglo.append(punto1)
