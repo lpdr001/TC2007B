@@ -14,6 +14,30 @@ class AdministradorController{
     let db = Firestore.firestore()
     
     
+    func EditUsuario(sn:AdminSoporte){
+        db.collection("Sesiones").document(sn.id).setData([
+            "nombre" : sn.nombre,
+            "password" : sn.password,
+            "user":sn.user
+        ])
+    }
+    
+    func SendSoporte(sn:AdminSoporte){
+        var ref: DocumentReference? = nil
+        ref = db.collection("AdminSoporte").addDocument(data: [
+            "nombre" : sn.nombre,
+            "password" : sn.password,
+            "user":sn.user
+
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        //db.collection("Usuarios").setData()
+    }
 
     func fetchAdministrador(st:String, completion: @escaping (Result<Administradores, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var administradores = [Administrador]()
