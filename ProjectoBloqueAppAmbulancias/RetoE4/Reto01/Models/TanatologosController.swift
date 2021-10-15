@@ -13,6 +13,9 @@ class TanatologosController{
     
     let db = Firestore.firestore()
     
+    
+   
+    
     func fetchEspecificTanatologos(st:String, completion: @escaping (Result<Tanatologos, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var tanatologos = [Tanatologo]()
         db.collection("Tanatologos").getDocuments() { (querySnapshot, err) in
@@ -55,5 +58,15 @@ class TanatologosController{
         }
        
     }
+    
+    func SingUpTanatologo(sup:Tanatologo){
+        var reference: DocumentReference? = nil
+        reference = db.collection("Tanatologos").addDocument(data: [
+                    "nombre" : sup.nombre,
+                    "password" : sup.password,
+                    "user":sup.user])
+    }
+    
+    
 }
 
