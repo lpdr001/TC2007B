@@ -93,4 +93,25 @@ class SesionesController{
         }
        
     }
+    
+    func fetchSesionesTiempo(start:Date,End:Date, completion: @escaping (Result<Sesiones, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+        var sesiones = [Sesion]()
+        db.collection("Sesiones").whereField("fechaIngreso", isGreaterThanOrEqualTo: start).whereField("fechaIngreso", isLessThanOrEqualTo: End).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(.failure(err))
+            } else {
+              
+                for document in querySnapshot!.documents {
+                    
+                    let s = Sesion(aDoc: document)
+                    //if(s.tipo == st){
+                    sesiones.append(s)
+                    //}
+                }
+                completion(.success(sesiones))
+            }
+        }
+       
+    }
 }
