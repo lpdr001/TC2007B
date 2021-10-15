@@ -15,6 +15,10 @@ class ReporteDeIndicadoresViewController: UIViewController {
     @IBOutlet weak var FechaInicial: UIDatePicker!
     @IBOutlet weak var FechaFinal: UIDatePicker!
     
+    
+    
+    @IBOutlet weak var vistapie: UIView!
+    @IBOutlet weak var vistabubble: UIView!
     @IBOutlet weak var vistabarras: UIView!
     var UC = UsuariosController()
     
