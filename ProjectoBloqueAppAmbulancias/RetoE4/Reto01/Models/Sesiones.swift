@@ -12,7 +12,7 @@ struct Sesion: Codable {
     let id:String
     var cierre:Bool
     var evaluacion,idUsuario,servicio, intervencion, herramienta, motivo: String
-    let fecha:Date
+    var fecha:Date
     var cuota,numeroSesion:Int
     
     init(id:String, cierre:Bool, numeroSesion: Int, evaluacion:String, idUsuario:String, servicio:String, couta:Int , fecha:Date, intervencion:String, herramienta:String, motivo:String){
@@ -33,7 +33,7 @@ struct Sesion: Codable {
         self.cierre = aDoc.get("cierre") as? Bool ?? false
         
         let timestamp = NSDate()
-        let postTimestamp = aDoc.get("fechaIngreso") as? Timestamp ?? Timestamp(date: timestamp as Date)
+        let postTimestamp = aDoc.get("fecha") as? Timestamp ?? Timestamp(date: timestamp as Date)
 
         self.fecha = postTimestamp.dateValue()
         self.evaluacion = aDoc.get("evaluacion") as? String ?? ""

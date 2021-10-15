@@ -75,12 +75,7 @@ class ReporteDeIndicadoresViewController: UIViewController {
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
             }
         }
-        SC.fetchSesionesTiempo(start: FechaInicial.date, End: FechaFinal.date){ (result) in
-            switch result{
-            case .success(let sesiones):self.definirSesiones(with: sesiones)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
-            }
-        }
+        
     }
     
     func displayError(_ error: Error, title: String) {
@@ -121,12 +116,19 @@ class ReporteDeIndicadoresViewController: UIViewController {
         //graficaBarras.xAxis.valueFormatter = IndexAxisValueFormatter(values: motivos)
         //graficaBarras.chartDescription?.text = "del 1-oct al 30-dic"
         graficaBarras.notifyDataSetChanged()
+        
+        SC.fetchSesionesTiempo(start: FechaInicial.date, End: FechaFinal.date){ (result) in
+            switch result{
+            case .success(let sesiones):self.definirSesiones(with: sesiones)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
+            }
+        }
     }
     
     func definicionGraficaBubble(){
         let punto1 = BubbleChartDataEntry(x: 1, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Acompañamiento"}).count)), data: "Servicios Acompañamiento")
-        let punto2 = BubbleChartDataEntry(x: 1, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Holísticos"}).count)), data: "Servicios Acompañamiento")
-        let punto3 = BubbleChartDataEntry(x: 1, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Herramientas Alternativas"}).count)), data: "Herramientas Alternativas")
+        let punto2 = BubbleChartDataEntry(x: 2, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Holísticos"}).count)), data: "Servicios Holísticos")
+        let punto3 = BubbleChartDataEntry(x: 3, y: 1, size: CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Herramientas Alternativas"}).count)), data: "Herramientas Alternativas")
         
         var arreglo = [BubbleChartDataEntry]()
         arreglo.append(punto1)
