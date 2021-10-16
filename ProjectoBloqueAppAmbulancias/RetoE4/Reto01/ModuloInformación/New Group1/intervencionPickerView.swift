@@ -8,6 +8,8 @@ import UIKit
 
 class intervencionPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    var currentValue = "Tanatología"
+    
     let intervenciones = ["Tanatología", "Acompañamiento Individual", "Acompañamiento Grupal", "Logoterapia", "Mindfulness", "Aromaterapia y Musicoterapia", "Cristaloterapia", "Reiki", "Biomagnetismo", "Angeloterapia", "Cama Térmica de Jade", "Flores de Bach", "Brisas ambientales"]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -19,10 +21,14 @@ class intervencionPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        currentValue = intervenciones[row]
+        print(currentValue)
         return intervenciones[row]
     }
     
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
+        currentValue = intervenciones[row]
+        print(currentValue)
         return intervenciones[row]
     }
     

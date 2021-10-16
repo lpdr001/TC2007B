@@ -9,6 +9,8 @@
 import UIKit
 
 class herramientaPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var currentValue = "Contención"
 
     let herramienta = ["Contención", "Diálogo", "Ejercicio", "Encuadre", "Infografía", "Dinámica", "Lectura", "Meditación", "Video", "Otro"]
 
@@ -21,10 +23,14 @@ class herramientaPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDat
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        currentValue = herramienta[row]
+        print(currentValue)
         return herramienta[row]
     }
     
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
+        currentValue = herramienta[row]
+        print(currentValue)
         return herramienta[row]
     }
 

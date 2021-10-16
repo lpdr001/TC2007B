@@ -34,8 +34,8 @@ class ReporteDeIndicadoresViewController: UIViewController {
         return g
     }()
     
-    lazy var graficaBubble: BubbleChartView = {
-        var g =  BubbleChartView()
+    lazy var graficaBubble: BarChartView = {
+        var g =  BarChartView()
         return g
     }()
     
@@ -126,16 +126,16 @@ class ReporteDeIndicadoresViewController: UIViewController {
     }
     
     func definicionGraficaBubble(){
-        let punto1 = BubbleChartDataEntry(x: 1, y: 1, size: 2)// CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Acompañamiento"}).count)), data: "Servicios Acompañamiento")
-        let punto2 = BubbleChartDataEntry(x: 2, y: 1, size: 3)// CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Servicios Holísticos"}).count)), data: "Servicios Holísticos")
-        let punto3 = BubbleChartDataEntry(x: 3, y: 1, size: 4) // CGFloat(Double(self.FiltrodatosSesiones.filter({$0.servicio == "Herramientas Alternativas"}).count)), data: "Herramientas Alternativas")
-        
-        var arreglo = [BubbleChartDataEntry]()
+        let punto1 = BarChartDataEntry(x: 1, y: Double(self.FiltrodatosUsuarios.filter({$0.sexo == "Servicios Acompañamiento"}).count), data: "Servicios Acompañamiento")
+        let punto2 = BarChartDataEntry(x: 1, y: Double(self.FiltrodatosUsuarios.filter({$0.sexo == "Servicios Holísticos"}).count), data: "Servicios Holísticos")
+        let punto3 = BarChartDataEntry(x: 1, y: Double(self.FiltrodatosUsuarios.filter({$0.sexo == "Herramientas Alternativas"}).count), data: "Herramientas Alternativas")
+
+        var arreglo = [BarChartDataEntry]()
         arreglo.append(punto1)
         arreglo.append(punto2)
         arreglo.append(punto3)
         
-        let dataSet = BubbleChartDataSet(entries: arreglo)
+        let dataSet = BarChartDataSet(entries: arreglo)
         let colores = [UIColor.blue, UIColor(red: 0, green: 1.0, blue: 1.0, alpha: 1.0),UIColor.lightGray]
         dataSet.colors = colores //ChartColorTemplates.colorful()
         let data = BubbleChartData(dataSet: dataSet)

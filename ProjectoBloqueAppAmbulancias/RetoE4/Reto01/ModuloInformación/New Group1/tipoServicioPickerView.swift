@@ -8,6 +8,8 @@
 import UIKit
 
 class tipoServicioPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var currentValue = "Servicios de Acompañamiento"
 
     let servicios = ["Servicios de Acompañamiento", "Servicios holísticos", "Herramientas alternativas"]
 
@@ -20,10 +22,14 @@ class tipoServicioPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        currentValue = servicios[row]
+        print(currentValue)
         return servicios[row]
     }
     
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
+        currentValue = servicios[row]
+        print(currentValue)
         return servicios[row]
     }
     
