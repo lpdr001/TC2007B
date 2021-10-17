@@ -605,7 +605,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-Ro-nzL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-Ro-nzL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eed-pr-F4q">
@@ -726,6 +726,7 @@ Llena el siguiente formulario</string>
                         <viewLayoutGuide key="safeArea" id="sK7-wu-Zik"/>
                         <color key="backgroundColor" red="0.23137256503105164" green="0.7137255072593689" blue="0.9490196704864502" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sK7-wu-Zik" firstAttribute="bottom" secondItem="VZz-Ro-nzL" secondAttribute="bottom" constant="1" id="1ch-rX-jAR"/>
                             <constraint firstItem="7uz-zC-2QZ" firstAttribute="leading" secondItem="Tsh-Zm-iE8" secondAttribute="leading" id="26l-ra-8rh"/>
                             <constraint firstItem="YFb-p5-VZU" firstAttribute="top" secondItem="2Ci-os-I5r" secondAttribute="bottom" constant="65" id="38k-0R-F3D"/>
                             <constraint firstItem="vbo-Un-2Ws" firstAttribute="leading" secondItem="59V-og-O9H" secondAttribute="trailing" constant="19" id="52L-Gi-dRE"/>
@@ -738,6 +739,7 @@ Llena el siguiente formulario</string>
                             <constraint firstItem="lBq-Uh-3IR" firstAttribute="top" secondItem="YmL-ab-68k" secondAttribute="bottom" constant="34" id="JLR-dv-1U3"/>
                             <constraint firstItem="sK7-wu-Zik" firstAttribute="trailing" secondItem="Dti-jy-tuB" secondAttribute="trailing" constant="65" id="L3t-Zn-7lT"/>
                             <constraint firstItem="2Ci-os-I5r" firstAttribute="leading" secondItem="Tsh-Zm-iE8" secondAttribute="trailing" constant="8" symbolic="YES" id="OFf-Ve-qFl"/>
+                            <constraint firstItem="VZz-Ro-nzL" firstAttribute="top" secondItem="rLZ-3B-edI" secondAttribute="top" id="Pws-WV-zjq"/>
                             <constraint firstItem="Dti-jy-tuB" firstAttribute="top" secondItem="rZ1-YI-wTm" secondAttribute="top" id="QXM-lc-B17"/>
                             <constraint firstItem="vbo-Un-2Ws" firstAttribute="top" secondItem="Dti-jy-tuB" secondAttribute="bottom" constant="19" id="RMm-a2-93O"/>
                             <constraint firstItem="D3y-0j-cNj" firstAttribute="centerX" secondItem="VZz-Ro-nzL" secondAttribute="centerX" id="ROH-GY-WyC"/>
@@ -748,6 +750,7 @@ Llena el siguiente formulario</string>
                             <constraint firstItem="D3y-0j-cNj" firstAttribute="centerX" secondItem="FXo-2R-eQC" secondAttribute="centerX" id="YAn-xD-KtI"/>
                             <constraint firstItem="D3y-0j-cNj" firstAttribute="top" secondItem="rLZ-3B-edI" secondAttribute="top" constant="309.5" id="YF8-D7-hbc"/>
                             <constraint firstItem="rZ1-YI-wTm" firstAttribute="leading" secondItem="YmL-ab-68k" secondAttribute="leading" id="aNv-f2-Uj9"/>
+                            <constraint firstItem="VZz-Ro-nzL" firstAttribute="leading" secondItem="rLZ-3B-edI" secondAttribute="leading" id="bM9-8d-dnA"/>
                             <constraint firstItem="sK7-wu-Zik" firstAttribute="trailing" secondItem="eed-pr-F4q" secondAttribute="trailing" constant="200" id="cEa-EM-eOk"/>
                             <constraint firstItem="vbo-Un-2Ws" firstAttribute="trailing" secondItem="0AF-mH-XSB" secondAttribute="trailing" id="e7z-H3-X9w"/>
                             <constraint firstItem="D3y-0j-cNj" firstAttribute="centerX" secondItem="YmL-ab-68k" secondAttribute="centerX" id="eJR-tw-vST"/>
@@ -863,39 +866,39 @@ Llena el siguiente formulario</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" semanticContentAttribute="spatial" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="97x-QS-QdA">
-                                <rect key="frame" x="16" y="188" width="343" height="180"/>
+                                <rect key="frame" x="16" y="188" width="382" height="264"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoT-2k-von">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faB-ch-Mxj">
-                                        <rect key="frame" x="0.0" y="20.5" width="343" height="34"/>
+                                        <rect key="frame" x="0.0" y="39" width="382" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm9-cs-mMj">
-                                        <rect key="frame" x="0.0" y="54.5" width="343" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Or-LF-ZGT">
-                                        <rect key="frame" x="0.0" y="75" width="343" height="34"/>
+                                        <rect key="frame" x="0.0" y="130.5" width="382" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNg-eI-lnh">
-                                        <rect key="frame" x="0.0" y="109" width="343" height="21"/>
+                                        <rect key="frame" x="0.0" y="178.5" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="LogInTanatologos:" destination="Fiz-iT-sco" eventType="touchUpInside" id="UWT-ix-mVn"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-Dh-O1p">
-                                        <rect key="frame" x="0.0" y="130" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="214" width="382" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -1958,8 +1961,9 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Domicilio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-3Q-7xL">
-                                                <rect key="frame" x="11" y="337" width="354" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Domicilio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-3Q-7xL">
+                                                <rect key="frame" x="11" y="337" width="352" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1986,8 +1990,8 @@ Llena el siguiente formulario</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-TJ-Tcx">
-                                                <rect key="frame" x="193" y="389" width="172" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-TJ-Tcx">
+                                                <rect key="frame" x="193" y="389" width="170" height="34"/>
                                                 <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2027,12 +2031,15 @@ Llena el siguiente formulario</string>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTK-FI-5NL">
                                                 <rect key="frame" x="149" y="668" width="78" height="30"/>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ql2-rW-xcJ">
-                                                <rect key="frame" x="120" y="23" width="137" height="139"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ql2-rW-xcJ">
+                                                <rect key="frame" x="119.5" y="23" width="137" height="139"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="2N9-Ab-LUw"/>
+                                                    <constraint firstAttribute="width" constant="137" id="jrp-Ap-edx"/>
+                                                </constraints>
                                             </imageView>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBn-PB-cVa">
-                                                <rect key="frame" x="281" y="77" width="49" height="31"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBn-PB-cVa">
+                                                <rect key="frame" x="280.5" y="77" width="51" height="31"/>
                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                             </switch>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="Identificación de respuesta actitudinal según etapas.            E.K.R" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPU-9r-t77">
@@ -2047,17 +2054,22 @@ Llena el siguiente formulario</string>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="E9n-HQ-pGk" firstAttribute="top" secondItem="KMp-Bw-mt5" secondAttribute="bottom" constant="16" id="0BG-Sc-OCd"/>
-                                            <constraint firstItem="gWu-mi-eDZ" firstAttribute="top" secondItem="FaE-3Q-7xL" secondAttribute="bottom" constant="18" id="0X1-Z5-M43"/>
-                                            <constraint firstItem="VZB-TJ-Tcx" firstAttribute="leading" secondItem="6Y5-9o-sLk" secondAttribute="leading" id="1CM-rN-gtq"/>
                                             <constraint firstItem="JUS-vS-bZa" firstAttribute="trailing" secondItem="S9O-Ym-a3c" secondAttribute="trailing" id="2vq-st-RuO"/>
                                             <constraint firstItem="NTK-FI-5NL" firstAttribute="centerX" secondItem="7XN-ZJ-NaV" secondAttribute="centerX" id="3cd-OP-M0u"/>
+                                            <constraint firstItem="VZB-TJ-Tcx" firstAttribute="leading" secondItem="3sG-12-Vc6" secondAttribute="leading" id="3xf-DK-w0f"/>
                                             <constraint firstItem="gWu-mi-eDZ" firstAttribute="leading" secondItem="yg2-Bo-vP0" secondAttribute="leading" id="80A-JL-Jol"/>
-                                            <constraint firstItem="3sG-12-Vc6" firstAttribute="leading" secondItem="VZB-TJ-Tcx" secondAttribute="leading" id="82o-S5-lfs"/>
                                             <constraint firstItem="3sG-12-Vc6" firstAttribute="top" secondItem="XQQ-ve-aHe" secondAttribute="bottom" constant="15" id="92Z-lp-V8P"/>
                                             <constraint firstItem="njv-va-ZFN" firstAttribute="centerX" secondItem="7XN-ZJ-NaV" secondAttribute="centerX" id="9jj-w1-c7b"/>
                                             <constraint firstItem="XQQ-ve-aHe" firstAttribute="leading" secondItem="JUS-vS-bZa" secondAttribute="trailing" constant="13" id="9wo-Ab-dfc"/>
+                                            <constraint firstItem="6Y5-9o-sLk" firstAttribute="leading" secondItem="VZB-TJ-Tcx" secondAttribute="leading" id="9zN-yO-D43"/>
+                                            <constraint firstItem="Ql2-rW-xcJ" firstAttribute="top" secondItem="0zy-z5-cVk" secondAttribute="top" constant="22.5" id="BgP-Oe-BlD"/>
+                                            <constraint firstItem="KBn-PB-cVa" firstAttribute="leading" secondItem="Ql2-rW-xcJ" secondAttribute="trailing" constant="24" id="BiB-Ov-l2v"/>
+                                            <constraint firstItem="6Y5-9o-sLk" firstAttribute="trailing" secondItem="3sG-12-Vc6" secondAttribute="trailing" id="E9L-gS-frZ"/>
+                                            <constraint firstItem="VZB-TJ-Tcx" firstAttribute="trailing" secondItem="E9n-HQ-pGk" secondAttribute="trailing" id="EYU-ps-GBL"/>
+                                            <constraint firstItem="KBn-PB-cVa" firstAttribute="centerY" secondItem="Ql2-rW-xcJ" secondAttribute="centerY" id="FaS-IU-pfP"/>
                                             <constraint firstItem="njv-va-ZFN" firstAttribute="leading" secondItem="S9O-Ym-a3c" secondAttribute="leading" id="G2Q-Vt-byr"/>
                                             <constraint firstItem="njv-va-ZFN" firstAttribute="leading" secondItem="0zy-z5-cVk" secondAttribute="leading" constant="11" id="Gi5-4Y-Uq8"/>
+                                            <constraint firstItem="6Y5-9o-sLk" firstAttribute="top" secondItem="yg2-Bo-vP0" secondAttribute="top" id="Hvy-BW-2cm"/>
                                             <constraint firstItem="aPU-9r-t77" firstAttribute="trailing" secondItem="KMp-Bw-mt5" secondAttribute="trailing" id="LsG-Ef-VqC"/>
                                             <constraint firstItem="E9n-HQ-pGk" firstAttribute="leading" secondItem="KMp-Bw-mt5" secondAttribute="leading" id="MBd-kR-B2V"/>
                                             <constraint firstItem="NTK-FI-5NL" firstAttribute="top" secondItem="aPU-9r-t77" secondAttribute="bottom" constant="39" id="MIi-aO-FfS"/>
@@ -2066,30 +2078,24 @@ Llena el siguiente formulario</string>
                                             <constraint firstItem="S9O-Ym-a3c" firstAttribute="trailing" secondItem="gWu-mi-eDZ" secondAttribute="trailing" id="PuH-H6-6pP"/>
                                             <constraint firstItem="JUS-vS-bZa" firstAttribute="top" secondItem="njv-va-ZFN" secondAttribute="bottom" constant="19" id="PxP-HT-772"/>
                                             <constraint firstItem="JUS-vS-bZa" firstAttribute="leading" secondItem="gWu-mi-eDZ" secondAttribute="leading" id="S0V-gz-h6q"/>
+                                            <constraint firstItem="njv-va-ZFN" firstAttribute="top" secondItem="Ql2-rW-xcJ" secondAttribute="bottom" constant="20.5" id="SQb-Ce-Pxb"/>
                                             <constraint firstItem="7XN-ZJ-NaV" firstAttribute="leading" secondItem="0zy-z5-cVk" secondAttribute="leading" id="TA2-xV-5sn"/>
-                                            <constraint firstItem="FaE-3Q-7xL" firstAttribute="centerX" secondItem="Ql2-rW-xcJ" secondAttribute="centerX" id="XCh-3Q-fWe"/>
-                                            <constraint firstItem="7XN-ZJ-NaV" firstAttribute="centerX" secondItem="Ql2-rW-xcJ" secondAttribute="centerX" id="XLD-3M-cTq"/>
-                                            <constraint firstItem="S9O-Ym-a3c" firstAttribute="leading" secondItem="FaE-3Q-7xL" secondAttribute="leading" id="YUG-I3-f3O"/>
                                             <constraint firstItem="gWu-mi-eDZ" firstAttribute="centerY" secondItem="0zy-z5-cVk" secondAttribute="centerY" id="Z4z-4k-BxG"/>
                                             <constraint firstAttribute="height" constant="812" id="Z76-bT-wGL"/>
-                                            <constraint firstItem="FaE-3Q-7xL" firstAttribute="trailing" secondItem="VZB-TJ-Tcx" secondAttribute="trailing" id="ZZA-MU-Ahg"/>
                                             <constraint firstItem="aPU-9r-t77" firstAttribute="leading" secondItem="0zy-z5-cVk" secondAttribute="leading" constant="10" id="aZV-Wb-stB"/>
-                                            <constraint firstItem="yg2-Bo-vP0" firstAttribute="top" secondItem="6Y5-9o-sLk" secondAttribute="top" id="ajn-9H-eP7"/>
                                             <constraint firstItem="XQQ-ve-aHe" firstAttribute="trailing" secondItem="3sG-12-Vc6" secondAttribute="trailing" id="bPU-qE-cwR"/>
                                             <constraint firstItem="S9O-Ym-a3c" firstAttribute="top" secondItem="JUS-vS-bZa" secondAttribute="bottom" constant="16" id="bU9-7D-K1m"/>
                                             <constraint firstItem="aPU-9r-t77" firstAttribute="top" secondItem="E9n-HQ-pGk" secondAttribute="bottom" constant="14" id="bxX-Y7-TJ1"/>
-                                            <constraint firstItem="njv-va-ZFN" firstAttribute="top" secondItem="Ql2-rW-xcJ" secondAttribute="bottom" constant="21.666666666666686" id="cGb-jW-Fm8"/>
                                             <constraint firstItem="E9n-HQ-pGk" firstAttribute="centerX" secondItem="0zy-z5-cVk" secondAttribute="centerX" id="ddY-Me-2Gg"/>
                                             <constraint firstItem="S9O-Ym-a3c" firstAttribute="top" secondItem="3sG-12-Vc6" secondAttribute="top" id="ee8-Oh-zOv"/>
                                             <constraint firstItem="XQQ-ve-aHe" firstAttribute="leading" secondItem="3sG-12-Vc6" secondAttribute="leading" id="hPM-IW-Bbz"/>
                                             <constraint firstAttribute="bottom" secondItem="aPU-9r-t77" secondAttribute="bottom" constant="183" id="hWO-fW-VBm"/>
                                             <constraint firstAttribute="trailing" secondItem="NTK-FI-5NL" secondAttribute="trailing" constant="149" id="j4X-Q0-zyb"/>
-                                            <constraint firstItem="gWu-mi-eDZ" firstAttribute="top" secondItem="VZB-TJ-Tcx" secondAttribute="top" id="mbz-uk-1Lc"/>
                                             <constraint firstAttribute="trailing" secondItem="XQQ-ve-aHe" secondAttribute="trailing" constant="11" id="pe2-bc-Cg0"/>
                                             <constraint firstItem="JUS-vS-bZa" firstAttribute="centerX" secondItem="S9O-Ym-a3c" secondAttribute="centerX" id="rKZ-KJ-F8S"/>
+                                            <constraint firstItem="VZB-TJ-Tcx" firstAttribute="top" secondItem="gWu-mi-eDZ" secondAttribute="top" id="rl5-Sy-B9E"/>
                                             <constraint firstItem="E9n-HQ-pGk" firstAttribute="trailing" secondItem="KMp-Bw-mt5" secondAttribute="trailing" id="u2p-Jb-kCj"/>
-                                            <constraint firstItem="FaE-3Q-7xL" firstAttribute="top" secondItem="S9O-Ym-a3c" secondAttribute="bottom" constant="17" id="upw-V3-kCd"/>
-                                            <constraint firstItem="3sG-12-Vc6" firstAttribute="trailing" secondItem="6Y5-9o-sLk" secondAttribute="trailing" id="vGw-pP-lkA"/>
+                                            <constraint firstItem="Ql2-rW-xcJ" firstAttribute="centerX" secondItem="7XN-ZJ-NaV" secondAttribute="centerX" id="utL-f9-MUA"/>
                                             <constraint firstItem="NTK-FI-5NL" firstAttribute="leading" secondItem="0zy-z5-cVk" secondAttribute="leading" constant="149" id="wYi-Jr-phI"/>
                                             <constraint firstItem="7XN-ZJ-NaV" firstAttribute="top" secondItem="0zy-z5-cVk" secondAttribute="top" constant="-13" id="zQh-ST-rxf"/>
                                             <constraint firstItem="gWu-mi-eDZ" firstAttribute="trailing" secondItem="yg2-Bo-vP0" secondAttribute="trailing" id="zyq-4h-q1E"/>
@@ -2154,7 +2160,7 @@ Llena el siguiente formulario</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2442" y="2642"/>
+            <point key="canvasLocation" x="-2442.0289855072465" y="2641.0714285714284"/>
         </scene>
         <!--Detalle Usuarios Table View Controller-->
         <scene sceneID="Ma2-nZ-YAT">
