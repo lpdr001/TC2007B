@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -38,7 +39,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="D7q-RF-l24" style="IBUITableViewCellStyleDefault" id="HYh-05-5Hx" customClass="ServicioTableViewCell" customModule="Reto01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYh-05-5Hx" id="V5J-AF-QoH">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -317,187 +318,194 @@
             <point key="canvasLocation" x="-1698" y="1855"/>
         </scene>
         <!--Nueva Sesión-->
-        <scene sceneID="FgA-tT-0CC">
+        <scene sceneID="yjR-Bg-Vfu">
             <objects>
-                <viewController storyboardIdentifier="editsesion" id="eLe-v9-A4D" customClass="EditarSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BIP-QI-Jge">
+                <viewController storyboardIdentifier="editsesion" id="3Z0-y8-ARE" customClass="EditarSesionViewController" customModule="Reto01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YNk-2D-J3A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q85-er-peX">
-                                <rect key="frame" x="1.5" y="-44" width="411" height="984"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufh-eJ-0mv">
+                                <rect key="frame" x="1" y="-44" width="412" height="984"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="72x-di-N88">
-                                        <rect key="frame" x="-443" y="0.0" width="1073" height="942"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="zL3-71-ssw">
+                                        <rect key="frame" x="-443" y="0.0" width="1073" height="984"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="1073" id="cvk-sR-cEn"/>
+                                            <constraint firstAttribute="width" constant="1073" id="o09-BA-WX5"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRI-80-JN3">
-                                        <rect key="frame" x="0.0" y="0.0" width="411" height="942"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-PU-36Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="412" height="984"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Motivo de consulta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzk-vv-QMt">
-                                                <rect key="frame" x="50" y="183" width="311" height="21"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CO-dc-aDz">
-                                                <rect key="frame" x="50" y="314" width="311" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Motivo de consulta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m2-qq-B3S">
+                                                <rect key="frame" x="50" y="121" width="312" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervencion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eG-ca-i0v">
-                                                <rect key="frame" x="50" y="445" width="311" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7R-b6-jnZ">
+                                                <rect key="frame" x="50" y="252" width="312" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herramienta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nv-PO-vzy">
-                                                <rect key="frame" x="50" y="576" width="311" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervencion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0w-vU-jC5">
+                                                <rect key="frame" x="50" y="383" width="312" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-Qa-JZT" customClass="EditarHerPickerView" customModule="Reto01" customModuleProvider="target">
-                                                <rect key="frame" x="55" y="600" width="301" height="94"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herramienta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-pm-1ir">
+                                                <rect key="frame" x="50" y="514" width="312" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVh-7b-Adr" customClass="herramientaPickerView" customModule="Reto01" customModuleProvider="target">
+                                                <rect key="frame" x="55" y="538" width="302" height="94"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="94" id="hkT-cC-p5V"/>
+                                                    <constraint firstAttribute="height" constant="94" id="Zg6-fL-YmX"/>
                                                 </constraints>
                                             </pickerView>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry9-Sa-Wfv" customClass="tipoServicioPickerView" customModule="Reto01" customModuleProvider="target">
-                                                <rect key="frame" x="55" y="343" width="301" height="94"/>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-Ah-VfV" customClass="tipoServicioPickerView" customModule="Reto01" customModuleProvider="target">
+                                                <rect key="frame" x="55" y="281" width="302" height="94"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="94" id="zB7-HP-Trh"/>
+                                                    <constraint firstAttribute="height" constant="94" id="xxe-Wv-aXf"/>
                                                 </constraints>
                                             </pickerView>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKP-aS-b9s" customClass="motivoServPickerView" customModule="Reto01" customModuleProvider="target">
-                                                <rect key="frame" x="55" y="212" width="301" height="94"/>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-hn-tr6" customClass="motivoServPickerView" customModule="Reto01" customModuleProvider="target">
+                                                <rect key="frame" x="55" y="150" width="302" height="94"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="94" id="Wyn-oL-IjX"/>
+                                                    <constraint firstAttribute="height" constant="94" id="r1P-qN-WAH"/>
                                                 </constraints>
                                             </pickerView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Evaluación Sesión" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U8p-2E-wNR">
-                                                <rect key="frame" x="30" y="732" width="351" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Evaluación Sesión" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zu-HL-b0V">
+                                                <rect key="frame" x="30" y="670" width="352" height="34"/>
                                                 <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cuota de recuperación" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-H3-zMO">
-                                                <rect key="frame" x="30" y="788" width="351" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cuota de recuperación" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NjV-xr-sG8">
+                                                <rect key="frame" x="30" y="726" width="352" height="34"/>
                                                 <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                             </textField>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHe-kB-jdC" customClass="intervencionPickerView" customModule="Reto01" customModuleProvider="target">
-                                                <rect key="frame" x="55" y="474" width="301" height="94"/>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBm-Ea-Ijh" customClass="intervencionPickerView" customModule="Reto01" customModuleProvider="target">
+                                                <rect key="frame" x="55" y="412" width="302" height="94"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="94" id="ixi-As-Ci3"/>
+                                                    <constraint firstAttribute="height" constant="94" id="Z8y-60-whc"/>
                                                 </constraints>
                                             </pickerView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.80802781130000001" green="1" blue="0.98886421769999999" alpha="0.76749343280000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="uKP-aS-b9s" secondAttribute="trailing" constant="55" id="3md-Nf-cxQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="sHe-kB-jdC" secondAttribute="trailing" constant="55" id="4Iw-t3-ZnL"/>
-                                            <constraint firstItem="1nv-PO-vzy" firstAttribute="centerX" secondItem="Mti-Qa-JZT" secondAttribute="centerX" id="5b1-9u-4Q8"/>
-                                            <constraint firstItem="4eG-ca-i0v" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="50" id="6Na-R8-zXa"/>
-                                            <constraint firstItem="wRb-H3-zMO" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="30" id="9CH-Gq-WbS"/>
-                                            <constraint firstItem="wRb-H3-zMO" firstAttribute="top" secondItem="U8p-2E-wNR" secondAttribute="bottom" constant="22" id="9Fm-g1-yJk"/>
-                                            <constraint firstItem="uKP-aS-b9s" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="55" id="9HV-ad-A7E"/>
-                                            <constraint firstItem="ry9-Sa-Wfv" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="55" id="B0j-zr-9wK"/>
-                                            <constraint firstItem="4eG-ca-i0v" firstAttribute="top" secondItem="ry9-Sa-Wfv" secondAttribute="bottom" constant="8" symbolic="YES" id="Bez-Fw-H1r"/>
-                                            <constraint firstAttribute="trailing" secondItem="Mti-Qa-JZT" secondAttribute="trailing" constant="55" id="Bzj-e2-Zqb"/>
-                                            <constraint firstAttribute="trailing" secondItem="7CO-dc-aDz" secondAttribute="trailing" constant="50" id="CD7-hB-R6v"/>
-                                            <constraint firstAttribute="trailing" secondItem="1nv-PO-vzy" secondAttribute="trailing" constant="50" id="CZW-vW-Tvc"/>
-                                            <constraint firstAttribute="trailing" secondItem="ry9-Sa-Wfv" secondAttribute="trailing" constant="55" id="GmV-XQ-SDx"/>
-                                            <constraint firstItem="7CO-dc-aDz" firstAttribute="leading" secondItem="Vzk-vv-QMt" secondAttribute="leading" id="MTw-cT-zf5"/>
-                                            <constraint firstItem="1nv-PO-vzy" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="50" id="Ne2-PR-PAH"/>
-                                            <constraint firstAttribute="trailing" secondItem="U8p-2E-wNR" secondAttribute="trailing" constant="30" id="Nnx-xf-Dmm"/>
-                                            <constraint firstItem="ry9-Sa-Wfv" firstAttribute="top" secondItem="7CO-dc-aDz" secondAttribute="bottom" constant="8" symbolic="YES" id="Ozm-iy-1UX"/>
-                                            <constraint firstItem="sHe-kB-jdC" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="55" id="PFW-eC-RDe"/>
-                                            <constraint firstAttribute="trailing" secondItem="Mti-Qa-JZT" secondAttribute="trailing" constant="55" id="SgM-MM-096"/>
-                                            <constraint firstAttribute="trailing" secondItem="4eG-ca-i0v" secondAttribute="trailing" constant="50" id="W4a-OI-wlp"/>
-                                            <constraint firstItem="7CO-dc-aDz" firstAttribute="top" secondItem="uKP-aS-b9s" secondAttribute="bottom" constant="8" symbolic="YES" id="XiO-Nx-35f"/>
-                                            <constraint firstItem="Vzk-vv-QMt" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="50" id="ZLA-9v-Eao"/>
-                                            <constraint firstAttribute="trailing" secondItem="wRb-H3-zMO" secondAttribute="trailing" constant="30" id="eRi-jp-Z6V"/>
-                                            <constraint firstItem="7CO-dc-aDz" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="50" id="gTs-f2-i6s"/>
-                                            <constraint firstItem="Mti-Qa-JZT" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="55" id="hkU-SH-8ep"/>
-                                            <constraint firstItem="1nv-PO-vzy" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="50" id="ih7-mb-ZYU"/>
-                                            <constraint firstAttribute="bottom" secondItem="U8p-2E-wNR" secondAttribute="bottom" constant="176" id="inj-Sx-IXu"/>
-                                            <constraint firstItem="1nv-PO-vzy" firstAttribute="top" secondItem="sHe-kB-jdC" secondAttribute="bottom" constant="8" symbolic="YES" id="jVn-66-JJQ"/>
-                                            <constraint firstItem="sHe-kB-jdC" firstAttribute="top" secondItem="4eG-ca-i0v" secondAttribute="bottom" constant="8" symbolic="YES" id="ldF-o4-lJg"/>
-                                            <constraint firstAttribute="height" constant="942" id="nhX-DM-vft"/>
-                                            <constraint firstItem="U8p-2E-wNR" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="30" id="nmn-kP-yP7"/>
-                                            <constraint firstAttribute="bottom" secondItem="Mti-Qa-JZT" secondAttribute="bottom" constant="248" id="obI-1P-9Et"/>
-                                            <constraint firstItem="Mti-Qa-JZT" firstAttribute="top" secondItem="1nv-PO-vzy" secondAttribute="bottom" constant="3" id="stL-o8-U7T"/>
-                                            <constraint firstItem="Mti-Qa-JZT" firstAttribute="leading" secondItem="SRI-80-JN3" secondAttribute="leading" constant="55" id="vTc-ZN-utx"/>
-                                            <constraint firstItem="uKP-aS-b9s" firstAttribute="top" secondItem="Vzk-vv-QMt" secondAttribute="bottom" constant="8" symbolic="YES" id="wVC-fj-2j8"/>
-                                            <constraint firstAttribute="trailing" secondItem="Vzk-vv-QMt" secondAttribute="trailing" constant="50" id="xfx-NV-yUS"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ga-Ah-VfV" secondAttribute="trailing" constant="55" id="1nV-jZ-je7"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="50" id="2EM-Bx-H4F"/>
+                                            <constraint firstAttribute="trailing" secondItem="BD7-pm-1ir" secondAttribute="trailing" constant="50" id="4E1-RL-tZM"/>
+                                            <constraint firstItem="BD7-pm-1ir" firstAttribute="top" secondItem="RBm-Ea-Ijh" secondAttribute="bottom" constant="8" symbolic="YES" id="5Mv-bE-hTg"/>
+                                            <constraint firstAttribute="trailing" secondItem="wVh-7b-Adr" secondAttribute="trailing" constant="55" id="5Vb-im-qZX"/>
+                                            <constraint firstItem="8ga-Ah-VfV" firstAttribute="top" secondItem="e7R-b6-jnZ" secondAttribute="bottom" constant="8" symbolic="YES" id="9dZ-2O-bNB"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="leading" secondItem="BD7-pm-1ir" secondAttribute="leading" id="DAu-fj-f4W"/>
+                                            <constraint firstAttribute="trailing" secondItem="RBm-Ea-Ijh" secondAttribute="trailing" constant="55" id="DlJ-a7-f6i"/>
+                                            <constraint firstItem="V0w-vU-jC5" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="50" id="ErU-Xg-Ptp"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="centerX" secondItem="8ga-Ah-VfV" secondAttribute="centerX" id="FL3-8C-5v0"/>
+                                            <constraint firstItem="2zu-HL-b0V" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="30" id="H1A-lG-Qew"/>
+                                            <constraint firstItem="BD7-pm-1ir" firstAttribute="centerX" secondItem="wVh-7b-Adr" secondAttribute="centerX" id="H69-jA-RpG"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="trailing" secondItem="V0w-vU-jC5" secondAttribute="trailing" id="J7u-s7-vPM"/>
+                                            <constraint firstItem="e7R-b6-jnZ" firstAttribute="leading" secondItem="0m2-qq-B3S" secondAttribute="leading" id="JzP-0Y-mEy"/>
+                                            <constraint firstAttribute="trailing" secondItem="e7R-b6-jnZ" secondAttribute="trailing" constant="50" id="NoN-mz-DgP"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="top" secondItem="Yck-PU-36Y" secondAttribute="top" constant="121" id="PFB-bP-vye"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="trailing" secondItem="e7R-b6-jnZ" secondAttribute="trailing" id="QjK-s1-8FH"/>
+                                            <constraint firstAttribute="trailing" secondItem="NjV-xr-sG8" secondAttribute="trailing" constant="30" id="QkM-uA-Sex"/>
+                                            <constraint firstItem="e7R-b6-jnZ" firstAttribute="top" secondItem="yy8-hn-tr6" secondAttribute="bottom" constant="8" symbolic="YES" id="Qzx-gs-W64"/>
+                                            <constraint firstItem="NjV-xr-sG8" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="30" id="V7m-ZW-eqB"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="centerX" secondItem="Yck-PU-36Y" secondAttribute="centerX" id="VX1-RK-sOW"/>
+                                            <constraint firstItem="V0w-vU-jC5" firstAttribute="top" secondItem="8ga-Ah-VfV" secondAttribute="bottom" constant="8" symbolic="YES" id="Vte-dc-6dN"/>
+                                            <constraint firstItem="yy8-hn-tr6" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="55" id="WVc-Eu-4SE"/>
+                                            <constraint firstItem="yy8-hn-tr6" firstAttribute="leading" secondItem="8ga-Ah-VfV" secondAttribute="leading" id="Wa0-lS-C0L"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="leading" secondItem="V0w-vU-jC5" secondAttribute="leading" id="afP-r4-bCk"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="trailing" secondItem="BD7-pm-1ir" secondAttribute="trailing" id="b3d-tM-h0N"/>
+                                            <constraint firstItem="RBm-Ea-Ijh" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="55" id="caa-fz-ua4"/>
+                                            <constraint firstItem="e7R-b6-jnZ" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="50" id="d5d-LC-YnB"/>
+                                            <constraint firstItem="0m2-qq-B3S" firstAttribute="centerX" secondItem="RBm-Ea-Ijh" secondAttribute="centerX" id="e86-Oq-mDJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="2zu-HL-b0V" secondAttribute="trailing" constant="30" id="eX7-Jj-p3A"/>
+                                            <constraint firstAttribute="trailing" secondItem="V0w-vU-jC5" secondAttribute="trailing" constant="50" id="ecV-iA-yMx"/>
+                                            <constraint firstItem="RBm-Ea-Ijh" firstAttribute="top" secondItem="V0w-vU-jC5" secondAttribute="bottom" constant="8" symbolic="YES" id="fTB-kk-AfJ"/>
+                                            <constraint firstItem="2zu-HL-b0V" firstAttribute="top" secondItem="wVh-7b-Adr" secondAttribute="bottom" constant="38" id="hxO-ZQ-zpV"/>
+                                            <constraint firstItem="NjV-xr-sG8" firstAttribute="top" secondItem="2zu-HL-b0V" secondAttribute="bottom" constant="22" id="iWO-dk-lpW"/>
+                                            <constraint firstAttribute="trailing" secondItem="yy8-hn-tr6" secondAttribute="trailing" constant="55" id="riZ-lr-acg"/>
+                                            <constraint firstItem="yy8-hn-tr6" firstAttribute="top" secondItem="0m2-qq-B3S" secondAttribute="bottom" constant="8" symbolic="YES" id="s5z-us-R8p"/>
+                                            <constraint firstItem="wVh-7b-Adr" firstAttribute="top" secondItem="BD7-pm-1ir" secondAttribute="bottom" constant="3" id="stU-xf-FHJ"/>
+                                            <constraint firstItem="BD7-pm-1ir" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="50" id="vuH-5d-aqj"/>
+                                            <constraint firstItem="wVh-7b-Adr" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="55" id="wVT-62-9HP"/>
+                                            <constraint firstItem="8ga-Ah-VfV" firstAttribute="leading" secondItem="Yck-PU-36Y" secondAttribute="leading" constant="55" id="xNg-wQ-YHQ"/>
                                         </constraints>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="bp6-6Q-arN" appends="YES" id="QBi-sk-FHM"/>
-                                        </connections>
                                     </view>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="SRI-80-JN3" secondAttribute="trailing" id="4rj-kQ-ccK"/>
-                                    <constraint firstItem="SRI-80-JN3" firstAttribute="top" secondItem="q85-er-peX" secondAttribute="top" id="Egt-Ky-Koe"/>
-                                    <constraint firstAttribute="bottom" secondItem="SRI-80-JN3" secondAttribute="bottom" constant="42" id="HK5-E1-0Sg"/>
-                                    <constraint firstItem="72x-di-N88" firstAttribute="leading" secondItem="q85-er-peX" secondAttribute="leading" constant="-443" id="JSM-z1-Bus"/>
-                                    <constraint firstItem="SRI-80-JN3" firstAttribute="top" secondItem="q85-er-peX" secondAttribute="top" id="QJT-Se-mW4"/>
-                                    <constraint firstItem="72x-di-N88" firstAttribute="top" secondItem="SRI-80-JN3" secondAttribute="top" id="ViS-vh-eI3"/>
-                                    <constraint firstAttribute="bottom" secondItem="SRI-80-JN3" secondAttribute="bottom" constant="42" id="XdH-H2-K1Y"/>
-                                    <constraint firstItem="SRI-80-JN3" firstAttribute="leading" secondItem="q85-er-peX" secondAttribute="leading" id="eam-PX-bMJ"/>
-                                    <constraint firstItem="SRI-80-JN3" firstAttribute="top" secondItem="q85-er-peX" secondAttribute="top" id="fVx-Bc-7jj"/>
-                                    <constraint firstItem="SRI-80-JN3" firstAttribute="centerX" secondItem="q85-er-peX" secondAttribute="centerX" id="fnt-rI-mFu"/>
-                                    <constraint firstItem="72x-di-N88" firstAttribute="bottom" secondItem="SRI-80-JN3" secondAttribute="bottom" id="qWb-L1-ICr"/>
-                                    <constraint firstAttribute="bottom" secondItem="SRI-80-JN3" secondAttribute="bottom" constant="42" id="sLB-x4-Puh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yck-PU-36Y" secondAttribute="trailing" id="I9p-Tp-R9q"/>
+                                    <constraint firstItem="Yck-PU-36Y" firstAttribute="top" secondItem="ufh-eJ-0mv" secondAttribute="top" id="Jh3-HA-SyH"/>
+                                    <constraint firstItem="Yck-PU-36Y" firstAttribute="centerX" secondItem="ufh-eJ-0mv" secondAttribute="centerX" id="NRH-td-s10"/>
+                                    <constraint firstItem="zL3-71-ssw" firstAttribute="top" secondItem="Yck-PU-36Y" secondAttribute="top" id="Sxu-kV-SAt"/>
+                                    <constraint firstItem="Yck-PU-36Y" firstAttribute="leading" secondItem="ufh-eJ-0mv" secondAttribute="leading" id="TKE-lu-ebN"/>
+                                    <constraint firstItem="Yck-PU-36Y" firstAttribute="leading" secondItem="ufh-eJ-0mv" secondAttribute="leading" id="Zgo-Fj-Bse"/>
+                                    <constraint firstItem="zL3-71-ssw" firstAttribute="leading" secondItem="ufh-eJ-0mv" secondAttribute="leading" constant="-443" id="cI7-P1-UcJ"/>
+                                    <constraint firstItem="zL3-71-ssw" firstAttribute="bottom" secondItem="Yck-PU-36Y" secondAttribute="bottom" id="hze-hL-Zsm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yck-PU-36Y" secondAttribute="bottom" id="nh4-by-WAV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yck-PU-36Y" secondAttribute="trailing" id="t7s-2q-ijf"/>
+                                    <constraint firstItem="Yck-PU-36Y" firstAttribute="centerY" secondItem="ufh-eJ-0mv" secondAttribute="centerY" id="xgd-Wq-JbT"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nCH-cn-KKB" appends="YES" id="zel-al-9IE"/>
+                                </connections>
                             </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="PWF-C4-kr0"/>
+                        <viewLayoutGuide key="safeArea" id="HxW-3m-bkN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q85-er-peX" firstAttribute="top" secondItem="BIP-QI-Jge" secondAttribute="topMargin" constant="-88" id="0VX-m2-KOo"/>
-                            <constraint firstItem="q85-er-peX" firstAttribute="leading" secondItem="PWF-C4-kr0" secondAttribute="leading" constant="1.6666666666666572" id="4K8-Xl-uST"/>
-                            <constraint firstItem="q85-er-peX" firstAttribute="centerY" secondItem="BIP-QI-Jge" secondAttribute="centerY" id="9c8-hI-UCO"/>
-                            <constraint firstItem="q85-er-peX" firstAttribute="centerX" secondItem="BIP-QI-Jge" secondAttribute="centerX" id="TDe-8n-tzj"/>
+                            <constraint firstItem="ufh-eJ-0mv" firstAttribute="top" secondItem="YNk-2D-J3A" secondAttribute="topMargin" constant="-88" id="RGY-Va-DDF"/>
+                            <constraint firstItem="ufh-eJ-0mv" firstAttribute="leading" secondItem="HxW-3m-bkN" secondAttribute="leading" constant="1" id="aBk-3X-dS8"/>
+                            <constraint firstItem="ufh-eJ-0mv" firstAttribute="centerY" secondItem="YNk-2D-J3A" secondAttribute="centerY" id="siT-P2-EAT"/>
+                            <constraint firstItem="ufh-eJ-0mv" firstAttribute="centerX" secondItem="YNk-2D-J3A" secondAttribute="centerX" id="vw4-wI-Gg0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Nueva Sesión" id="pCF-kd-Q7K">
-                        <barButtonItem key="rightBarButtonItem" title="Listo" style="plain" id="j6l-00-c4p">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="DIH-dL-6CP">
+                    <navigationItem key="navigationItem" title="Nueva Sesión" id="sxb-dA-UWI" userLabel="Editar Sesión">
+                        <barButtonItem key="rightBarButtonItem" title="Listo" style="plain" id="YcY-xw-DGJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Cm9-XF-oLX">
                                 <rect key="frame" x="271" y="0.0" width="123" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Listo"/>
                                 <connections>
-                                    <action selector="editar:" destination="eLe-v9-A4D" eventType="touchUpInside" id="iog-D7-RAg"/>
+                                    <action selector="editar:" destination="3Z0-y8-ARE" eventType="touchUpInside" id="xHc-Zh-iMm"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <action selector="editar:" destination="3Z0-y8-ARE" id="wva-LK-hSG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Eval" destination="U8p-2E-wNR" id="XHk-ZM-sPl"/>
-                        <outlet property="cuota" destination="wRb-H3-zMO" id="IvC-4T-sAv"/>
-                        <outlet property="herr" destination="Mti-Qa-JZT" id="Nks-EU-Ytv"/>
-                        <outlet property="inter" destination="sHe-kB-jdC" id="IKV-Oe-RmZ"/>
-                        <outlet property="motivo" destination="uKP-aS-b9s" id="F0q-nC-cYP"/>
-                        <outlet property="servi" destination="ry9-Sa-Wfv" id="Dmz-Hs-Zr7"/>
+                        <outlet property="Eval" destination="NjV-xr-sG8" id="UXa-v0-wfY"/>
+                        <outlet property="cuota" destination="2zu-HL-b0V" id="8Oc-T3-uZ0"/>
+                        <outlet property="herram" destination="wVh-7b-Adr" id="w2d-2K-hoQ"/>
+                        <outlet property="interv" destination="RBm-Ea-Ijh" id="7tZ-qZ-aoS"/>
+                        <outlet property="motivo" destination="yy8-hn-tr6" id="1yx-IU-CJg"/>
+                        <outlet property="serv" destination="8ga-Ah-VfV" id="0wz-Qs-SCx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uEt-t1-FBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bp6-6Q-arN">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5PK-hv-sEX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nCH-cn-KKB">
                     <connections>
-                        <action selector="cerrarteclado:" destination="eLe-v9-A4D" id="nWL-Ra-Owd"/>
+                        <action selector="cerarteclado:" destination="3Z0-y8-ARE" id="l9v-gH-Kaf"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1697" y="2515"/>
+            <point key="canvasLocation" x="-1697" y="2642"/>
         </scene>
         <!--Uuarios Tanatologo Table View Controller-->
         <scene sceneID="dyT-0i-utR">
@@ -529,13 +537,13 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Uvr-Mg-DFA">
-                            <rect key="frame" x="0.0" y="198.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="209.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="vdg-ky-557" detailTextLabel="fgO-bt-4hR" style="IBUITableViewCellStyleSubtitle" id="x1R-8f-pYa" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="115" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="131.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1R-8f-pYa" id="Pvu-Aa-bT0">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -813,39 +821,39 @@ Llena el siguiente formulario</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" semanticContentAttribute="spatial" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="97x-QS-QdA">
-                                <rect key="frame" x="16" y="188" width="382" height="264"/>
+                                <rect key="frame" x="16" y="188" width="343" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoT-2k-von">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faB-ch-Mxj">
-                                        <rect key="frame" x="0.0" y="39" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="343" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm9-cs-mMj">
-                                        <rect key="frame" x="0.0" y="91.5" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="54.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Or-LF-ZGT">
-                                        <rect key="frame" x="0.0" y="130.5" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="75" width="343" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNg-eI-lnh">
-                                        <rect key="frame" x="0.0" y="178.5" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="109" width="343" height="21"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="LogInTanatologos:" destination="Fiz-iT-sco" eventType="touchUpInside" id="UWT-ix-mVn"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-Dh-O1p">
-                                        <rect key="frame" x="0.0" y="214" width="382" height="50"/>
+                                        <rect key="frame" x="0.0" y="130" width="343" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -1412,7 +1420,7 @@ Llena el siguiente formulario</string>
                             <tableViewSection headerTitle="Juan Luis Guerra" id="Mz8-5y-Zb3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="iwo-eI-ulm" detailTextLabel="eDX-ys-BCv" style="IBUITableViewCellStyleSubtitle" id="BQq-Gi-9pE">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BQq-Gi-9pE" id="FWs-mK-eZc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1436,7 +1444,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="DrZ-PX-aAs" detailTextLabel="LUr-Kh-9ne" style="IBUITableViewCellStyleSubtitle" id="YOa-Wf-BjX">
-                                        <rect key="frame" x="0.0" y="115.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="132" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YOa-Wf-BjX" id="Vl1-rN-Nq0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1460,7 +1468,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XPA-tr-Q0d" detailTextLabel="hXf-fe-VVN" style="IBUITableViewCellStyleSubtitle" id="v6M-dj-zeF">
-                                        <rect key="frame" x="0.0" y="159" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="175.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v6M-dj-zeF" id="tLF-Fi-NtK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1484,7 +1492,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8e8-T8-Lsi" detailTextLabel="qA6-F0-4jb" style="IBUITableViewCellStyleSubtitle" id="xDj-Jg-ThX">
-                                        <rect key="frame" x="0.0" y="202.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="219" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xDj-Jg-ThX" id="m8H-c8-NED">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1508,7 +1516,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Av0-QE-89C" detailTextLabel="biz-ZV-ApN" style="IBUITableViewCellStyleSubtitle" id="WTV-MG-ekb">
-                                        <rect key="frame" x="0.0" y="246" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="262.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTV-MG-ekb" id="pIM-KY-WiS">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1532,7 +1540,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="rHF-IC-JpH" detailTextLabel="avh-rP-4yL" style="IBUITableViewCellStyleSubtitle" id="2t9-6X-TH7">
-                                        <rect key="frame" x="0.0" y="289.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="306" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2t9-6X-TH7" id="0yt-8w-iUU">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1556,7 +1564,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="gbH-bh-Sc3" detailTextLabel="x02-EV-knB" style="IBUITableViewCellStyleSubtitle" id="D52-FL-BJL">
-                                        <rect key="frame" x="0.0" y="333" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D52-FL-BJL" id="zrx-rf-ZlB">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1580,7 +1588,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FfA-7D-fhA" detailTextLabel="Vsw-62-5kx" style="IBUITableViewCellStyleSubtitle" id="wv8-76-yCY">
-                                        <rect key="frame" x="0.0" y="376.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="393" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wv8-76-yCY" id="vmo-GC-LPk">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1631,13 +1639,13 @@ Llena el siguiente formulario</string>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TlL-EM-OLp">
-                            <rect key="frame" x="0.0" y="851.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="725.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="Zpb-QO-5VT">
-                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zpb-QO-5VT" id="sqj-j3-H2g">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2166,7 +2174,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="SPp-Lz-Fhv" detailTextLabel="rsV-DI-BbW" style="IBUITableViewCellStyleSubtitle" id="nnV-UP-SWK">
-                                <rect key="frame" x="0.0" y="169" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="185.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nnV-UP-SWK" id="IYW-Aa-9QA">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -2230,13 +2238,13 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="center" id="2zU-Qd-3zt">
-                            <rect key="frame" x="0.0" y="183.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="194.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="34l-Ip-rvd" style="IBUITableViewCellStyleDefault" id="iFP-tN-bWf">
-                                <rect key="frame" x="0.0" y="112" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="128.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iFP-tN-bWf" id="LlA-f4-6rV">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2303,7 +2311,7 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="center" id="8ez-ty-xZl">
-                            <rect key="frame" x="0.0" y="195.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="206.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiE-g7-Vft">
@@ -2320,7 +2328,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="wPz-gG-fWG" detailTextLabel="0kC-M3-D5X" style="IBUITableViewCellStyleSubtitle" id="OO7-Ii-H5w">
-                                <rect key="frame" x="0.0" y="112" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="128.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OO7-Ii-H5w" id="urt-a7-3jg">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -2520,13 +2528,13 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="center" id="Kph-Vu-87B">
-                            <rect key="frame" x="0.0" y="183.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="194.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Gr1-ZS-oxU" style="IBUITableViewCellStyleDefault" id="mcL-7S-IWF">
-                                <rect key="frame" x="0.0" y="112" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="128.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mcL-7S-IWF" id="D63-Wu-DgT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2591,13 +2599,13 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="29x-h6-QWp">
-                            <rect key="frame" x="0.0" y="198.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="209.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="yW3-t6-jAt" detailTextLabel="z8k-6L-pY9" style="IBUITableViewCellStyleSubtitle" id="mmG-Gn-YOy" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="115" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="131.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mmG-Gn-YOy" id="0D9-Oo-xBj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -2669,7 +2677,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Jbf-th-A0o" detailTextLabel="dnc-ds-lZo" style="IBUITableViewCellStyleSubtitle" id="YfF-9W-66X">
-                                <rect key="frame" x="0.0" y="169" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="185.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YfF-9W-66X" id="FbA-r3-JvU">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -3112,8 +3120,8 @@ Llena el siguiente formulario</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
-        <image name="book.fill" catalog="system" width="128" height="102"/>
-        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="fondo" width="488" height="845.5"/>

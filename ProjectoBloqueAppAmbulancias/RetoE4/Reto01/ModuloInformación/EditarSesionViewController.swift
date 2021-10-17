@@ -13,15 +13,12 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
     @IBOutlet weak var cuota: UITextField!
     @IBOutlet weak var Eval: UITextField!
     
-    let motivos = ["Abuso", "Adicción", "Ansiedad", "Baja Autoestima", "Codependencia", "Comunicación familiar", "Conflicto con hermano", "Conflicto con madre", "Conflicto con padre", "Dependencia", "Divorcio", "Duelo", "Duelo Grupal", "Enfermedad", "Enfermedad Crónico degenerativa", "Heridas de la infancia", "Identidad de género", "Infertilidad", "Infidelidad", "Intento de suicidio", "Miedo", "Pérdida de vienes materiales", "Pérdida de identidad", "Pérdida laboral", "Relación con los padres", "Ruptura de noviazgo", "Stress", "Trastorno Obsesivo", "Violación", "Violencia Intrafamiliar", "Violencia Psicológica", "Viudez", "Otro"]
-    let servicios = ["Servicios de Acompañamiento", "Servicios holísticos", "Herramientas alternativas"]
-    let intervenciones = ["Tanatología", "Acompañamiento Individual", "Acompañamiento Grupal", "Logoterapia", "Mindfulness", "Aromaterapia y Musicoterapia", "Cristaloterapia", "Reiki", "Biomagnetismo", "Angeloterapia", "Cama Térmica de Jade", "Flores de Bach", "Brisas ambientales"]
-    let herramienta = ["Contención", "Diálogo", "Ejercicio", "Encuadre", "Infografía", "Dinámica", "Lectura", "Meditación", "Video", "Otro"]
-    
+    //Picker views
+
     @IBOutlet weak var motivo: motivoServPickerView!
-    @IBOutlet weak var servi: tipoServicioPickerView!
-    @IBOutlet weak var inter: intervencionPickerView!
-    @IBOutlet weak var herr: EditarHerPickerView!
+    @IBOutlet weak var serv: tipoServicioPickerView!
+    @IBOutlet weak var interv: intervencionPickerView!
+    @IBOutlet weak var herram: herramientaPickerView!
     
     var sc = SesionesController()
 
@@ -32,8 +29,18 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
         cuota.delegate = self
         Eval.delegate = self
         
-        motivo.delegate = self
+        //PickerViews
+        self.herram.delegate = herram
+        self.herram.dataSource = herram
         
+        self.interv.delegate = interv
+        self.interv.dataSource = interv
+        
+        self.serv.delegate = serv
+        self.serv.dataSource = serv
+        
+        self.motivo.delegate = motivo
+        self.motivo.dataSource = motivo
         /*let defM:Int = motivos.firstIndex(of: sesion!.motivo)!
         motivo.selectRow(1, inComponent: 0, animated: true)
         let defS:Int = servicios.firstIndex(of: sesion!.servicio)!
@@ -45,9 +52,21 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func cerrarteclado(_ sender: UITapGestureRecognizer) {
+    @IBAction func cerarteclado(_ sender: UITapGestureRecognizer) {
         cuota.resignFirstResponder()
         Eval.resignFirstResponder()
+    }
+    
+    @IBAction func editar(_ sender: Any) {
+        let tmpus = Sesion(id: sesion.id, cierre: sesion.cierre, numeroSesion: sesion.numeroSesion, evaluacion: Eval.text!, idUsuario: sesion.idUsuario, servicio: serv.currentValue, couta: Int(cuota.text!) ?? 0, fecha: sesion.fecha, intervencion: interv.currentValue, herramienta: herram.currentValue, motivo: motivo.currentValue)
+        
+        sesion.evaluacion = Eval.text!
+        sesion.cuota = Int(cuota.text!) ?? 0
+        
+        sc.EditUsuario(sn: tmpus)
+        
+        _ = navigationController?.popViewController(animated: true)
+        
     }
     
     /*
@@ -60,16 +79,6 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
     }
     */
     
-    @IBAction func editar(_ sender: Any) {
-        let tmpus = Sesion(id: sesion.id, cierre: sesion.cierre, numeroSesion: sesion.numeroSesion, evaluacion: Eval.text!, idUsuario: sesion.idUsuario, servicio: servi.currentValue, couta: Int(cuota.text!) ?? 0, fecha: sesion.fecha, intervencion: inter.currentValue, herramienta: herr.currentValue, motivo: motivo.currentValue)
-        
-        sesion.evaluacion = Eval.text!
-        sesion.cuota = Int(cuota.text!) ?? 0
-        
-        sc.EditUsuario(sn: tmpus)
-        
-        _ = navigationController?.popViewController(animated: true)
-        
-    }
+
 
 }
