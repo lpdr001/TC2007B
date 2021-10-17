@@ -34,6 +34,7 @@
 		32BEF3372717C3D8004EA84F /* RegistrarSoporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEF3362717C3D8004EA84F /* RegistrarSoporteViewController.swift */; };
 		32BEF33B2717C41B004EA84F /* EditarTanatologoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEF33A2717C41B004EA84F /* EditarTanatologoViewController.swift */; };
 		32D4274426E666D9001DB449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4274326E666D9001DB449 /* Assets.xcassets */; };
+		32E58EED271BB65500C68D52 /* EditarHerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E58EEC271BB65500C68D52 /* EditarHerPickerView.swift */; };
 		32E96269271925C100D8C935 /* EditarSoporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E96268271925C100D8C935 /* EditarSoporteViewController.swift */; };
 		3A64724F2719CCC200D6A016 /* motivoServPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64724E2719CCC200D6A016 /* motivoServPickerView.swift */; };
 		3A6472522719CCF300D6A016 /* tipoServicioPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6472512719CCF300D6A016 /* tipoServicioPickerView.swift */; };
@@ -96,6 +97,7 @@
 		32BEF3362717C3D8004EA84F /* RegistrarSoporteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarSoporteViewController.swift; sourceTree = "<group>"; };
 		32BEF33A2717C41B004EA84F /* EditarTanatologoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarTanatologoViewController.swift; sourceTree = "<group>"; };
 		32D4274326E666D9001DB449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32E58EEC271BB65500C68D52 /* EditarHerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarHerPickerView.swift; sourceTree = "<group>"; };
 		32E96268271925C100D8C935 /* EditarSoporteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarSoporteViewController.swift; sourceTree = "<group>"; };
 		3A64724E2719CCC200D6A016 /* motivoServPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivoServPickerView.swift; sourceTree = "<group>"; };
 		3A6472512719CCF300D6A016 /* tipoServicioPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipoServicioPickerView.swift; sourceTree = "<group>"; };
@@ -245,9 +247,18 @@
 			path = "ModuloInformación";
 			sourceTree = "<group>";
 		};
+		32E58EEB271BB60600C68D52 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				32E58EEC271BB65500C68D52 /* EditarHerPickerView.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
 		3AFABD3B27195E4C0063FA8D /* New Group1 */ = {
 			isa = PBXGroup;
 			children = (
+				32E58EEB271BB60600C68D52 /* Edit */,
 				3AFABD3C27195E7F0063FA8D /* herramientaPickerView.swift */,
 				3A6472512719CCF300D6A016 /* tipoServicioPickerView.swift */,
 				3A64724E2719CCC200D6A016 /* motivoServPickerView.swift */,
@@ -487,6 +498,7 @@
 				AF421D3D2710EF78009CE697 /* AdministradorController.swift in Sources */,
 				AF421D4527111214009CE697 /* AdminSoporteController.swift in Sources */,
 				32AB61EB271146E3006793EA /* EditarUserViewController.swift in Sources */,
+				32E58EED271BB65500C68D52 /* EditarHerPickerView.swift in Sources */,
 				3260D793270D5EE500E6F29E /* UuariosTanatologoTableViewController.swift in Sources */,
 				3260D786270D594A00E6F29E /* Usuarios.swift in Sources */,
 				32BE039827135A2C00E8B74D /* EditarSesionViewController.swift in Sources */,

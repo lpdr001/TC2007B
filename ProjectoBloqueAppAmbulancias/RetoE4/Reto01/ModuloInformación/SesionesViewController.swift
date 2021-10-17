@@ -63,6 +63,8 @@ class SesionesViewController: UIViewController , UITextFieldDelegate {
         cuota.resignFirstResponder()
     }
     
+    
+    
     @IBAction func Registrar(_ sender: Any) {
         
         

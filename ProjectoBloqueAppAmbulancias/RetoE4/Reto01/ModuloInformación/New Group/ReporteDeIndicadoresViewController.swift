@@ -35,8 +35,8 @@ class ReporteDeIndicadoresViewController: UIViewController {
     }()
     
     lazy var graficaBubble: BarChartView = {
-        var g =  BarChartView()
-        return g
+        var h =  BarChartView()
+        return h
     }()
     
     override func viewWillAppear(_ animated: Bool)  {
