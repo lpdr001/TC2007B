@@ -20,6 +20,14 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
     @IBOutlet weak var interv: intervencionPickerView!
     @IBOutlet weak var herram: herramientaPickerView!
     
+    let motivos = ["Abuso", "Adicción", "Ansiedad", "Baja Autoestima", "Codependencia", "Comunicación familiar", "Conflicto con hermano", "Conflicto con madre", "Conflicto con padre", "Dependencia", "Divorcio", "Duelo", "Duelo Grupal", "Enfermedad", "Enfermedad Crónico degenerativa", "Heridas de la infancia", "Identidad de género", "Infertilidad", "Infidelidad", "Intento de suicidio", "Miedo", "Pérdida de vienes materiales", "Pérdida de identidad", "Pérdida laboral", "Relación con los padres", "Ruptura de noviazgo", "Stress", "Trastorno Obsesivo", "Violación", "Violencia Intrafamiliar", "Violencia Psicológica", "Viudez", "Otro"]
+    
+    let intervenciones = ["Tanatología", "Acompañamiento Individual", "Acompañamiento Grupal", "Logoterapia", "Mindfulness", "Aromaterapia y Musicoterapia", "Cristaloterapia", "Reiki", "Biomagnetismo", "Angeloterapia", "Cama Térmica de Jade", "Flores de Bach", "Brisas ambientales"]
+    
+    let servicios = ["Servicios de Acompañamiento", "Servicios holísticos", "Herramientas alternativas"]
+    
+    let herramienta = ["Contención", "Diálogo", "Ejercicio", "Encuadre", "Infografía", "Dinámica", "Lectura", "Meditación", "Video", "Otro"]
+    
     var sc = SesionesController()
 
     var sesion: Sesion!
@@ -41,14 +49,14 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
         
         self.motivo.delegate = motivo
         self.motivo.dataSource = motivo
-        /*let defM:Int = motivos.firstIndex(of: sesion!.motivo)!
-        motivo.selectRow(1, inComponent: 0, animated: true)
+        let defM:Int = motivos.firstIndex(of: sesion!.motivo)!
+        motivo.selectRow(defM, inComponent: 0, animated: true)
         let defS:Int = servicios.firstIndex(of: sesion!.servicio)!
-        servi.selectRow(1, inComponent: 0, animated: true)
+        serv.selectRow(defS, inComponent: 0, animated: true)
         let defI:Int = intervenciones.firstIndex(of: sesion!.intervencion)!
-        //inter.selectRow(0, inComponent: defI, animated: true)
+        interv.selectRow(defI, inComponent: 0, animated: true)
         let defH:Int = herramienta.firstIndex(of: sesion!.herramienta)!
-        herr.selectRow(0, inComponent: 0, animated: true)*/
+        herram.selectRow(defH, inComponent: 0, animated: true)
         // Do any additional setup after loading the view.
     }
     
