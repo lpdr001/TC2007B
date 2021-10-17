@@ -37,7 +37,7 @@ class DetalleSesionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        uc.fetchOneSesion(st: user.id, stt: num){ (result) in
+        uc.fetchOneSesion(st: sesion!.idUsuario, stt: num){ (result) in
             switch result{
             case .success(let sesiones):self.updateUI(with: sesiones)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")

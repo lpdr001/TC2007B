@@ -2692,7 +2692,7 @@ Llena el siguiente formulario</string>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="n1X-RC-tKc" kind="show" id="k1u-2h-wVY"/>
+                                    <segue destination="n1X-RC-tKc" kind="show" identifier="segue" id="k1u-2h-wVY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
