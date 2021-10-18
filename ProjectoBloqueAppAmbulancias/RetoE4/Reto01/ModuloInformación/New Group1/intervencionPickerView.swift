@@ -10,7 +10,7 @@ class intervencionPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
 
     var currentValue = "Tanatología"
     
-    let intervenciones = ["Tanatología", "Acompañamiento Individual", "Acompañamiento Grupal", "Logoterapia", "Mindfulness", "Aromaterapia y Musicoterapia", "Cristaloterapia", "Reiki", "Biomagnetismo", "Angeloterapia", "Cama Térmica de Jade", "Flores de Bach", "Brisas ambientales"]
+    let intervenciones = ["Tanatología", "Acompañamiento Individual", "Acompañamiento Grupal", "Logoterapia", "Mindfulness", "Aromaterapia y Musicoterapia", "Cristaloterapia", "Reiki", "Biomagnetismo", "Angeloterapia", "Cama Térmica de Jade", "Flores de Bach", "Brisas ambientales","Tanatología"]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

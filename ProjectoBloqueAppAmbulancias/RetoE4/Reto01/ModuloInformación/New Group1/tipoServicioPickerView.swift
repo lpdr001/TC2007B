@@ -11,7 +11,7 @@ class tipoServicioPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     
     var currentValue = "Servicios de Acompañamiento"
 
-    let servicios = ["Servicios de Acompañamiento", "Servicios holísticos", "Herramientas alternativas"]
+    let servicios = ["Servicios de Acompañamiento", "Servicios holísticos", "Herramientas alternativas","Servicios de Acompañamiento"]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -22,12 +22,14 @@ class tipoServicioPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        print(row)
         currentValue = servicios[row]
         print(currentValue)
         return servicios[row]
     }
     
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
+        print(row)
         currentValue = servicios[row]
         print(currentValue)
         return servicios[row]

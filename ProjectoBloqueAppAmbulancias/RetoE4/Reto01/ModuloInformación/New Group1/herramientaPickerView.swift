@@ -12,7 +12,7 @@ class herramientaPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDat
     
     var currentValue = "Contención"
 
-    let herramienta = ["Contención", "Diálogo", "Ejercicio", "Encuadre", "Infografía", "Dinámica", "Lectura", "Meditación", "Video", "Otro"]
+    let herramienta = ["Contención", "Diálogo", "Ejercicio", "Encuadre", "Infografía", "Dinámica", "Lectura", "Meditación", "Video", "Otro","Contención"]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
