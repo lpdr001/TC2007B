@@ -95,7 +95,7 @@ class ReporteDeIndicadoresViewController: UIViewController {
     func definirSesiones(with sesiones:Sesiones){
         datosSesiones = sesiones
         FiltrodatosSesiones = sesiones
-        definicionGraficaBarras()
+        definicionGraficaBubble()
     }
     
     func definicionGraficaBarras(){

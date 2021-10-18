@@ -10,7 +10,7 @@ import Firebase
 
 
 class LogInViewController: UIViewController {
-
+    var b2: Bool = false
     var name = "Mr. Meeseeks"
     
     @IBOutlet weak var password: UITextField!
@@ -31,21 +31,24 @@ class LogInViewController: UIViewController {
     
     
     @IBAction func LogInTanatologos(_ sender: Any) {
-        
-        TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
+        if(b2 == false)
+        {
+        b2 = true
+            
+            TanatologoControlador.fetchTanatologos(st: username.text!){ (result) in
             switch result{
-            case .success(let tanatologos):self.updatedatos(with: tanatologos, password:self.password.text!, username:self.username.text!)
+            case .success(let tanatologos): self.b2 = self.updatedatos(with: tanatologos, password:self.password.text!, username:self.username.text!)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
             }
         }
         
-        
-        
-       
+        }
         
     }
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.b2 = false
       //  super.viewDidLoad()
         
        // error.text = ""
@@ -77,7 +80,7 @@ class LogInViewController: UIViewController {
         }else {
             AdministradorControlador.fetchAdministrador(st: username){ (result) in
                 switch result{
-                case .success(let administradores):self.updatedatos1(with: administradores, password: password, username: username)
+                case .success(let administradores):self.b2 = self.updatedatos1(with: administradores, password: password, username: username)
                 case .failure: b = false //self.displayError(error, title: "No se pudo acceder a ")
                 }
             }

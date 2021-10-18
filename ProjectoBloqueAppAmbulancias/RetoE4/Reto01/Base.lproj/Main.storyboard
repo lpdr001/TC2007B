@@ -198,18 +198,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wis-eY-fwY">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wis-eY-fwY">
                                 <rect key="frame" x="16" y="98" width="382" height="655.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sesion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-i5-RFD">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-WV-Zu7">
-                                        <rect key="frame" x="0.0" y="60.5" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="29" width="382" height="20.5"/>
                                         <accessibility key="accessibilityConfiguration" label="Id"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -217,63 +217,63 @@
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LaExpediente" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUm-hb-0Pf">
-                                        <rect key="frame" x="0.0" y="121" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="58" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="usuari" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-rV-AMf">
-                                        <rect key="frame" x="0.0" y="181" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="87" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tanatologo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBK-b0-VN8">
-                                        <rect key="frame" x="0.0" y="241.5" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="116" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="motivo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbR-wj-bPe">
-                                        <rect key="frame" x="0.0" y="302" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="145" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki3-dK-Uta">
-                                        <rect key="frame" x="0.0" y="362.5" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="174" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBW-u7-OkZ">
-                                        <rect key="frame" x="0.0" y="422.5" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="203" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDs-oU-sp9">
-                                        <rect key="frame" x="0.0" y="483" width="382" height="52"/>
+                                        <rect key="frame" x="0.0" y="232" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="motivo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oey-a9-QbY">
-                                        <rect key="frame" x="0.0" y="543.5" width="382" height="52"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="motivo" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oey-a9-QbY">
+                                        <rect key="frame" x="0.0" y="261" width="382" height="365.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBJ-vb-anw">
-                                        <rect key="frame" x="0.0" y="604" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="635" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -483,14 +483,11 @@
                                     <action selector="editar:" destination="3Z0-y8-ARE" eventType="touchUpInside" id="xHc-Zh-iMm"/>
                                 </connections>
                             </button>
-                            <connections>
-                                <action selector="editar:" destination="3Z0-y8-ARE" id="wva-LK-hSG"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Eval" destination="NjV-xr-sG8" id="UXa-v0-wfY"/>
-                        <outlet property="cuota" destination="2zu-HL-b0V" id="8Oc-T3-uZ0"/>
+                        <outlet property="Eval" destination="2zu-HL-b0V" id="Pab-oK-zcP"/>
+                        <outlet property="cuota" destination="NjV-xr-sG8" id="0BB-UW-Imj"/>
                         <outlet property="herram" destination="wVh-7b-Adr" id="w2d-2K-hoQ"/>
                         <outlet property="interv" destination="RBm-Ea-Ijh" id="7tZ-qZ-aoS"/>
                         <outlet property="motivo" destination="yy8-hn-tr6" id="1yx-IU-CJg"/>
@@ -891,7 +888,7 @@ Llena el siguiente formulario</string>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNg-eI-lnh">
                                         <rect key="frame" x="0.0" y="109" width="343" height="21"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Ingresar"/>
                                         <connections>
                                             <action selector="LogInTanatologos:" destination="Fiz-iT-sco" eventType="touchUpInside" id="UWT-ix-mVn"/>
                                         </connections>
@@ -2254,7 +2251,7 @@ Llena el siguiente formulario</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uL2-EY-niW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2443.4782608695655" y="1854.6195652173915"/>
+            <point key="canvasLocation" x="-2442" y="1854"/>
         </scene>
         <!--Tanatologos Amin Table View Controller-->
         <scene sceneID="kRs-cK-MXj">
@@ -3014,7 +3011,7 @@ Llena el siguiente formulario</string>
                                                 <color key="backgroundColor" red="0.85098046059999999" green="0.96470594409999999" blue="0.95294123890000004" alpha="0.53450396629999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dja-82-fOJ" customClass="intervencionPickerView" customModule="Reto01" customModuleProvider="target">
                                                 <rect key="frame" x="55" y="474" width="301" height="94"/>

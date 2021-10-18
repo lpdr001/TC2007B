@@ -37,6 +37,10 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
         cuota.delegate = self
         Eval.delegate = self
         
+        Eval.text = sesion!.evaluacion
+        cuota.text =
+            String(sesion!.cuota)
+        
         //PickerViews
         self.herram.delegate = herram
         self.herram.dataSource = herram
@@ -49,14 +53,22 @@ class EditarSesionViewController: UIViewController, UITextFieldDelegate, UIPicke
         
         self.motivo.delegate = motivo
         self.motivo.dataSource = motivo
+        
         let defM:Int = motivos.firstIndex(of: sesion!.motivo)!
         motivo.selectRow(defM, inComponent: 0, animated: true)
+        motivo.currentValue = sesion!.motivo
+        
         let defS:Int = servicios.firstIndex(of: sesion!.servicio)!
         serv.selectRow(defS, inComponent: 0, animated: true)
+        serv.currentValue = sesion!.servicio
+        
         let defI:Int = intervenciones.firstIndex(of: sesion!.intervencion)!
         interv.selectRow(defI, inComponent: 0, animated: true)
+        interv.currentValue = sesion!.intervencion
+        
         let defH:Int = herramienta.firstIndex(of: sesion!.herramienta)!
         herram.selectRow(defH, inComponent: 0, animated: true)
+        herram.currentValue = sesion!.herramienta
         // Do any additional setup after loading the view.
     }
     

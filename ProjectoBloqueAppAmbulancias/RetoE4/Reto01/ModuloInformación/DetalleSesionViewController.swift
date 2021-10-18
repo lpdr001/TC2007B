@@ -59,16 +59,23 @@ class DetalleSesionViewController: UIViewController {
                     self.sesion.idUsuario = user.id
                     self.tanname.text = self.tanatologo.nombre
                 
-                    self.Fecha.text = DateFormatter().string(from: self.sesion.fecha)
+                let today = self.sesion.fecha
+                let formatter1 = DateFormatter()
+                formatter1.dateStyle = .short
+                print(formatter1.string(from: today))
+                
+                let h = formatter1.string(from: today)
+                
+                    self.Fecha.text = "Fecha: "+h
                     self.ns.text = "Numero de sesion: " + String(self.sesion.numeroSesion)
-                    self.nexp.text = self.sesion.idUsuario
-                    self.usname.text = self.user.nombre
-                    self.motivo.text = self.sesion.motivo
-                    self.servicio.text = self.sesion.servicio
-                    self.intervencion.text = self.sesion.intervencion
-                    self.herramienta.text = self.sesion.herramienta
-                    self.cuota.text = String(self.sesion.cuota)
-                    self.sesionDesc.text = self.sesion.evaluacion
+                self.nexp.text = "Expediente: " + self.sesion.idUsuario
+                    self.usname.text = "Usuario: " + self.user.nombre
+                    self.motivo.text = "Motivo: " + self.sesion.motivo
+                    self.servicio.text = "Servicio: " + self.sesion.servicio
+                    self.intervencion.text = "Intervención: " + self.sesion.intervencion
+                    self.herramienta.text = "Hermienta: " + self.sesion.herramienta
+                    self.cuota.text = "Cuota: " + String(self.sesion.cuota) + "$"
+                    self.sesionDesc.text = "Evaluación: " + self.sesion.evaluacion
             return 1
             }
             else{

@@ -34,8 +34,10 @@ struct Sesion: Codable {
         
         let timestamp = NSDate()
         let postTimestamp = aDoc.get("fecha") as? Timestamp ?? Timestamp(date: timestamp as Date)
-
+        print(postTimestamp)
+        
         self.fecha = postTimestamp.dateValue()
+        print(self.fecha)
         self.evaluacion = aDoc.get("evaluacion") as? String ?? ""
         self.idUsuario = aDoc.get("isUsuario") as? String ?? ""
         self.servicio = aDoc.get("servicio") as? String ?? ""

@@ -107,8 +107,12 @@ func displayError(_ error: Error, title: String) {
         dateFormatter.locale = NSLocale.current
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //Specify your format that you want
         //let strDate = dateFormatter.string(from: date)*/
-        let h = DateFormatter().string(from: filtroDatos[indexPath.row].fecha)
-            
+        let today = filtroDatos[indexPath.row].fecha
+        let formatter1 = DateFormatter()
+        formatter1.dateStyle = .short
+        print(formatter1.string(from: today))
+        
+        let h = formatter1.string(from: today)
         
         cell.textLabel?.text = "" + String(filtroDatos[indexPath.row].numeroSesion) + ": " + h
         cell.detailTextLabel?.text = String(filtroDatos[indexPath.row].cuota)
