@@ -862,39 +862,39 @@ Llena el siguiente formulario</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" semanticContentAttribute="spatial" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="97x-QS-QdA">
-                                <rect key="frame" x="16" y="188" width="382" height="264"/>
+                                <rect key="frame" x="16" y="188" width="343" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoT-2k-von">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faB-ch-Mxj">
-                                        <rect key="frame" x="0.0" y="39" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="343" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm9-cs-mMj">
-                                        <rect key="frame" x="0.0" y="91.5" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="54.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Or-LF-ZGT">
-                                        <rect key="frame" x="0.0" y="130.5" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="75" width="343" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNg-eI-lnh">
-                                        <rect key="frame" x="0.0" y="178.5" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="109" width="343" height="21"/>
                                         <state key="normal" title="Ingresar"/>
                                         <connections>
                                             <action selector="LogInTanatologos:" destination="Fiz-iT-sco" eventType="touchUpInside" id="UWT-ix-mVn"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-Dh-O1p">
-                                        <rect key="frame" x="0.0" y="214" width="382" height="50"/>
+                                        <rect key="frame" x="0.0" y="130" width="343" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -1733,7 +1733,7 @@ Llena el siguiente formulario</string>
                                                             <action selector="updateFecha:" destination="Rlv-fe-eaF" eventType="valueChanged" id="nHC-PG-AQk"/>
                                                         </connections>
                                                     </datePicker>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nm6-Nu-V9I">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nm6-Nu-V9I">
                                                         <rect key="frame" x="8" y="116" width="398" height="307"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <accessibility key="accessibilityConfiguration">
@@ -1766,7 +1766,7 @@ Llena el siguiente formulario</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sft-vA-WcM">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sft-vA-WcM">
                                                         <rect key="frame" x="8" y="958" width="398" height="362"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -1776,13 +1776,13 @@ Llena el siguiente formulario</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-SV-Od2">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-SV-Od2">
                                                         <rect key="frame" x="8" y="431" width="398" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-E2-XOf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-E2-XOf">
                                                         <rect key="frame" x="8" y="844" width="398" height="78"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1797,27 +1797,24 @@ Llena el siguiente formulario</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khO-ad-edp">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khO-ad-edp">
                                                         <rect key="frame" x="8" y="1328" width="398" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Motivos por periodo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-xG-qeD">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivos por periodo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-xG-qeD">
                                                         <rect key="frame" x="8" y="1470" width="398" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cuota de recuperación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dx-J6-CDc">
-                                                        <rect key="frame" x="8" y="2295" width="398" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-IZ-dOn">
-                                                        <rect key="frame" x="0.0" y="1961" width="415" height="287"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-IZ-dOn" customClass="cuotaYtanTableView" customModule="Reto01" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="2011" width="415" height="306"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="306" id="t7e-6j-3KP"/>
+                                                        </constraints>
                                                         <searchBar key="tableHeaderView" contentMode="redraw" id="WMy-b7-MRC">
                                                             <rect key="frame" x="0.0" y="0.0" width="415" height="44"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -1825,19 +1822,67 @@ Llena el siguiente formulario</string>
                                                                 <constraint firstAttribute="height" constant="44" id="rXF-lV-ZUn"/>
                                                             </constraints>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="h9E-IZ-dOn" id="6Bi-aB-WiQ"/>
+                                                            </connections>
                                                         </searchBar>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zelda1" id="d44-CE-wG8">
-                                                                <rect key="frame" x="0.0" y="72" width="415" height="44"/>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zelda1" rowHeight="83" id="d44-CE-wG8" customClass="tanGraphTableViewCell" customModule="Reto01" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="72" width="415" height="83"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
-                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d44-CE-wG8" id="vjG-pb-NPz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="415" height="44"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d44-CE-wG8" id="vjG-pb-NPz">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="415" height="83"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanatologo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXj-TG-VTJ">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="415" height="21"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cuota:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zv-7F-qNy">
+                                                                            <rect key="frame" x="169" y="18" width="246" height="21"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="54" id="flF-ha-PsA"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Usuarios: 100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHo-SL-Cvn">
+                                                                            <rect key="frame" x="10" y="22" width="130" height="16"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="130" id="ncM-c7-vEo"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="QHo-SL-Cvn" firstAttribute="leading" secondItem="vjG-pb-NPz" secondAttribute="leadingMargin" constant="-10" id="Cqg-cf-cot"/>
+                                                                        <constraint firstItem="HXj-TG-VTJ" firstAttribute="top" secondItem="vjG-pb-NPz" secondAttribute="top" id="Liu-vj-go3"/>
+                                                                        <constraint firstItem="9Zv-7F-qNy" firstAttribute="centerY" secondItem="QHo-SL-Cvn" secondAttribute="centerY" id="Ne8-IM-LWB"/>
+                                                                        <constraint firstItem="9Zv-7F-qNy" firstAttribute="firstBaseline" secondItem="QHo-SL-Cvn" secondAttribute="firstBaseline" id="XGW-7u-Lah"/>
+                                                                        <constraint firstItem="HXj-TG-VTJ" firstAttribute="leading" secondItem="vjG-pb-NPz" secondAttribute="leading" id="cMW-x8-D8A"/>
+                                                                        <constraint firstItem="9Zv-7F-qNy" firstAttribute="top" secondItem="HXj-TG-VTJ" secondAttribute="bottom" constant="8" symbolic="YES" id="d0R-Oh-n0J"/>
+                                                                        <constraint firstItem="9Zv-7F-qNy" firstAttribute="leading" secondItem="QHo-SL-Cvn" secondAttribute="trailing" constant="29" id="e3O-7V-ETk"/>
+                                                                        <constraint firstItem="9Zv-7F-qNy" firstAttribute="trailing" secondItem="HXj-TG-VTJ" secondAttribute="trailing" id="i1y-qC-DRP"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="HXj-TG-VTJ" secondAttribute="trailing" id="rcS-sP-75u"/>
+                                                                    </constraints>
                                                                 </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="tancuota" destination="9Zv-7F-qNy" id="A4w-y5-aC4"/>
+                                                                    <outlet property="tanname" destination="HXj-TG-VTJ" id="yhz-Sb-npx"/>
+                                                                    <outlet property="usuariosc" destination="QHo-SL-Cvn" id="0KE-YX-3yI"/>
+                                                                </connections>
                                                             </tableViewCell>
                                                         </prototypes>
+                                                        <connections>
+                                                            <outlet property="searchBar" destination="WMy-b7-MRC" id="Y0l-kl-Gm6"/>
+                                                        </connections>
                                                     </tableView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="cuota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1r-m4-vnK">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cuota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1r-m4-vnK">
                                                         <rect key="frame" x="8" y="2366" width="398" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1852,15 +1897,15 @@ Llena el siguiente formulario</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-Hw-V3E">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-Hw-V3E">
                                                         <rect key="frame" x="8" y="501" width="398" height="334.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-pF-YzU" customClass="motivosTbleView" customModule="Reto01" customModuleProvider="target">
-                                                        <rect key="frame" x="-1" y="1555" width="415" height="290"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-pF-YzU" customClass="motivosTbleView" customModule="Reto01" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="1543" width="417" height="294"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <searchBar key="tableHeaderView" contentMode="redraw" text="" id="7hj-uo-tkW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="415" height="56"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="417" height="56"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <connections>
@@ -1869,10 +1914,10 @@ Llena el siguiente formulario</string>
                                                         </searchBar>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zelda" id="2Mm-uO-9Nx">
-                                                                <rect key="frame" x="0.0" y="84" width="415" height="44"/>
+                                                                <rect key="frame" x="0.0" y="84" width="417" height="43.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Mm-uO-9Nx" id="k1t-AF-RDc">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="415" height="44"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="417" height="43.5"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </tableViewCellContentView>
                                                             </tableViewCell>
@@ -1881,8 +1926,14 @@ Llena el siguiente formulario</string>
                                                             <outlet property="searchBar" destination="7hj-uo-tkW" id="aBF-qy-4xX"/>
                                                         </connections>
                                                     </tableView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Usuarios atendidos por tanatólogo y cuota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEF-Cs-Sn3">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios atendidos por tanatólogo y cuota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEF-Cs-Sn3">
                                                         <rect key="frame" x="8" y="1910" width="398" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota de recuperación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dx-J6-CDc">
+                                                        <rect key="frame" x="8" y="2337" width="398" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1899,6 +1950,7 @@ Llena el siguiente formulario</string>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="centerX" secondItem="Shg-pF-YzU" secondAttribute="centerX" id="2dl-0J-alH"/>
                                                     <constraint firstItem="KHS-bu-9Dw" firstAttribute="leading" secondItem="erO-Ww-TKS" secondAttribute="leading" id="35U-uX-5te"/>
                                                     <constraint firstItem="Shg-pF-YzU" firstAttribute="top" secondItem="yZF-xG-qeD" secondAttribute="bottom" constant="52" id="4Yx-yX-Dmw"/>
+                                                    <constraint firstItem="h9E-IZ-dOn" firstAttribute="top" secondItem="MEF-Cs-Sn3" secondAttribute="bottom" constant="80" id="7eg-V1-mQI"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="rKJ-OY-7HZ" secondAttribute="leading" id="AZ0-kx-z2w"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="centerX" secondItem="VyJ-5u-FqQ" secondAttribute="centerX" id="Ad3-im-jl3"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="MEF-Cs-Sn3" secondAttribute="leading" id="BeN-VQ-4f4"/>
@@ -1909,49 +1961,51 @@ Llena el siguiente formulario</string>
                                                     <constraint firstItem="VyJ-5u-FqQ" firstAttribute="centerX" secondItem="ZHL-6b-pTq" secondAttribute="centerX" id="GyY-bL-GLB"/>
                                                     <constraint firstItem="VyJ-5u-FqQ" firstAttribute="top" secondItem="dcB-E2-XOf" secondAttribute="bottom" constant="7" id="JEB-ng-giX"/>
                                                     <constraint firstItem="1Xe-tx-w3N" firstAttribute="centerX" secondItem="KHS-bu-9Dw" secondAttribute="centerX" id="KGb-Ba-amV"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="dcB-E2-XOf" secondAttribute="trailing" id="KTr-M8-qxc"/>
-                                                    <constraint firstItem="MEF-Cs-Sn3" firstAttribute="top" secondItem="Shg-pF-YzU" secondAttribute="bottom" constant="8" id="KVX-qx-S0f"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="Sft-vA-WcM" secondAttribute="trailing" id="MGO-6E-ta4"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="dcB-E2-XOf" secondAttribute="trailing" constant="1" id="KTr-M8-qxc"/>
+                                                    <constraint firstItem="MEF-Cs-Sn3" firstAttribute="top" secondItem="Shg-pF-YzU" secondAttribute="bottom" constant="73" id="KVX-qx-S0f"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="Sft-vA-WcM" secondAttribute="trailing" constant="1" id="MGO-6E-ta4"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="dcB-E2-XOf" secondAttribute="leading" id="MRa-w7-aWK"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="leading" secondItem="rKJ-OY-7HZ" secondAttribute="trailing" constant="15" id="MhF-jy-uXf"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="centerY" secondItem="erO-Ww-TKS" secondAttribute="centerY" id="N2H-r3-ABp"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="centerY" secondItem="rKJ-OY-7HZ" secondAttribute="centerY" id="ODJ-hg-9YB"/>
                                                     <constraint firstAttribute="bottom" secondItem="yZF-xG-qeD" secondAttribute="bottom" constant="1402" id="PwB-JN-o12"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="Q1o-Hw-V3E" secondAttribute="trailing" id="RLw-QV-MVN"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="Q1o-Hw-V3E" secondAttribute="trailing" constant="1" id="RLw-QV-MVN"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="centerX" secondItem="h9E-IZ-dOn" secondAttribute="centerX" id="Rt3-if-vId"/>
                                                     <constraint firstItem="3hy-SV-Od2" firstAttribute="top" secondItem="nm6-Nu-V9I" secondAttribute="bottom" constant="8" id="T4O-kX-yJf"/>
                                                     <constraint firstItem="erO-Ww-TKS" firstAttribute="leading" secondItem="WzD-rB-QxK" secondAttribute="trailing" constant="26" id="TWp-Kb-QHd"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="ZHL-6b-pTq" secondAttribute="trailingMargin" id="TwU-CJ-DdB"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="9dx-J6-CDc" secondAttribute="leading" id="UiH-kC-xyz"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="nm6-Nu-V9I" secondAttribute="trailing" id="VPo-jm-b1s"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="nm6-Nu-V9I" secondAttribute="trailing" constant="1" id="VPo-jm-b1s"/>
                                                     <constraint firstItem="VyJ-5u-FqQ" firstAttribute="top" secondItem="ZHL-6b-pTq" secondAttribute="top" constant="929" id="VWD-Uy-zoS"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="top" secondItem="ZHL-6b-pTq" secondAttribute="top" constant="17" id="VcD-WV-qgW"/>
                                                     <constraint firstAttribute="trailing" secondItem="FVj-Tg-keC" secondAttribute="trailing" constant="-11" id="Vhn-s4-j7o"/>
                                                     <constraint firstItem="VyJ-5u-FqQ" firstAttribute="leading" secondItem="ZHL-6b-pTq" secondAttribute="leading" constant="64" id="W6m-Fo-80P"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="MEF-Cs-Sn3" secondAttribute="trailing" id="WcD-ZG-evb"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="MEF-Cs-Sn3" secondAttribute="trailing" constant="1" id="WcD-ZG-evb"/>
                                                     <constraint firstItem="Q1o-Hw-V3E" firstAttribute="top" secondItem="1Xe-tx-w3N" secondAttribute="bottom" constant="8" id="Wis-bv-2Y2"/>
-                                                    <constraint firstItem="9dx-J6-CDc" firstAttribute="top" secondItem="h9E-IZ-dOn" secondAttribute="bottom" constant="8" id="XMg-Sf-EyK"/>
+                                                    <constraint firstItem="9dx-J6-CDc" firstAttribute="top" secondItem="h9E-IZ-dOn" secondAttribute="bottom" constant="20" id="XMg-Sf-EyK"/>
                                                     <constraint firstItem="yZF-xG-qeD" firstAttribute="top" secondItem="khO-ad-edp" secondAttribute="bottom" constant="15" id="ZvF-C1-3FK"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="leading" secondItem="ZHL-6b-pTq" secondAttribute="leading" constant="49" id="aAB-9I-Yaw"/>
-                                                    <constraint firstItem="a1r-m4-vnK" firstAttribute="top" secondItem="9dx-J6-CDc" secondAttribute="bottom" constant="39" id="b8K-tP-KAD"/>
+                                                    <constraint firstItem="a1r-m4-vnK" firstAttribute="top" secondItem="9dx-J6-CDc" secondAttribute="bottom" constant="8" id="b8K-tP-KAD"/>
                                                     <constraint firstItem="3hy-SV-Od2" firstAttribute="top" secondItem="ZHL-6b-pTq" secondAttribute="top" constant="431" id="cEO-uU-JWo"/>
                                                     <constraint firstAttribute="bottom" secondItem="Q1o-Hw-V3E" secondAttribute="bottom" constant="2057.5" id="e34-Am-zH4"/>
+                                                    <constraint firstItem="Shg-pF-YzU" firstAttribute="leading" secondItem="ZHL-6b-pTq" secondAttribute="leading" constant="-1" id="elj-jh-hCn"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="nm6-Nu-V9I" secondAttribute="leading" id="jXv-Rx-BcC"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="3hy-SV-Od2" secondAttribute="leading" id="jaU-kc-HNr"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="a1r-m4-vnK" secondAttribute="leading" id="kaG-kr-ALm"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="khO-ad-edp" secondAttribute="trailing" id="lU3-Fj-Rm2"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="yZF-xG-qeD" secondAttribute="trailing" id="pMl-CU-TLi"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="khO-ad-edp" secondAttribute="trailing" constant="1" id="lU3-Fj-Rm2"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="yZF-xG-qeD" secondAttribute="trailing" constant="1" id="pMl-CU-TLi"/>
                                                     <constraint firstItem="1Xe-tx-w3N" firstAttribute="top" secondItem="3hy-SV-Od2" secondAttribute="bottom" constant="20" id="phq-M1-Xhh"/>
                                                     <constraint firstItem="dcB-E2-XOf" firstAttribute="top" secondItem="Q1o-Hw-V3E" secondAttribute="bottom" constant="8.5" id="qoe-za-cL8"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="leading" secondItem="Q1o-Hw-V3E" secondAttribute="leading" id="qr4-zT-BbH"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="3hy-SV-Od2" secondAttribute="trailing" id="rEv-BZ-u7k"/>
-                                                    <constraint firstAttribute="bottom" secondItem="9dx-J6-CDc" secondAttribute="bottom" constant="566" id="rTS-rr-9Ce"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="3hy-SV-Od2" secondAttribute="trailing" constant="1" id="rEv-BZ-u7k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9dx-J6-CDc" secondAttribute="bottom" constant="535" id="rTS-rr-9Ce"/>
                                                     <constraint firstItem="Sft-vA-WcM" firstAttribute="top" secondItem="VyJ-5u-FqQ" secondAttribute="bottom" constant="8" id="rjD-es-CER"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="top" secondItem="FVj-Tg-keC" secondAttribute="top" id="s3d-AE-Mnx"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="a1r-m4-vnK" secondAttribute="trailing" id="sQR-DT-jT5"/>
-                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="9dx-J6-CDc" secondAttribute="trailing" id="siX-uy-it4"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="a1r-m4-vnK" secondAttribute="trailing" constant="1" id="sQR-DT-jT5"/>
+                                                    <constraint firstItem="zkI-15-Bax" firstAttribute="trailing" secondItem="9dx-J6-CDc" secondAttribute="trailing" constant="1" id="siX-uy-it4"/>
                                                     <constraint firstItem="zkI-15-Bax" firstAttribute="top" secondItem="WzD-rB-QxK" secondAttribute="bottom" constant="24" id="tli-mP-WNf"/>
                                                     <constraint firstItem="nm6-Nu-V9I" firstAttribute="top" secondItem="zkI-15-Bax" secondAttribute="bottom" constant="8" id="uag-q7-8dY"/>
+                                                    <constraint firstItem="h9E-IZ-dOn" firstAttribute="leading" secondItem="ZHL-6b-pTq" secondAttribute="leading" id="v1J-dh-IOt"/>
                                                     <constraint firstItem="WzD-rB-QxK" firstAttribute="bottom" secondItem="FVj-Tg-keC" secondAttribute="bottom" id="vpp-dT-iOE"/>
                                                     <constraint firstAttribute="trailing" secondItem="1Xe-tx-w3N" secondAttribute="trailing" constant="76" id="xIE-rR-BNm"/>
                                                     <constraint firstItem="KHS-bu-9Dw" firstAttribute="top" secondItem="a1r-m4-vnK" secondAttribute="bottom" constant="27" id="zAa-gj-Yhn"/>
@@ -2001,13 +2055,16 @@ Llena el siguiente formulario</string>
                     <size key="freeformSize" width="414" height="3001"/>
                     <connections>
                         <outlet property="Cuota" destination="a1r-m4-vnK" id="MdX-OO-Mcp"/>
+                        <outlet property="CuotaGlobal" destination="a1r-m4-vnK" id="je9-hy-qtZ"/>
                         <outlet property="FechaFinal" destination="FVj-Tg-keC" id="A6z-ns-s6M"/>
                         <outlet property="FechaInicial" destination="WzD-rB-QxK" id="uwp-cz-szx"/>
                         <outlet property="IPP" destination="khO-ad-edp" id="hIo-Lu-z4k"/>
                         <outlet property="SPP" destination="dcB-E2-XOf" id="ikw-4K-54V"/>
                         <outlet property="UAPP" destination="3hy-SV-Od2" id="AmJ-sv-DDl"/>
                         <outlet property="search1" destination="7hj-uo-tkW" id="1Cd-UQ-6qF"/>
+                        <outlet property="search2" destination="WMy-b7-MRC" id="st6-PG-OHA"/>
                         <outlet property="tableview1" destination="Shg-pF-YzU" id="KYs-rN-cEg"/>
+                        <outlet property="tableview2" destination="h9E-IZ-dOn" id="TeU-wG-kjr"/>
                         <outlet property="vistabarras" destination="nm6-Nu-V9I" id="Udp-vL-mDG"/>
                         <outlet property="vistabubble" destination="Q1o-Hw-V3E" id="bZS-8h-YgC"/>
                         <outlet property="vistapie" destination="Sft-vA-WcM" id="cUJ-w5-jEi"/>
@@ -2016,7 +2073,7 @@ Llena el siguiente formulario</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRG-ZD-LLl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="1Gl-4Q-9Yi"/>
             </objects>
-            <point key="canvasLocation" x="-4859" y="1090"/>
+            <point key="canvasLocation" x="-4859.420289855073" y="1089.84375"/>
         </scene>
         <!--Tanatologos-->
         <scene sceneID="oAm-Vd-wKX">
@@ -2858,7 +2915,7 @@ Llena el siguiente formulario</string>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="bIz-RR-EhW" kind="show" id="WM3-iK-A2y"/>
+                                    <segue destination="bIz-RR-EhW" kind="show" identifier="segue" id="WM3-iK-A2y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -23,18 +23,25 @@ class ReporteDeIndicadoresViewController: UIViewController{
     
     
     @IBOutlet weak var search1: UISearchBar!
-    
     @IBOutlet weak var tableview1: motivosTbleView!
+    
+    @IBOutlet weak var tableview2: cuotaYtanTableView!
+    @IBOutlet weak var search2: UISearchBar!
+    
+    @IBOutlet weak var CuotaGlobal: UILabel!
     
     @IBOutlet weak var vistapie: UIView!
     @IBOutlet weak var vistabubble: UIView!
     @IBOutlet weak var vistabarras: UIView!
     var UC = UsuariosController()
     var SC = SesionesController()
+    var TC = TanatologosController()
     
     var FiltrodatosUsuarios = [Usuario]()
     
     var FiltrodatosSesiones = [Sesion]()
+    
+    var FiltrodatosTanatologos = [Tanatologo]()
     
     lazy var graficaBarras: BarChartView = {
         var g =  BarChartView()
@@ -54,6 +61,16 @@ class ReporteDeIndicadoresViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool)  {
         //super.viewDidLoad()
         ReporteDeIndicadoresViewController.inst = self
+        
+        TC.fetchEspecificTanatologos(st: ""){ (result) in
+            switch result{
+            case .success(let usuarios):self.definirTanatologos(with: usuarios)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
+            }
+
+            
+        }
+        
         let toDate = FechaFinal.date
         let fromDate = Calendar.current.date(byAdding: .month, value: -1, to: toDate)
 
@@ -85,6 +102,8 @@ class ReporteDeIndicadoresViewController: UIViewController{
         
         tableview1.delegate = tableview1
         tableview1.dataSource = tableview1
+        tableview2.delegate = tableview2
+        tableview2.dataSource = tableview2
         
         GetData()
         
@@ -121,7 +140,12 @@ class ReporteDeIndicadoresViewController: UIViewController{
     
     func definirSesiones(with sesiones:Sesiones){
         FiltrodatosSesiones = sesiones
+        tableview2.reloadData()
         definicionGraficaBubble()
+    }
+    
+    func definirTanatologos(with tanatologos: Tanatologos){
+        FiltrodatosTanatologos = tanatologos
     }
     
     func definicionGraficaBarras(){
@@ -172,6 +196,7 @@ class ReporteDeIndicadoresViewController: UIViewController{
         
         SPP.text = "Servicios Acompañamiento: " + String(punto1.y) + " Servicios Holísticos: " + String(punto2.y) + " Herramientas Aalternativas: " + String(punto3.y)
         definicionGraficaPie()
+        tableview2.reloadData()
     }
     
     func definicionGraficaPie(){
@@ -234,7 +259,8 @@ class ReporteDeIndicadoresViewController: UIViewController{
         IPP.text! += " Reiki" + String(punto8.y) + " Biomagnetismo" + String(punto9.y) + " Angeloterapia" + String(punto10.y) + " Cama Térmica de Jade" + String(punto11.y) + " Flores de Bach" + String(punto12.y) + " Brisas ambientales" + String(punto13.y)
         
         tableview1.reloadData()
-        
+        tableview2.reloadData()
+        Cuota.text = String(tableview2.globalSum)
     }
 
 }

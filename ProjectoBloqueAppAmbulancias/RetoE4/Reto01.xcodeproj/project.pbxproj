@@ -13,6 +13,7 @@
 		322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097BB26DEE3FB0024DD40 /* Main.storyboard */; };
 		322097C226DEE3FC0024DD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097C026DEE3FC0024DD40 /* LaunchScreen.storyboard */; };
 		3220DAB527189FE3002F9219 /* ReporteDeIndicadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220DAB427189FE3002F9219 /* ReporteDeIndicadoresViewController.swift */; };
+		323545D9271DA24E00BED68B /* cuotaYtanTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323545D8271DA24E00BED68B /* cuotaYtanTableView.swift */; };
 		323B899C2713DDE2007AFDA2 /* Reto01Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B899B2713DDE2007AFDA2 /* Reto01Testing.swift */; };
 		3260D786270D594A00E6F29E /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D785270D594A00E6F29E /* Usuarios.swift */; };
 		3260D789270D5AAD00E6F29E /* UsuariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D788270D5AAD00E6F29E /* UsuariosController.swift */; };
@@ -75,6 +76,7 @@
 		322097C126DEE3FC0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3220DAB427189FE3002F9219 /* ReporteDeIndicadoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteDeIndicadoresViewController.swift; sourceTree = "<group>"; };
+		323545D8271DA24E00BED68B /* cuotaYtanTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cuotaYtanTableView.swift; sourceTree = "<group>"; };
 		323B89992713DDE2007AFDA2 /* Reto01Testing.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reto01Testing.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B899B2713DDE2007AFDA2 /* Reto01Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reto01Testing.swift; sourceTree = "<group>"; };
 		323B899D2713DDE2007AFDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				32EBE486271D2A6B00E2F65D /* motivosTableView.swift */,
+				323545D8271DA24E00BED68B /* cuotaYtanTableView.swift */,
 			);
 			path = minitables;
 			sourceTree = "<group>";
@@ -272,8 +275,8 @@
 				32E58EEB271BB60600C68D52 /* Edit */,
 				3AFABD3C27195E7F0063FA8D /* herramientaPickerView.swift */,
 				3A6472512719CCF300D6A016 /* tipoServicioPickerView.swift */,
-				3A64724E2719CCC200D6A016 /* motivoServPickerView.swift */,
 				3A6472572719D17100D6A016 /* intervencionPickerView.swift */,
+				3A64724E2719CCC200D6A016 /* motivoServPickerView.swift */,
 			);
 			path = "New Group1";
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				3A6472582719D17100D6A016 /* intervencionPickerView.swift in Sources */,
 				32EBE487271D2A6B00E2F65D /* motivosTableView.swift in Sources */,
 				32E96269271925C100D8C935 /* EditarSoporteViewController.swift in Sources */,
+				323545D9271DA24E00BED68B /* cuotaYtanTableView.swift in Sources */,
 				32BEF3332717C366004EA84F /* RegistrarTanatologoViewController.swift in Sources */,
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
 				32BEF32F27179BFB004EA84F /* TanatologosAminTableViewController.swift in Sources */,
