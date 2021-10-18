@@ -12,18 +12,19 @@ import TinyConstraints
 
 class ReporteDeIndicadoresViewController: UIViewController{
     
+    static var inst = ReporteDeIndicadoresViewController()
     @IBOutlet weak var FechaInicial: UIDatePicker!
     @IBOutlet weak var FechaFinal: UIDatePicker!
     @IBOutlet weak var Cuota: UILabel!
-    @IBOutlet weak var SMPP: UISearchBar!
-    @IBOutlet weak var MPP: UITableView!
-    @IBOutlet weak var SUAPP: UISearchBar!
-    @IBOutlet weak var UAPT: UITableView!
     
     @IBOutlet weak var UAPP: UILabel!
     @IBOutlet weak var SPP: UILabel!
     @IBOutlet weak var IPP: UILabel!
     
+    
+    @IBOutlet weak var search1: UISearchBar!
+    
+    @IBOutlet weak var tableview1: motivosTbleView!
     
     @IBOutlet weak var vistapie: UIView!
     @IBOutlet weak var vistabubble: UIView!
@@ -52,6 +53,7 @@ class ReporteDeIndicadoresViewController: UIViewController{
     
     override func viewWillAppear(_ animated: Bool)  {
         //super.viewDidLoad()
+        ReporteDeIndicadoresViewController.inst = self
         let toDate = FechaFinal.date
         let fromDate = Calendar.current.date(byAdding: .month, value: -1, to: toDate)
 
@@ -80,7 +82,12 @@ class ReporteDeIndicadoresViewController: UIViewController{
         graficaPie.width(to: vistapie)
         graficaPie.height(to: vistapie)
         
+        
+        tableview1.delegate = tableview1
+        tableview1.dataSource = tableview1
+        
         GetData()
+        
     
     }
     
@@ -225,6 +232,8 @@ class ReporteDeIndicadoresViewController: UIViewController{
         IPP.text! += " Mindfulness" + String(punto5.y) + " Aromaterapia y Musicoterapia" + String(punto6.y) + " Cristaloterapia" + String(punto7.y)
         
         IPP.text! += " Reiki" + String(punto8.y) + " Biomagnetismo" + String(punto9.y) + " Angeloterapia" + String(punto10.y) + " Cama Térmica de Jade" + String(punto11.y) + " Flores de Bach" + String(punto12.y) + " Brisas ambientales" + String(punto13.y)
+        
+        tableview1.reloadData()
         
     }
 
