@@ -33,12 +33,36 @@ class EditarTanatologoViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func Editar(_ sender: Any) {
-        let  tanatologo = Tanatologo(id: "", nombre: name.text!, password: password.text!, user: username.text!)
-                tc.SingUpTanatologo(sup: tanatologo)
-                LogInViewController.Lv.datos[0] = tanatologo
-                _ = navigationController?.popViewController(animated: true)
+        
+        tc.fetchTanatologos(st: username.text!){ (result) in
+            switch result{
+            case .success(let tanatologos):self.updatedatos(with: tanatologos)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+            }
+        }
         
     }
+    
+    func updatedatos(with tanatologos: Tanatologos){
+       
+        let  tanatologo = Tanatologo(id: sup!.id, nombre: name.text!, password: password.text!, user: username.text!)
+      
+        
+        if (tanatologos.count <= 0){
+            
+            tc.Editar(sup: tanatologo)
+                    LogInViewController.Lv.datos[0] = tanatologo
+                    _ = navigationController?.popViewController(animated: true)
+        }
+    }
+   
+    func displayError(_ error: Error, title: String) {
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: title, message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     
     /*
     // MARK: - Navigation

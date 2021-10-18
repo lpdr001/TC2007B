@@ -1019,20 +1019,18 @@ Llena el siguiente formulario</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-9a-PVN">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-9a-PVN">
                                         <rect key="frame" x="0.0" y="84" width="374" height="76"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-Om-D3u">
                                         <rect key="frame" x="0.0" y="168" width="374" height="76"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lca-L3-KHB">
                                         <rect key="frame" x="0.0" y="252" width="374" height="76"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -2012,7 +2010,7 @@ Llena el siguiente formulario</string>
                         <outlet property="SMPP" destination="7hj-uo-tkW" id="WwA-uh-dX5"/>
                         <outlet property="SPP" destination="dcB-E2-XOf" id="ikw-4K-54V"/>
                         <outlet property="SUAPP" destination="WMy-b7-MRC" id="JHW-kS-k1u"/>
-                        <outlet property="UAPP" destination="h9E-IZ-dOn" id="heb-jw-wik"/>
+                        <outlet property="UAPP" destination="3hy-SV-Od2" id="AmJ-sv-DDl"/>
                         <outlet property="UAPT" destination="h9E-IZ-dOn" id="WQa-ge-MQc"/>
                         <outlet property="vistabarras" destination="nm6-Nu-V9I" id="Udp-vL-mDG"/>
                         <outlet property="vistabubble" destination="Q1o-Hw-V3E" id="bZS-8h-YgC"/>
@@ -2021,7 +2019,7 @@ Llena el siguiente formulario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRG-ZD-LLl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4859.420289855073" y="1090.5133928571429"/>
+            <point key="canvasLocation" x="-4859" y="1090"/>
         </scene>
         <!--Tanatologos-->
         <scene sceneID="oAm-Vd-wKX">
@@ -2620,20 +2618,18 @@ Llena el siguiente formulario</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-y1-zSr">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-y1-zSr">
                                         <rect key="frame" x="0.0" y="84" width="374" height="76"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-uh-SFi">
                                         <rect key="frame" x="0.0" y="168" width="374" height="76"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRC-sa-iqf">
                                         <rect key="frame" x="0.0" y="252" width="374" height="76"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -2645,7 +2641,6 @@ Llena el siguiente formulario</string>
                                                 <state key="normal" title="Guardar"/>
                                                 <connections>
                                                     <action selector="Editar:" destination="mXG-vZ-7iU" eventType="touchUpInside" id="IhL-9B-y9k"/>
-                                                    <action selector="Registrar:" destination="mXG-vZ-7iU" eventType="touchUpInside" id="dgw-Bc-DAp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2664,7 +2659,6 @@ Llena el siguiente formulario</string>
                     </view>
                     <navigationItem key="navigationItem" id="WvR-xS-9AU"/>
                     <connections>
-                        <outlet property="Name" destination="fdz-y1-zSr" id="w8d-Cx-i6E"/>
                         <outlet property="name" destination="fdz-y1-zSr" id="Mz7-rt-LoF"/>
                         <outlet property="password" destination="sRC-sa-iqf" id="4Ze-Sk-aal"/>
                         <outlet property="username" destination="Y16-uh-SFi" id="yp4-KA-Xa3"/>
