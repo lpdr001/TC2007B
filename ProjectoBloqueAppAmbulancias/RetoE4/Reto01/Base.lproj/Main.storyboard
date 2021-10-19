@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jM-Dg-qOo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,7 +38,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="D7q-RF-l24" style="IBUITableViewCellStyleDefault" id="HYh-05-5Hx" customClass="ServicioTableViewCell" customModule="Reto01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYh-05-5Hx" id="V5J-AF-QoH">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -534,13 +533,13 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Uvr-Mg-DFA">
-                            <rect key="frame" x="0.0" y="209.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="198.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="vdg-ky-557" detailTextLabel="fgO-bt-4hR" style="IBUITableViewCellStyleSubtitle" id="x1R-8f-pYa" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="131.5" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="115" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1R-8f-pYa" id="Pvu-Aa-bT0">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1452,7 +1451,7 @@ Llena el siguiente formulario</string>
                             <tableViewSection headerTitle="Juan Luis Guerra" id="Mz8-5y-Zb3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="iwo-eI-ulm" detailTextLabel="eDX-ys-BCv" style="IBUITableViewCellStyleSubtitle" id="BQq-Gi-9pE">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BQq-Gi-9pE" id="FWs-mK-eZc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1476,7 +1475,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="DrZ-PX-aAs" detailTextLabel="LUr-Kh-9ne" style="IBUITableViewCellStyleSubtitle" id="YOa-Wf-BjX">
-                                        <rect key="frame" x="0.0" y="132" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="115.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YOa-Wf-BjX" id="Vl1-rN-Nq0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1500,7 +1499,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XPA-tr-Q0d" detailTextLabel="hXf-fe-VVN" style="IBUITableViewCellStyleSubtitle" id="v6M-dj-zeF">
-                                        <rect key="frame" x="0.0" y="175.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="159" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v6M-dj-zeF" id="tLF-Fi-NtK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1524,7 +1523,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8e8-T8-Lsi" detailTextLabel="qA6-F0-4jb" style="IBUITableViewCellStyleSubtitle" id="xDj-Jg-ThX">
-                                        <rect key="frame" x="0.0" y="219" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="202.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xDj-Jg-ThX" id="m8H-c8-NED">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1548,7 +1547,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Av0-QE-89C" detailTextLabel="biz-ZV-ApN" style="IBUITableViewCellStyleSubtitle" id="WTV-MG-ekb">
-                                        <rect key="frame" x="0.0" y="262.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="246" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTV-MG-ekb" id="pIM-KY-WiS">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1572,7 +1571,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="rHF-IC-JpH" detailTextLabel="avh-rP-4yL" style="IBUITableViewCellStyleSubtitle" id="2t9-6X-TH7">
-                                        <rect key="frame" x="0.0" y="306" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="289.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2t9-6X-TH7" id="0yt-8w-iUU">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1596,7 +1595,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="gbH-bh-Sc3" detailTextLabel="x02-EV-knB" style="IBUITableViewCellStyleSubtitle" id="D52-FL-BJL">
-                                        <rect key="frame" x="0.0" y="349.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="333" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D52-FL-BJL" id="zrx-rf-ZlB">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1620,7 +1619,7 @@ Llena el siguiente formulario</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FfA-7D-fhA" detailTextLabel="Vsw-62-5kx" style="IBUITableViewCellStyleSubtitle" id="wv8-76-yCY">
-                                        <rect key="frame" x="0.0" y="393" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="376.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wv8-76-yCY" id="vmo-GC-LPk">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1671,13 +1670,13 @@ Llena el siguiente formulario</string>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TlL-EM-OLp">
-                            <rect key="frame" x="0.0" y="725.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="851.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="Zpb-QO-5VT">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zpb-QO-5VT" id="sqj-j3-H2g">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1827,30 +1826,12 @@ Llena el siguiente formulario</string>
                                                                 <outlet property="delegate" destination="h9E-IZ-dOn" id="6Bi-aB-WiQ"/>
                                                             </connections>
                                                         </searchBar>
-                                                        <stackView key="tableFooterView" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="6" id="dql-Ob-0cb">
-                                                            <rect key="frame" x="0.0" y="345" width="415" height="44"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota de recuperación Global:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dx-J6-CDc">
-                                                                    <rect key="frame" x="92" y="0.0" width="231" height="19"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cuota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1r-m4-vnK">
-                                                                    <rect key="frame" x="186" y="25" width="43" height="19"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zelda1" textLabel="6tw-mm-GSa" detailTextLabel="DR2-WL-e2R" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="d44-CE-wG8" customClass="tanGraphTableViewCell" customModule="Reto01" customModuleProvider="target">
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zelda1" textLabel="6tw-mm-GSa" detailTextLabel="nk7-jC-f6S" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="d44-CE-wG8" customClass="tanGraphTableViewCell" customModule="Reto01" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="72" width="415" height="83"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d44-CE-wG8" id="vjG-pb-NPz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="415" height="113"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="415" height="83"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6tw-mm-GSa">
@@ -1860,34 +1841,17 @@ Llena el siguiente formulario</string>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios: 100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHo-SL-Cvn">
-                                                                            <rect key="frame" x="265" y="0.0" width="130" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="130" id="U2r-Ye-ftJ"/>
-                                                                                <constraint firstAttribute="height" constant="16" id="j5i-pE-DCc"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zv-7F-qNy">
-                                                                            <rect key="frame" x="305" y="19" width="50.5" height="21"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="21" id="HcQ-At-g5A"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nk7-jC-f6S">
+                                                                            <rect key="frame" x="20" y="44.5" width="33" height="14.5"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="HXj-TG-VTJ" firstAttribute="top" secondItem="vjG-pb-NPz" secondAttribute="top" constant="11" id="Liu-vj-go3"/>
-                                                                        <constraint firstItem="QHo-SL-Cvn" firstAttribute="leading" secondItem="HXj-TG-VTJ" secondAttribute="leading" constant="245" id="Mzs-ds-hIK"/>
-                                                                        <constraint firstItem="HXj-TG-VTJ" firstAttribute="leading" secondItem="vjG-pb-NPz" secondAttribute="leading" constant="20" id="cMW-x8-D8A"/>
-                                                                        <constraint firstAttribute="trailingMargin" secondItem="9Zv-7F-qNy" secondAttribute="trailing" constant="39.5" id="fo6-Ww-JD2"/>
-                                                                        <constraint firstItem="QHo-SL-Cvn" firstAttribute="top" secondItem="HXj-TG-VTJ" secondAttribute="bottom" constant="-32" id="fuG-Ra-E2f"/>
-                                                                        <constraint firstItem="9Zv-7F-qNy" firstAttribute="top" secondItem="HXj-TG-VTJ" secondAttribute="bottom" constant="-13" id="qJk-Qi-qmh"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="HXj-TG-VTJ" secondAttribute="trailing" constant="155" id="rcS-sP-75u"/>
+                                                                        <constraint firstAttribute="top" secondItem="vjG-pb-NPz" secondAttribute="top" constant="11" id="Liu-vj-go3"/>
+                                                                        <constraint firstAttribute="leading" secondItem="vjG-pb-NPz" secondAttribute="leading" constant="20" id="cMW-x8-D8A"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>
                                                             </tableViewCell>
@@ -1922,7 +1886,7 @@ Llena el siguiente formulario</string>
                                                         </searchBar>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zelda" id="2Mm-uO-9Nx">
-                                                                <rect key="frame" x="0.0" y="100.5" width="417" height="43.5"/>
+                                                                <rect key="frame" x="0.0" y="84" width="417" height="44"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Mm-uO-9Nx" id="k1t-AF-RDc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="417" height="44"/>
@@ -1940,6 +1904,24 @@ Llena el siguiente formulario</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" id="dql-Ob-0cb">
+                                                        <rect key="frame" x="0.0" y="2325" width="415" height="54"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota de recuperación Global:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dx-J6-CDc">
+                                                                <rect key="frame" x="92" y="0.0" width="231" height="19"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cuota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1r-m4-vnK">
+                                                                <rect key="frame" x="186" y="35" width="43" height="19"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.80802781130000001" green="1" blue="0.98886421769999999" alpha="0.76749343280000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -2387,7 +2369,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="SPp-Lz-Fhv" detailTextLabel="rsV-DI-BbW" style="IBUITableViewCellStyleSubtitle" id="nnV-UP-SWK">
-                                <rect key="frame" x="0.0" y="185.5" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nnV-UP-SWK" id="IYW-Aa-9QA">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -2451,13 +2433,13 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="center" id="2zU-Qd-3zt">
-                            <rect key="frame" x="0.0" y="194.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="183.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="34l-Ip-rvd" style="IBUITableViewCellStyleDefault" id="iFP-tN-bWf">
-                                <rect key="frame" x="0.0" y="128.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iFP-tN-bWf" id="LlA-f4-6rV">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2524,7 +2506,7 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="center" id="8ez-ty-xZl">
-                            <rect key="frame" x="0.0" y="206.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="195.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiE-g7-Vft">
@@ -2541,7 +2523,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="wPz-gG-fWG" detailTextLabel="0kC-M3-D5X" style="IBUITableViewCellStyleSubtitle" id="OO7-Ii-H5w">
-                                <rect key="frame" x="0.0" y="128.5" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OO7-Ii-H5w" id="urt-a7-3jg">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -2737,13 +2719,13 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="center" id="Kph-Vu-87B">
-                            <rect key="frame" x="0.0" y="194.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="183.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Gr1-ZS-oxU" style="IBUITableViewCellStyleDefault" id="mcL-7S-IWF">
-                                <rect key="frame" x="0.0" y="128.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mcL-7S-IWF" id="D63-Wu-DgT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2808,13 +2790,13 @@ Llena el siguiente formulario</string>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="29x-h6-QWp">
-                            <rect key="frame" x="0.0" y="209.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="198.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="yW3-t6-jAt" detailTextLabel="z8k-6L-pY9" style="IBUITableViewCellStyleSubtitle" id="mmG-Gn-YOy" userLabel="zelda">
-                                <rect key="frame" x="0.0" y="131.5" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="115" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mmG-Gn-YOy" id="0D9-Oo-xBj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -2886,7 +2868,7 @@ Llena el siguiente formulario</string>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" textLabel="Jbf-th-A0o" detailTextLabel="dnc-ds-lZo" style="IBUITableViewCellStyleSubtitle" id="YfF-9W-66X">
-                                <rect key="frame" x="0.0" y="185.5" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YfF-9W-66X" id="FbA-r3-JvU">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -3335,8 +3317,8 @@ Llena el siguiente formulario</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
-        <image name="book.fill" catalog="system" width="128" height="95"/>
-        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="fondo" width="488" height="845.5"/>

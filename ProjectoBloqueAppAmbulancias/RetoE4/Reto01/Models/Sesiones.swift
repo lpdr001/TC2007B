@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 
 struct Sesion: Codable {
-    let id:String
+    var id:String
     var cierre:Bool
     var evaluacion,idUsuario,servicio, intervencion, herramienta, motivo: String
     var fecha:Date
@@ -29,6 +29,7 @@ struct Sesion: Codable {
         self.motivo = motivo
     }
     init(aDoc: DocumentSnapshot){
+
         self.id = aDoc.documentID
         self.cierre = aDoc.get("cierre") as? Bool ?? false
         
@@ -39,14 +40,14 @@ struct Sesion: Codable {
         self.fecha = postTimestamp.dateValue()
         print(self.fecha)
         self.evaluacion = aDoc.get("evaluacion") as? String ?? ""
-        self.idUsuario = aDoc.get("isUsuario") as? String ?? ""
+        self.idUsuario = aDoc.get("idUsuario") as? String ?? "1"
         self.servicio = aDoc.get("servicio") as? String ?? ""
         self.intervencion = aDoc.get("intervencion") as? String ?? ""
         self.herramienta = aDoc.get("herramienta") as? String ?? ""
         self.motivo = aDoc.get("motivo") as? String ?? ""
         self.numeroSesion = aDoc.get("numeroSesion")as? Int ?? 0
         self.cuota = aDoc.get("cuota")as? Int ?? 0
-    }
+        }
     static func == (left:Sesion, right:Sesion)-> Bool{return left.numeroSesion == right.numeroSesion }
 }
 

@@ -58,9 +58,11 @@ class cuotaYtanTableView: UITableView, UITableViewDelegate, UITableViewDataSourc
         
         for u in ReporteDeIndicadoresViewController.inst.FiltrodatosUsuarios.filter({$0.idTanatologo == filtro[indexPath.row].id}) {
             print(u.nombre)
+            print (u.id)
             for s in ReporteDeIndicadoresViewController.inst.FiltrodatosSesiones.filter({$0.idUsuario == u.id}) {
                 sum += s.cuota
-                print(sum)
+                //print(s.idUsuario)
+                print(String(sum))
             }
         }
              
