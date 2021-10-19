@@ -18,12 +18,19 @@ class cuotaYtanTableView: UITableView, UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var globalSum = 0
+    var globalSum = 100
     
     let sections = ["Tanatólogos"]
     
-    let motivos = ReporteDeIndicadoresViewController.inst.FiltrodatosTanatologos
-    var filtro = ReporteDeIndicadoresViewController.inst.FiltrodatosTanatologos
+    var motivos = [Tanatologo]() //ReporteDeIndicadoresViewController.inst.FiltrodatosTanatologos
+    var filtro = [Tanatologo]() //ReporteDeIndicadoresViewController.inst.FiltrodatosTanatologos
+    
+    func SetData(mot:[Tanatologo]){
+        self.motivos = mot
+        self.filtro = self.motivos
+        self.reloadData()
+        globalSum = 0
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -44,21 +51,21 @@ class cuotaYtanTableView: UITableView, UITableViewDelegate, UITableViewDataSourc
 
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "zelda1", for: indexPath) as! tanGraphTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "zelda1", for: indexPath) //as! tanGraphTableViewCell
         
         var sum = 0
         
+        
         for u in ReporteDeIndicadoresViewController.inst.FiltrodatosUsuarios.filter({$0.idTanatologo == filtro[indexPath.row].id}) {
+            print(u.nombre)
             for s in ReporteDeIndicadoresViewController.inst.FiltrodatosSesiones.filter({$0.idUsuario == u.id}) {
                 sum += s.cuota
+                print(sum)
             }
         }
              
-        cell.tanname?.text = filtro[indexPath.row].nombre + "(" + filtro[indexPath.row].user + ")"
-        cell.usuariosc?.text = "Usuarios: " + String(ReporteDeIndicadoresViewController.inst.FiltrodatosUsuarios.filter({$0.idTanatologo == motivos[indexPath.row].id}).count)
-        cell.tancuota?.text = "Cuota: " + String(sum)
-        
-        globalSum += sum
+        cell.textLabel?.text = filtro[indexPath.row].nombre + "(" + filtro[indexPath.row].user + ")"
+        cell.detailTextLabel?.text = "Usuarios: " + String(ReporteDeIndicadoresViewController.inst.FiltrodatosUsuarios.filter({$0.idTanatologo == filtro[indexPath.row].id}).count) + "  Cuota: " + String(sum) + "$"
         
         return cell
     }

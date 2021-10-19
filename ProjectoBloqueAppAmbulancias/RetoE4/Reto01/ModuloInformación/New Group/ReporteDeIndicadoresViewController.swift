@@ -57,19 +57,10 @@ class ReporteDeIndicadoresViewController: UIViewController{
         var k =  PieChartView()
         return k
     }()
-    
-    override func viewWillAppear(_ animated: Bool)  {
-        //super.viewDidLoad()
-        ReporteDeIndicadoresViewController.inst = self
-        
-        TC.fetchEspecificTanatologos(st: ""){ (result) in
-            switch result{
-            case .success(let usuarios):self.definirTanatologos(with: usuarios)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
-            }
+    override func viewDidLoad() {
 
-            
-        }
+        super.viewDidLoad()
+        ReporteDeIndicadoresViewController.inst = self
         
         let toDate = FechaFinal.date
         let fromDate = Calendar.current.date(byAdding: .month, value: -1, to: toDate)
@@ -116,10 +107,23 @@ class ReporteDeIndicadoresViewController: UIViewController{
     
     
     func GetData(){
-        UC.fetchUsers(start: FechaInicial.date, End: FechaFinal.date){ (result) in
+        DispatchQueue.main.async {
+            
+            
+            self.UC.fetchUsers(start: self.FechaInicial.date, End: self.FechaFinal.date){ (result) in
             switch result{
             case .success(let sesiones):self.definirUsuarios(with: sesiones)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
+            }
+        }
+            
+            self.TC.fetchEspecificTanatologos(st: ""){ (result) in
+                switch result{
+                case .success(let usuarios):self.definirTanatologos(with: usuarios)
+                case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
+                }
+
+                
             }
         }
         
@@ -134,18 +138,27 @@ class ReporteDeIndicadoresViewController: UIViewController{
         }
     
     func definirUsuarios(with sesiones:Usuarios){
-        FiltrodatosUsuarios = sesiones
-        definicionGraficaBarras()
+        DispatchQueue.main.async {
+            self.FiltrodatosUsuarios = sesiones
+            self.definicionGraficaBarras()
+            print("Set Us")
+        }
     }
     
     func definirSesiones(with sesiones:Sesiones){
-        FiltrodatosSesiones = sesiones
-        tableview2.reloadData()
-        definicionGraficaBubble()
+        DispatchQueue.main.async {
+            self.FiltrodatosSesiones = sesiones
+            self.definicionGraficaBubble()
+            print("Set Ses")
+        }
     }
     
     func definirTanatologos(with tanatologos: Tanatologos){
-        FiltrodatosTanatologos = tanatologos
+        DispatchQueue.main.async {
+            self.FiltrodatosTanatologos = tanatologos
+            print("Set Tan")
+            self.tableview2.SetData(mot: self.FiltrodatosTanatologos)
+        }
     }
     
     func definicionGraficaBarras(){
@@ -196,7 +209,6 @@ class ReporteDeIndicadoresViewController: UIViewController{
         
         SPP.text = "Servicios Acompañamiento: " + String(punto1.y) + " Servicios Holísticos: " + String(punto2.y) + " Herramientas Aalternativas: " + String(punto3.y)
         definicionGraficaPie()
-        tableview2.reloadData()
     }
     
     func definicionGraficaPie(){
@@ -260,7 +272,13 @@ class ReporteDeIndicadoresViewController: UIViewController{
         
         tableview1.reloadData()
         tableview2.reloadData()
-        Cuota.text = String(tableview2.globalSum)
+        
+        var sum = 0
+        for s in FiltrodatosSesiones{
+            sum += s.cuota
+        }
+        
+        Cuota.text = String(sum) + "$"
     }
 
 }
