@@ -51,6 +51,7 @@
 		AF63E4E226FBA66200AFE201 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */; };
 		AF63E4E626FBCE8C00AFE201 /* ServiciosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */; };
 		AF63E4E726FBCE8C00AFE201 /* Servicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63E4E526FBCE8B00AFE201 /* Servicios.swift */; };
+		AF86A692271F723A007422A0 /* reporteH.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86A691271F723A007422A0 /* reporteH.swift */; };
 		AFFA154E270FD4D000E4A3E7 /* Tanatologos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA154D270FD4D000E4A3E7 /* Tanatologos.swift */; };
 		AFFA1550270FD62100E4A3E7 /* TanatologosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */; };
 		E6F935186A9567DEBA525AE1 /* Pods_Reto01_Reto01Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA81E337716B1967B16F0734 /* Pods_Reto01_Reto01Testing.framework */; };
@@ -118,6 +119,7 @@
 		AF63E4E126FBA66200AFE201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosController.swift; sourceTree = "<group>"; };
 		AF63E4E526FBCE8B00AFE201 /* Servicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servicios.swift; sourceTree = "<group>"; };
+		AF86A691271F723A007422A0 /* reporteH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reporteH.swift; sourceTree = "<group>"; };
 		AFFA154D270FD4D000E4A3E7 /* Tanatologos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologos.swift; sourceTree = "<group>"; };
 		AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologosController.swift; sourceTree = "<group>"; };
 		CA81E337716B1967B16F0734 /* Pods_Reto01_Reto01Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reto01_Reto01Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +298,7 @@
 				AF63E4E426FBCE8B00AFE201 /* ServiciosController.swift */,
 				AF63E4E526FBCE8B00AFE201 /* Servicios.swift */,
 				3260D788270D5AAD00E6F29E /* UsuariosController.swift */,
+				AF86A691271F723A007422A0 /* reporteH.swift */,
 				AFFA154F270FD62100E4A3E7 /* TanatologosController.swift */,
 				AF421D3A2710EF32009CE697 /* Administradores.swift */,
 				AF421D3C2710EF78009CE697 /* AdministradorController.swift */,
@@ -523,6 +526,7 @@
 				3AA06715270FECA5009E760F /* ReporteBusquedaViewController.swift in Sources */,
 				32A28B92270DD277009BB4A2 /* LogInViewController.swift in Sources */,
 				3260D7A5270D6F2D00E6F29E /* SesionesController.swift in Sources */,
+				AF86A692271F723A007422A0 /* reporteH.swift in Sources */,
 				3AFABD3D27195E7F0063FA8D /* herramientaPickerView.swift in Sources */,
 				3260D79D270D69AF00E6F29E /* DetalleUsuariosTableViewController.swift in Sources */,
 				32BEF3372717C3D8004EA84F /* RegistrarSoporteViewController.swift in Sources */,
