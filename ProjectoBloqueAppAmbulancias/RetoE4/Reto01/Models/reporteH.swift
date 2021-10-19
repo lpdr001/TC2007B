@@ -53,12 +53,7 @@ class reporteHistoricoTableView:  UITableView, UITableViewDelegate, UISearchBarD
     
     
     
-    func SetData(mot:[Tanatologo]){
-        self.motivo = mot
-        self.
-    }
-           
-
+    
         /*   func updateUI(with sesiones:Sesiones) -> Int{
                if(sesiones.count != 0)
                {
@@ -94,18 +89,11 @@ class reporteHistoricoTableView:  UITableView, UITableViewDelegate, UISearchBarD
                DispatchQueue.main.async {
                    let alert = UIAlertController(title: title, message: error.localizedDescription, preferredStyle: .alert)
                    alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-                   self.present(alert, animated: true, completion: nil)
+                 //  self.present(alert, animated: true, completion: nil)
                }
            }
        
-func viewWillAppear(_ animated: Bool) {
-           
-           Sesion.fetchOneSesion(st: nexp!.idUsuario, stt: num){ (result) in
-               switch result{
-               case .success(let sesiones):self.updateUI(with: sesiones)
-               case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
-               }
-       }
+
        
            func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
                // #warning Incomplete implementation, return the number of rows
@@ -117,5 +105,5 @@ func viewWillAppear(_ animated: Bool) {
             
     
     
- }
+ 
 
