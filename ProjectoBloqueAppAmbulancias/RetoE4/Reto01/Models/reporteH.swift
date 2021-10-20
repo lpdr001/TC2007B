@@ -51,7 +51,40 @@ class reporteHistoricoTableView:  UITableView, UITableViewDelegate, UISearchBarD
            var sesion: Sesion!
     
     
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       // let cell = tableView.dequeueReusableCell(withIdentifier: "zelda1", for: indexPath)
+        
+        var sum = 0
+        
+        
+        for u in ReporteDeIndicadoresViewController.inst.FiltrodatosUsuarios.filter({$0.idTanatologo == filtro[indexPath.row].id}) {
+            print(u.nombre)
+            print (u.id)
+            for s in ReporteDeIndicadoresViewController.inst.FiltrodatosSesiones.filter({$0.idUsuario == u.id}) {
+                sum += s.cuota
+                //print(s.idUsuario)
+                print(String(sum))
+            }
+        }
+             
+        cell.textLabel?.text = filtro[indexPath.row].nombre + "(" + filtro[indexPath.row].user + ")"
+        cell.detailTextLabel?.text = "Usuarios: " + String(ReporteDeIndicadoresViewController.inst.FiltrodatosUsuarios.filter({$0.idTanatologo == filtro[indexPath.row].id}).count) + "  Cuota: " + String(sum) + "$"
+        
+        return cell
+    }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print ("using bar")
+        if searchBar.text == nil || searchBar.text == "" {
+            self.filtro = self.motivos
+        } else {
+            let lowerCase = searchBar.text!
+            self.filtro = self.motivos.filter({$0.nombre.range(of: lowerCase, options: .caseInsensitive) != nil })
+        }
+        globalSum = 0
+        self.reloadData()
+    }
+
     
     
         /*   func updateUI(with sesiones:Sesiones) -> Int{
@@ -101,6 +134,21 @@ class reporteHistoricoTableView:  UITableView, UITableViewDelegate, UISearchBarD
                return 0
            }
            
+
+func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    print ("using bar")
+    if searchBar.text == nil || searchBar.text == "" {
+        self.filtro = self.motivos
+    } else {
+        let lowerCase = searchBar.text!
+        self.filtro = self.motivos.filter({$0.nombre.range(of: lowerCase, options: .caseInsensitive) != nil })
+    }
+    globalSum = 0
+    self.reloadData()
+}
+
+}
+
            
             
     
