@@ -15,7 +15,16 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
     @IBOutlet weak var searchBarS: UISearchBar!
     @IBOutlet var UITableView: UITableView!
     @IBOutlet var Namedisplay: UILabel!
-   
+    @IBOutlet weak var ocupacion: UILabel!
+    @IBOutlet weak var religion: UILabel!
+    @IBOutlet weak var edad: UILabel!
+    @IBOutlet weak var Sexo: UILabel!
+    @IBOutlet weak var procedencia: UILabel!
+    @IBOutlet weak var EstadoCivil: UILabel!
+    @IBOutlet weak var telefono: UILabel!
+    @IBOutlet weak var referencia: UILabel!
+    @IBOutlet weak var idact: UILabel!
+    
     var UsuarioControlador = SesionesController()
     var Username = ""
     var UserID = ""
@@ -39,7 +48,16 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
 //viewDidLoad() {
         //super.viewDidLoad()
         
-        Namedisplay.text = user?.nombre
+        Namedisplay.text = user?.nombre ?? ""
+        ocupacion.text = user?.ocupacion ?? ""
+        religion.text = user?.religion ?? ""
+        edad.text = String(user!.edad)
+        Sexo.text = user?.sexo ?? ""
+        procedencia.text = user?.procedencia ?? ""
+        EstadoCivil.text = user?.estadoCivil ?? ""
+        telefono.text = String(user!.telefono)
+        referencia.text = user?.referencia ?? ""
+        idact.text = user?.iDRA ?? ""
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
