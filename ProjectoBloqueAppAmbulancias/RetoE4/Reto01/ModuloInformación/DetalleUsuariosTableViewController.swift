@@ -14,6 +14,7 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
     
     @IBOutlet weak var searchBarS: UISearchBar!
     @IBOutlet var UITableView: UITableView!
+    @IBOutlet weak var domicilio: UILabel!
     @IBOutlet var Namedisplay: UILabel!
     @IBOutlet weak var ocupacion: UILabel!
     @IBOutlet weak var religion: UILabel!
@@ -53,6 +54,7 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
         religion.text = user?.religion ?? ""
         edad.text = String(user!.edad)
         Sexo.text = user?.sexo ?? ""
+        domicilio.text = user?.domicilio ?? ""
         procedencia.text = user?.procedencia ?? ""
         EstadoCivil.text = user?.estadoCivil ?? ""
         telefono.text = String(user!.telefono)
@@ -134,6 +136,7 @@ func displayError(_ error: Error, title: String) {
         
         cell.textLabel?.text = "" + String(filtroDatos[indexPath.row].numeroSesion) + ": " + h
         cell.detailTextLabel?.text = String(filtroDatos[indexPath.row].cuota)
+        
         
         
         

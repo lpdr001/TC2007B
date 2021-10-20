@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-apretón-de-manos-corazón-103.png",
+      "filename" : "corazon00.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icons8-apretón-de-manos-corazón-104.png",
+      "filename" : "corazon00-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icons8-apretón-de-manos-corazón-105.png",
+      "filename" : "corazon00-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
