@@ -73,7 +73,6 @@ class cuotaYtanTableView: UITableView, UITableViewDelegate, UITableViewDataSourc
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print ("using bar")
         if searchBar.text == nil || searchBar.text == "" {
             self.filtro = self.motivos
         } else {

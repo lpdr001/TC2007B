@@ -13,6 +13,7 @@
 		322097BD26DEE3FB0024DD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097BB26DEE3FB0024DD40 /* Main.storyboard */; };
 		322097C226DEE3FC0024DD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322097C026DEE3FC0024DD40 /* LaunchScreen.storyboard */; };
 		3220DAB527189FE3002F9219 /* ReporteDeIndicadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220DAB427189FE3002F9219 /* ReporteDeIndicadoresViewController.swift */; };
+		322C200D271F6B8F000D94DC /* AdminSoportesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C200C271F6B8F000D94DC /* AdminSoportesTableViewController.swift */; };
 		323545D9271DA24E00BED68B /* cuotaYtanTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323545D8271DA24E00BED68B /* cuotaYtanTableView.swift */; };
 		323B899C2713DDE2007AFDA2 /* Reto01Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B899B2713DDE2007AFDA2 /* Reto01Testing.swift */; };
 		3260D786270D594A00E6F29E /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260D785270D594A00E6F29E /* Usuarios.swift */; };
@@ -76,6 +77,7 @@
 		322097C126DEE3FC0024DD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322097C326DEE3FC0024DD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3220DAB427189FE3002F9219 /* ReporteDeIndicadoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteDeIndicadoresViewController.swift; sourceTree = "<group>"; };
+		322C200C271F6B8F000D94DC /* AdminSoportesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSoportesTableViewController.swift; sourceTree = "<group>"; };
 		323545D8271DA24E00BED68B /* cuotaYtanTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cuotaYtanTableView.swift; sourceTree = "<group>"; };
 		323B89992713DDE2007AFDA2 /* Reto01Testing.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reto01Testing.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B899B2713DDE2007AFDA2 /* Reto01Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reto01Testing.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				32BEF32E27179BFB004EA84F /* TanatologosAminTableViewController.swift */,
 				32BEF3362717C3D8004EA84F /* RegistrarSoporteViewController.swift */,
 				32E96268271925C100D8C935 /* EditarSoporteViewController.swift */,
+				322C200C271F6B8F000D94DC /* AdminSoportesTableViewController.swift */,
 			);
 			path = VistasTanatologo;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				322097BA26DEE3FB0024DD40 /* ViewController.swift in Sources */,
 				32BEF32F27179BFB004EA84F /* TanatologosAminTableViewController.swift in Sources */,
 				329D792C271298D000461B09 /* SesionesViewController.swift in Sources */,
+				322C200D271F6B8F000D94DC /* AdminSoportesTableViewController.swift in Sources */,
 				32A6702127060C5A004B8C64 /* DetalleServicioViewController.swift in Sources */,
 				3260D7A1270D6C2800E6F29E /* Sesiones.swift in Sources */,
 				AF421D3B2710EF32009CE697 /* Administradores.swift in Sources */,

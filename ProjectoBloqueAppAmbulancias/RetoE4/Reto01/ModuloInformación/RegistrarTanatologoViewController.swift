@@ -16,13 +16,15 @@ class RegistrarTanatologoViewController: UIViewController, UITextFieldDelegate {
   
    // var datos = [Tanatologo]()
     var tc = TanatologosController()
+    var asc = AdminSoporteController()
+    var ac = AdministradorController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //Name.delegate = self
-        //password.delegate = self
-        //username.delegate = self
+        Name.delegate = self
+        password.delegate = self
+        username.delegate = self
         
         
         // Do any additional setup after loading the view.
@@ -39,8 +41,31 @@ class RegistrarTanatologoViewController: UIViewController, UITextFieldDelegate {
     }
     */
     
+    
+    
     func updatedatos(with tanatologos: Tanatologos){
-       
+        if(tanatologos.count <= 0){
+            asc.fetchAdminSoporte(st: username.text!){ (result) in switch result{
+                case .success(let tanatologos):self.updatedatos2(with: tanatologos)
+                case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+                }
+            }
+        }
+    }
+    
+    func updatedatos2(with tanatologos: Soportes){
+        
+        if(tanatologos.count <= 0){
+            ac.fetchAdministrador(st: username.text!){ (result) in
+            switch result{
+            case .success(let tanatologos):self.finishval(with: tanatologos)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+                }
+            }
+        }
+    }
+    
+    func finishval(with tanatologos: Administradores){
         let tanatologo = Tanatologo(id: "", nombre: Name.text!, password: password.text!, user:username.text!)
       
         
@@ -50,6 +75,7 @@ class RegistrarTanatologoViewController: UIViewController, UITextFieldDelegate {
             _ = navigationController?.popViewController(animated: true)
 
         }
+        
     }
    
     func displayError(_ error: Error, title: String) {
@@ -70,6 +96,12 @@ class RegistrarTanatologoViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
+    }
+    
+    @IBAction func CerrarTeclado(_ sender: UITapGestureRecognizer) {
+     username.resignFirstResponder()
+    password.resignFirstResponder()
+        Name.resignFirstResponder()
     }
     
 }

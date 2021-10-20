@@ -1,21 +1,21 @@
 //
-//  TanatologosAminTableViewController.swift
+//  AdminSoportesTableViewController.swift
 //  Reto01
 //
-//  Created by user193889 on 10/13/21.
+//  Created by user193889 on 10/19/21.
 //
 
 import UIKit
 
-class TanatologosAminTableViewController: UITableViewController , UISearchBarDelegate {
+class AdminSoportesTableViewController : UITableViewController , UISearchBarDelegate {
     
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var UITableView: UITableView!
     
-    var tc = TanatologosController()
+    var tc =  AdminSoporteController()
     
-    var datos = [Tanatologo]()
-    var filtroDatos = [Tanatologo]()
+    var datos = [AdminSoporte]()
+    var filtroDatos = [AdminSoporte]()
 
     override func viewWillAppear(_ animated: Bool) {
         
@@ -25,7 +25,7 @@ class TanatologosAminTableViewController: UITableViewController , UISearchBarDel
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        tc.fetchEspecificTanatologos(st: ""){ (result) in
+        tc.fetchAdminSoportes(st: ""){ (result) in
             switch result{
             case .success(let usuarios):self.updateUI(with: usuarios)
             case .failure(let error):self.displayError(error, title: "No se pudo acceder a los servicios")
@@ -35,7 +35,7 @@ class TanatologosAminTableViewController: UITableViewController , UISearchBarDel
         }    }
 
 
-    func updateUI(with usuarios:Tanatologos){
+    func updateUI(with usuarios:Soportes){
         DispatchQueue.main.async {
             self.datos = usuarios
             self.filtroDatos = usuarios
@@ -60,7 +60,7 @@ class TanatologosAminTableViewController: UITableViewController , UISearchBarDel
         
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
            
-            return "Tanatologos"
+            return "Admins Soporte"
         }
 
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,24 +94,20 @@ class TanatologosAminTableViewController: UITableViewController , UISearchBarDel
         }
 
     @IBAction func Addtan(_ sender: Any) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         
-        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "ATan")//as! SesionesViewController
+        //let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "ASup")//as! SesionesViewController
         
         //balanceViewController.user = self.user
         //balanceViewController.datos = self.datos
-        self.show(balanceViewController, sender: nil)
+        //self.show(balanceViewController, sender: nil)
     }
     // In a storyboard-based application, you will often want to do a little preparation before navigation*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         //let siguiente = segue.destination as! UuariosTanatologoTableViewController
-        let indice = self.tableView.indexPathForSelectedRow?.item
-        var tmp = [Tanatologo]()
-        tmp.append(filtroDatos[indice!])
-        LogInViewController.Lv.datos = tmp
         
     }
 

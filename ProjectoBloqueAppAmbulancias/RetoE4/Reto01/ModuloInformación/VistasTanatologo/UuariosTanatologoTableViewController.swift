@@ -161,9 +161,9 @@ func displayError(_ error: Error, title: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         
-        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "ETan")//as! SesionesViewController
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "ETan") as! EditarTanatologoViewController
         
-        //balanceViewController.user = self.user
+        balanceViewController.sup = self.tanatologo
         //balanceViewController.datos = self.datos
         self.show(balanceViewController, sender: nil)
     }

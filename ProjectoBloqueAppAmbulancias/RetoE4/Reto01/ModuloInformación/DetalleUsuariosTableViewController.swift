@@ -64,8 +64,8 @@ class DetalleUsuariosTableViewController: UITableViewController, UISearchBarDele
 
 func updateUI(with sesiones:Sesiones){
     DispatchQueue.main.async {
-        self.datos = sesiones
-        self.filtroDatos = sesiones
+        self.datos = sesiones.sorted(by: {$0.numeroSesion > $1.numeroSesion })
+        self.filtroDatos = self.datos
         self.tableView.reloadData()
     }
     

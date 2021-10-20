@@ -15,13 +15,16 @@ class EditarTanatologoViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var password: UITextField!
     
     var tc = TanatologosController()
+    var asc = AdminSoporteController()
+    var ac = AdministradorController()
+    
     var sup : Tanatologo?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sup = LogInViewController.Lv.datos[0]
+        //sup = LogInViewController.Lv.datos[0]
                 
                 username.delegate = self
                 name.delegate = self
@@ -44,6 +47,33 @@ class EditarTanatologoViewController: UIViewController, UITextFieldDelegate {
     }
     
     func updatedatos(with tanatologos: Tanatologos){
+        if(tanatologos.count <= 0){
+            asc.fetchAdminSoporte(st: username.text!){ (result) in switch result{
+                case .success(let tanatologos):self.updatedatos2(with: tanatologos)
+                case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+                }
+            }
+        }
+        else if(tanatologos.count != 0){
+            let  tanatologo = Tanatologo(id: sup!.id, nombre: name.text!, password: password.text!, user: sup!.nombre)
+                
+                tc.Editar(sup: tanatologo)
+        }
+    }
+    
+    func updatedatos2(with tanatologos: Soportes){
+        
+        if(tanatologos.count <= 0){
+            ac.fetchAdministrador(st: username.text!){ (result) in
+            switch result{
+            case .success(let tanatologos):self.finishval(with: tanatologos)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a ")
+                }
+            }
+        }
+    }
+    
+    func finishval(with tanatologos: Administradores){
        
         let  tanatologo = Tanatologo(id: sup!.id, nombre: name.text!, password: password.text!, user: username.text!)
       
@@ -51,7 +81,7 @@ class EditarTanatologoViewController: UIViewController, UITextFieldDelegate {
         if (tanatologos.count <= 0){
             
             tc.Editar(sup: tanatologo)
-                    LogInViewController.Lv.datos[0] = tanatologo
+            LogInViewController.Lv.datos[0] = tanatologo
                     _ = navigationController?.popViewController(animated: true)
         }
     }
@@ -63,6 +93,12 @@ class EditarTanatologoViewController: UIViewController, UITextFieldDelegate {
                 self.present(alert, animated: true, completion: nil)
             }
         }
+    
+    @IBAction func CerrarTeclado(_ sender: UITapGestureRecognizer) {
+        username.resignFirstResponder()
+        password.resignFirstResponder()
+        name.resignFirstResponder()
+    }
     
     /*
     // MARK: - Navigation

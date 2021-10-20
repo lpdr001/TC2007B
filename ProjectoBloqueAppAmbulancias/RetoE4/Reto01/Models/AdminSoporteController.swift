@@ -15,7 +15,7 @@ class AdminSoporteController{
     
     
     func EditUsuario(sn:AdminSoporte){
-        db.collection("Sesiones").document(sn.id).setData([
+        db.collection("AdminSoporte").document(sn.id).setData([
             "nombre" : sn.nombre,
             "password" : sn.password,
             "user":sn.user
@@ -41,6 +41,27 @@ class AdminSoporteController{
     func fetchAdminSoporte(st:String, completion: @escaping (Result<Soportes, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
         var adminsoporte = [AdminSoporte]()
         db.collection("AdminSoporte").whereField("user", isEqualTo: st).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(.failure(err))
+            } else {
+              
+                for document in querySnapshot!.documents {
+                    
+                    let s = AdminSoporte(aDoc: document)
+                    //if(s.tipo == st){
+                    adminsoporte.append(s)
+                    //}
+                }
+                completion(.success(adminsoporte))
+            }
+        }
+       
+    }
+    
+    func fetchAdminSoportes(st:String, completion: @escaping (Result<Soportes, Error>) -> Void){//        let servicios = [Servicio(nombre: "Uno", desc: "Desc Uno")]
+        var adminsoporte = [AdminSoporte]()
+        db.collection("AdminSoporte").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))

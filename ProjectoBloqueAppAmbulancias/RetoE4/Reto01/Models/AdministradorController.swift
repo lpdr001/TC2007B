@@ -14,17 +14,17 @@ class AdministradorController{
     let db = Firestore.firestore()
     
     
-    func EditUsuario(sn:AdminSoporte){
-        db.collection("Sesiones").document(sn.id).setData([
+    func EditUsuario(sn:Administrador){
+        db.collection("Administradores").document(sn.id).setData([
             "nombre" : sn.nombre,
             "password" : sn.password,
             "user":sn.user
         ])
     }
     
-    func SendSoporte(sn:AdminSoporte){
+    func SendSoporte(sn:Administrador){
         var ref: DocumentReference? = nil
-        ref = db.collection("AdminSoporte").addDocument(data: [
+        ref = db.collection("Administradores").addDocument(data: [
             "nombre" : sn.nombre,
             "password" : sn.password,
             "user":sn.user
