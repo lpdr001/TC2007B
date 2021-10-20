@@ -48,6 +48,7 @@ class LogInViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+       
         self.b2 = false
       //  super.viewDidLoad()
         

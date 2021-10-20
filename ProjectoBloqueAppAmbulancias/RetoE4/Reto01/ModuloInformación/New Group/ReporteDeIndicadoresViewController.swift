@@ -101,6 +101,11 @@ class ReporteDeIndicadoresViewController: UIViewController{
     
     }
     
+    
+    @IBAction func cerrarteclado(_ sender: UITapGestureRecognizer) {
+    }
+    
+    
     @IBAction func updateFecha(_ sender: UIDatePicker) {
         GetData()
     }
